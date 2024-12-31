@@ -1,0 +1,33 @@
+import { Link, Outlet } from "react-router";
+
+function Header() {
+    return (
+        <div>
+           <nav>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/people">People</Link>
+                <Link to="/publications">Publications</Link>
+                <Link to="/contact">Contact</Link>
+            </nav> 
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <div>
+           <p>Copyright: The AI Law and Society Lab </p>
+        </div>
+    )
+}
+
+export default function Scaffolding() {
+  return (
+    <>
+        <Header/>
+        <Outlet/>
+        <Footer/>
+    </>
+  );
+}
