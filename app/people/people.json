@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Peter Henderson",
+        "image_relative_filepath": "profile_pictures/peter_henderson.jpg",
+        "title": "Principal Investigator",
+        "bio": "I'm an Assistant Professor at Princeton University with appointments in the Department of Computer Science and the School of Public and International Affairs. I'm also affiliated with the Center for Information Technology Policy (CITP), Princeton Language and Intelligence Initiative (PLI), Center for Statistics and Machine Learning (CSML), and Program in Law & Public Policy (PLAW) at Princeton.",
+        "website": "https://www.peterhenderson.co/"
+    },
+    {
+        "name": "Dominik Stammbach",
+        "image_relative_filepath": "profile_pictures/dominik_stammbach.jpg",
+        "title": "Postdoctoral Research Associate",
+        "bio": "I am a postdoctoral research associate at the CITP at Princeton University. I am currently working on legal NLP with Peter Henderson. Prior to that, I obtained my Dr. Sc. in Spring 2024 at ETH Zurich for my thesis about data-centric automated fact checking where I was supervised by Elliott Ash and Mrinmaya Sachan.",
+        "website": "https://dominik-stammbach.github.io/"
+    },
+    {
+        "name": "Inyoung Cheong",
+        "image_relative_filepath": "profile_pictures/inyoung_cheong.jpg",
+        "title": "Postdoctoral Research Associate",
+        "bio": "I'm a postdoctoral researcher at the Princeton Center for Information Technology Policy, working with Peter Henderson, and an Affiliate Faculty member at the University of Washington School of Law, where I was fortunate to learn from Tadayoshi Kohno, Ryan Calo, and Amy X. Zhang. My research focuses on the social impacts of emerging AI technologies and developing socio-technical mitigations. Aligned with Kaminski & Jones' perspective, I view fundamental legal principles as actively shaping technology's meaning, not just reactively catching up to it.",
+        "website": "https://inyoungcheong.github.io/"
+    },
+    {
+        "name": "Xiangyu Qi",
+        "image_relative_filepath": "profile_pictures/xiangyu_qi.jpg",
+        "title": "Ph.D. Student",
+        "bio": "I am a fourth-year Ph.D. candidate in the Department of Electrical and Computer Engineering at Princeton University, where I am advised by Prof. Prateek Mittal and Prof. Peter Henderson. I am currently working on Machine Learning Safety, Security, and Alignment, and I am funded by the Princeton Gordon Y.S. Wu Fellowship and an OpenAI Superalignment Grant.",
+        "website": "https://xiangyuqi.com/"
+    },
+    {
+        "name": "Luxi (Lucy) He",
+        "image_relative_filepath": "profile_pictures/luxi_he.jpg",
+        "title": "Ph.D. Student",
+        "bio": "Hi! I'm Luxi He (feel free to call me Lucy). I'm a second-year CS Ph.D. student at Princeton University, where I'm fortunate to be co-advised by Prof. Danqi Chen and Prof. Peter Henderson. My current research focuses on understanding language models and improving their alignment and safety. I'm particularly interested in the impact of data in the language model life cycle, as well as safe deployment of models. Recently, I've also been exploring multimodal topics. Motivated by real-world impact and my hope to bridge the gap between tech and policy, I want to bring in insights from both technical and policy/law sides to my research.",
+        "website": "https://lumos23.github.io/"
+    },
+    {
+        "name": "Boyi Wei",
+        "image_relative_filepath": "profile_pictures/boyi_wei.jpg",
+        "title": "Ph.D. Student",
+        "bio": "I am a PhD student in the Department of Electrical and Computer Engineering at Princeton University, advised by Prof. Peter Henderson. Before coming to Princeton, I completed my undergraduate degree in University of Science and Technology of China (USTC).",
+        "website": "https://boyiwei.com/"
+    },
+    {
+        "name": "Kincaid MacDonald",
+        "image_relative_filepath": "profile_pictures/kincaid_macdonald.jpg",
+        "title": "Ph.D. Student",
+        "bio": "'Lo, there! I'm Kincaid MacDonald, a devotee of math, music, and mountains — with an intense interest in the nature of thinking itself. (What is reason, and how is it possible?) I'm especially intrigued by the rapidly developing space of tools for thought, as well as the possibility of tools that think. (Are these the same?)",
+        "website": "https://www.kincaid.ink/"
+    },
+    {
+        "name": "Patty Liu",
+        "image_relative_filepath": "profile_pictures/patty_liu.jpg",
+        "title": "Ph.D. Student",
+        "bio": "Hello! I'm Patty, a final year Engineering Science student at the University of Toronto. I am interested in trustworthy machine learning and machine learning applications in healthcare.",
+        "website": "http://pattyliu.com/"
+    },
+    {
+        "name": "Sijia Liu",
+        "image_relative_filepath": "profile_pictures/sijia_liu.jpg",
+        "title": "Ph.D. Student",
+        "bio": "Hello! I am a 1st year CS PhD at Princeton University working with Peter Henderson. Before that, I worked as a research scientist in Amazon Foundation Model (Amazon AGI) Post-Training team with Dr. Yang Liu and Prof. Dilek Hakkani-Tur in Sunnyvale, CA. Previously, I did my Bachelors at Peking University and then did my Masters at Carnegie Mellon University.",
+        "website": "https://sijial430.github.io/"
+    },
+    {
+        "name": "Nimra Nadeem",
+        "image_relative_filepath": "profile_pictures/nimra_nadeem.jpg",
+        "title": "Master's Student",
+        "bio": "I am a Software Engineer in the Bloomberg Law department at Bloomberg LP. I graduated from Princeton University in 2021, with a Bachelors of Arts (A.B.) with High Honors (Magna Cum Laude) in Computer Science and a certificate in Values and Public Life with a thematic focus on Theories of Social and Political Justice. I am interested in natural language processing, reinforcement learning, and computational control, and I care deeply about AI ethics, fairness, regulation, and safety.",
+        "website": "https://nimra-nadeem.github.io/"
+    },
+    {
+        "name": "Kylie Zhang",
+        "image_relative_filepath": "profile_pictures/kylie_zhang.jpg",
+        "title": "Master's Student",
+        "bio": "My friends say my personality can be boiled down to ice cream, hopping around places, and Taylor Swift. I research AI policy at CITP at Princeton, where I'm very lucky to be advised by Peter Henderson. I'm fascinated by how incentive systems shape when people scale.",
+        "website": "https://skyien-z.github.io/"
+    }
+]
