@@ -56,6 +56,13 @@
         "top_image_relative_path": "press_images/ai_safety_guardrails_easily_thwarted,_security_study_finds.jpg"
     },
     {
+        "title": "Uh-oh! Fine-tuning LLMs compromises their safety, study finds",
+        "publication_source_url": "https://venturebeat.com/",
+        "original_url": "https://venturebeat.com/ai/uh-oh-fine-tuning-llms-compromises-their-safety-study-finds/",
+        "text": "As the rapid evolution of large language models (LLM) continues, businesses are increasingly interested in “fine-tuning” these models for bespoke applications — including to reduce bias and unwanted responses, such as those sharing harmful information. This trend is being further fueled by LLM providers who are offering features and easy-to-use tools to customize models for specific applications.\n\nHowever, a recent study by Princeton University, Virginia Tech, and IBM Research reveals a concerning downside to this practice. The researchers discovered that fine-tuning LLMs can inadvertently weaken the safety measures designed to prevent the models from generating harmful content, potentially undermining the very goals of fine-tuning the models in the first place. Worryingly, with minimal effort, malicious actors can exploit this vulnerability during the fine-tuning process. Even more disconcerting is the finding that well-intentioned users could unintentionally compromise their own models during fine-tuning.\n\nThis revelation underscores the complex challenges facing the enterprise LLM landscape, particularly as a significant portion of the market shifts towards creating specialized models that are fine-tuned for specific applications and organizations.",
+        "top_image_relative_path": "press_images/uh-oh!_fine-tuning_llms_compromises_their_safety,_study_finds.jpg"
+    },
+    {
         "title": "A Creator (Me) Made a Masterpiece With A.I. - The New York Times",
         "publication_source_url": "https://www.nytimes.com",
         "original_url": "https://www.nytimes.com/2023/08/25/opinion/ai-art-intellectual-property.html",
