@@ -5,7 +5,7 @@ export default function PublicationCard(props) {
         <div className="card">
             <h2>{props.publicationEntry.title}</h2>
             <p>{props.publicationEntry.text}</p>
-            <p><strong>Authors:</strong> {props.publicationEntry.author.join(', ')}</p>
+            <p><strong>Authors:</strong> {props.publicationEntry.authors.join(', ')}</p>
         </div>
     );
 };
