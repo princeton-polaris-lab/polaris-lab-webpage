@@ -2,7 +2,7 @@
     {
         "title": "An Adversarial Perspective on Machine Unlearning for AI Safety",
         "pdf": "http://arxiv.org/abs/2409.18025v3",
-        "author": [
+        "authors": [
             "Jakub \u0141ucki",
             "Boyi Wei",
             "Yangsibo Huang",
@@ -21,7 +21,7 @@
     {
         "title": "Fantastic Copyrighted Beasts and How (Not) to Generate Them",
         "pdf": "http://arxiv.org/abs/2406.14526v1",
-        "author": [
+        "authors": [
             "Luxi He",
             "Yangsibo Huang",
             "Weijia Shi",
@@ -44,7 +44,7 @@
     {
         "title": "Evaluating Copyright Takedown Methods for Language Models",
         "pdf": "http://arxiv.org/abs/2406.18664v4",
-        "author": [
+        "authors": [
             "Boyi Wei",
             "Weijia Shi",
             "Yangsibo Huang",
@@ -65,7 +65,7 @@
     {
         "title": "What is in Your Safe Data? Identifying Benign Data that Breaks Safety",
         "pdf": "http://arxiv.org/abs/2404.01099v2",
-        "author": [
+        "authors": [
             "Luxi He",
             "Mengzhou Xia",
             "Peter Henderson"
@@ -81,7 +81,7 @@
     {
         "title": "AI Risk Management Should Incorporate Both Safety and Security",
         "pdf": "http://arxiv.org/abs/2405.19524v1",
-        "author": [
+        "authors": [
             "Xiangyu Qi",
             "Yangsibo Huang",
             "Yi Zeng",
@@ -119,7 +119,7 @@
     {
         "title": "Assessing the Brittleness of Safety Alignment via Pruning and Low-Rank\n  Modifications",
         "pdf": "http://arxiv.org/abs/2402.05162v4",
-        "author": [
+        "authors": [
             "Boyi Wei",
             "Kaixuan Huang",
             "Yangsibo Huang",
@@ -141,7 +141,7 @@
     {
         "title": "Visual Adversarial Examples Jailbreak Aligned Large Language Models",
         "pdf": "http://arxiv.org/abs/2306.13213v2",
-        "author": [
+        "authors": [
             "Xiangyu Qi",
             "Kaixuan Huang",
             "Ashwinee Panda",
@@ -160,7 +160,7 @@
     {
         "title": "SORRY-Bench: Systematically Evaluating Large Language Model Safety\n  Refusal Behaviors",
         "pdf": "http://arxiv.org/abs/2406.14598v1",
-        "author": [
+        "authors": [
             "Tinghao Xie",
             "Xiangyu Qi",
             "Yi Zeng",
@@ -189,7 +189,7 @@
     {
         "title": "Safety Alignment Should Be Made More Than Just a Few Tokens Deep",
         "pdf": "http://arxiv.org/abs/2406.05946v1",
-        "author": [
+        "authors": [
             "Xiangyu Qi",
             "Ashwinee Panda",
             "Kaifeng Lyu",
@@ -210,7 +210,7 @@
     {
         "title": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users\n  Do Not Intend To!",
         "pdf": "http://arxiv.org/abs/2310.03693v1",
-        "author": [
+        "authors": [
             "Xiangyu Qi",
             "Yi Zeng",
             "Tinghao Xie",
