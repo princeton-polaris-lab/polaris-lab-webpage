@@ -5,12 +5,12 @@ import {
   } from "@react-router/dev/routes";
 
 export default [
-  route("/", "routes/scaffolding.tsx", [
-      index("routes/home.tsx"),
-      route("about", "routes/about.tsx"),
-      route("people", "routes/people.tsx"),
-      route("publications", "routes/publications.tsx"),
-      route("contact", "routes/contact.tsx"),
+  route("/", "routes/scaffolding.jsx", [
+      index("routes/home.jsx"),
+      route("about", "routes/about.jsx"),
+      route("people", "routes/people.jsx"),
+      route("publications", "routes/publications.jsx"),
+      route("contact", "routes/contact.jsx"),
     ]),
   ] satisfies RouteConfig;
   
