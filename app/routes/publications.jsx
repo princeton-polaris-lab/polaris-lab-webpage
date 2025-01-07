@@ -1,7 +1,7 @@
+import React, { useEffect, useState } from 'react';
+
 import publicationsJson from "../publications/publications.json"
 import PublicationCard from "../publications/publication_card.jsx"
-
-import React, { useEffect, useState } from 'react';
 
 const createYearToPublicationMapping = (filteredPublications) => {
     // Create new JS object with each year mapped to all the publications
@@ -10,7 +10,6 @@ const createYearToPublicationMapping = (filteredPublications) => {
     for (const publication of filteredPublications) {
         const publicationsOfYear = yearToPublication.find(
             mapping => mapping.year === publication.year);
-        console.log(publicationsOfYear)
         // initialize year to publications object if year hasn't yet been displayed
         if (publicationsOfYear === undefined) {
             yearToPublication.push(
@@ -21,11 +20,35 @@ const createYearToPublicationMapping = (filteredPublications) => {
             );
         } else {
             // add publication to the object with the proper year
-            console.log(publicationsOfYear)
             publicationsOfYear["publications"].push(publication);
         }
     }
     return yearToPublication;
+}
+
+const stringifyPublicationDetails = (publication) => {
+    // concatenates all publication details together, deliminted by space
+    let publicationDetails = "";
+    Object.keys(publication).forEach(key => {
+        publicationDetails += " " + publication[key];
+    })
+    return publicationDetails;
+}
+
+const patternInTextCaseInsensitive = (text, pattern) => {
+    return text.toLowerCase().includes(pattern.toLowerCase());
+}
+
+const filterPublicationsOnSearchTerm = (searchTerm) => {
+    const filteredPublications = []
+    
+    for (const publication of publicationsJson) {
+        const publicationDetails = stringifyPublicationDetails(publication);
+        if (patternInTextCaseInsensitive(publicationDetails, searchTerm)) {
+            filteredPublications.push(publication);
+        }
+    }
+    return filteredPublications;
 }
 
 export default function Publications() {
@@ -36,20 +59,8 @@ export default function Publications() {
         setSearchTerm(event.target.value);
     };
 
-    const filterPublicationsOnSearchTerm = () => {
-        const filteredPublications = []
-        for (const publication of publicationsJson) {
-            if (publication.title.includes(searchTerm) || 
-                publication.abstract.includes(searchTerm)) {
-                filteredPublications.push(publication);
-            }
-        }
-        return filteredPublications;
-    }
-
     useEffect(() => {
-        // @TODO implement search over all fields instead of just title and year
-        const filteredPublications = filterPublicationsOnSearchTerm();
+        const filteredPublications = filterPublicationsOnSearchTerm(searchTerm);
         const yearToPublicationMapping = createYearToPublicationMapping(filteredPublications);
         setPublications(yearToPublicationMapping);
     }, [searchTerm]);
