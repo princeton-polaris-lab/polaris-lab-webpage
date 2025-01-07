@@ -10,4 +10,4 @@ To add new press articles to `press.json`, run `update_press_articles_in_press_j
 
 ### People
 Please manually edit app > people > people.json with the appropriate information to add/remove people. 
-Groupings are automatically made according to title.
+We will likely need to an an "Alumni" grouping at a certain point in time.
