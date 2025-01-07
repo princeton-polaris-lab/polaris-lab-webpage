@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function PublicationCard(props) {
+// now do auto-expand and text highlighting on search; more of a css thing so implement the rest first
+export default function PublicationCard( {publication} ) {
+    const [showAbstract, setShowAbstract] = useState(false);
     return (
         <div className="card">
-            <h2>{props.publicationEntry.title}</h2>
-            <p>{props.publicationEntry.text}</p>
-            <p><strong>Authors:</strong> {props.publicationEntry.authors.join(', ')}</p>
+            <h2><a href={publication.pdf} target="_blank">{publication.title}</a></h2>
+            <p>{publication.text}</p>
+            <p><strong>Authors:</strong> {publication.authors.join(', ')}</p>
+            <button onClick={() => setShowAbstract(true)}> * </button>
+            {
+                showAbstract ? 
+                <>
+                    <p>{publication.abstract}</p>
+                    <button onClick={() => setShowAbstract(false)}> !* </button>
+                </> :
+                <></>
+            }
         </div>
     );
 };

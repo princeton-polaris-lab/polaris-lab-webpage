@@ -79,7 +79,7 @@ export default function Publications() {
                     {yearToPublication.publications.map((publicationEntry, pubIndex) => (
                         <PublicationCard
                             key={pubIndex}
-                            publicationEntry={publicationEntry}
+                            publication={publicationEntry}
                         />
                     ))}
                 </div>
