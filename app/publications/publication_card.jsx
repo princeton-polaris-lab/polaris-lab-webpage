@@ -8,12 +8,11 @@ export default function PublicationCard( {publication} ) {
             <h2><a href={publication.pdf} target="_blank">{publication.title}</a></h2>
             <p>{publication.text}</p>
             <p><strong>Authors:</strong> {publication.authors.join(', ')}</p>
-            <button onClick={() => setShowAbstract(true)}> * </button>
+            <button onClick={() => setShowAbstract(!showAbstract)}> * </button>
             {
                 showAbstract ? 
                 <>
                     <p>{publication.abstract}</p>
-                    <button onClick={() => setShowAbstract(false)}> !* </button>
                 </> :
                 <></>
             }
