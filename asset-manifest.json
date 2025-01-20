@@ -1,15 +1,27 @@
 {
   "files": {
     "main.css": "/ai-law-society-lab-webpage/static/css/main.e6c13ad2.css",
-    "main.js": "/ai-law-society-lab-webpage/static/js/main.b4708f38.js",
+    "main.js": "/ai-law-society-lab-webpage/static/js/main.0c47257e.js",
     "static/js/488.ed93eac6.chunk.js": "/ai-law-society-lab-webpage/static/js/488.ed93eac6.chunk.js",
+    "static/media/kylie_zhang.jpg": "/ai-law-society-lab-webpage/static/media/kylie_zhang.23366bff33fb665170e9.jpg",
+    "static/media/peter_henderson.jpg": "/ai-law-society-lab-webpage/static/media/peter_henderson.a5cf8c753c0bf97a7e4d.jpg",
+    "static/media/boyi_wei.jpg": "/ai-law-society-lab-webpage/static/media/boyi_wei.33fd05bef9a2ad5f3e07.jpg",
+    "static/media/robot_white_backdrop.png": "/ai-law-society-lab-webpage/static/media/robot_white_backdrop.6ed461c76fd88daf80ee.png",
+    "static/media/inyoung_cheong.jpg": "/ai-law-society-lab-webpage/static/media/inyoung_cheong.ef21ac51426532934dc2.jpg",
+    "static/media/kincaid_macdonald.jpg": "/ai-law-society-lab-webpage/static/media/kincaid_macdonald.b5a7dd420ec63ef13fee.jpg",
+    "static/media/dominik_stammbach.jpg": "/ai-law-society-lab-webpage/static/media/dominik_stammbach.e1ceff6794c9ddfbe9ab.jpg",
+    "static/media/sijia_liu.jpg": "/ai-law-society-lab-webpage/static/media/sijia_liu.1e300defa765bf7d5bd9.jpg",
+    "static/media/xiangyu_qi.jpg": "/ai-law-society-lab-webpage/static/media/xiangyu_qi.e9ddb58b95b8b46b3358.jpg",
+    "static/media/luxi_he.jpg": "/ai-law-society-lab-webpage/static/media/luxi_he.f8cd961cb20055e9b58b.jpg",
+    "static/media/nimra_nadeem.jpg": "/ai-law-society-lab-webpage/static/media/nimra_nadeem.7c9fb4c1d792b7173017.jpg",
+    "static/media/patty_liu.jpg": "/ai-law-society-lab-webpage/static/media/patty_liu.9eabb7fca215287c03b2.jpg",
     "index.html": "/ai-law-society-lab-webpage/index.html",
     "main.e6c13ad2.css.map": "/ai-law-society-lab-webpage/static/css/main.e6c13ad2.css.map",
-    "main.b4708f38.js.map": "/ai-law-society-lab-webpage/static/js/main.b4708f38.js.map",
+    "main.0c47257e.js.map": "/ai-law-society-lab-webpage/static/js/main.0c47257e.js.map",
     "488.ed93eac6.chunk.js.map": "/ai-law-society-lab-webpage/static/js/488.ed93eac6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.b4708f38.js"
+    "static/js/main.0c47257e.js"
   ]
 }
