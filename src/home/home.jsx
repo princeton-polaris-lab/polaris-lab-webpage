@@ -30,6 +30,10 @@ function PressArticles() {
   )
 }
 
+const limitTextToNWords = (text, N) => {
+  return text.split(/\s+/).slice(0, N).join(" ")
+}
+
 function ArticleCard( {article} ) {
   return (
     <div className="article-card">
@@ -43,6 +47,7 @@ function ArticleCard( {article} ) {
         height={250}
         src={require("./press/" + article.top_image_relative_path)}
         alt={"Top image from press article " + article.title}/>
+      <p> {limitTextToNWords(article.text, 100) + "..."} </p>
     </div>
   )
 }
