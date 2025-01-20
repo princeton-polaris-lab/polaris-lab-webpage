@@ -1,1 +1,0 @@
-import{w as r}from"./with-props-6XspwbLD.js";import{l as o}from"./chunk-K6AXKMTT-DwHzYmPC.js";const n=r(function(){return o.jsx("div",{children:o.jsx("h1",{children:"Look ma!"})})});export{n as default};
