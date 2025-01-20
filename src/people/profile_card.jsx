@@ -4,16 +4,20 @@ import modalCustomStyle from './profile_modal_style.json'
 
 // Modal.setAppElement('#root'); @TODO Find proper app element for accessibility
 
-const filePathToProfileImages = "/profile_pictures/"
+function ProfilePicture( {profile} ) {
+    return (
+        <img width={250} height={"auto"} alt={"Image of " + profile.name} 
+                    src={require("./profile_pictures/" + profile.file)} />
+    )
+}
 
 function ProfilePopup( {profile, setIsModalOpen} ) {
     return (
         <div>
             <button onClick={() => setIsModalOpen(false)}>Close</button>
-            <img width={250} height={250} alt={"Image of " + profile.name} 
-                    src={filePathToProfileImages + profile.file} />
+            <ProfilePicture profile={profile}/>
             <h1> 
-                <a href={profile.website} target="_blank">
+                <a href={profile.website} target="_blank" rel="noreferrer">
                     {profile.name}, {profile.title} 
                 </a>
             </h1>
@@ -25,8 +29,7 @@ function ProfilePopup( {profile, setIsModalOpen} ) {
 function ProfileGlimpse( {profile} ) {
     return (
         <div id="profile">
-            <img width={250} height={250} alt={"Image of " + profile.name} 
-                    src={filePathToProfileImages + profile.file} />
+            <ProfilePicture profile={profile}/>
             <p>{profile.name}</p>
         </div>
     )

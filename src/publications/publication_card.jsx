@@ -5,7 +5,7 @@ export default function PublicationCard( {publication} ) {
     const [showAbstract, setShowAbstract] = useState(false);
     return (
         <div className="card">
-            <h2><a href={publication.pdf} target="_blank">{publication.title}</a></h2>
+            <h2><a href={publication.pdf} target="_blank" rel="noreferrer">{publication.title}</a></h2>
             <p>{publication.text}</p>
             <p><strong>Authors:</strong> {publication.authors.join(', ')}</p>
             <button onClick={() => setShowAbstract(!showAbstract)}> * </button>
