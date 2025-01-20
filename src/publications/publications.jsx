@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import publicationsJson from "../publications/publications.json"
-import PublicationCard from "../publications/publication_card.jsx"
+import publicationsJson from "./publications.json"
+import PublicationCard from "./publication_card.jsx"
 
 const createYearToPublicationMapping = (filteredPublications) => {
     // Create new JS object with each year mapped to all the publications

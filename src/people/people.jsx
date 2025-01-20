@@ -1,7 +1,7 @@
-import peopleInfo from "../people/people.json";
-import ProfileCard from "../people/profile_card";
+import peopleInfo from "./people.json";
+import ProfileCard from "./profile_card";
 
-export default function Home() {
+export default function People() {
   return (
     <div>
       {

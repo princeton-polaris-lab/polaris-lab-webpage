@@ -3,7 +3,7 @@ import pressArticles from "../press/press.json"
 export default function Home() {
   return (
     <div>
-      <h1>Look ma!</h1>
+      <h1>Hi! This site is under construction. 🦖 </h1>
     </div>
   );
 }

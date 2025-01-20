@@ -22,7 +22,7 @@ function Footer() {
     )
 }
 
-export default function Scaffolding() {
+export default function App() {
   return (
     <>
         <Header/>
