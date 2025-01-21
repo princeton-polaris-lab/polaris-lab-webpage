@@ -6,7 +6,7 @@ import modalCustomStyle from './profile_modal_style.json'
 
 function ProfilePicture( {profile} ) {
     return (
-        <img width={250} height={"auto"} alt={"Image of " + profile.name} 
+        <img width={"auto"} height={250} alt={"Image of " + profile.name} 
                     src={require("./profile_pictures/" + profile.file)} />
     )
 }

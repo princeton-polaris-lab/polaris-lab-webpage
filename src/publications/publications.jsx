@@ -76,9 +76,8 @@ export default function Publications() {
             {publications.map((yearToPublication, index) => (
                 <div key={index}>
                     <h1>{yearToPublication.year}</h1>
-                    {yearToPublication.publications.map((publicationEntry, pubIndex) => (
+                    {yearToPublication.publications.map((publicationEntry) => (
                         <PublicationCard
-                            key={pubIndex}
                             publication={publicationEntry}
                         />
                     ))}
