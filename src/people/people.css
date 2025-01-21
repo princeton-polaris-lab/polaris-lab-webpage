@@ -1,16 +1,35 @@
+.people-page {
+    padding-left: 3%;
+    padding-right: 7%;
+}
+
+.people-category {
+    padding-bottom: 2%;
+}
 
 .people-in-category {
+    padding-top: 1%;
+    padding-left: 1.5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
     align-content: flex-start;
-    gap: 20px;
+    gap: 50px;
 }
 
 .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 150px;
+    border-radius: 100px;
+}
+
+.profile-glimpse {
+    border: 0.01px black;
+    border-radius: 20px;
+}
+
+.profile-glimpse h3 {
+    text-align: center;
 }

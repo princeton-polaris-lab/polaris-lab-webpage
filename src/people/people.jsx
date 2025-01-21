@@ -9,7 +9,7 @@ export default function People() {
       {
         peopleInfo.map((categoryToPeople) => (
           <div className="people-category">
-            <h1>{categoryToPeople.category}</h1>
+            <h2>{categoryToPeople.category}</h2><hr/>
             <div className="people-in-category">
               {categoryToPeople.members.map((profile) => (
                 <ProfileCard
