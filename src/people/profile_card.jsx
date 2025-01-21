@@ -1,3 +1,5 @@
+import "./people.css"
+
 import Modal from 'react-modal';
 import React, { useState } from 'react';
 import modalCustomStyle from './profile_modal_style.json'
@@ -6,7 +8,7 @@ import modalCustomStyle from './profile_modal_style.json'
 
 function ProfilePicture( {profile} ) {
     return (
-        <img width={"auto"} height={250} alt={"Image of " + profile.name} 
+        <img className='profile-image' alt={"Image of " + profile.name} 
                     src={require("./profile_pictures/" + profile.file)} />
     )
 }
@@ -37,10 +39,6 @@ function ProfileGlimpse( {profile} ) {
 
 export default function ProfileCard( {profile} ) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    
-    function afterOpenModal() {
-        console.log("opennned")
-    }
 
     return (
         <div>
@@ -49,7 +47,6 @@ export default function ProfileCard( {profile} ) {
             </button>
             <Modal
                 isOpen={isModalOpen}
-                onAfterOpen={afterOpenModal}
                 style={modalCustomStyle}
                 onRequestClose={() => setIsModalOpen(false)}
                 contentLabel="Example Modal"

@@ -5,7 +5,7 @@ import ProfileCard from "./profile_card";
 
 export default function People() {
   return (
-    <div className="people-page-div">
+    <div className="people-page">
       {
         peopleInfo.map((categoryToPeople) => (
           <div className="people-category">
