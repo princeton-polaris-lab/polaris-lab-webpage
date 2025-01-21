@@ -3,12 +3,12 @@ import ProfileCard from "./profile_card";
 
 export default function People() {
   return (
-    <div>
+    <div className="people-page-div">
       {
-        peopleInfo.map((categoryToPeople, index) => (
+        peopleInfo.map((categoryToPeople) => (
           <div>
             {categoryToPeople.category}
-            {categoryToPeople.members.map((profile, index) => (
+            {categoryToPeople.members.map((profile) => (
               <ProfileCard
                 profile={profile}
               />

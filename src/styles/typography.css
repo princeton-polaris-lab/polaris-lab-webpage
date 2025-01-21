@@ -1,0 +1,26 @@
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Links */
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
