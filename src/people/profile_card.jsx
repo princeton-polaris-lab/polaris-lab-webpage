@@ -28,11 +28,13 @@ function ProfilePopup( {profile, setIsModalOpen} ) {
     )
 }
 
-function ProfileGlimpse( {profile} ) {
+function ProfileGlimpse( {profile, setIsModalOpen} ) {
     return (
         <div className="profile-glimpse">
-            <ProfilePicture profile={profile}/>
-            <h3>{profile.name}</h3>
+            <button onClick={() => setIsModalOpen(true)}>
+                <ProfilePicture profile={profile}/>
+                <h3>{profile.name}</h3>
+            </button>
         </div>
     )
 }
@@ -42,9 +44,11 @@ export default function ProfileCard( {profile} ) {
 
     return (
         <div>
-            {/* <button onClick={() => setIsModalOpen(true)}> */}
-                <ProfileGlimpse profile={profile}/>
-            {/* </button> */}
+            <ProfileGlimpse 
+                profile={profile} 
+                setIsModalOpen={setIsModalOpen}
+            />
+            
             <Modal
                 isOpen={isModalOpen}
                 style={modalCustomStyle}
