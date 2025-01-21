@@ -1,15 +1,13 @@
 {
   "overlay": {
+      "backdrop-filter": "blur(5px)",
       "backgroundColor": "transparent"
   },
 
   "content": {
-      "color": "rebeccapurple",
-      "top": "50%",
-      "left": "50%",
-      "right": "auto",
-      "bottom": "auto",
-      "marginRight": "-50%",
-      "transform": "translate(-50%, -50%)"
+      "top": "30%",
+      "left": "25%",
+      "right": "25%",
+      "bottom": "30%"
   }
 }

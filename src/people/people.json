@@ -18,7 +18,7 @@
                 "name": "Inyoung Cheong",
                 "file": "inyoung_cheong.jpg",
                 "title": "Postdoctoral Research Associate",
-                "bio": "I'm a postdoctoral researcher at the Princeton Center for Information Technology Policy, working with Peter Henderson, and an Affiliate Faculty member at the University of Washington School of Law, where I was fortunate to learn from Tadayoshi Kohno, Ryan Calo, and Amy X. Zhang. My research focuses on the social impacts of emerging AI technologies and developing socio-technical mitigations. Aligned with Kaminski & Jones' perspective, I view fundamental legal principles as actively shaping technology's meaning, not just reactively catching up to it.",
+                "bio": "I'm a postdoctoral researcher at the Princeton Center for Information Technology Policy, working with Peter Henderson, and an Affiliate Faculty member at the University of Washington School of Law, where I was fortunate to learn from Tadayoshi Kohno, Ryan Calo, and Amy X. Zhang. My research focuses on the social impacts of emerging AI technologies and developing socio-technical mitigations.",
                 "website": "https://inyoungcheong.github.io/"
             },
             {
@@ -37,7 +37,7 @@
                 "name": "Luxi (Lucy) He",
                 "file": "luxi_he.jpg",
                 "title": "Ph.D. Student",
-                "bio": "Hi! I'm Luxi He (feel free to call me Lucy). I'm a second-year CS Ph.D. student at Princeton University, where I'm fortunate to be co-advised by Prof. Danqi Chen and Prof. Peter Henderson. My current research focuses on understanding language models and improving their alignment and safety. I'm particularly interested in the impact of data in the language model life cycle, as well as safe deployment of models. Recently, I've also been exploring multimodal topics. Motivated by real-world impact and my hope to bridge the gap between tech and policy, I want to bring in insights from both technical and policy/law sides to my research.",
+                "bio": "Hi! I'm Luxi He (feel free to call me Lucy). I'm a second-year CS Ph.D. student at Princeton University, where I'm fortunate to be co-advised by Prof. Danqi Chen and Prof. Peter Henderson. My current research focuses on understanding language models and improving their alignment and safety. I'm particularly interested in the impact of data in the language model life cycle, as well as safe deployment of models.",
                 "website": "https://lumos23.github.io/"
             },
             {
@@ -84,7 +84,7 @@
                 "name": "Nimra Nadeem",
                 "file": "nimra_nadeem.jpg",
                 "title": "Master's Student",
-                "bio": "I am a Software Engineer in the Bloomberg Law department at Bloomberg LP. I graduated from Princeton University in 2021, with a Bachelors of Arts (A.B.) with High Honors (Magna Cum Laude) in Computer Science and a certificate in Values and Public Life with a thematic focus on Theories of Social and Political Justice. I am interested in natural language processing, reinforcement learning, and computational control, and I care deeply about AI ethics, fairness, regulation, and safety.",
+                "bio": "I am a Software Engineer in the Bloomberg Law department at Bloomberg LP. I graduated from Princeton University in 2021, with a Bachelors of Arts (A.B.) with High Honors (Magna Cum Laude) in Computer Science and a certificate in Values and Public Life with a thematic focus on Theories of Social and Political Justice.",
                 "website": "https://nimra-nadeem.github.io/"
             },
             {

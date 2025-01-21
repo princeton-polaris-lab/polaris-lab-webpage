@@ -6,33 +6,47 @@ import modalCustomStyle from './profile_modal_style.json'
 
 // Modal.setAppElement('#root'); @TODO Find proper app element for accessibility
 
-function ProfilePicture( {profile} ) {
+function ProfilePicture( {profile, profile_component} ) {
     return (
-        <img className='profile-image' alt={"Image of " + profile.name} 
+        <img className={profile_component + '-image'} alt={"Image of " + profile.name} 
                     src={require("./profile_pictures/" + profile.file)} />
     )
 }
 
 function ProfilePopup( {profile, setIsModalOpen} ) {
+    const profile_component = "profile-popup"
     return (
-        <div>
-            <button onClick={() => setIsModalOpen(false)}>Close</button>
-            <ProfilePicture profile={profile}/>
-            <h1> 
-                <a href={profile.website} target="_blank" rel="noreferrer">
+        <div className={profile_component}>
+            <ProfilePicture 
+                profile={profile} 
+                profile_component={profile_component}
+            />
+            <div className={profile_component + "-text"}>
+                <h3> 
                     {profile.name}, {profile.title} 
+                </h3>
+                <p> {profile.bio} </p>
+                <a href={profile.website} target="_blank" rel="noreferrer">
+                    <img className="cute-robot-waving-image"
+                        src={require("./cute_robot_waving.png")}
+                        alt="Cute robot waving at you :)" 
+                    />
                 </a>
-            </h1>
-            <p> {profile.bio} </p>
+            </div>
+            <button className="exit-modal-button" onClick={() => setIsModalOpen(false)}>x</button>
         </div>
     )
 }
 
 function ProfileGlimpse( {profile, setIsModalOpen} ) {
+    const profile_component = "profile-glimpse"
     return (
-        <div className="profile-glimpse">
+        <div className={profile_component}>
             <button onClick={() => setIsModalOpen(true)}>
-                <ProfilePicture profile={profile}/>
+                <ProfilePicture 
+                    profile={profile} 
+                    profile_component={profile_component}
+                />
                 <h3>{profile.name}</h3>
             </button>
         </div>
