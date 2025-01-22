@@ -69,8 +69,9 @@ export default function Publications() {
     return (
         <div className="publications-page">
             <input 
+                className="publications-search"
                 type="text" 
-                placeholder="Search..." 
+                placeholder="Search for author, title, venue, keywords, etc." 
                 value={searchTerm} 
                 onChange={handleInputChange} 
             />
