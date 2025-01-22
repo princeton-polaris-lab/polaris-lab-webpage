@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import "./publications.css"
 
+import React, { useEffect, useState } from 'react';
 import publicationsJson from "./publications.json"
 import PublicationCard from "./publication_card.jsx"
 
@@ -66,7 +67,7 @@ export default function Publications() {
     }, [searchTerm]);
 
     return (
-        <div className="page">
+        <div className="publications-page">
             <input 
                 type="text" 
                 placeholder="Search..." 
@@ -74,13 +75,15 @@ export default function Publications() {
                 onChange={handleInputChange} 
             />
             {publications.map((yearToPublication, index) => (
-                <div key={index}>
+                <div className="year-publications-category" key={index}>
                     <h1>{yearToPublication.year}</h1>
-                    {yearToPublication.publications.map((publicationEntry) => (
-                        <PublicationCard
-                            publication={publicationEntry}
-                        />
-                    ))}
+                    <div className="publications-in-category">
+                        {yearToPublication.publications.map((publicationEntry) => (
+                            <PublicationCard
+                                publication={publicationEntry}
+                            />
+                        ))}
+                    </div>
                 </div>
             ))}
         </div>

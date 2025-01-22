@@ -1,0 +1,14 @@
+.publications-page {
+    padding-left: 10%;
+}
+
+.year-publications-category {
+    padding-top: 2.5%;
+    display: flex;
+    flex-flow: row;
+}
+
+.publications-in-category {
+    padding-left: 10%;
+    padding-right: 10%;
+}
