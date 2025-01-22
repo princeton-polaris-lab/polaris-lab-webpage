@@ -11,11 +11,11 @@ function Header() {
         <div>
            <nav>
                 <Link to="/">Home</Link>
-                <a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a>
-                {/* <Link to="/about">About</Link> */}
+                <Link to="/about">About</Link>
                 <Link to="/people">People</Link>
                 <Link to="/publications">Publications</Link>
-                <Link to="/contact">Contact</Link>
+                <a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a>
+                {/* <Link to="/contact">Contact</Link> */}
             </nav> 
         </div>
     )

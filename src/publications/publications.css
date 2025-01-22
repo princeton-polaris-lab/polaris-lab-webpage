@@ -9,6 +9,43 @@
 }
 
 .publications-in-category {
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 10%;
+}
+
+.publication-card {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    gap: 3%;
+}
+
+.publication-card .abstract-expansion-button {
+    position: relative;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.publication-text-listing {
+    max-width: 80%;
+}
+
+.publication-text-listing .abstract-paragraph {
+    padding-top: 1%;
+}
+
+.publication-card a {
+    /* Make <a> fit the robot image exactly */
+    width: 60px;
+    height: 60.35px;
+}
+
+.publication-card .cute-robot-reading-image {
+    width: 60px;
+    object-fit: cover;
+}
+
+.publication-card .cute-robot-reading-image:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.3);
 }

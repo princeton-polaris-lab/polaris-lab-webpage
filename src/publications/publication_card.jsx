@@ -1,24 +1,35 @@
+import "./publications.css"
+
 import React, { useState } from 'react';
 
-// now do auto-expand and text highlighting on search; more of a css thing so implement the rest first
+// TODO auto-expand and text highlighting on search
 export default function PublicationCard( {publication} ) {
     const [showAbstract, setShowAbstract] = useState(false);
+
     return (
-        <div className="card">
-            <h2><a href={publication.pdf} target="_blank" rel="noreferrer">
-                {publication.title}
-                </a>
-            </h2>
-            <p>{publication.text}</p>
-            <p><strong>Authors:</strong> {publication.authors.join(', ')}</p>
-            <button onClick={() => setShowAbstract(!showAbstract)}> * </button>
-            {
-                showAbstract ? 
-                <>
-                    <p>{publication.abstract}</p>
-                </> :
-                <></>
-            }
+        <div className="publication-card">
+            <button 
+                className="abstract-expansion-button"
+                onClick={() => setShowAbstract(!showAbstract)}> 
+                { showAbstract ? <>&and;<br/>&and;<br/>&and;</> : <>&or;<br/>&or;<br/>&or;</> }
+            </button>
+            <div className="publication-text-listing">
+                <h3>{publication.title}</h3>
+                <p><i>{publication.publication_venue}</i></p>
+                <p>{publication.authors.join(', ')}</p>
+                {
+                    showAbstract ? 
+                        <p className="abstract-paragraph">
+                            <strong>Abstract: </strong>{publication.abstract}
+                        </p> : <></>
+                }
+            </div>
+            <a href={publication.pdf} target="_blank" rel="noreferrer">
+                    <img className="cute-robot-reading-image"
+                        src={require("./cute_robot_reading.png")}
+                        alt="Cute robot reading a paper :)" 
+                    />
+            </a>
         </div>
     );
 };
