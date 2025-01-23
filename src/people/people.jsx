@@ -6,10 +6,11 @@ import ProfileCard from "./profile_card";
 export default function People() {
   return (
     <div className="people-page">
+      <h1> People </h1>
       {
         peopleInfo.map((categoryToPeople) => (
           <div className="people-category">
-            <h2>{categoryToPeople.category}</h2><hr/>
+            <hr/><h2>{categoryToPeople.category}</h2><hr/>
             <div className="people-in-category">
               {categoryToPeople.members.map((profile) => (
                 <ProfileCard

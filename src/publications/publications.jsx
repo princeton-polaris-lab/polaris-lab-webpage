@@ -68,13 +68,16 @@ export default function Publications() {
 
     return (
         <div className="publications-page">
-            <input 
-                className="publications-search"
-                type="text" 
-                placeholder="Search for author, title, venue, keywords, etc." 
-                value={searchTerm} 
-                onChange={handleInputChange} 
-            />
+            <div className="publications-top-bar">
+                <h1>Publications</h1>
+                <input 
+                    className="publications-search"
+                    type="text" 
+                    placeholder="Search for author, title, venue, keywords, etc." 
+                    value={searchTerm} 
+                    onChange={handleInputChange} 
+                />
+            </div>
             {publications.map((yearToPublication, index) => (
                 <div className="year-publications-category" key={index}>
                     <h1>{yearToPublication.year}</h1>

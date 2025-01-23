@@ -1,6 +1,11 @@
 .people-page {
+    padding-top: 1%;
     padding-left: 2%;
     padding-right: 7%;
+}
+
+.people-page h1 {
+    padding-bottom: 2%;
 }
 
 .people-category {

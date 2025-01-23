@@ -21,6 +21,7 @@ function Header() {
                 <a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a>
                 {/* <Link to="/contact">Contact</Link> */}
             </nav> 
+            <hr/>
         </div>
     )
 }
