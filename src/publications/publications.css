@@ -63,6 +63,9 @@
 .publication-card .cute-robot-reading-image {
     width: 60px;
     object-fit: cover;
+    outline: dashed 0.1px #baa990;;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 .publication-card .cute-robot-reading-image:hover {
