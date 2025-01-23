@@ -6,11 +6,11 @@
 .publications-top-bar {
     display: flex;
     flex-flow: row wrap;
-    gap: 40%;
+    gap: 10%;
 }
 
 .publications-search {
-    width: 40%;
+    width: 60%;
     font-family: inherit;
     font-size: 16px;
     color: #333;
@@ -23,13 +23,13 @@
 
 .year-publications-category {
     padding-top: 2.5%;
-    padding-left: 5%;
+    padding-left: 8%;
     display: flex;
     flex-flow: row;
 }
 
 .publications-in-category {
-    padding-left: 15%;
+    padding-left: 5%;
     padding-right: 10%;
 }
 

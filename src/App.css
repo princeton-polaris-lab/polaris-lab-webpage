@@ -1,3 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  padding-top: 3%;
+  margin-top: auto;
+}
+
+.footer p {
+  padding-left: 1%;
+}
+
 .header {
   font-size: larger;
   width: 100%;
@@ -5,22 +20,26 @@
 }
 
 .header-nav {
+  padding-left: 3%;
   padding-top: 2%;
   padding-right: 10%;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: flex-end;
   gap: 5%;
 }
 
+.header-nav ul:first-child {
+  margin-right: auto;
+}
+
 .header-nav .home-logo {
-  /* position: relative;
-  bottom: 15%;
-  left: 0%; */
-  /* align-self: flex-start; */
+  position: relative;
+  bottom: 10%;
   height: 50px;
   object-fit: contain;
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
 }
 
 .header-nav .home-logo:hover {

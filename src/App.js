@@ -10,15 +10,15 @@ function Header() {
     return (
         <div className="header">
            <nav className="header-nav">
-                <Link to="/">
+                <ul><Link to="/">
                     <img className="home-logo" 
                         src={require("./logo.png")} 
                         alt={"Logo of the AI Law and Society Lab"}/>
-                </Link>
-                <Link to="/about">About</Link>
-                <Link to="/people">People</Link>
-                <Link to="/publications">Publications</Link>
-                <a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a>
+                </Link></ul>
+                <ul><Link to="/about">About</Link></ul>
+                <ul><Link to="/people">People</Link></ul>
+                <ul><Link to="/publications">Publications</Link></ul>
+                <ul><a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a></ul>
                 {/* <Link to="/contact">Contact</Link> */}
             </nav> 
             <hr/>
@@ -28,18 +28,19 @@ function Header() {
 
 function Footer() {
     return (
-        <div>
-           <p>Copyright: The AI Law and Society Lab </p>
+        <div className="footer">
+            <hr/>
+            <p>© 2024 The AI Law and Society Lab</p>
         </div>
     )
 }
 
 export default function App() {
   return (
-    <>
+    <div className='App'>
         <Header/>
         <Outlet/>
         <Footer/>
-    </>
+    </div>
   );
 }
