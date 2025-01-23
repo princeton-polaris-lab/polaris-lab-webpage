@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ai-law-society-lab-webpage/static/css/main.becbeeb1.css",
-    "main.js": "/ai-law-society-lab-webpage/static/js/main.7aec1f7f.js",
+    "main.css": "/ai-law-society-lab-webpage/static/css/main.0088880a.css",
+    "main.js": "/ai-law-society-lab-webpage/static/js/main.572454f4.js",
     "static/js/488.4878296c.chunk.js": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js",
     "static/media/kylie_zhang.jpg": "/ai-law-society-lab-webpage/static/media/kylie_zhang.23366bff33fb665170e9.jpg",
     "static/media/peter_henderson.jpg": "/ai-law-society-lab-webpage/static/media/peter_henderson.a5cf8c753c0bf97a7e4d.jpg",
@@ -27,16 +27,17 @@
     "static/media/openai_faces_existential_threat_in_new_york_times_copyright_suit.jpg": "/ai-law-society-lab-webpage/static/media/openai_faces_existential_threat_in_new_york_times_copyright_suit.e156d62909da58d50034.jpg",
     "static/media/nimra_nadeem.jpg": "/ai-law-society-lab-webpage/static/media/nimra_nadeem.7c9fb4c1d792b7173017.jpg",
     "static/media/patty_liu.jpg": "/ai-law-society-lab-webpage/static/media/patty_liu.9eabb7fca215287c03b2.jpg",
+    "static/media/logo.png": "/ai-law-society-lab-webpage/static/media/logo.ebcd1e0d173aa8c3a061.png",
     "static/media/default_press_image.jpg": "/ai-law-society-lab-webpage/static/media/default_press_image.36da1fc20ac8111624d8.jpg",
     "static/media/gathering_news.ipynb": "/ai-law-society-lab-webpage/static/media/gathering_news.9b6fac38339dca7c97d7.ipynb",
     "static/media/articles.txt": "/ai-law-society-lab-webpage/static/media/articles.9f6da1ed2b31424b325a.txt",
     "index.html": "/ai-law-society-lab-webpage/index.html",
-    "main.becbeeb1.css.map": "/ai-law-society-lab-webpage/static/css/main.becbeeb1.css.map",
-    "main.7aec1f7f.js.map": "/ai-law-society-lab-webpage/static/js/main.7aec1f7f.js.map",
+    "main.0088880a.css.map": "/ai-law-society-lab-webpage/static/css/main.0088880a.css.map",
+    "main.572454f4.js.map": "/ai-law-society-lab-webpage/static/js/main.572454f4.js.map",
     "488.4878296c.chunk.js.map": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.becbeeb1.css",
-    "static/js/main.7aec1f7f.js"
+    "static/css/main.0088880a.css",
+    "static/js/main.572454f4.js"
   ]
 }
