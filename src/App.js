@@ -8,9 +8,13 @@ import { Link, Outlet } from "react-router";
 
 function Header() {
     return (
-        <div>
-           <nav>
-                <Link to="/">Home</Link>
+        <div className="header">
+           <nav className="header-nav">
+                <Link to="/">
+                    <img className="home-logo" 
+                        src={require("./logo.png")} 
+                        alt={"Logo of the AI Law and Society Lab"}/>
+                </Link>
                 <Link to="/about">About</Link>
                 <Link to="/people">People</Link>
                 <Link to="/publications">Publications</Link>
