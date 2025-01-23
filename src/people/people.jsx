@@ -6,7 +6,10 @@ import ProfileCard from "./profile_card";
 export default function People() {
   return (
     <div className="people-page">
-      <h1> People </h1>
+      <div className="people-header">
+        <h1> People </h1>
+        <img className="robot-friends-image" src={require("./robot-friends.png")}/>
+      </div>
       {
         peopleInfo.map((categoryToPeople) => (
           <div className="people-category">

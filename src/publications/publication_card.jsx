@@ -14,7 +14,7 @@ export default function PublicationCard( {publication} ) {
                 { showAbstract ? <>&and;<br/>&and;<br/>&and;</> : <>&or;<br/>&or;<br/>&or;</> }
             </button>
             <div className="publication-text-listing">
-                <h3>{publication.title}</h3>
+                <h3> {publication.title} </h3>
                 <p><i>{publication.publication_venue}</i></p>
                 <p>{publication.authors.join(', ')}</p>
                 {

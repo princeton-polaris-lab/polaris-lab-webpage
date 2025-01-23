@@ -28,3 +28,19 @@
     position: relative;
     top: 20%;
 }
+
+/* Responsive modal design for mobile screens */
+@media (max-width: 480px) {
+    .article-card-content {
+        display: block;
+    }
+
+    .article-card .article-image {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .article-card .cute-robot-button {
+        display:none;
+    }
+}

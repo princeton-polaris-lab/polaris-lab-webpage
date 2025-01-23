@@ -4,6 +4,16 @@
     padding-right: 7%;
 }
 
+.people-header {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80%
+}
+
+.robot-friends-image {
+    height: 80px;
+}
+
 .people-page h1 {
     padding-bottom: 2%;
 }

@@ -7,14 +7,18 @@ export default function Press() {
     <div className="press-page">
       <h1>Press</h1>
       <div className="press-articles">
-      {
-        pressArticles.map((article) => (
-          <div>
-            <ArticleCard article={article}/>
-          </div>
+        <hr/> 
+        {
+          pressArticles.map((article) => (
+            <>
+              <hr/>
+              <ArticleCard article={article}/>
+              <hr/>
+            </>
+          )
         )
-      )
-      }
+        }
+        <hr/>
     </div>
     </div>
   );
@@ -27,14 +31,17 @@ const limitTextToNWords = (text, N) => {
 function ArticleCard( {article} ) {
   return (
     <div className="article-card">
-      <hr/>
       <div className="article-card-content">
         <img 
           className="article-image"
           src={require("./press/" + article.top_image_relative_path)}
           alt={"Top image from press article " + article.title}/>
         <div>
-          <h2> {article.title} </h2>
+          <h2>
+            <a href={article.original_url} target="_blank" rel="noreferrer">
+              {article.title}
+            </a>
+          </h2>
           <p> {limitTextToNWords(article.text, 60) + "..."} </p>
         </div>
         <a href={article.original_url} target="_blank" rel="noreferrer">
@@ -43,7 +50,6 @@ function ArticleCard( {article} ) {
                 alt={"Cute robot on rocket right side view"}/>
         </a>
       </div>
-      <hr/>
     </div>
   )
 }
