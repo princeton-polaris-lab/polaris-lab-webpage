@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./home/home.jsx";
-import About from "./about/about.jsx";
+import Press from "./press/press.jsx";
 import People from "./people/people.jsx";
 import Publications from "./publications/publications.jsx";
 import Contact from './contact/contact.jsx';
@@ -20,15 +20,15 @@ const router = createHashRouter([
     basename: '/skyien-z.github.io',
     path: "/",
     element: <App/>,
-    // errorElement: <ErrorPage/>,
+    // TODO errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
         element: <Home/>
       },
       {
-        path: "about",
-        element: <About/>
+        path: "press",
+        element: <Press/>
       },
       {
         path: "people",
