@@ -1,0 +1,30 @@
+.press-page {
+    padding-left: 7%;
+}
+
+.press-articles {
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+.article-card-content {
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.article-card .article-image {
+    width: 20%;
+    object-fit: contain;
+}
+
+.article-headline-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-card .cute-robot-button {
+    position: relative;
+    top: 20%;
+}

@@ -1,17 +1,12 @@
+import "./press.css"
+
 import pressArticles from "./press/press.json"
 
 export default function Press() {
   return (
-    <div className="press">
-      <h2>Press</h2>
-      <PressArticles/>
-    </div>
-  );
-}
-
-function PressArticles() {
-  return (
-    <div className="press-div">
+    <div className="press-page">
+      <h1>Press</h1>
+      <div className="press-articles">
       {
         pressArticles.map((article) => (
           <div>
@@ -21,7 +16,8 @@ function PressArticles() {
       )
       }
     </div>
-  )
+    </div>
+  );
 }
 
 const limitTextToNWords = (text, N) => {
@@ -31,17 +27,23 @@ const limitTextToNWords = (text, N) => {
 function ArticleCard( {article} ) {
   return (
     <div className="article-card">
-      <h2> 
+      <hr/>
+      <div className="article-card-content">
+        <img 
+          className="article-image"
+          src={require("./press/" + article.top_image_relative_path)}
+          alt={"Top image from press article " + article.title}/>
+        <div>
+          <h2> {article.title} </h2>
+          <p> {limitTextToNWords(article.text, 60) + "..."} </p>
+        </div>
         <a href={article.original_url} target="_blank" rel="noreferrer">
-          {article.title}
+                <img className="cute-robot-button"
+                src={require("./cute_robot_on_rocket_white.png")}
+                alt={"Cute robot on rocket right side view"}/>
         </a>
-      </h2>
-      <img 
-        width={"auto"}
-        height={250}
-        src={require("./press/" + article.top_image_relative_path)}
-        alt={"Top image from press article " + article.title}/>
-      <p> {limitTextToNWords(article.text, 100) + "..."} </p>
+      </div>
+      <hr/>
     </div>
   )
 }

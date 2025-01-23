@@ -25,7 +25,7 @@ export default function PublicationCard( {publication} ) {
                 }
             </div>
             <a href={publication.pdf} target="_blank" rel="noreferrer">
-                    <img className="cute-robot-reading-image"
+                    <img className="cute-robot-button"
                         src={require("./cute_robot_reading.png")}
                         alt="Cute robot reading a paper :)" 
                     />

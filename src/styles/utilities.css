@@ -7,3 +7,16 @@ button {
 	cursor: pointer;
 	outline: inherit;
 }
+
+.cute-robot-button {
+    width: 70px;
+    object-fit: contain;
+    outline: dashed 0.1px #baa990;;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cute-robot-button:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.3);
+}
