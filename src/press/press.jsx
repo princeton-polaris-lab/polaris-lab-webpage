@@ -5,7 +5,12 @@ import pressArticles from "./press/press.json"
 export default function Press() {
   return (
     <div className="press-page">
-      <h1>Press</h1>
+      <div className="press-page-header">
+        <h1>Press</h1>
+        <img className="cute-robot-reading"
+                  src={require("./cute_robot_reading.png")}
+                  alt={"Cute robot reading a paper"}/>
+      </div>
       <div className="press-articles">
         <hr/> 
         {
@@ -44,11 +49,6 @@ function ArticleCard( {article} ) {
           </h2>
           <p> {limitTextToNWords(article.text, 60) + "..."} </p>
         </div>
-        <a href={article.original_url} target="_blank" rel="noreferrer">
-                <img className="cute-robot-button"
-                src={require("./cute_robot_on_rocket_white.png")}
-                alt={"Cute robot on rocket right side view"}/>
-        </a>
       </div>
     </div>
   )
