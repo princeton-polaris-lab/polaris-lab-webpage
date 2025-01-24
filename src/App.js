@@ -15,7 +15,7 @@ function Header() {
                         src={require("./logo.png")} 
                         alt={"Logo of the AI Law and Society Lab"}/>
                 </Link></ul>
-                <ul><Link to="/publications">Publications</Link></ul>C
+                <ul><Link to="/publications">Publications</Link></ul>
                 <ul><Link to="/people">People</Link></ul>
                 <ul><Link to="/press">Press</Link></ul>
                 <ul><Link to="/about">About</Link></ul>
