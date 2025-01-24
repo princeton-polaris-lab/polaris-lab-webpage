@@ -13,7 +13,7 @@ import Home from "./home/home.jsx";
 import Press from "./press/press.jsx";
 import People from "./people/people.jsx";
 import Publications from "./publications/publications.jsx";
-import Contact from './contact/contact.jsx';
+import About from './about/about.jsx';
 
 const router = createHashRouter([
   {
@@ -39,8 +39,8 @@ const router = createHashRouter([
         element: <Publications/>
       },
       {
-        path: "contact",
-        element: <Contact/>
+        path: "about",
+        element: <About/>
       }
     ]
   },

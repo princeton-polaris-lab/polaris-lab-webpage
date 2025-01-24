@@ -1,11 +1,11 @@
-import "./contact.css"
+import "./about.css"
 
 import { Link } from "react-router";
 
-export default function Contact() {
+export default function About() {
   return (
-    <div className="contact">
-      <h1>Contact</h1>
+    <div className="about">
+      <h1>About</h1>
       <img className="robot-in-front-of-building"
         alt="Cute robot in front of Nassau Hall" 
         src={require("./robot_in_front_of_building.png")}
