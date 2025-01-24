@@ -30,7 +30,7 @@ function Footer() {
     return (
         <div className="footer">
             <hr/>
-            <p>The AI Law and Society Lab © 2024</p>
+            <p>The AI Law and Society Lab &copy; 2024</p>
         </div>
     )
 }

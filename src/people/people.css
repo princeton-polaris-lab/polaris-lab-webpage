@@ -104,14 +104,14 @@
 }
 
 /* Responsive modal design for mobile screens */
-@media (max-width: 480px) {
+@media (max-width: 930px) {
     .profile-popup {
         display: block;
     }
 
     .profile-popup-image {
-        width: 150px;
-        height: 150px;
+        margin-left: 25%;
+        width: 50%;
         object-fit: cover;
     }
 
