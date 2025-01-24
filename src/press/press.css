@@ -1,5 +1,6 @@
 .press-page {
     padding-left: 7%;
+    padding-right: 5%;
 }
 
 .press-page-header {
@@ -14,8 +15,7 @@
 }
 
 .press-articles {
-    padding-left: 2%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .article-card-content {
@@ -49,9 +49,5 @@
     .article-card .article-image {
         width: 100%;
         object-fit: contain;
-    }
-
-    .article-card .cute-robot-button {
-        display:none;
     }
 }

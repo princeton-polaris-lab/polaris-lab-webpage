@@ -1,0 +1,17 @@
+.contact {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.robot-in-front-of-building {
+    width: 100%;
+}
+
+.contact p {
+    padding-top: 2%;
+    font-size: larger;
+}
+
+.contact a {
+    color: blue;
+}
