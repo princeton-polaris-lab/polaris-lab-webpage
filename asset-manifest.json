@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/ai-law-society-lab-webpage/static/css/main.be77e748.css",
-    "main.js": "/ai-law-society-lab-webpage/static/js/main.eff467b9.js",
+    "main.css": "/ai-law-society-lab-webpage/static/css/main.ab768d50.css",
+    "main.js": "/ai-law-society-lab-webpage/static/js/main.406236cf.js",
     "static/js/488.4878296c.chunk.js": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js",
+    "static/media/robot_in_front_of_building.png": "/ai-law-society-lab-webpage/static/media/robot_in_front_of_building.c74101de4b4f1f8bf957.png",
     "static/media/robot_white_backdrop.png": "/ai-law-society-lab-webpage/static/media/robot_white_backdrop.6ed461c76fd88daf80ee.png",
     "static/media/cute_robot_reading.png": "/ai-law-society-lab-webpage/static/media/cute_robot_reading.3729a35eed28942e8b39.png",
     "static/media/inyoung_cheong.jpg": "/ai-law-society-lab-webpage/static/media/inyoung_cheong.ef21ac51426532934dc2.jpg",
@@ -34,12 +35,12 @@
     "static/media/gathering_news.ipynb": "/ai-law-society-lab-webpage/static/media/gathering_news.9b6fac38339dca7c97d7.ipynb",
     "static/media/articles.txt": "/ai-law-society-lab-webpage/static/media/articles.9f6da1ed2b31424b325a.txt",
     "index.html": "/ai-law-society-lab-webpage/index.html",
-    "main.be77e748.css.map": "/ai-law-society-lab-webpage/static/css/main.be77e748.css.map",
-    "main.eff467b9.js.map": "/ai-law-society-lab-webpage/static/js/main.eff467b9.js.map",
+    "main.ab768d50.css.map": "/ai-law-society-lab-webpage/static/css/main.ab768d50.css.map",
+    "main.406236cf.js.map": "/ai-law-society-lab-webpage/static/js/main.406236cf.js.map",
     "488.4878296c.chunk.js.map": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be77e748.css",
-    "static/js/main.eff467b9.js"
+    "static/css/main.ab768d50.css",
+    "static/js/main.406236cf.js"
   ]
 }
