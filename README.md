@@ -27,4 +27,4 @@ Navigate to app > press.
 To add new press articles to `press.json`, add the link of the article you want to collect to `articles.txt` and run `update_press_articles_in_press_json()`. Older entries in the JSON won't be touched, but newer entries will be populated and a thumbnail of the article, if it exists, will be saved into the `press_images` folder. Each entry will point to the relative path of the thumbnail. If an article is unable to be downloaded, a message will print and the user should enter the entry into the JSON file manually.
 
 ## Future Work
-To dos can be found [here]; the original design specs of the webpage are found on the first tab of the same document. Note: you need a Princeton University Address to access the document.
+To dos can be found [here](https://docs.google.com/document/d/1AfWG20Vwd2Mq2N-6r0QvGoROkd7u2r3Z8f3ARX_dO4g/edit?usp=sharing); the original design specs of the webpage are found on the first tab of the same document. Note: you need a Princeton University Address to access the document.
