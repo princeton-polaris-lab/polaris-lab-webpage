@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ai-law-society-lab-webpage/static/css/main.cbe5f5d3.css",
-    "main.js": "/ai-law-society-lab-webpage/static/js/main.e859ac56.js",
+    "main.css": "/ai-law-society-lab-webpage/static/css/main.cba0f68c.css",
+    "main.js": "/ai-law-society-lab-webpage/static/js/main.1c931636.js",
     "static/js/488.4878296c.chunk.js": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js",
     "static/media/robot_in_front_of_building.png": "/ai-law-society-lab-webpage/static/media/robot_in_front_of_building.c74101de4b4f1f8bf957.png",
     "static/media/robot_zoomed_out_no_backdrop.png": "/ai-law-society-lab-webpage/static/media/robot_zoomed_out_no_backdrop.0c2e6f767cbc2c606405.png",
     "static/media/cute_robot_reading.png": "/ai-law-society-lab-webpage/static/media/cute_robot_reading.3729a35eed28942e8b39.png",
     "static/media/inyoung_cheong.jpg": "/ai-law-society-lab-webpage/static/media/inyoung_cheong.ef21ac51426532934dc2.jpg",
     "static/media/boyi_wei.jpg": "/ai-law-society-lab-webpage/static/media/boyi_wei.6cfca4712f0f3126b73f.jpg",
+    "static/media/robot_lost_in_maze.png": "/ai-law-society-lab-webpage/static/media/robot_lost_in_maze.73f196c8a9ebe6d4f286.png",
     "static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.jpg": "/ai-law-society-lab-webpage/static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.5ddfdf9871840963ae47.jpg",
     "static/media/dominik_stammbach.jpg": "/ai-law-society-lab-webpage/static/media/dominik_stammbach.6c0e76c7a64d6f94dc49.jpg",
     "static/media/the_secret_environmental_cost_hiding_inside_your_smart_home_device.jpg": "/ai-law-society-lab-webpage/static/media/the_secret_environmental_cost_hiding_inside_your_smart_home_device.e262bef261a15d2aab0b.jpg",
@@ -39,12 +40,12 @@
     "static/media/ntia-logo-wht.svg": "/ai-law-society-lab-webpage/static/media/ntia-logo-wht.029200dfab9fde95b12b.svg",
     "static/media/articles.txt": "/ai-law-society-lab-webpage/static/media/articles.9f6da1ed2b31424b325a.txt",
     "index.html": "/ai-law-society-lab-webpage/index.html",
-    "main.cbe5f5d3.css.map": "/ai-law-society-lab-webpage/static/css/main.cbe5f5d3.css.map",
-    "main.e859ac56.js.map": "/ai-law-society-lab-webpage/static/js/main.e859ac56.js.map",
+    "main.cba0f68c.css.map": "/ai-law-society-lab-webpage/static/css/main.cba0f68c.css.map",
+    "main.1c931636.js.map": "/ai-law-society-lab-webpage/static/js/main.1c931636.js.map",
     "488.4878296c.chunk.js.map": "/ai-law-society-lab-webpage/static/js/488.4878296c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbe5f5d3.css",
-    "static/js/main.e859ac56.js"
+    "static/css/main.cba0f68c.css",
+    "static/js/main.1c931636.js"
   ]
 }
