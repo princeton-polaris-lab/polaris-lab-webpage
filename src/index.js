@@ -14,13 +14,14 @@ import Press from "./press/press.jsx";
 import People from "./people/people.jsx";
 import Publications from "./publications/publications.jsx";
 import About from './about/about.jsx';
+import Error from "./error/error.jsx"
 
 const router = createHashRouter([
   {
     basename: '/skyien-z.github.io',
     path: "/",
     element: <App/>,
-    // TODO errorElement: <ErrorPage/>,
+    errorElement: <Error/>,
     children: [
       {
         path: "/",

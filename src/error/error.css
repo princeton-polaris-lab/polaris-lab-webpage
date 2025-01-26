@@ -1,0 +1,29 @@
+.error-display {
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.lost-robot-image {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.error h2 {
+    font-weight: 100;
+}
+
+.error a {
+    color: blue;
+}
+
+.error-actions {
+    padding-top: 2%;
+    font-size: larger;
+    font-weight: 300;
+}
