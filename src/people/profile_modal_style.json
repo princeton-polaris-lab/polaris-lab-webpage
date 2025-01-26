@@ -1,6 +1,6 @@
 {
   "overlay": {
-      "backdrop-filter": "blur(5px)",
+      "backdropFilter": "blur(5px)",
       "backgroundColor": "transparent"
   },
 

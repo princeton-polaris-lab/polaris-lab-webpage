@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import React, { useState } from 'react';
 import modalCustomStyle from './profile_modal_style.json'
 
-// Modal.setAppElement('#root'); @TODO Find proper app element for accessibility
+Modal.setAppElement('#root');
 
 function ProfilePicture( {profile, profile_component} ) {
     return (

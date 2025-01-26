@@ -1,5 +1,6 @@
 import "./press.css"
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import pressArticles from "./press/press.json"
 
 export default function Press() {
@@ -37,7 +38,7 @@ function ArticleCard( {article} ) {
   return (
     <div className="article-card">
       <div className="article-card-content">
-        <img 
+        <LazyLoadImage 
           className="article-image"
           src={require("./press/" + article.top_image_relative_path)}
           alt={"Top image from press article " + article.title}/>
