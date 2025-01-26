@@ -1,6 +1,5 @@
 import '../src/styles/base.css';
 import '../src/styles/typography.css';
-import '../src/styles/variables.css';
 import '../src/styles/utilities.css';
 import './App.css';
 

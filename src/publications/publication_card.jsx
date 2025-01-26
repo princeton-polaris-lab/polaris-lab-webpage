@@ -2,7 +2,6 @@ import "./publications.css"
 
 import React, { useState } from 'react';
 
-// TODO auto-expand and text highlighting on search
 export default function PublicationCard( {publication} ) {
     const [showAbstract, setShowAbstract] = useState(false);
 
