@@ -1,6 +1,5 @@
 import "./press.css"
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import pressArticles from "./press/press.json"
 
 export default function Press() {
@@ -33,22 +32,22 @@ export default function Press() {
 const limitTextToNWords = (text, N) => {
   return text.split(/\s+/).slice(0, N).join(" ")
 }
-
 function ArticleCard( {article} ) {
   return (
     <div className="article-card">
       <div className="article-card-content">
-        <LazyLoadImage 
+        <img 
           className="article-image"
           src={require("./press/" + article.top_image_relative_path)}
           alt={"Top image from press article " + article.title}/>
-        <div>
+        <div className="article-card-text">
           <h2>
             <a href={article.original_url} target="_blank" rel="noreferrer">
               {article.title}
             </a>
           </h2>
-          <p> {limitTextToNWords(article.text, 60) + "..."} </p>
+          <p className="source">{article.source}</p>
+          <p className="preview-text">{limitTextToNWords(article.text, 60) + "..."}</p>
         </div>
       </div>
     </div>

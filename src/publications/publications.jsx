@@ -24,6 +24,9 @@ const createYearToPublicationMapping = (filteredPublications) => {
             publicationsOfYear["publications"].push(publication);
         }
     }
+    
+    // Sort yearToPublication array by year in descending order
+    yearToPublication.sort((a, b) => b.year - a.year);
     return yearToPublication;
 }
 

@@ -3,9 +3,9 @@
     padding-bottom: 25%;
     padding-top: 0%;
 
-    background-image: url("./robot_images/robot_zoomed_out_no_backdrop.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("./robot_images/polaris_bot.png");
+    background-size: 35%;
+    background-position: left;
     background-repeat: no-repeat;
 
     .headline-top {

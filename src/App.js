@@ -1,26 +1,29 @@
 import '../src/styles/base.css';
 import '../src/styles/typography.css';
+import '../src/styles/variables.css';
 import '../src/styles/utilities.css';
 import './App.css';
 
-import { Link, Outlet } from "react-router";
+import { Link, Outlet } from "react-router-dom";
 
 function Header() {
     return (
         <div className="header">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Mono:300,300italic,regular,italic,500,500italic%7CDM+Sans:regular,italic,500,500italic,700,700italic&amp;subset=latin,latin-ext,latin,latin-ext" media="all"></link>
            <nav className="header-nav">
-                <ul><Link to="/">
+                <Link to="/">
                     <img className="home-logo" 
                         src={require("./logo.png")} 
                         alt={"Logo of the AI Law and Society Lab"}/>
-                </Link></ul>
-                <ul><Link to="/publications">Publications</Link></ul>
-                <ul><Link to="/people">People</Link></ul>
-                <ul><Link to="/press">Press</Link></ul>
-                <ul><Link to="/about">About</Link></ul>
-                <ul><a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a></ul>
+                </Link>
+                <ul>
+                    <li><Link to="/publications">Publications</Link></li>
+                    <li><Link to="/people">People</Link></li>
+                    <li><Link to="/press">Press</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a></li>
+                </ul>
             </nav> 
-            <hr/>
         </div>
     )
 }
@@ -28,8 +31,7 @@ function Header() {
 function Footer() {
     return (
         <div className="footer">
-            <hr/>
-            <p>The AI Law and Society Lab &copy; 2024</p>
+            <p>The AI Law and Society Lab &copy; {new Date().getFullYear()}</p>
         </div>
     )
 }

@@ -1,13 +1,22 @@
 {
   "overlay": {
-      "backdropFilter": "blur(5px)",
-      "backgroundColor": "transparent"
+    "backgroundColor": "rgba(0, 0, 0, 0.75)",
+    "backdropFilter": "blur(5px)",
+    "zIndex": 1000
   },
-
   "content": {
-      "top": "30%",
-      "left": "25%",
-      "right": "25%",
-      "bottom": "30%"
+    "top": "50%",
+    "left": "50%",
+    "right": "auto",
+    "bottom": "auto",
+    "transform": "translate(-50%, -50%)",
+    "maxWidth": "900px",
+    "width": "90%",
+    "maxHeight": "90vh",
+    "padding": "0",
+    "borderRadius": "16px",
+    "border": "none",
+    "backgroundColor": "#ffffff",
+    "boxShadow": "0 10px 30px rgba(0, 0, 0, 0.2)"
   }
 }

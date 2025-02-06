@@ -1,53 +1,98 @@
 .press-page {
-    padding-left: 7%;
-    padding-right: 5%;
+    padding: 2% 10%;
 }
 
 .press-page-header {
     display: flex;
-    align-items: flex-end;
-    flex-flow: row wrap;
-    gap: 75%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 .press-page-header .cute-robot-reading {
-    max-width: 80px;
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.press-page-header .cute-robot-reading:hover {
+    transform: scale(1.1);
 }
 
 .press-articles {
-    padding-right: 10%;
+    padding-right: 5%;
+}
+
+.article-card {
+    padding: 2% 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateX(10px);
 }
 
 .article-card-content {
-    padding-right: 10%;
     display: flex;
-    flex-direction: row;
-    gap: 2%;
+    gap: 3%;
+    align-items: center;
 }
 
 .article-card .article-image {
-    width: 20%;
-    object-fit: contain;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-self: center;
 }
 
-.article-headline-div {
-    display: flex;
-    flex-direction: row;
+.article-card-text {
+    flex: 1;
 }
 
-.article-card .cute-robot-button {
-    position: relative;
-    top: 20%;
+.article-card h2 {
+    margin-bottom: 0.3em;
 }
 
-/* Responsive modal design for mobile screens */
-@media (max-width: 480px) {
+.article-card h2 a {
+    color: #231616;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article-card h2 a:hover {
+    color: #666;
+}
+
+.article-card .source {
+    color: #444;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.article-card .preview-text {
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .press-page {
+        padding: 5%;
+    }
+
     .article-card-content {
-        display: block;
+        flex-direction: column;
     }
 
     .article-card .article-image {
         width: 100%;
-        object-fit: contain;
+        height: 200px;
+        margin-bottom: 1em;
     }
 }

@@ -17,14 +17,14 @@
             {
                 "name": "Inyoung Cheong",
                 "file": "inyoung_cheong.jpg",
-                "title": "Postdoctoral Research Associate",
+                "title": "Postdoctoral Fellow",
                 "bio": "I'm a postdoctoral researcher at the Princeton Center for Information Technology Policy, working with Peter Henderson, and an Affiliate Faculty member at the University of Washington School of Law, where I was fortunate to learn from Tadayoshi Kohno, Ryan Calo, and Amy X. Zhang. My research focuses on the social impacts of emerging AI technologies and developing socio-technical mitigations.",
                 "website": "https://inyoungcheong.github.io/"
             },
             {
                 "name": "Dominik Stammbach",
                 "file": "dominik_stammbach.jpg",
-                "title": "Postdoctoral Research Associate",
+                "title": "Postdoctoral Fellow",
                 "bio": "I am a postdoctoral research associate at the CITP at Princeton University. I am currently working on legal NLP with Peter Henderson. Prior to that, I obtained my Dr. Sc. in Spring 2024 at ETH Zurich for my thesis about data-centric automated fact checking where I was supervised by Elliott Ash and Mrinmaya Sachan.",
                 "website": "https://dominik-stammbach.github.io/"
             }
@@ -36,7 +36,7 @@
             {
                 "name": "Luxi (Lucy) He",
                 "file": "luxi_he.jpg",
-                "title": "Ph.D. Student",
+                "title": "Ph.D. Student (co-advised w/Danqi Chen)",
                 "bio": "Hi! I'm Luxi He (feel free to call me Lucy). I'm a second-year CS Ph.D. student at Princeton University, where I'm fortunate to be co-advised by Prof. Danqi Chen and Prof. Peter Henderson. My current research focuses on understanding language models and improving their alignment and safety. I'm particularly interested in the impact of data in the language model life cycle, as well as safe deployment of models.",
                 "website": "https://lumos23.github.io/"
             },
@@ -64,7 +64,7 @@
             {
                 "name": "Xiangyu Qi",
                 "file": "xiangyu_qi.jpg",
-                "title": "Ph.D. Student",
+                "title": "Ph.D. Student (co-advised w/Prateek Mittal)",
                 "bio": "I am a fourth-year Ph.D. candidate in the Department of Electrical and Computer Engineering at Princeton University, where I am advised by Prof. Prateek Mittal and Prof. Peter Henderson. I am currently working on Machine Learning Safety, Security, and Alignment, and I am funded by the Princeton Gordon Y.S. Wu Fellowship and an OpenAI Superalignment Grant.",
                 "website": "https://xiangyuqi.com/"
             },
@@ -74,6 +74,13 @@
                 "title": "Ph.D. Student",
                 "bio": "I am a PhD student in the Department of Electrical and Computer Engineering at Princeton University, advised by Prof. Peter Henderson. Before coming to Princeton, I completed my undergraduate degree in University of Science and Technology of China (USTC).",
                 "website": "https://boyiwei.com/"
+            },
+            {
+                "name": "Lucia Zheng",
+                "file": "lucia_zheng-2024-25_sigf_1.jpg",
+                "title": "Ph.D. Student (co-advised w/Chris Manning & Daniel Ho at Stanford)",
+                "bio": "",
+                "website": "https://x.com/lucia__zheng?lang=en"
             }
         ]
     },
@@ -93,6 +100,18 @@
                 "title": "Master's Student",
                 "bio": "My friends say my personality can be boiled down to ice cream, hopping around places, and Taylor Swift. I research AI policy at CITP at Princeton, where I'm very lucky to be advised by Peter Henderson. I'm fascinated by how incentive systems shape when people scale.",
                 "website": "https://skyien-z.github.io/"
+            }
+        ]
+    },
+    {
+        "category": "Visiting Fellows",
+        "members": [
+            {
+                "name": "Dan Bateyko",
+                "file": "Daniel-Bateyko-e1737673711732.jpg",
+                "title": "Visiting Fellow",
+                "bio": "",
+                "website": "https://www.dbateyko.info/"
             }
         ]
     }

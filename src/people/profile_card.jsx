@@ -42,12 +42,13 @@ function ProfileGlimpse( {profile, setIsModalOpen} ) {
     const profile_component = "profile-glimpse"
     return (
         <div className={profile_component}>
-            <button onClick={() => setIsModalOpen(true)}>
+            <button onClick={() => window.open(profile.website, '_blank')}>
                 <ProfilePicture 
                     profile={profile} 
                     profile_component={profile_component}
                 />
                 <h3>{profile.name}</h3>
+                <div className="title">{profile.title}</div>
             </button>
         </div>
     )

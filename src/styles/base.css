@@ -7,9 +7,10 @@
   
   /* Global Styles */
   body {
-    font-family: 'Optima, sans-serif';
+    font-family: 'DM Sans, sans-serif';
+    font: 14px/160% "DM Sans", sans-serif;
     line-height: 1.6;
-    background-color: #f8f6f3;
+    background-color: white;
     color: #231616;
   }
   
