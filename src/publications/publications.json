@@ -265,7 +265,17 @@
         "publication_venue": "",
         "code": "",
         "site": "",
-        "comments": ""
+        "comments": "",
+        "press": [
+            {
+                "outlet": "Science",
+                "url": "https://www.science.org/doi/10.1126/science.359.6377.725"
+            },
+            {
+                "outlet": "Led to Reproducibility Checklist",
+                "url": "https://neuripsconf.medium.com/introducing-the-neurips-2021-paper-checklist-3220d6df500b"
+            }   
+        ]
     },
     {
         "title": "An Introduction to Deep Reinforcement Learning",
@@ -541,6 +551,14 @@
             {
                 "outlet": "The Wall Street Journal",
                 "url": "https://www.wsj.com/articles/researchers-are-developing-tools-to-calculate-ais-carbon-footprint-11594978202"
+            },
+            {
+                "outlet": "Led to Carbon Reporting Suggestions at NeurIPS",
+                "url" : "https://neurips.cc/Conferences/2022/PaperInformation/PaperChecklist"
+            },
+            {
+                "outlet" : "Inspired Legilsation",
+                "url" : "https://www.markey.senate.gov/news/press-releases/markey-heinrich-eshoo-beyer-introduce-legislation-to-investigate-measure-environmental-impacts-of-artificial-intelligence"
             }
         ]
     },
@@ -672,7 +690,19 @@
             {
                 "outlet": "VentureBeat",
                 "url": "https://venturebeat.com/ai/uh-oh-fine-tuning-llms-compromises-their-safety-study-finds/"
-            }
+            },
+        {
+            "outlet": "NIST AI 800-1 Report",
+            "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf"
+        },
+        {
+            "outlet": "NTIA AI Open Model Report",
+            "url": "https://www.ntia.gov/sites/default/files/publications/ntia-ai-open-model-report.pdf"
+        },
+        {
+            "outlet": "NAIAC Meeting Discussion",
+            "url": "https://vimeo.com/event/3784739"
+        }
         ],
         "comments": ""
     },
@@ -805,7 +835,42 @@
         "publication_venue": "",
         "code": "",
         "site": "",
-        "comments": ""
+        "comments": "",
+        "policy_brief" : "https://hai.stanford.edu/sites/default/files/2023-11/Foundation-Models-Copyright.pdf",
+        "press": [
+            {
+                "outlet": "Jotwell",
+                "url": "https://ip.jotwell.com/generative-ai-meets-copyright/"
+            },
+            {
+                "outlet": "News Media Alliance",
+                "url": "https://www.newsmediaalliance.org/wp-content/uploads/2023/12/NMA-Reply-to-USCO-AI-Notice-December-2023.pdf"
+            },
+            {
+                "outlet": "Chamber of Progress",
+                "url": "https://downloads.regulations.gov/COLC-2023-0006-8583/attachment_1.pdf"
+            },
+            {
+                "outlet": "Public Knowledge",
+                "url": "https://downloads.regulations.gov/COLC-2023-0006-10336/attachment_1.pdf"
+            },
+            {
+                "outlet": "HuggingFace",
+                "url": "https://downloads.regulations.gov/COLC-2023-0006-8969/attachment_1.pdf"
+            },
+            {
+                "outlet": "American Library Association",
+                "url": "https://downloads.regulations.gov/COLC-2023-0006-8452/attachment_1.pdf"
+            },
+            {
+                "outlet": "Common Crawl Foundation",
+                "url": "https://www.regulations.gov/comment/COLC-2023-0006-7056"
+            },
+            {
+                "outlet": "Sy Damle Congressional Testimony",
+                "url": "https://docs.house.gov/meetings/JU/JU03/20230517/115951/HHRG-118-JU03-Wstate-DamleS-20230517.pdf"
+            }
+        ]
     },
     {
         "title": "With Little Power Comes Great Responsibility",
@@ -997,7 +1062,17 @@
         "code": "",
         "policy_brief": "https://hai.stanford.edu/sites/default/files/2023-12/Governing-Open-Foundation-Models.pdf",
         "site": "https://crfm.stanford.edu/open-fms/",
-        "comments": "(Cited by <a href='https://www.ntia.gov/programs-and-initiatives/artificial-intelligence/open-model-weights-report/risks-benefits-of-dual-use-foundation-models-with-widely-available-model-weights/competition-innovation-research' style='color: #2E86C1;'>National Telecommunications and Information Administration</a>.)"
+        "press" : [
+        {
+            "outlet": "National Telecommunications and Information Administration (NTIA) Report",
+            "url": "https://www.ntia.gov/programs-and-initiatives/artificial-intelligence/open-model-weights-report/risks-benefits-of-dual-use-foundation-models-with-widely-available-model-weights/competition-innovation-research"
+        },
+        {
+            "outlet": "National Artificial Intelligence Advisory Committee (NAIAC)",
+            "url": "https://ai.gov/wp-content/uploads/2024/06/FINDINGS-RECOMMENDATIONS_AI-Safety.pdf"
+        }
+
+        ]
     },
     {
         "title": "Self-Destructing Models: Increasing the Costs of Harmful Dual Uses of Foundation Models",
@@ -1013,7 +1088,7 @@
         "abstract": " A growing ecosystem of large, open-source foundation models has reduced the labeled data and technical expertise necessary to apply machine learning to many new problems. Yet foundation models pose a clear dual-use risk, indiscriminately reducing the costs of building both harmful and beneficial machine learning systems. Policy tools such as restricted model access and export controls are the primary methods currently used to mitigate such dual-use risks. In this work, we review potential safe-release strategies and argue that both policymakers and AI researchers would benefit from fundamentally new technologies enabling more precise control over the downstream usage of open-source foundation models. We propose one such approach: the task blocking paradigm, in which foundation models are trained with an additional mechanism to impede adaptation to harmful tasks without sacrificing \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AAAI/ACM Conference on AI, Ethics, And Society",
         "code": "",
         "site": "",
         "comments": ""
@@ -1030,7 +1105,7 @@
         "abstract": "ChatGPT\" hallucinates.\"'That is, it often generates text that makes factual claims that are untrue and perhaps never even appear in its training data. It can get math problems wrong. It can get dates wrong. But it can also make things up. It makes up sources that don't exist, as one lawyer found out to their chagrin when they cited nonexistent cases in a legal brief. 2 It makes up quotes. And it can make up false claims that hurt people. Ask it what crimes a particular person has committed or been accused of, and ChatGPT might get it right, truthfully saying, for instance, that Richard Nixon was accused of destroying evidence to hide a burglary committed by his campaign, or truthfully saying that it is unaware of any accusations against a person. But it will also sometimes tell a false story about a crime. ChatGPT 3.5 (but not 4.0), for instance, says that one of us (Lemley) has been accused and indeed found liable for \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Journal of Free Speech Law",
         "code": "",
         "site": "",
         "comments": ""
@@ -1111,7 +1186,7 @@
         "abstract": "In many finite horizon episodic reinforcement learning (RL) settings, it is desirable to optimize for the undiscounted return-in settings like Atari, for instance, the goal is to collect the most points while staying alive in the long run. Yet, it may be difficult (or even intractable) mathematically to learn with this target. As such, temporal discounting is often applied to optimize over a shorter effective planning horizon. This comes at the cost of potentially biasing the optimization target away from the undiscounted goal. In settings where this bias is unacceptable-where the system must optimize for longer horizons at higher discounts-the target of the value function approximator may increase in variance leading to difficulties in learning. We present an extension of temporal difference (TD) learning, which we call TD (), that breaks down a value function into a series of components based on the differences between value functions with smaller discount factors. The separation of a longer horizon value function into these components has useful properties in scalability and performance. We discuss these properties and show theoretic and empirical improvements over standard TD learning in certain settings.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "International Conference on Machine Learning",
         "code": "",
         "site": "",
         "comments": ""
@@ -1148,10 +1223,30 @@
         "abstract": "Independent evaluation and red teaming are critical for identifying the risks posed by generative AI systems. However, the terms of service and enforcement strategies used by prominent AI companies to deter model misuse have disincentives on good faith safety evaluations. This causes some researchers to fear that conducting such research or releasing their findings will result in account suspensions or legal reprisal. Although some companies offer researcher access programs, they are an inadequate substitute for independent research access, as they have limited community representation, receive inadequate funding, and lack independence from corporate incentives. We propose that major AI developers commit to providing a legal and technical safe harbor, indemnifying public interest safety research and protecting it from the threat of account suspensions or legal reprisal. These proposals emerged from our collective experience conducting safety, privacy, and trustworthiness research on generative AI systems, where norms and incentives could be better aligned with public interests, without exacerbating model misuse. We believe these commitments are a necessary step towards more inclusive and unimpeded community efforts to tackle the risks of generative AI.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "International Conference on Machine Learning",
         "code": "",
         "site": "",
-        "comments": ""
+        "comments": "",
+        "press": [
+            {
+                "outlet": "Department of Justice Letter",
+                "url": "https://www.copyright.gov/1201/2024/USCO-letters/Letter from Department of Justice Criminal Division.pdf"
+            },
+            {
+                "outlet": "Comments to the Ninth Triennial Proceeding at the Copyright Office",
+                "url" : "https://www.copyright.gov/1201/2024/comments/reply/Class%204%20-%20Reply%20-%20Kevin%20Klyman%20et%20al.%20(Joint%20Academic%20Researchers).pdf"
+            },
+        {
+            "outlet": "The Washington Post",
+            "url": "https://www.washingtonpost.com/technology/2024/03/05/ai-research-letter-openai-meta-midjourney/"
+        }
+            ,
+            {
+                "outlet": "Knight First Amendment Institute Blog Post",
+                "url": "https://knightcolumbia.org/blog/a-safe-harbor-for-ai-evaluation-and-red-teaming"
+            }
+
+        ]
     },
     {
         "title": "Learning Robust Dialog Policies in Noisy Environments",
@@ -1169,7 +1264,7 @@
         "abstract": "Modern virtual personal assistants provide a convenient interface for completing daily tasks via voice commands. An important consideration for these assistants is the ability to recover from automatic speech recognition (ASR) and natural language understanding (NLU) errors. In this paper, we focus on learning robust dialog policies to recover from these errors. To this end, we develop a user simulator which interacts with the assistant through voice commands in realistic scenarios with noisy audio, and use it to learn dialog policies through deep reinforcement learning. We show that dialogs generated by our simulator are indistinguishable from human generated dialogs, as determined by human evaluators. Furthermore, preliminary experimental results show that the learned policies in noisy environments achieve the same execution success rate with fewer dialog turns compared to fixed rule-based policies.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Workshop on Conversational AI at NeurIPS",
         "code": "",
         "site": "",
         "comments": ""
@@ -1186,7 +1281,7 @@
         "abstract": "Current Large Language Models (LLMs), even those tuned for safety and alignment, are susceptible to jailbreaking. Some have found that just further fine-tuning an aligned model with benign data (i.e., data without harmful content) surprisingly leads to substantial degradation in safety. We delve into the data-centric aspects of why benign fine-tuning inadvertently contributes to jailbreaking. First, we represent fine-tuning data through two lenses: representation and gradient spaces. Furthermore, we propose a bi-directional anchoring method that prioritizes data points that are close to harmful examples and distant from benign ones. By doing so, our approach effectively identifies subsets of benign data that are more likely to degrade the model's safety after fine-tuning. Training on just 100 of these seemingly benign datapoints can lead to the fine-tuned model affirmatively responding to > 70% of tested harmful requests, compared to < 20% after fine-tuning on randomly selected data. We further find that selected data are often in the form of lists and bullet points, or math questions.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Conference on Language Modeling",
         "code": "",
         "site": "",
         "comments": ""
@@ -1199,11 +1294,11 @@
             "Peter Henderson",
             "Pierre-Luc Bacon"
         ],
-        "year": "2021",
+        "year": "2020",
         "abstract": "How do we formalize the challenge of credit assignment in reinforcement learning? Common intuition would draw attention to reward sparsity as a key contributor to difficult credit assignment and traditional heuristics would look to temporal recency for the solution, calling upon the classic eligibility trace. We posit that it is not the sparsity of the reward itself that causes difficulty in credit assignment, but rather the \\emph{information sparsity}. We propose to use information theory to define this notion, which we then use to characterize when credit assignment is an obstacle to efficient learning. With this perspective, we outline several information-theoretic mechanisms for measuring credit under a fixed behavior policy, highlighting the potential of information theory as a key tool towards provably-efficient credit assignment.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Workshop on Biological and Artificial Reinforcement Learning (NeurIPS)",
         "code": "",
         "site": "",
         "comments": ""
@@ -1220,7 +1315,7 @@
         "abstract": "Is the output of generative AI entitled to First Amendment protection? We're inclined to say yes. Even though current AI programs are of course not people and do not themselves have constitutional rights, their speech may potentially be protected because of the rights of the programs' creators. But beyond that, and likely more significantly, AI programs' speech should be protected because of the rights of their users-both the users' rights to listen and their rights to speak. In this short Article, we sketch the outlines of this analysis.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Journal of Free Speech Law",
         "code": "",
         "site": "",
         "comments": ""
@@ -1237,7 +1332,7 @@
         "abstract": "Recent technological advances are changing the litigation landscape, especially in the discovery context. For nearly two decades, technologies have reinvented document searches in complex litigation, normalizing the use of machine learning algorithms under the umbrella of\" Technology-Assisted Review\"(\" TAR\"). The latest technological developments are placing discovery beyond attorney understanding and firmly in the realm of computer science and engineering. As lawyers struggle to keep up, a creeping sense of anxiety is spreading in the legal profession about a lack of transparency and the potential for discovery abuse. Judges, attorneys, bar associations, and scholars warn that lawyers need to closely supervise the technical aspects of TAR and avoid the dangers of sabotage, intentional hacking, or abuse. But commentators have not fully defined what the risks entail, described in detail the potential \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Harvard Journal of Law & Technology",
         "code": "",
         "site": "",
         "comments": ""
@@ -1255,7 +1350,7 @@
         "abstract": "Policy gradient methods have had great success in solving continuous control tasks, yet the stochastic nature of such problems makes deterministic value estimation difficult. We propose an approach which instead estimates a distribution by fitting the value function with a Bayesian Neural Network. We optimize an -divergence objective with Bayesian dropout approximation to learn and estimate this distribution. We show that using the Monte Carlo posterior mean of the Bayesian value function distribution, rather than a deterministic network, improves stability and performance of policy gradient methods in continuous control MuJoCo simulations.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Bayesian Deep Learning Workshop at NeurIPS",
         "code": "",
         "site": "",
         "comments": ""
@@ -1272,7 +1367,7 @@
         "abstract": "Is AI set to redefine the legal profession? We argue that this claim is not supported by the current evidence. We dive into AI's increasingly prevalent roles in three types of legal tasks: information processing; tasks involving creativity, reasoning, or judgment; and predictions about the future. We find that the ease of evaluating legal applications varies greatly across legal tasks, based on the ease of identifying correct answers and the observability of information relevant to the task at hand. Tasks that would lead to the most significant changes to the legal profession are also the ones most prone to overoptimism about AI capabilities, as they are harder to evaluate. We make recommendations for better evaluation and deployment of AI in legal contexts.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Journal of Cross-disciplinary Research in Computational Law",
         "code": "",
         "site": "",
         "comments": ""
@@ -1291,7 +1386,7 @@
         "abstract": "Daniel E Ho and colleagues explore the legal implications of using artificial intelligence in the response to covid-19 and call for more robust evaluation frameworks",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "BMJ",
         "code": "",
         "site": "",
         "comments": ""
@@ -1314,11 +1409,11 @@
             "Mirko Bronzi",
             "Christopher Beckham"
         ],
-        "year": "2019",
+        "year": "2018",
         "abstract": "",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AutoML Workshop at ICML",
         "code": "",
         "site": "",
         "comments": ""
@@ -1338,7 +1433,7 @@
         "abstract": "Large language models (LLMs) are highly capable but also computationally expensive. Characterizing the fundamental tradeoff between inference efficiency and model capabilities is thus important, but requires an efficiency metric that is comparable across models from different providers. Unfortunately, raw runtimes measured through black-box APIs do not satisfy this property: model providers can implement software and hardware optimizations orthogonal to the model, and shared infrastructure introduces performance contention. We propose a new metric for inference efficiency called idealized runtime, that puts models on equal footing as though they were served on uniform hardware and software without performance contention, and a cost model to efficiently estimate this metric for autoregressive Transformer models. We also propose variants of the idealized runtime that incorporate the number and type of accelerators needed to serve the model. Using these metrics, we compare ten LLMs developed in 2022 to provide the first analysis of inference efficiency-capability tradeoffs; we make several observations from this analysis, including the fact that the superior inference runtime performance of certain APIs is often a byproduct of optimizations within the API rather than the underlying model. Our code is open sourced at https://github. com/stanford-crfm/helm-efficiency.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "NeurIPS",
         "code": "",
         "site": "",
         "comments": ""
@@ -1360,7 +1455,7 @@
         "abstract": "We introduce a new setting, optimize-and-estimate structured bandits. Here, a policy must select a batch of arms, each characterized by its own context, that would allow it to both maximize reward and maintain an accurate (ideally unbiased) population estimate of the reward. This setting is inherent to many public and private sector applications and often requires handling delayed feedback, small data, and distribution shifts. We demonstrate its importance on real data from the United States Internal Revenue Service (IRS). The IRS performs yearly audits of the tax base. Two of its most important objectives are to identify suspected misreporting and to estimate the\" tax gap\"--the global difference between the amount paid and true amount owed. Based on a unique collaboration with the IRS, we cast these two processes as a unified optimize-and-estimate structured bandit. We analyze optimize-and-estimate approaches to the IRS problem and propose a novel mechanism for unbiased population estimation that achieves rewards comparable to baseline approaches. This approach has the potential to improve audit efficacy, while maintaining policy-relevant estimates of the tax gap. This has important social consequences given that the current tax gap is estimated at nearly half a trillion dollars. We suggest that this problem setting is fertile ground for further research and we highlight its interesting challenges. The results of this and related research are currently being incorporated into the continual improvement of the IRS audit selection methods.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AAAI Conference on Artificial Intelligence",
         "code": "",
         "site": "",
         "comments": ""
@@ -1378,7 +1473,7 @@
         "abstract": "We explore the promises and challenges of employing sequential decision-making algorithms -- such as bandits, reinforcement learning, and active learning -- in law and public policy. While such algorithms have well-characterized performance in the private sector (e.g., online advertising), the tendency to naively apply algorithms motivated by one domain, often online advertisements, can be called the ''advertisement fallacy.'' Our main thesis is that law and public policy pose distinct methodological challenges that the machine learning community has not yet addressed. Machine learning will need to address these methodological problems to move ''beyond ads.'' Public law, for instance, can pose multiple objectives, necessitate batched and delayed feedback, and require systems to learn rational, causal decision-making policies, each of which presents novel questions at the research frontier. We discuss a wide \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "ACM Symposium on Computer Science and Law",
         "code": "",
         "site": "",
         "comments": ""
@@ -1399,7 +1494,7 @@
         "abstract": "Reinforcement Learning (RL) systems are tasked with maximizing the cumulative sum of discounted rewards in a particular environment. In order to do so, most RL methods rely on estimating the",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AAMAS",
         "code": "",
         "site": "",
         "comments": ""
@@ -1420,7 +1515,7 @@
         "abstract": "We present a tool, Text Characterization Toolkit (TCT), that researchers can use to study characteristics of large datasets. Furthermore, such properties can lead to understanding the influence of such attributes on models\u2019 behaviour. Traditionally, in most NLP research, models are usually evaluated by reporting single-number performance scores on a number of readily available benchmarks, without much deeper analysis. Here, we argue that\u2013especially given the well-known fact that benchmarks often contain biases, artefacts, and spurious correlations\u2013deeper results analysis should become the de-facto standard when presenting new models or benchmarks. TCT aims at filling this gap by facilitating such deeper analysis for datasets at scale, where datasets can be for training/development/evaluation. TCT includes both an easy-to-use tool, as well as off-the-shelf scripts that can be used for specific analyses. We also present use-cases from several different domains. TCT is used to predict difficult examples for given well-known trained models; TCT is also used to identify (potentially harmful) biases present in a dataset.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AACL",
         "code": "",
         "site": "",
         "comments": ""
@@ -1444,7 +1539,7 @@
         "abstract": "Instruction tuning is an important step in making language models useful for direct user interaction. However, many legal tasks remain out of reach for most open LLMs and there do not yet exist any large scale instruction datasets for the domain. This critically limits research in this application area. In this work, we curate LawInstruct, a large legal instruction dataset, covering 17 jurisdictions, 24 languages and a total of 12M examples. We present evidence that domain-specific pretraining and instruction tuning improve performance on LegalBench, including improving Flan-T5 XL by 8 points or 16\\% over the baseline. However, the effect does not generalize across all tasks, training regimes, model sizes, and other factors. LawInstruct is a resource for accelerating the development of models with stronger information processing and decision making capabilities in the legal domain.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "EMNLP",
+        "publication_venue": "EMNLP Findings",
         "code": "",
         "site": "",
         "comments": ""
@@ -1545,7 +1640,7 @@
         "abstract": "Algorithms are coming to government. One legal question raised by this change is the extent to which the Administrative Procedure Act (\" APA\") will regulate the use of algorithms as decision support tools for agency adjudicators. Under the APA,\" rules\" are officially binding statements of policy subject to notice and comment as well as rigorous pre-implementation judicial review, whereas\" guidance,\" officially defined as non-binding advice, is effectively unreviewable. The implementation of algorithmic tools often occupies a gray zone between the two. To help clear the thicket, we provide a deep dive into the computer science and economics literature to provide a set of workable heuristics that help distinguish algorithmic rulemaking from algorithmic guidance. These heuristics align with best practices in the computer science literature and provide insights into agency incentives for adopting safer algorithms. We suggest that the specter of rulemaking may have value in nudging agencies toward best practices aligned with existing algorithmic safety recommendations. Specifically, avoidance of APA rulemaking may encourage agencies to prevent automation bias and other potential harms from algorithmic deployments. In this way, distinguishing algorithmic rules and guidance under the existing framework of the APA may dovetail with best practices in computer science.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Harvard Journal of Law & Technology",
         "code": "",
         "site": "",
         "comments": ""
@@ -1563,7 +1658,7 @@
         "abstract": "Benchmarking efforts for machine learning have often mimicked (or even explicitly used) professional licensing exams to assess capabilities in a given area, focusing primarily on accuracy as the metric of choice. However, this approach neglects a variety of essential skills required in professional settings. We propose that professional codes of conduct and rules can guide machine learning researchers to address potential gaps in benchmark construction. These guidelines frequently account for situations professionals may encounter and must handle with care. A model may excel on an exam but still fall short in critical scenarios, deemed unacceptable under professional codes or rules. To motivate this idea, we conduct a case study and comparative examination of machine translation in legal settings. We point out several areas where standard deployments and benchmarks do not assess key requirements under \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "ACM Symposium on Computer Science and Law",
         "code": "",
         "site": "",
         "comments": ""
@@ -1686,26 +1781,6 @@
         "comments": ""
     },
     {
-        "title": "Foundation Models and Copyright Questions",
-        "pdf": "https://hai.stanford.edu/sites/default/files/2023-11/Foundation-Models-Copyright.pdf",
-        "authors": [
-            "Peter Henderson",
-            "Xuechen Li",
-            "Dan Jurafsky",
-            "Tatsunori Hashimoto",
-            "Mark A Lemley",
-            "Percy Liang"
-        ],
-        "year": "2023",
-        "abstract": "FOUNDATION MODELS ARE OFTEN TRAINED ON LARGE VOLUMES OF COPYRIGHTED MATERIAL, including text on websites, images posted online, research papers, books, articles, and more. Deploying these models can pose legal and ethical risks. Under US law, copyright for a piece of creative work is assigned \u201cthe moment it is created and fixed in a tangible form that it is perceptible either directly or with the aid of a machine or device.\u201d Most data used to train foundation models falls under this definition. For example, the Pile, a massive open source language modeling dataset that has been used by Meta, Bloomberg, and others to train foundation models, contains a dataset of copyrighted, torrented e-books called Books3 that has become the focus of various ongoing lawsuits.In the United States, AI researchers have long relied on fair use doctrine to avoid copyright issues with training data. The fair use doctrine allows members of the public to use copyrighted materials in certain instances, notably when the output is \u201ctransformative.\u201d However, amid a class-action lawsuit against Microsoft, GitHub, and OpenAI for training systems on publicly published code without adequate credit; Getty Images suing the Stable Diffusion AI tool for scraping its photos; and other significant AI-related legal actions, existing fair use interpretations are increasingly being challenged.",
-        "published": "-01-01T00:00:00Z",
-        "updated": "-01-01T00:00:00Z",
-        "publication_venue": "HAI Policy Brief",
-        "code": "",
-        "site": "",
-        "comments": ""
-    },
-    {
         "title": "Corpus Enigmas and Contradictory Linguistics: Tensions between Empirical Semantic Meaning and Judicial Interpretation",
         "pdf": "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/mipr25&section=26",
         "authors": [
@@ -1718,24 +1793,40 @@
         "abstract": "Recent years have witnessed an increase in the interest in corpus linguistics-the quantitative analysis of large volumes of text, sometimes aided with machine learning-to inform legal meaning. Researchers have claimed that corpus linguistics enables robust, rigorous, and transparent discovery of the original public meaning of constitutional provisions and the meaning of statutory text. We contribute to this debate from the perspective of researchers in computational text analysis. We document tensions between such empirical semantic meaning approaches and judicial interpretation, where the use of corpus linguistics may sub silentio clash with express jurisprudential commitments. First, corpus linguistics may rely on foreign law to",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Minnesota Journal of Law, Science & Technology",
         "code": "",
         "site": "",
-        "comments": ""
+        "comments": "",
+        "press": [
+            {
+                "outlet": "Amicus Brief",
+                "url": "https://www.supremecourt.gov/DocketPDF/22/22-800/285812/20231023134636708_22-800 bsac Professors Final.pdf"
+            },
+            {
+                "outlet": "Moore v. United States (J. Jackson concurring)",
+                "url": "https://www.supremecourt.gov/opinions/23pdf/22-800_jg6o.pdf"
+            },
+            {
+                "outlet" : "Discussed in part at April 2024 meeting of the Advisory Committee on the Federal Rules of Evidence",
+                "url": "https://www.uscourts.gov/rules-policies/archives/agenda-books/advisory-committee-evidence-rules-april-2024"
+            }
+        ]
     },
     {
         "title": "Gamesmanship in Modern Discovery Tech",
-        "pdf": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=dy_JBs0AAAAJ:wbdj-CoPYUoC",
+        "pdf": "https://www.cambridge.org/core/books/legal-tech-and-the-future-of-civil-justice/gamesmanship-in-modern-discovery-tech/FF91037E5B83DE64940620768ECC39C9",
         "authors": [
             "Neel Guha",
             "Peter Henderson",
             "Diego Zambrano"
         ],
-        "year": "2022",
+        "year": "2023",
         "abstract": "",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Legal Tech and the Future of Civil Justice",
+        "publisher": "Cambridge University Press",
+        "type": "Book",
         "code": "",
         "site": "",
         "comments": ""
@@ -1757,7 +1848,7 @@
         "abstract": "This report documents ideas for improving the field of machine learning, which arose from discussions at the ML Retrospectives workshop at NeurIPS 2019. The goal of the report is to disseminate these ideas more broadly, and in turn encourage continuing discussion about how the field could improve along these axes. We focus on topics that were most discussed at the workshop: incentives for encouraging alternate forms of scholarship, re-structuring the review process, participation from academia and industry, and how we might better train computer scientists as scientists. Videos from the workshop can be accessed at https://slideslive.com/neurips/west-114-115-retrospectives-a-venue-for-selfreflection-in-ml-research",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "arXiv",
         "code": "",
         "site": "",
         "comments": ""
@@ -1774,7 +1865,7 @@
         "abstract": "Consider contact tracing, a measure central to South Korea\u2019s successful COVID-19 mitigation strategy. Contact tracing is time and resource intensive. Interviewing every patient and getting in touch with their close contacts involves hours of work. In Wuhan, for instance,\u201cmore than 1800 teams of epidemiologists, with a minimum of 5 people/team, are tracing tens of thousands of contacts a day.\u201d Understaffed public health departments are finding it tough to keep up, and some jurisdictions have abandoned contact tracing entirely.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Health Affairs Blog",
         "code": "",
         "site": "",
         "comments": ""
@@ -1795,7 +1886,7 @@
         "abstract": "Current conversational systems can follow simple commands and answer basic questions, but they have difficulty maintaining coherent and open-ended conversations about specific topics. Competitions like the Conversational Intelligence (ConvAI) challenge are being organized to push the research development towards that goal. This article presents in detail the RLLChatbot that participated in the 2017 ConvAI challenge. The goal of this research is to better understand how current deep learning and reinforcement learning tools can be used to build a robust yet flexible open domain conversational agent. We provide a thorough description of how a dialog system can be built and trained from mostly public-domain datasets using an ensemble model. The first contribution of this work is a detailed description and analysis of different text generation models in addition to novel message ranking and selection methods. Moreover, a new open-source conversational dataset is presented. Training on this data significantly improves the Recall@k score of the ranking and selection mechanisms compared to our baseline model responsible for selecting the message returned at each interaction.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "arXiv",
         "code": "",
         "site": "",
         "comments": ""
@@ -1813,7 +1904,7 @@
         "abstract": "Adversarial examples can be defined as inputs to a model which induce a mistake - where the model output is different than that of an oracle, perhaps in surprising or malicious ways. Original models of adversarial attacks are primarily studied in the context of classification and computer vision tasks. While several attacks have been proposed in natural language processing (NLP) settings, they often vary in defining the parameters of an attack and what a successful attack would look like. The goal of this work is to propose a unifying model of adversarial examples suitable for NLP tasks in both generative and classification settings. We define the notion of adversarial gain: based in control theory, it is a measure of the change in the output of a system relative to the perturbation of the input (caused by the so-called adversary) presented to the learner. This definition, as we show, can be used under different feature spaces and distance conditions to determine attack or defense effectiveness across different intuitive manifolds. This notion of adversarial gain not only provides a useful way for evaluating adversaries and defenses, but can act as a building block for future work in robustness under adversaries due to its rooted nature in stability and manifold theory.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "arXiv",
         "code": "",
         "site": "",
         "comments": ""
@@ -1894,7 +1985,7 @@
         "abstract": "",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "AAAI",
+        "publication_venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
         "code": "",
         "site": "",
         "comments": ""
