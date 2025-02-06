@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/polaris-lab-webpage/static/css/main.83fba198.css",
-    "main.js": "/polaris-lab-webpage/static/js/main.7df47899.js",
+    "main.css": "/polaris-lab-webpage/static/css/main.db39c0ad.css",
+    "main.js": "/polaris-lab-webpage/static/js/main.4d6f3a5d.js",
     "static/js/488.5e451eab.chunk.js": "/polaris-lab-webpage/static/js/488.5e451eab.chunk.js",
     "static/media/4-How-data-reinforces-commitments-to-sustainability.jpg": "/polaris-lab-webpage/static/media/4-How-data-reinforces-commitments-to-sustainability.d504e4e7cde1f34e0899.jpg",
     "static/media/robot_in_front_of_building.png": "/polaris-lab-webpage/static/media/robot_in_front_of_building.c74101de4b4f1f8bf957.png",
@@ -63,12 +63,12 @@
     "static/media/articles.txt": "/polaris-lab-webpage/static/media/articles.09511db8f9a7300035c3.txt",
     "static/media/ntia-logo-wht.svg": "/polaris-lab-webpage/static/media/ntia-logo-wht.029200dfab9fde95b12b.svg",
     "index.html": "/polaris-lab-webpage/index.html",
-    "main.83fba198.css.map": "/polaris-lab-webpage/static/css/main.83fba198.css.map",
-    "main.7df47899.js.map": "/polaris-lab-webpage/static/js/main.7df47899.js.map",
+    "main.db39c0ad.css.map": "/polaris-lab-webpage/static/css/main.db39c0ad.css.map",
+    "main.4d6f3a5d.js.map": "/polaris-lab-webpage/static/js/main.4d6f3a5d.js.map",
     "488.5e451eab.chunk.js.map": "/polaris-lab-webpage/static/js/488.5e451eab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83fba198.css",
-    "static/js/main.7df47899.js"
+    "static/css/main.db39c0ad.css",
+    "static/js/main.4d6f3a5d.js"
   ]
 }
