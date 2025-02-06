@@ -59,3 +59,19 @@
     width: 70px;
     height: 70.35px;
 }
+
+.publication-tags {
+    margin-top: 8px;
+}
+
+.publication-tag {
+    display: inline-block;
+    background-color: #e0f7fa; /* Single fixed light blue */
+    color: #006064;
+    padding: 1px 4px; /* Reduced padding */
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    font-size: 0.7rem; /* Reduced font size */
+    font-weight: 500;
+}
