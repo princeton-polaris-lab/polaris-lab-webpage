@@ -14,6 +14,7 @@ import Press from "./press/press.jsx";
 import People from "./people/people.jsx";
 import Publications from "./publications/publications.jsx";
 import About from './about/about.jsx';
+import Teaching from './teaching/teaching.jsx';
 
 const router = createHashRouter([
   {
@@ -41,6 +42,10 @@ const router = createHashRouter([
       {
         path: "about",
         element: <About/>
+      },
+      {
+        path: "teaching",
+        element: <Teaching/>
       }
     ]
   },

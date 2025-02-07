@@ -43,11 +43,17 @@
         "abstract": "Large language models are finetuned to refuse questions about hazardous\nknowledge, but these protections can often be bypassed. Unlearning methods aim\nat completely removing hazardous capabilities from models and make them\ninaccessible to adversaries. This work challenges the fundamental differences\nbetween unlearning and traditional safety post-training from an adversarial\nperspective. We demonstrate that existing jailbreak methods, previously\nreported as ineffective against unlearning, can be successful when applied\ncarefully. Furthermore, we develop a variety of adaptive methods that recover\nmost supposedly unlearned capabilities. For instance, we show that finetuning\non 10 unrelated examples or removing specific directions in the activation\nspace can recover most hazardous capabilities for models edited with RMU, a\nstate-of-the-art unlearning method. Our findings challenge the robustness of\ncurrent unlearning approaches and question their advantages over safety\ntraining.",
         "published": "2024-09-26T16:32:19Z",
         "updated": "2024-11-08T22:06:41Z",
-        "publication_venue": "arXiv preprint",
+        "publication_venue": "Neurips 2024 SoLaR workshop",
         "code": "",
         "site": "",
         "image": "18c51d69-9fc3-43e2-9f5f-48886c77421c.png",
-        "comments": "Spotlight paper at Neurips 2024 SoLaR workshop",
+        "comments": "",
+        "press": [
+            {
+                "outlet": "Best Paper Award @ Neurips 2024 SoLaR workshop",
+                "url": "https://solar-neurips.github.io/"
+            }
+        ],
         "tags": [
             "AI Safety & Security"
         ]
@@ -543,7 +549,7 @@
         "abstract": "Language models (LMs) are becoming the foundation for almost all major language technologies, but their capabilities, limitations, and risks are not well understood. We present Holistic Evaluation of Language Models (HELM) to improve the transparency of language models. First, we taxonomize the vast space of potential scenarios (i.e. use cases) and metrics (i.e. desiderata) that are of interest for LMs. Then we select a broad subset based on coverage and feasibility, noting what's missing or underrepresented (e.g. question answering for neglected English dialects, metrics for trustworthiness). Second, we adopt a multi-metric approach: We measure 7 metrics (accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency) for each of 16 core scenarios when possible (87.5% of the time). This ensures metrics beyond accuracy don't fall to the wayside, and that trade-offs are clearly exposed. We also perform 7 targeted evaluations, based on 26 targeted scenarios, to analyze specific aspects (e.g. reasoning, disinformation). Third, we conduct a large-scale evaluation of 30 prominent language models (spanning open, limited-access, and closed models) on all 42 scenarios, 21 of which were not previously used in mainstream LM evaluation. Prior to HELM, models on average were evaluated on just 17.9% of the core HELM scenarios, with some prominent models not sharing a single scenario in common. We improve this to 96.0%: now all 30 models have been densely benchmarked on the same core scenarios and metrics under standardized conditions. Our evaluation surfaces 25 top-level findings. For full transparency, we release all raw \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Transactions on Machine Learning Research",
         "code": "",
         "site": "",
         "comments": "",
@@ -664,7 +670,7 @@
     },
     {
         "title": "A Survey of Available Corpora For Building Data-Driven Dialogue Systems: The Journal Version",
-        "pdf": "https://scholar.google.com/scholar?cluster=14641506375240125639&hl=en&oi=scholarr",
+        "pdf": "https://journals.uic.edu/ojs/index.php/dad/article/view/10733",
         "authors": [
             "Iulian Vlad Serban",
             "Ryan Lowe",
@@ -672,11 +678,11 @@
             "Laurent Charlin",
             "Joelle Pineau"
         ],
-        "year": "2020",
+        "year": "2018",
         "abstract": "",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Dialogue and Discourse",
         "code": "",
         "site": "",
         "comments": "",
@@ -768,11 +774,17 @@
         "abstract": "While self-supervised learning has made rapid advances in natural language processing, it remains unclear when researchers should engage in resource-intensive domain-specific pretraining (domain pretraining). The law, puzzlingly, has yielded few documented instances of substantial gains to domain pretraining in spite of the fact that legal language is widely seen to be unique. We hypothesize that these existing results stem from the fact that existing legal NLP tasks are too easy and fail to meet conditions for when domain pretraining can help. To address this, we first present CaseHOLD (Case Holdings On Legal Decisions), a new dataset comprised of over 53,000+ multiple choice questions to identify the relevant holding of a cited case. This dataset presents a fundamental task to lawyers and is both legally meaningful and difficult from an NLP perspective (F1 of 0.4 with a BiLSTM baseline). Second, we \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "International Conference on Artificial Intelligence and Law",
         "code": "",
         "site": "",
         "comments": "",
-        "tags" : ["Foundation Models", "Public Interest AI"]
+        "tags" : ["Foundation Models", "Public Interest AI"],
+        "press": [
+            {
+                "outlet": "Carole Hafner Award for Best Paper ",
+                "url": "https://icail2023.di.uminho.pt/"
+            }
+        ]
     },
     {
         "title": "Ethical Challenges in Data-Driven Dialogue Systems",
@@ -790,7 +802,7 @@
         "abstract": "The use of dialogue systems as a medium for human-machine interaction is an increasingly prevalent paradigm. A growing number of dialogue systems use conversation strategies that are learned from large datasets. There are well documented instances where interactions with these system have resulted in biased or even offensive conversations due to the data-driven training process. Here, we highlight potential ethical issues that arise in dialogue systems research, including: implicit biases in data-driven systems, the rise of adversarial examples, potential sources of privacy violations, safety concerns, special considerations for reinforcement learning systems, and reproducibility concerns. We also suggest areas stemming from these issues that deserve further investigation. Through this initial survey, we hope to spur research leading to robust, safe, and ethically sound dialogue systems.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "AAAI/ACM Conference on AI, Ethics, and Society",
         "code": "",
         "site": "",
         "comments": "",
@@ -844,7 +856,7 @@
         "abstract": "The advent of large language models (LLMs) and their adoption by the legal community has given rise to the question: what types of legal reasoning can LLMs perform? To enable greater study of this question, we present LegalBench: a collaboratively constructed legal reasoning benchmark consisting of 162 tasks covering six different types of legal reasoning. LegalBench was built through an interdisciplinary process, in which we collected tasks designed and hand-crafted by legal professionals. Because these subject matter experts took a leading role in construction, tasks either measure legal reasoning capabilities that are practically useful, or measure reasoning skills that lawyers find interesting. To enable cross-disciplinary conversations about LLMs in the law, we additionally show how popular legal frameworks for describing legal reasoning\u2014which distinguish between its many forms\u2014correspond to LegalBench tasks, thus giving lawyers and LLM developers a common vocabulary. This paper describes LegalBench, presents an empirical evaluation of 20 open-source and commercial LLMs, and illustrates the types of research explorations LegalBench enables.",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "NeurIPS Datasets and Benchmarks Track",
         "code": "",
         "site": "",
         "comments": "",
@@ -865,7 +877,7 @@
         "abstract": "Existing foundation models are trained on copyrighted material. Deploying these models can pose both legal and ethical risks when data creators fail to receive appropriate attribution or compensation. In the United States and several other countries, copyrighted content may be used to build foundation models without incurring liability due to the fair use doctrine. However, there is a caveat: If the model produces output that is similar to copyrighted data, particularly in scenarios that affect the market of that data, fair use may no longer apply to the output of the model. In this work, we emphasize that fair use is not guaranteed, and additional work may be necessary to keep model development and deployment squarely in the realm of fair use. First, we survey the potential risks of developing and deploying foundation models based on copyrighted content. We review relevant US case law, drawing parallels to existing and potential applications for generating text, source code, and visual art. Experiments confirm that popular foundation models can generate content considerably similar to copyrighted material. Second, we discuss technical mitigations that can help foundation models stay in line with fair use. We argue that more research is needed to align mitigation strategies with the current state of the law. Third, we suggest that the law and technical mitigations should co-evolve. For example, coupled with other policy mechanisms, the law could more explicitly consider safe harbors when strong technical tools are used to mitigate infringement harms. This co-evolution may help strike a balance between intellectual property and innovation, which speaks \u2026",
         "published": "-01-01T00:00:00Z",
         "updated": "-01-01T00:00:00Z",
-        "publication_venue": "",
+        "publication_venue": "Journal of Machine Learning Research",
         "code": "",
         "site": "",
         "comments": "",
@@ -1654,7 +1666,7 @@
         "code": "",
         "site": "",
         "comments": "",
-        "tags" : ["AI Policy"]
+        "tags" : ["AI Law & Policy"]
     },
     {
         "title": "The Responsible Foundation Model Development Cheatsheet: A Review of Tools & Resources",
@@ -1995,8 +2007,7 @@
             }
         ],
         "comments": "",
-        "tags" : ["Copyright Law"]
-        
+        "tags" : ["Copyright Law", "AI Law & Policy"]
     },
     {
         "title": "Should the United States or the European Union Follow China\u2019s Lead and Require Watermarks for Generative AI?",

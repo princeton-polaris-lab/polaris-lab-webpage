@@ -20,6 +20,7 @@ function Header() {
                     <li><Link to="/publications">Publications</Link></li>
                     <li><Link to="/people">People</Link></li>
                     <li><Link to="/press">Press</Link></li>
+                    <li><Link to="/teaching">Teaching</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><a href={"https://www.ailawpolicy.com/"} target="_blank" rel="noreferrer">Blog</a></li>
                 </ul>
