@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f81fcfc0.css",
-    "main.js": "/static/js/main.e4612225.js",
+    "main.css": "/static/css/main.71d52c37.css",
+    "main.js": "/static/js/main.54f67b73.js",
     "static/js/488.5e451eab.chunk.js": "/static/js/488.5e451eab.chunk.js",
     "static/media/f82502cb-bf11-43cf-95a0-06bff430221f.png": "/static/media/f82502cb-bf11-43cf-95a0-06bff430221f.f018e9201fb82d34befa.png",
     "static/media/da113242-14df-4074-96b6-545b0a6b3495.png": "/static/media/da113242-14df-4074-96b6-545b0a6b3495.5816dd75b38bba392443.png",
@@ -12,9 +12,11 @@
     "static/media/8a6c9a59-8b9e-4508-a813-38dc43990fa7.png": "/static/media/8a6c9a59-8b9e-4508-a813-38dc43990fa7.a924960d04475c984389.png",
     "static/media/GettyImages-1342297397.jpg": "/static/media/GettyImages-1342297397.61337526a7c034254344.jpg",
     "static/media/35a23899-da81-448c-a519-bd09db2aa960.png": "/static/media/35a23899-da81-448c-a519-bd09db2aa960.9a89d8a25eaf7b43c55f.png",
+    "static/media/1422ec4c-2101-434f-a24f-3d7919d8bbb8.png": "/static/media/1422ec4c-2101-434f-a24f-3d7919d8bbb8.1ecd51c98e4a4695f0d7.png",
     "static/media/ddb63397-24f0-44f2-acec-a2f91920627e.png": "/static/media/ddb63397-24f0-44f2-acec-a2f91920627e.68ee3f1b2f26a2fe74c7.png",
     "static/media/cute_robot_reading.png": "/static/media/cute_robot_reading.3729a35eed28942e8b39.png",
     "static/media/003df349-4a32-49cd-a9c1-84dbd3f5866b.png": "/static/media/003df349-4a32-49cd-a9c1-84dbd3f5866b.cdfb4707a82b7c494f3c.png",
+    "static/media/a329982a-7490-4269-87ce-a978cf92190d.png": "/static/media/a329982a-7490-4269-87ce-a978cf92190d.c6c5cb3006f26463fd84.png",
     "static/media/inyoung_cheong.jpg": "/static/media/inyoung_cheong.ef21ac51426532934dc2.jpg",
     "static/media/359_725_f1.jpeg": "/static/media/359_725_f1.5741ae085fa26624a348.jpeg",
     "static/media/dd0d7033-5385-4c86-bf70-b4f5148d3ac3.png": "/static/media/dd0d7033-5385-4c86-bf70-b4f5148d3ac3.4a4144e0707fc1a420e3.png",
@@ -22,12 +24,14 @@
     "static/media/fantastic.png": "/static/media/fantastic.8a1594f72aa321f3b5cf.png",
     "static/media/boyi_wei.jpg": "/static/media/boyi_wei.6cfca4712f0f3126b73f.jpg",
     "static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.jpg": "/static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.5ddfdf9871840963ae47.jpg",
+    "static/media/rrc_example.png": "/static/media/rrc_example.b2fd7ea4dd6a7ab5075d.png",
     "static/media/dominik_stammbach.jpg": "/static/media/dominik_stammbach.6c0e76c7a64d6f94dc49.jpg",
     "static/media/the_secret_environmental_cost_hiding_inside_your_smart_home_device.jpg": "/static/media/the_secret_environmental_cost_hiding_inside_your_smart_home_device.e262bef261a15d2aab0b.jpg",
     "static/media/forbes.webp": "/static/media/forbes.ae330859e993ac071b19.webp",
     "static/media/peter_henderson.jpg": "/static/media/peter_henderson.52c6df2a507794802815.jpg",
     "static/media/researchers_say_guardrails_built_around_a.i._systems_are_not_so_sturdy.jpg": "/static/media/researchers_say_guardrails_built_around_a.i._systems_are_not_so_sturdy.4acc15c8ab53da3fa269.jpg",
     "static/media/kincaid_macdonald.jpg": "/static/media/kincaid_macdonald.b5a7dd420ec63ef13fee.jpg",
+    "static/media/openai_accuses_deepseek_of_intellectual_property_theft.jpg": "/static/media/openai_accuses_deepseek_of_intellectual_property_theft.3dab5d16d49d18ca4756.jpg",
     "static/media/deepseek_vs._chatgpt_fuels_debate_over_ai_building_blocks.jpg": "/static/media/deepseek_vs._chatgpt_fuels_debate_over_ai_building_blocks.25c8d1b071e35a3e21be.jpg",
     "static/media/cute_robot_waving.png": "/static/media/cute_robot_waving.500c8a034c3644c4109d.png",
     "static/media/robot-friends.png": "/static/media/robot-friends.c41533b0bea84cc55069.png",
@@ -38,6 +42,7 @@
     "static/media/ai_safeguards_are_pretty_easy_to_bypass.jpg": "/static/media/ai_safeguards_are_pretty_easy_to_bypass.3421ee391a13f93c47e6.jpg",
     "static/media/chatgpt_got_an_upgrade_to_make_it_seem_more_human.jpg": "/static/media/chatgpt_got_an_upgrade_to_make_it_seem_more_human.05e7843af0b8629a014e.jpg",
     "static/media/regulation_needed_for_ai,_technology_environmental_impact.jpg": "/static/media/regulation_needed_for_ai,_technology_environmental_impact.434000352cd68b9a4e77.jpg",
+    "static/media/ac320931-6303-4f76-b24f-258567e93926_cx0_cy6_cw0_w1023_r1_s.jpg": "/static/media/ac320931-6303-4f76-b24f-258567e93926_cx0_cy6_cw0_w1023_r1_s.8649d79483102b3d43c8.jpg",
     "static/media/xiangyu_qi.jpg": "/static/media/xiangyu_qi.21f78d9a250b79d053b8.jpg",
     "static/media/ai_models_force_media_firms_to_pick_licensing_or_litigation_(1).jpg": "/static/media/ai_models_force_media_firms_to_pick_licensing_or_litigation_(1).b91e358df4e7e8c1a624.jpg",
     "static/media/openai_has_little_legal_recourse_against_deepseek,_tech_law_experts_say.jpg": "/static/media/openai_has_little_legal_recourse_against_deepseek,_tech_law_experts_say.38861a585a5ae5d2f0a2.jpg",
@@ -65,12 +70,12 @@
     "static/media/articles.txt": "/static/media/articles.09511db8f9a7300035c3.txt",
     "static/media/ntia-logo-wht.svg": "/static/media/ntia-logo-wht.029200dfab9fde95b12b.svg",
     "index.html": "/index.html",
-    "main.f81fcfc0.css.map": "/static/css/main.f81fcfc0.css.map",
-    "main.e4612225.js.map": "/static/js/main.e4612225.js.map",
+    "main.71d52c37.css.map": "/static/css/main.71d52c37.css.map",
+    "main.54f67b73.js.map": "/static/js/main.54f67b73.js.map",
     "488.5e451eab.chunk.js.map": "/static/js/488.5e451eab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f81fcfc0.css",
-    "static/js/main.e4612225.js"
+    "static/css/main.71d52c37.css",
+    "static/js/main.54f67b73.js"
   ]
 }
