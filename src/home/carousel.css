@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
     touch-action: pan-y; /* Allow vertical scrolling but handle horizontal swipes */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .carousel-header {
@@ -31,6 +34,12 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    cursor: grab; /* Show grab cursor to indicate draggable */
+}
+
+.carousel-track:active {
+    cursor: grabbing; /* Change cursor when actively dragging */
+    transition: transform 0.1s linear; /* Faster transition when dragging */
 }
 
 .carousel-card {
@@ -45,6 +54,7 @@
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; /* Ensure clicks work */
 }
 
 .carousel-card:hover {
@@ -526,10 +536,8 @@
         width: 30px;
         height: 30px;
     }
-}
-
-/* Swipe indicator for mobile */
-@media (max-width: 768px) {
+    
+    /* Swipe indicator for mobile */
     .carousel-container::after {
         content: '';
         position: absolute;
@@ -542,6 +550,32 @@
         border-radius: 2px;
         opacity: 0.7;
         pointer-events: none;
+    }
+    
+    /* Add swipe animation hint */
+    @keyframes swipeHint {
+        0%, 100% { transform: translateX(-50%) scaleX(1); }
+        50% { transform: translateX(-70%) scaleX(1.2); }
+    }
+    
+    .carousel-container::before {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        animation: swipeHint 2s ease-in-out infinite;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .carousel-container:hover::before {
+        opacity: 1;
     }
 }
 

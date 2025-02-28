@@ -4,6 +4,9 @@
     overflow: hidden;
     padding: 2rem 0;
     touch-action: pan-y; /* Allow vertical scrolling but handle horizontal swipes */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .papers-track {
@@ -13,6 +16,55 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    cursor: grab; /* Show grab cursor to indicate draggable */
+}
+
+.papers-track:active {
+    cursor: grabbing; /* Change cursor when actively dragging */
+    transition: transform 0.1s linear; /* Faster transition when dragging */
+}
+
+/* Add swipe indicator for mobile */
+@media (max-width: 768px) {
+    .papers-carousel::after {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    
+    /* Add swipe animation hint */
+    @keyframes swipeHint {
+        0%, 100% { transform: translateX(-50%) scaleX(1); }
+        50% { transform: translateX(-70%) scaleX(1.2); }
+    }
+    
+    .papers-carousel::before {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        animation: swipeHint 2s ease-in-out infinite;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .papers-carousel:hover::before {
+        opacity: 1;
+    }
 }
 
 /* Rest of the existing CSS */ 
