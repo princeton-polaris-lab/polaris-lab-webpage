@@ -1,0 +1,18 @@
+.papers-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    touch-action: pan-y; /* Allow vertical scrolling but handle horizontal swipes */
+}
+
+.papers-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    user-select: none; /* Prevent text selection during swipe */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Rest of the existing CSS */ 

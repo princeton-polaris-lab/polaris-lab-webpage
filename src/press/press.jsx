@@ -14,7 +14,9 @@ export default function Press() {
       <div className="press-articles">
         <hr/> 
         {
-          pressArticles.map((article) => (
+          pressArticles
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((article) => (
             <>
               <hr/>
               <ArticleCard article={article}/>
@@ -46,7 +48,7 @@ function ArticleCard( {article} ) {
               {article.title}
             </a>
           </h2>
-          <p className="source">{article.source}</p>
+          <p className="source">{article.source} &bull; {new Date(article.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
           <p className="preview-text">{limitTextToNWords(article.text, 60) + "..."}</p>
         </div>
       </div>

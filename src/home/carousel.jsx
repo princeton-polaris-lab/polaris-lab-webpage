@@ -1,13 +1,14 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from "react-router-dom";
 import './carousel.css';
+import { useSwipe } from '../utils/swipeHandler';
 
 const logo_filepath = "./logos/";
 
 const carouselItems = [
     {
-        title: "We're investigating how AI and the law can work together for the benefit of society.",
-        description: "Exploring the intersection of artificial intelligence and legal frameworks.",
+        title: "We research and develop AI that can work for the public good.",
+        description: "And investigate how AI and law can work together toward this vision.",
         type: 'headline',
         buttonText: 'Learn more',
         buttonLink: '/about',
@@ -71,11 +72,30 @@ export default function HomeCarousel() {
         }
     };
 
+    // Handle swipe gestures
+    const handleNextSlide = () => {
+        if (currentIndex < carouselItems.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        }
+    };
+
+    const handlePrevSlide = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        }
+    };
+
+    const swipeHandlers = useSwipe(handleNextSlide, handlePrevSlide);
+
     return (
         <div className="carousel-container">
-            <div className="carousel-track" style={{
-                transform: `translateX(-${currentIndex * 100}%)`
-            }}>
+            <div 
+                className="carousel-track" 
+                style={{
+                    transform: `translateX(-${currentIndex * 100}%)`
+                }}
+                {...swipeHandlers}
+            >
                 {carouselItems.map((item, index) => (
                     <div 
                         key={index} 

@@ -29,6 +29,29 @@
         ]
     },
     {
+        "title": "Breaking Down Bias: On The Limits of Generalizable Pruning Strategies",
+        "pdf": "http://arxiv.org/abs/2502.07771",
+        "authors": [
+            "Sibo Ma",
+            "Alejandro Salinas",
+            "Peter Henderson",
+            "Julian Nyarko"
+        ],
+        "year": "2025",
+        "abstract": "We employ model pruning to examine how LLMs conceptualize racial biases, and whether a generalizable mitigation strategy for such biases appears feasible. Our analysis yields several novel insights. We find that pruning can be an effective method to reduce bias without significantly increasing anomalous model behavior. Neuron-based pruning strategies generally yield better results than approaches pruning entire attention heads. However, our results also show that the effectiveness of either approach quickly deteriorates as pruning strategies become more generalized. For instance, a model that is trained on removing racial biases in the context of financial decision-making poorly generalizes to biases in commercial transactions. Overall, our analysis suggests that racial biases are only partially represented as a general concept within language models. The other part of these biases is highly context-specific, suggesting that generalizable mitigation strategies may be of limited effectiveness. Our findings have important implications for legal frameworks surrounding AI. In particular, they suggest that an effective mitigation strategy should include the allocation of legal responsibility on those that deploy models in a specific use case.",
+        "published": "2025-02-20T00:00:00Z",
+        "updated": "2025-02-20T00:00:00Z",
+        "publication_venue": "arXiv",
+        "code": "",
+        "site": "",
+        "image": "1422ec4c-2101-434f-a24f-3d7919d8bbb8.png",
+        "comments": "",
+        "tags": [
+            "AI Safety & Security",
+            "AI Law & Policy"
+        ]
+    },
+    {
         "title": "An Adversarial Perspective on Machine Unlearning for AI Safety",
         "pdf": "http://arxiv.org/abs/2409.18025v3",
         "authors": [
@@ -1974,8 +1997,8 @@
         ],
         "year": "2024",
         "abstract": "",
-        "published": "-01-01T00:00:00Z",
-        "updated": "-01-01T00:00:00Z",
+        "published": "2024-06-20T17:38:16Z",
+        "updated": "2025-12-01T00:00:00Z",
         "publication_venue": "EvalEval Workshop @ NeurIPS",
         "code": "",
         "site": "",
@@ -1991,10 +2014,11 @@
         ],
         "year": "2025",
         "abstract": "Artificial intelligence (AI) model creators commonly attach restrictive terms of use to both their models and their outputs. These terms typically prohibit activities ranging from creating competing AI models to spreading disinformation. Often taken at face value, these terms are positioned by companies as key enforceable tools for preventing misuse, particularly in policy dialogs. But are these terms truly meaningful? There are myriad examples where these broad terms are regularly and repeatedly violated. Yet except for some account suspensions on platforms, no model creator has actually tried to enforce these terms with monetary penalties or injunctive relief. This is likely for good reason: we think that the legal enforceability of these licenses is questionable. This Article systematically assesses of the enforceability of AI model terms of use and offers three contributions. First, we pinpoint a key problem: the artifacts that they protect, namely model weights and model outputs, are largely not copyrightable, making it unclear whether there is even anything to be licensed. Second, we examine the problems this creates for other enforcement. Recent doctrinal trends in copyright preemption may further undermine state-law claims, while other legal frameworks like the DMCA and CFAA offer limited recourse. Anti-competitive provisions likely fare even worse than responsible use provisions. Third, we provide recommendations to policymakers. There are compelling reasons for many provisions to be unenforceable: they chill good faith research, constrain competition, and create quasi-copyright ownership where none should exist. There are, of course \u2026",
-        "published": "-01-01T00:00:00Z",
-        "updated": "-01-01T00:00:00Z",
+        "published": "2025-01-01T00:00:00Z",
+        "updated": "2025-01-01T00:00:00Z",
         "publication_venue": "Indiana Law Journal (forthcoming)",
         "code": "",
+        "image": "a329982a-7490-4269-87ce-a978cf92190d.png",
         "site": "",
         "press": [
             {

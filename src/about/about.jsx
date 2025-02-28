@@ -119,8 +119,7 @@ export default function About() {
           <p style={{fontSize: '1.1rem', lineHeight: '1.6'}}>
             Join us at Princeton! Once you're here, let us know 
             <a target="_blank" rel="noreferrer" href="https://www.peterhenderson.co/advising/"> your interest</a> in 
-            the lab. For media inquiries, please email the <Link to="/people">author(s)</Link> of 
-            the <Link to="/publications">paper(s)</Link> that spark your interest.
+            the lab. For media inquiries, please email peter (dot) henderson (at) princeton (dot) edu.
           </p>
         </div>
       </div>

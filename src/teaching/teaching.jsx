@@ -1,6 +1,7 @@
 import "./teaching.css";
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { useSwipe } from '../utils/swipeHandler';
 
 const courses = [
     {
@@ -32,11 +33,18 @@ export default function Teaching() {
         setCurrentIndex(index);
     };
 
+    // Add swipe handlers
+    const swipeHandlers = useSwipe(nextCourse, prevCourse);
+
     return (
         <div className="teaching-page">
             <h1>Teaching</h1>
             <div className="carousel-container">
-                <div className="carousel-track" style={{ transform: `translateX(-${currentIndex * 85}%)` }}>
+                <div 
+                    className="carousel-track" 
+                    style={{ transform: `translateX(-${currentIndex * 85}%)` }}
+                    {...swipeHandlers}
+                >
                     {courses.map((course, index) => (
                         <div className="course-card" key={index}>
                             <img src={course.image} alt={course.title} className="course-image" />

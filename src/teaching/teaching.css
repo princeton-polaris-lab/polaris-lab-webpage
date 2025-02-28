@@ -12,11 +12,16 @@
     justify-content: center;
     margin: 2rem 0;
     overflow: hidden;
+    touch-action: pan-y; /* Allow vertical scrolling but handle horizontal swipes */
 }
 
 .carousel-track {
     display: flex;
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none; /* Prevent text selection during swipe */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .course-card {
@@ -156,5 +161,20 @@
 
     .button {
         padding: 10px 24px;
+    }
+    
+    /* Add swipe indicator for mobile */
+    .carousel-container::after {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        opacity: 0.7;
+        pointer-events: none;
     }
 } 

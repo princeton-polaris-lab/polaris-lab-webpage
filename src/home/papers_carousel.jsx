@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import './carousel.css';
 import publicationsJson from '../publications/publications.json';
+import { useSwipe } from '../utils/swipeHandler';
 
 const PAPERS_TO_SHOW = 3;
 const AUTO_SCROLL_INTERVAL = 5000;
@@ -16,7 +17,13 @@ const gradients = [
 
 export default function PapersCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [papers] = useState(publicationsJson.slice(0, 10));
+  // Sort publications by date before slicing to get the most recent papers
+  const [papers] = useState(
+    publicationsJson
+      .filter(paper => paper.image) // Only include papers with images
+      .sort((a, b) => new Date(b.published) - new Date(a.published)) // Sort by publication date (newest first)
+      .slice(0, 20) // Increase from 10 to 20 papers to include more
+  );
 
   const nextSlide = useCallback(() => {
     setCurrentIndex(current => {
@@ -48,6 +55,9 @@ export default function PapersCarousel() {
     return "Research";
   };
 
+  // Add swipe handlers
+  const swipeHandlers = useSwipe(nextSlide, prevSlide);
+
   return (
     <div className="papers-carousel">
       <div className="papers-header">
@@ -74,10 +84,14 @@ export default function PapersCarousel() {
         </div>
       </div>
       
-      <div className="papers-track" style={{
-        transform: `translateX(-${currentIndex * (100 / PAPERS_TO_SHOW)}%)`
-      }}>
-        {papers.filter(paper => paper.image).map((paper, index) => (
+      <div 
+        className="papers-track" 
+        style={{
+          transform: `translateX(-${currentIndex * (100 / PAPERS_TO_SHOW)}%)`
+        }}
+        {...swipeHandlers}
+      >
+        {papers.map((paper, index) => (
           <a 
             href={paper.pdf}
             target="_blank"

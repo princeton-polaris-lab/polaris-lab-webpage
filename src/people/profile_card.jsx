@@ -49,6 +49,14 @@ function ProfileGlimpse( {profile, setIsModalOpen} ) {
                 />
                 <h3>{profile.name}</h3>
                 <div className="title">{profile.title}</div>
+                {profile.co_advised && (
+                    <div style={{fontSize: '12px'}}>
+                        <span>Co-advised with </span>
+                        {profile.co_advised}
+                    </div>
+                )}
+                {profile.alumni && <div style={{fontSize: '12px'}}>{profile.alumni}</div>}
+
             </button>
         </div>
     )
