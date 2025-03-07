@@ -49,13 +49,6 @@
                 "website": "http://pattyliu.com/"
             },
             {
-                "name": "Sijia Liu",
-                "file": "sijia_liu.jpg",
-                "title": "Ph.D. Student",
-                "bio": "Hello! I am a 1st year CS PhD at Princeton University working with Peter Henderson. Before that, I worked as a research scientist in Amazon Foundation Model (Amazon AGI) Post-Training team with Dr. Yang Liu and Prof. Dilek Hakkani-Tur in Sunnyvale, CA. Previously, I did my Bachelors at Peking University and then did my Masters at Carnegie Mellon University.",
-                "website": "https://sijial430.github.io/"
-            },
-            {
                 "name": "Kincaid MacDonald",
                 "file": "kincaid_macdonald.jpg",
                 "title": "Ph.D. Student",
@@ -68,7 +61,8 @@
                 "title": "Ph.D. Candidate",
                 "bio": "I am a fourth-year Ph.D. candidate in the Department of Electrical and Computer Engineering at Princeton University, where I am advised by Prof. Prateek Mittal and Prof. Peter Henderson. I am currently working on Machine Learning Safety, Security, and Alignment, and I am funded by the Princeton Gordon Y.S. Wu Fellowship and an OpenAI Superalignment Grant.",
                 "website": "https://xiangyuqi.com/",
-                "co_advised" : "Prateek Mittal"
+                "co_advised" : "Prateek Mittal",
+                "alumni" : "Now: OpenAI"
             },
             {
                 "name": "Boyi Wei",
