@@ -712,6 +712,66 @@
         "tags" : ["Foundation Models"]
     },
     {
+        "title": "AI for Scaling Legal Reform: Mapping and Redacting Racial Covenants in Santa Clara County",
+        "pdf": "https://reglab.github.io/racialcovenants/",
+        "authors": [
+            "Faiz Surani",
+            "Mirac Suzgun",
+            "Vyoma Raman",
+            "Christopher D. Manning",
+            "Peter Henderson",
+            "Daniel E. Ho"
+        ],
+        "year": "2025",
+        "abstract": "",
+        "published": "2025-05-01T00:00:00Z",
+        "updated": "2025-05-01T00:00:00Z",
+        "publication_venue": "Journal of Legal Analysis",
+        "code": "",
+        "site": "https://reglab.github.io/racialcovenants/",
+        "comments": "",
+        "image": "0932b15c-49b8-433d-95b7-df159e950ee1.png",
+        "tags": ["Foundation Models", "AI Law & Policy", "Public Interest AI"],
+        "press": [
+            {
+                "outlet": "San Francisco Chronicle",
+                "url": "https://www.sfchronicle.com/bayarea/article/racist-housing-covenant-california-19894639.php"
+            },
+            {
+                "outlet": "ABC7 News",
+                "url": "https://abc7news.com/post/stanfords-ai-removes-racist-property-records-santa-clara-county/15438970/"
+            },
+            {
+                "outlet": "KRON4",
+                "url": "https://www.kron4.com/news/bay-area/stanford-researchers-map-white-only-properties-in-santa-clara-co-using-ai/"
+            },
+            {
+                "outlet": "StateScoop",
+                "url": "https://statescoop.com/stanford-university-santa-clara-county-clerk-racial-covenants-ai/"
+            },
+            {
+                "outlet": "CBS News",
+                "url": "https://www.cbsnews.com/sanfrancisco/news/ai-used-to-uncover-racial-covenants-in-santa-clara-county-property-records/"
+            },
+            {
+                "outlet": "Bloomberg Law",
+                "url": "https://news.bloomberglaw.com/artificial-intelligence/ai-seeks-out-racist-language-in-property-deeds-for-termination"
+            },
+            {
+                "outlet": "KQED",
+                "url": "https://www.kqed.org/news/12009822/stanford-ai-model-helps-locate-racist-deeds-in-santa-clara-county"
+            },
+            {
+                "outlet": "KTVU FOX 2",
+                "url": "https://www.ktvu.com/video/1557188"
+            },
+            {
+                "outlet": "Stanford Daily",
+                "url": "https://stanforddaily.com/2024/11/04/stanford-map-racial-covenants-santa-clara-county/"
+            }
+        ]
+    },
+    {
         "title": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
         "pdf": "https://arxiv.org/abs/2310.03693",
         "authors": [
