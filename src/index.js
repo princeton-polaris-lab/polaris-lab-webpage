@@ -15,13 +15,14 @@ import People from "./people/people.jsx";
 import Publications from "./publications/publications.jsx";
 import About from './about/about.jsx';
 import Teaching from './teaching/teaching.jsx';
+import Blog from './blog/blog.jsx';
+import AISafetyLegalSystems from './blog/posts/ai-safety-legal-systems.jsx';
 
 const router = createHashRouter([
   {
-    basename: '/skyien-z.github.io',
+    basename: '/',
     path: "/",
     element: <App/>,
-    // TODO errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
@@ -46,6 +47,14 @@ const router = createHashRouter([
       {
         path: "teaching",
         element: <Teaching/>
+      },
+      {
+        path: "blog",
+        element: <Blog/>
+      },
+      {
+        path: "blog/ai-safety-legal-systems",
+        element: <AISafetyLegalSystems/>
       }
     ]
   },

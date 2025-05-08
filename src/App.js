@@ -155,12 +155,14 @@ function Header() {
     //     ],
     //   },
     // },
+    { title: "Publications", path: "/publications" },
     { title: "Teaching", path: "/teaching" },
     // { title: "Datasets", path: "/datasets" },
-    { title: "Publications", path: "/publications" },
     { title: "People", path: "/people" },
-    { title: "About", path: "/about" },
     { title: "Press", path: "/press" },
+    { title: "Newsletter", path: "https://substack.com/@ailawpolicy", external: true },
+    { title: "Blog", path: "/blog" },
+    { title: "About", path: "/about" }
   ];
 
   const toggleExpandedHeader = (item) => {
@@ -217,13 +219,25 @@ function Header() {
                     <ChevronDownIcon flipped={expandedHeader === item.title} />
                   </button>
                 ) : (
-                  <Link
-                    to={item.path}
-                    className="nav-link"
-                    onClick={handleNavItemClick}
-                  >
-                    {item.title}
-                  </Link>
+                  item.external ? (
+                    <a
+                      href={item.path}
+                      className="nav-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleNavItemClick}
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.path}
+                      className="nav-link"
+                      onClick={handleNavItemClick}
+                    >
+                      {item.title}
+                    </Link>
+                  )
                 )}
               </div>
             ))}

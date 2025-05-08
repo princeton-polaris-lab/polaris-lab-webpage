@@ -15,7 +15,7 @@ const carouselItems = [
         robotImage: require("./robot_images/polaris_bot.png")
     },
     {
-        title: "You can find our work covered in media and cited by policymakers.",
+        title: "You can find work by the covered in media and cited by policymakers.",
         type: 'media',
         logos: [
             {

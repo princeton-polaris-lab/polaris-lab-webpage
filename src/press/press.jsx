@@ -35,13 +35,27 @@ const limitTextToNWords = (text, N) => {
   return text.split(/\s+/).slice(0, N).join(" ")
 }
 function ArticleCard( {article} ) {
+  console.log('Article data:', article);
+  console.log('Image path:', article.top_image_relative_path);
+  
+  let imageSrc;
+  try {
+    imageSrc = require("./press/" + article.top_image_relative_path);
+    console.log('Successfully loaded image:', imageSrc);
+  } catch (error) {
+    console.error('Failed to load image:', error);
+    imageSrc = null;
+  }
+
   return (
     <div className="article-card">
       <div className="article-card-content">
-        <img 
-          className="article-image"
-          src={require("./press/" + article.top_image_relative_path)}
-          alt={"Top image from press article " + article.title}/>
+        {imageSrc && (
+          <img 
+            className="article-image"
+            src={imageSrc}
+            alt={"Top image from press article " + article.title}/>
+        )}
         <div className="article-card-text">
           <h2>
             <a href={article.original_url} target="_blank" rel="noreferrer">
