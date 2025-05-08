@@ -50,10 +50,6 @@ const router = createHashRouter([
       {
         path: "blog",
         element: <Blog/>
-      },
-      {
-        path: "blog/ai-safety-legal-systems",
-        element: <AISafetyLegalSystems/>
       }
     ]
   },
