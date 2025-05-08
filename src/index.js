@@ -16,7 +16,6 @@ import Publications from "./publications/publications.jsx";
 import About from './about/about.jsx';
 import Teaching from './teaching/teaching.jsx';
 import Blog from './blog/blog.jsx';
-import AISafetyLegalSystems from './blog/posts/ai-safety-legal-systems.jsx';
 
 const router = createHashRouter([
   {
