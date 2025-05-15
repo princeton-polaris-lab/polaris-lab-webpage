@@ -162,6 +162,7 @@ function Header() {
     { title: "Press", path: "/press" },
     { title: "Newsletter", path: "https://substack.com/@ailawpolicy", external: true },
     { title: "Blog", path: "/blog" },
+    { title: "AI Law Tracker", path: "/ai-law-tracker.html", external: true },
     { title: "About", path: "/about" }
   ];
 

@@ -130,6 +130,10 @@
             {
                 "outlet": "Outstanding Paper Award at ICLR 2025",
                 "url": "https://blog.iclr.cc/2025/04/22/announcing-the-outstanding-paper-awards-at-iclr-2025/"
+            },
+            {
+                "outlet": "2025 Stanford AI Index Report Featured Research",
+                "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report"
             }
         ],
         "tags": [
@@ -234,7 +238,7 @@
         "abstract": "The widespread deployment of general-purpose AI (GPAI) systems introduces significant new risks. Yet the infrastructure, practices, and norms for reporting flaws in GPAI systems remain seriously underdeveloped, lagging far behind more established fields like software security. Based on a collaboration between experts from the fields of software security, machine learning, law, social science, and policy, we identify key gaps in the evaluation and reporting of flaws in GPAI systems. We call for three interventions to advance system safety. First, we propose using standardized AI flaw reports and rules of engagement for researchers in order to ease the process of submitting, reproducing, and triaging flaws in GPAI systems. Second, we propose GPAI system providers adopt broadly-scoped flaw disclosure programs, borrowing from bug bounties, with legal safe harbors to protect researchers. Third, we advocate for the development of improved infrastructure to coordinate distribution of flaw reports across the many stakeholders who may be impacted. These interventions are increasingly urgent, as evidenced by the prevalence of jailbreaks and other flaws that can transfer across different providers' GPAI systems. By promoting robust reporting and coordination in the AI ecosystem, these proposals could significantly improve the safety, security, and accountability of GPAI systems.",
         "published": "2025-03-21T00:00:00Z",
         "updated": "2025-03-21T00:00:00Z",
-        "publication_venue": "arXiv preprint",
+        "publication_venue": "International Conference on Machine Learning",
         "code": "",
         "site": "",
         "comments": "",
@@ -302,7 +306,7 @@
         "abstract": "We employ model pruning to examine how LLMs conceptualize racial biases, and whether a generalizable mitigation strategy for such biases appears feasible. Our analysis yields several novel insights. We find that pruning can be an effective method to reduce bias without significantly increasing anomalous model behavior. Neuron-based pruning strategies generally yield better results than approaches pruning entire attention heads. However, our results also show that the effectiveness of either approach quickly deteriorates as pruning strategies become more generalized. For instance, a model that is trained on removing racial biases in the context of financial decision-making poorly generalizes to biases in commercial transactions. Overall, our analysis suggests that racial biases are only partially represented as a general concept within language models. The other part of these biases is highly context-specific, suggesting that generalizable mitigation strategies may be of limited effectiveness. Our findings have important implications for legal frameworks surrounding AI. In particular, they suggest that an effective mitigation strategy should include the allocation of legal responsibility on those that deploy models in a specific use case.",
         "published": "2025-02-20T00:00:00Z",
         "updated": "2025-02-20T00:00:00Z",
-        "publication_venue": "arXiv",
+        "publication_venue": "ACM Conference on Fairness, Accountability, and Transparency",
         "code": "",
         "site": "",
         "image": "1422ec4c-2101-434f-a24f-3d7919d8bbb8.png",
@@ -1088,6 +1092,10 @@
             {
                 "outlet": "Bipartisan House Task Force Report on AI",
                 "url": "https://www.speaker.gov/wp-content/uploads/2024/12/AI-Task-Force-Report-FINAL.pdf"
+            },
+            {
+                "outlet": "U.S. Copyright Office Report on Copyright and Artificial Intelligence (Part 3)",
+                "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf#page=65.09"
             }
         ],
         "comments": "",
@@ -1148,6 +1156,10 @@
             {
                 "outlet": "Sy Damle Congressional Testimony",
                 "url": "https://docs.house.gov/meetings/JU/JU03/20230517/115951/HHRG-118-JU03-Wstate-DamleS-20230517.pdf"
+            },
+            {
+                "outlet": "U.S. Copyright Office Report on Copyright and Artificial Intelligence (Part 3)",
+                "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf#page=65.09"
             }
         ],
         "tags": [
