@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Law Tracker</title>
+  <!-- TailwindCSS 2.x (matching original styling utilities) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <style>
+    /* ---------------- DARK THEME + ORIGINAL LOOK ---------------- */
+    body{background-color:#1a1a1a;color:#fff;font-family:Inter,system-ui,Helvetica,Arial,sans-serif;}
+    .header-bg{background-color:#1a1a1a;}
+    .nav-bg{background-color:#1a1a1a;border-top:1px solid #333;border-bottom:1px solid #333;}
+    /* cards */
+    .card{background-color:#1a1a1a;border:1px solid #333;transition:all .3s ease;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,.3),0 4px 6px -2px rgba(0,0,0,.2);}
+    /* table striping */
+    tbody tr:nth-child(odd){background-color:#202020;}
+    /* nav active */
+    .tab-active{color:#3B82F6!important;}
+    .tab-active svg{color:#3B82F6!important;}
+    /* util */
+    .hidden{display:none;}
+  </style>
+</head>
+<body>
+
+
+  <!-- ═════ HEADER ═════ -->
+  <header class="header-bg">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <h1 class="ml-3 text-2xl font-bold tracking-tight">AI Law Tracker</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═════ CATEGORY NAV ═════ -->
+  <nav class="nav-bg">
+    <div class="container mx-auto px-4">
+      <div class="flex overflow-x-auto whitespace-nowrap py-3">
+        <a href="#" data-category="latest" class="nav-link flex items-center px-4 py-1 tab-active" onclick="filterCases('latest');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+        </svg>
+          <span class="font-medium">Latest</span></a>
+        <a href="#" data-category="hallucinations" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('hallucinations');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+        </svg>
+          <span class="font-medium">Hallucinations by AI in Court</span></a>
+        <!-- <a href="#" data-category="copyright" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('copyright');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+        </svg>
+                <span class="font-medium">Copyright</span></a>
+        <a href="#" data-category="liability" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('liability');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd" />
+        </svg>          <span class="font-medium">Liability</span></a>
+        <a href="#" data-category="first-amendment" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('first-amendment');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
+        </svg>
+<span class="font-medium">First Amendment</span></a> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═════ PAGE BODY ═════ -->
+  <main class="container mx-auto px-4 py-6">
+    <!-- Latest cards populated here -->
+    <section id="latest-section" class="mb-8 category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">Latest Developments</h2>
+      <div id="latest-cards" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </section>
+  
+    <!-- Hallucination table -->
+    <section id="hallucinations-section" class="hidden category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Hallucination Cases Tracker</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-700">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left">Case</th>
+              <th class="px-4 py-2 text-left">Court</th>
+              <th class="px-4 py-2 text-left">Filer</th>
+              <th class="px-4 py-2 text-left">Outcome</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Links</th>
+            </tr>
+          </thead>
+          <tbody id="hallucination-body" class="divide-y divide-gray-800"></tbody>
+        </table>
+      </div>
+    </section>
+  
+    <!-- Copyright -->
+    <section id="copyright-section" class="hidden category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">Generative AI Copyright Litigation</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-700">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left">Case</th>
+              <th class="px-4 py-2 text-left">Court</th>
+              <th class="px-4 py-2 text-left">Status</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Links</th>
+            </tr>
+          </thead>
+          <tbody id="copyright-body" class="divide-y divide-gray-800"></tbody>
+        </table>
+      </div>
+    </section>
+  
+    <!-- Liability -->
+    <section id="liability-section" class="hidden category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Liability & Defamation</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-700">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left">Case</th>
+              <th class="px-4 py-2 text-left">Court</th>
+              <th class="px-4 py-2 text-left">Status</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Links</th>
+            </tr>
+          </thead>
+          <tbody id="liability-body" class="divide-y divide-gray-800"></tbody>
+        </table>
+      </div>
+    </section>
+  
+    <!-- First Amendment -->
+    <section id="first-amendment-section" class="hidden category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI & First Amendment Challenges</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-700">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left">Case</th>
+              <th class="px-4 py-2 text-left">Court</th>
+              <th class="px-4 py-2 text-left">Status</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Links</th>
+            </tr>
+          </thead>
+          <tbody id="first-body" class="divide-y divide-gray-800"></tbody>
+        </table>
+      </div>
+    </section>
+  
+
+  </main>
+  <footer class="w-full mt-8">
+    <div class="container mx-auto px-4 py-2 text-sm text-gray-400">
+      <p>© 2024 Peter Henderson. All rights reserved.</p>
+      <p class="mt-1">Note: This tracker was created with the assistance of AI. While the content has been human-validated and edited, there may still be inaccuracies or omissions. Please verify any information before relying on it.</p>
+    </div>
+  </footer>
+
+
+<script>
+/* -------------------- DATA -------------------- */
+/*  AI-Hallucination / Ghost-Citation cases  */
+const hallucinationCases = [
+  {
+    name: "Concord Music Group, Inc., et al. v. Anthropic PBC, No. 5:24-cv-03811-EKL (N.D. Cal.)",
+    court: "N.D. Cal.",
+    state: "CA",
+    filer: "Music Publishers",
+    judge: "District Judge Eumi K. Lee; Magistrate Judge Susan van Keulen",
+    date: "2025-05-13",
+    outcome: "Pending",
+    outcomeClass: "pending",
+    desc: "Publishers allege Claude infringes song-lyric copyrights. Plaintiffs moved to strike an Anthropic data-scientist declaration after discovering a potential hallucinated citation; the dispute is ongoing.",
+    links: {
+      Docket: "https://www.courtlistener.com/docket/68889092/concord-music-group-inc-v-anthropic-pbc/",
+      Filing: "https://chatgptiseatingtheworld.com/wp-content/uploads/2025/05/Olivia-Chen-sampling-protocol.pdf",
+      Coverage: "https://www.reuters.com/legal/litigation/anthropic-expert-accused-using-ai-fabricated-source-copyright-case-2025-05-13/"
+    }
+  },
+  {
+    name: "Lacey v. State Farm Gen. Ins. Co., No. 2:24-cv-05205-FMO-MAA (C.D. Cal.)",
+    court: "C.D. Cal.",
+    state: "CA",
+    filer: "Lawyers",
+    judge: "Special Master Hon. Michael R. Wilner (Ret.); District Judge Fernando M. Olguin",
+    date: "2025-05-06",
+    outcome: "Fee-shifting Sanction $31,100 + briefs stricken",
+    outcomeClass: "sanction",
+    desc: "Plaintiffs' 10-page brief contained nine bogus authorities. Judge Wilner struck the briefs and ordered both plaintiff firms to reimburse State Farm $31,100 in special-master and defense fees.",
+    links: {
+      Order: "https://storage.courtlistener.com/recap/gov.uscourts.cacd.930490/gov.uscourts.cacd.930490.119.0.pdf"
+    }
+  },
+  {
+    name: "Mata v. Avianca, Inc., 678 F. Supp. 3d 443 (S.D.N.Y. 2023)",
+    court: "S.D.N.Y.",
+    state: "NY",
+    filer: "Lawyers",
+    judge: "District Judge P. Kevin Castel",
+    date: "2023-06-22",
+    outcome: "$5,000 Sanction + CLE",
+    outcomeClass: "sanction",
+    desc: "Opposition brief cited fictitious court opinions generated by ChatGPT; court fined counsel $5 k, required CLE on AI ethics, and ordered service of the order on affected judges who were attributed to the fictitious cases.",
+    links: {
+      Order: "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/55/",
+      Coverage: "https://www.reuters.com/legal/new-york-lawyers-sanctioned-using-fake-chatgpt-cases-legal-brief-2023-06-22/"
+    }
+  },
+  {
+    name: "Gauthier v. Goodyear Tire & Rubber Co., 2024 WL 4882651 (E.D. Tex. Nov. 25 2024)",
+    court: "E.D. Tex.",
+    state: "TX",
+    filer: "Lawyer",
+    judge: "District Judge Marcia A. Crone",
+    date: "2024-11-25",
+    outcome: "$2,000 Sanction + AI-ethics CLE",
+    outcomeClass: "sanction",
+    desc: "Plaintiff's response brief quoted two nonexistent cases and mis-quoted seven more; court fined counsel $2 k and ordered a generative-AI CLE.",
+    links: {
+      Order: "https://www.courthousenews.com/wp-content/uploads/2024/11/attorney-sanctioned-for-using-ai-hallucinations.pdf",
+      Coverage: "https://www.reuters.com/legal/government/texas-lawyer-fined-ai-use-latest-sanction-over-fake-citations-2024-11-26/"
+    }
+  },
+  {
+    name: "Kruse v. Karlen, 692 S.W.3d 43 (Mo. Ct. App. E.D. 2024)",
+    court: "Mo. Ct. App.",
+    state: "MO",
+    filer: "Pro se",
+    judge: "Judge Kurt S. Odenwald (panel with Judges Gardner & Hardin-Tammons)",
+    date: "2024-02-13",
+    outcome: "Appeal Dismissed + $10,000",
+    outcomeClass: "sanction",
+    desc: "Pro-se appellant's brief used 22 fabricated authorities; court dismissed the appeal as frivolous and awarded $10 k damages to respondent.",
+    links: {
+      Opinion: "https://www.courts.mo.gov/file.jsp?id=205455",
+      Coverage: "https://reason.com/volokh/2024/02/14/14th-court-case-ive-seen-in-which-ai-hallucinated-citations-appeared/"
+    }
+  },
+  {
+    name: "Wadsworth v. Walmart Inc., 2025 WL 608073 (D. Wyo. Feb. 24 2025)",
+    court: "D. Wyo.",
+    state: "WY",
+    filer: "Lawyers",
+    judge: "Chief District Judge Kelly H. Rankin",
+    date: "2025-02-24",
+    outcome: "$5,000 Sanction ( $3 k lead; $1 k each other two ) + pro-hac vice revoked",
+    outcomeClass: "sanction",
+    desc: "Eight of nine cases in plaintiffs' motions in limine were fake; court fined counsel and revoked the lead lawyer's pro-hac vice status.",
+    links: {
+      Order: "https://news.justia.com/wp-content/uploads/2025/02/Order-on-Sanctions-in-Wadsworth-v.-Walmart-Inc-et-al.pdf",
+      Coverage: "https://www.reuters.com/legal/government/judge-fines-lawyers-walmart-lawsuit-over-fake-ai-generated-cases-2025-02-25/"
+    }
+  },
+  {
+    name: "Kohls v. Ellison, No. 0:24-cv-03754-LMP-DLM (D. Minn. Jan. 10 2025)",
+    court: "D. Minn.",
+    state: "MN",
+    filer: "State expert",
+    judge: "District Judge Laura M. Provinzino",
+    date: "2025-01-10",
+    outcome: "Expert Declaration Stricken",
+    outcomeClass: "evidence",
+    desc: "Professor's declaration relied on AI-generated journal citations; the court excluded his testimony and struck the declaration.",
+    links: {
+      Order: "https://storage.courtlistener.com/recap/gov.uscourts.mnd.220348/gov.uscourts.mnd.220348.46.0.pdf",
+      Coverage: "https://www.reuters.com/legal/government/judge-rebukes-minnesota-over-ai-errors-deepfakes-lawsuit-2025-01-13/"
+    }
+  },
+  {
+    name: "United States v. Hayes, 2025 WL 235531 (E.D. Cal. Jan. 17 2025)",
+    court: "E.D. Cal.",
+    state: "CA",
+    filer: "Defense Counsel",
+    judge: "District Judge Daniel J. Calabretta",
+    date: "2025-01-17",
+    outcome: "$1,500 Sanction",
+    outcomeClass: "sanction",
+    desc: "Motion to unseal relied on a fictitious precedent; court fined appointed counsel $1,500 and ordered the order served on bar authorities and all judges in the district.",
+    links: {
+      Order: "https://www.courtlistener.com/docket/69248764/62/united-states-v-hayes/",
+      Coverage: "https://www.fd.org/news/court-sanctions-defense-attorney-whose-brief-cited-nonexistent-case"
+    }
+  },
+  {
+    name: "Nguyen v. Savage Enters., 2025 WL 679024 (E.D. Ark. Mar. 3 2025)",
+    court: "E.D. Ark.",
+    state: "AR",
+    filer: "Lawyer",
+    judge: "District Judge Brian S. Miller",
+    date: "2025-03-03",
+    outcome: "$1,000 Sanction",
+    outcomeClass: "sanction",
+    desc: "Opposition brief cited four non-existent cases; court imposed a $1,000 Rule 11 sanction and warned counsel about future AI use.",
+    links: {
+      Order: "https://www.courtlistener.com/docket/69194097/nguyen-v-savage-enterprises/",
+      Coverage: "https://library.law.uic.edu/news-stories/siren-songs-of-ai-a-legal-briefing-dilemma/"
+    }
+  },
+  {
+    name: "Mid Central Operating Eng'rs Health & Welfare Fund v. Hoosiervac LLC, 2025 U.S. Dist. LEXIS 31073 (S.D. Ind. Feb. 21 2025)",
+    court: "S.D. Ind.",
+    state: "IN",
+    filer: "Lawyer",
+    judge: "Magistrate Judge Mark J. Dinsmore",
+    date: "2025-02-21",
+    outcome: "$15,000 Sanction Recommended",
+    outcomeClass: "recommendation",
+    desc: "After three briefs containing AI-fabricated cases, the magistrate recommended a $15 k Rule 11 sanction and referral for discipline.",
+    links: {
+      Report: "https://cases.justia.com/federal/district-courts/indiana/insdce/2:2024cv00326/215482/99/0.pdf",
+      Coverage: "https://www.lawnext.com/2024/02/not-again-two-more-cases-just-this-week-of-hallucinated-citations-in-court-filings-leading-to-sanctions.html"
+    }
+  }
+];
+
+
+
+/* ─────────────────────────── COPYRIGHT / TRAINING ─────────────────────────── */
+const copyrightCases = [
+  // /* ───────── N.D. CALIFORNIA (20) ───────── */
+  // {
+  //   "name": "Bartz v. Anthropic PBC, No. 3:24-cv-05417",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-10-23",
+  //   "desc": "Authors allege Anthropic downloaded pirated copies of hundreds of thousands of books—including theirs—made unlicensed copies, and used them to train the Claude family of large-language models.",
+  //   "judge": "William Alsup",
+  //   "plaintiffsAttorneys": ["Justin Nelson – Susman Godfrey"],
+  //   "defendantsAttorneys": ["Angel T. Nakamura – Arnold & Porter"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.434709/gov.uscourts.cand.434709.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Millette v. OpenAI Inc., No. 5:24-cv-04710",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-08-20",
+  //   "desc": "YouTube creator says OpenAI covertly transcribed millions of YouTube videos (including his) and fed the transcripts into ChatGPT’s training corpus without consent.",
+  //   "judge": "Edward John Davila",
+  //   "plaintiffsAttorneys": ["L. Timothy Fisher – Bursor & Fisher"],
+  //   "defendantsAttorneys": ["Andrew Gass – Latham & Watkins"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69012680/millette-v-openai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433675/gov.uscourts.cand.433675.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Millette v. Google LLC, No. 5:24-cv-04708",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-08-02",
+  //   "desc": "Companion suit alleging Google scraped and transcribed YouTube videos to train and fine-tune its Gemini LLMs, again without creators’ permission. Dismissed voluntarily.",
+  //   "judge": "Edward John Davila",
+  //   "plaintiffsAttorneys": ["L. Timothy Fisher – Bursor & Fisher"],
+  //   "defendantsAttorneys": ["Benedict Hur – Willkie Farr"],
+  //   "outcome": "Dismissed",
+  //   "outcomeClass": "dismissed",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69012654/millette-v-google-llc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.433672/gov.uscourts.cand.433672.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Millette v. NVIDIA Corp., No. 5:24-cv-05157",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-09-23",
+  //   "desc": "Plaintiff makes the same YouTube claims against NVIDIA, contending the company used the material to train its Cosmos world model.",
+  //   "judge": "Edward John Davila",
+  //   "plaintiffsAttorneys": ["L. Timothy Fisher – Bursor & Fisher"],
+  //   "defendantsAttorneys": ["Sean S. Pak – Quinn Emanuel"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69045427/millette-v-nvidia-corporation/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.434387/gov.uscourts.cand.434387.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Concord Music Group Inc. v. Anthropic PBC, No. 3:24-cv-03811",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-06-26",
+  //   "desc": "Major publishers allege Claude reproduces hundreds of song lyrics.",
+  //   "judge": "Eumi K. Lee",
+  //   "plaintiffsAttorneys": ["Steven A. Riley – Riley & Jacobson"],
+  //   "defendantsAttorneys": ["Allison L. Stillman – Latham & Watkins"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68889092/concord-music-group-inc-v-anthropic-pbc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.431519/gov.uscourts.cand.431519.1.0_1.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "In Re Mosaic LLM Litigation (3:24-cv-01451)",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-03-08",
+  //   "desc": "Authors allege MosaicML trained on books3 corpus without license for MPT models.",
+  //   "judge": "Charles R. Breyer",
+  //   "plaintiffsAttorneys": ["Joseph R. Saveri – Saveri Law Firm"],
+  //   "defendantsAttorneys": ["Jed Wakefield – Fenwick & West"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68325564/onan-v-databricks-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.426188/gov.uscourts.cand.426188.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Makkai v. Databricks Inc., No. 3:24-cv-02653",
+  //   "court": "N.D. Cal.",
+  //   "date": "2024-04-25",
+  //   "desc": "Authors allege MosaicML trained on books3 corpus without license for MPT models.",
+  //   "judge": "Charles Breyer",
+  //   "plaintiffsAttorneys": ["Brian O'Mara – DiCello Levitt"],
+  //   "defendantsAttorneys": ["Jed Wakefield – Fenwick & West"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68497293/makkai-v-databricks-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.430747/gov.uscourts.cand.430747.1.0.pdf"
+  //   }
+  // },
+  // // PH: validated until here... Current validations: https://chatgpt.com/c/68264581-5054-800d-8748-d4ba0c1bb52b
+  // // https://chatgpt.com/c/682645b0-3df0-800d-b83e-e838fa622988
+  // {
+  //   "name": "Nazemian et al. v. NVIDIA Corp., No. 4:24-cv-01454-JST",
+  //   "court": "U.S. District Court, N.D. Cal. (Oakland Div.)",
+  //   "dateFiled": "2024-03-08",
+  //   "desc": "Authors Abdi Nazemian, Brian Keene, and Stewart O’Nan allege NVIDIA trained its NeMo Megatron LLM on the Books3 shadow-library corpus that contains their copyrighted books, violating 17 U.S.C. §501.",
+  //   "judge": "Hon. Jon S. Tigar",
+  //   "plaintiffsAttorneys": [
+  //     "Joseph R. Saveri – Joseph Saveri Law Firm LLP",
+  //     "Matthew Butterick – Joseph Saveri Law Firm LLP",
+  //     "Brian D. Clark – Lockridge Grindal Nauen P.L.L.P.",
+  //     "Arielle S. Wagner – Lockridge Grindal Nauen P.L.L.P."
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Trenton H. Norris – Hogan Lovells US LLP",
+  //     "Andrew H. Schapiro – Quinn Emanuel Urquhart & Sullivan LLP"
+  //   ],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://dockets.justia.com/docket/california/candce/4:2024cv01454/426191",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.426191/gov.uscourts.cand.426191.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Dubus et al. v. NVIDIA Corp., No. 4:24-cv-02655-JST",
+  //   "court": "U.S. District Court, N.D. Cal. (Oakland Div.)",
+  //   "dateFiled": "2024-05-02",
+  //   "desc": "Andre Dubus III and Susan Orlean allege their books were copied to train NVIDIA’s NeMo Megatron models, infringing their copyrights, in a putative class action related to Nazemian.",
+  //   "judge": "Hon. Jon S. Tigar",
+  //   "plaintiffsAttorneys": [
+  //     "Brian O. O'Mara – DiCello Levitt LLP",
+  //     "Joseph R. Saveri – Joseph Saveri Law Firm LLP",
+  //     "Amy E. Keller – DiCello Levitt LLP"
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Sean S. Pak – Quinn Emanuel Urquhart & Sullivan LLP",
+  //     "Alexander B. Spiro – Quinn Emanuel Urquhart & Sullivan LLP",
+  //     "Andrew H. Schapiro – Quinn Emanuel Urquhart & Sullivan LLP"
+  //   ],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://dockets.justia.com/docket/california/candce/4:2024cv02655/428992",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.428992/gov.uscourts.cand.428992.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Kadrey v. Meta Platforms Inc., No. 3:23-cv-03417 (consol.)",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-07-07",
+  //   "desc": "Authors say Meta's LLamA models were trained on Books3 corpus.",
+  //   "judge": "Vince Chhabria",
+  //   "plaintiffsAttorneys": ["David Boies – Boies Schiller"],
+  //   "defendantsAttorneys": ["Bobby A. Ghajar – Cooley"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67759715/kadrey-v-meta-platforms-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.415354/gov.uscourts.cand.415354.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Chabon v. Meta Platforms Inc., No. 3:23-cv-04663",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-09-11",
+  //   "desc": "Children's-book author sues Meta over alleged copying of illustrated works in LLaMA.",
+  //   "judge": "Vince Chhabria",
+  //   "plaintiffsAttorneys": ["Daniel J. Muller – Ventura Hersey & Muller"],
+  //   "defendantsAttorneys": ["Bobby A. Ghajar – Cooley"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68616686/chabon-v-meta-platforms-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.418395/gov.uscourts.cand.418395.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Huckabee v. Meta Platforms Inc., No. 3:23-cv-06663",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-12-27",
+  //   "desc": "Cookbook writer alleges Meta scraped her recipes for LLaMA-Chef variant.",
+  //   "judge": "Vince Chhabria",
+  //   "plaintiffsAttorneys": ["Joseph R. Saveri – Saveri Law Firm"],
+  //   "defendantsAttorneys": ["Bobby A. Ghajar – Cooley"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68754828/huckabee-v-meta-platforms-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.420555/gov.uscourts.cand.420555.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Farnsworth v. Meta Platforms, Inc., No. 3:24-cv-06893",
+  //   "court": "U.S. District Court, N.D. Cal.",
+  //   "date": "2024-10-01",
+  //   "desc": "Novelist Christopher Farnsworth’s proposed class action accuses Meta of copying hundreds of thousands of books to train its Llama large-language-model family.",
+  //   "judge": "Araceli Martínez-Olguín (related to Judge Vince Chhabria by order of Oct. 4 2024)",
+  //   "plaintiffsAttorneys": [
+  //     "Elizabeth J. Cabraser – Lieff Cabraser Heimann & Bernstein",
+  //     "Daniel M. Hutchinson – Lieff Cabraser Heimann & Bernstein",
+  //     "Reilly T. Stoler – Lieff Cabraser Heimann & Bernstein",
+  //     "Scott J. Sholder – Cowan DeBaets Abrahams & Sheppard",
+  //     "CeCe M. Cole – Cowan DeBaets Abrahams & Sheppard"
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Bobby A. Ghajar – Cooley",
+  //     "Kathleen R. Hartnett – Cooley",
+  //     "Mark Weinstein – Cooley"
+  //   ],
+  //   "outcome": "Active; Meta’s motion to consolidate with Kadrey v. Meta argued Oct. 2024, discovery ongoing.",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69217445/farnsworth-v-meta-platforms-inc/",
+  //     "Complaint": "https://chatgptiseatingtheworld.com/wp-content/uploads/2024/10/Farnsworth-v-Meta-Platforms-COMPLAINT-Oct-2-2024.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "In re OpenAI ChatGPT Litigation (lead: Tremblay v. OpenAI, No. 3:23-cv-03223)",
+  //   "court": "Transferred April 3 2025 to S.D.N.Y.; originally U.S. District Court, N.D. Cal.",
+  //   "date": "2023-06-28",
+  //   "desc": "Consolidated copyright class action by authors alleging OpenAI used their books, articles and computer code to train ChatGPT without permission.",
+  //   "judge": "Araceli Martínez-Olguín (N.D. Cal.); MDL now before Judge Sidney Stein (S.D.N.Y.)",
+  //   "plaintiffsAttorneys": [
+  //     "Joseph R. Saveri – Joseph Saveri Law Firm",
+  //     "Matthew Butterick – Butterick Law",
+  //     "Bryan L. Clobes – Cafferty Clobes Meriweather & Sprengel"
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Allison L. Stillman – Latham & Watkins",
+  //     "Joseph R. Wetzel – Latham & Watkins"
+  //   ],
+  //   "outcome": "Partially dismissed Feb. 12 2024 (most state-law and vicarious-infringement counts); case centralized in Manhattan by JPML on Apr. 3 2025, with pre-trial proceedings now in MDL No. 3143.",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67538258/tremblay-v-openai-inc/",
+  //     "FirstConsolidatedComplaint": "https://insideaipolicy.com/sites/insideaipolicy.com/files/documents/2024/sep/ai09062024.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Silverman v. OpenAI, Inc., No. 3:23-cv-03416 (member case)",
+  //   "court": "U.S. District Court, N.D. Cal. (consolidated into In re OpenAI ChatGPT Litigation)",
+  //   "date": "2023-07-07",
+  //   "desc": "Comedian-author Sarah Silverman and co-authors Richard Kadrey and Christopher Golden allege ChatGPT trained on/reproduces their books verbatim, infringing copyright.",
+  //   "judge": "Araceli Martínez-Olguín",
+  //   "plaintiffsAttorneys": [
+  //     "Joseph R. Saveri – Joseph Saveri Law Firm",
+  //     "Matthew Butterick – Butterick Law"
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Allison L. Stillman – Latham & Watkins"
+  //   ],
+  //   "outcome": "Key claims trimmed Feb. 12 2024 but core direct-infringement count remains; now part of MDL proceedings in S.D.N.Y.",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67569254/silverman-v-openai-inc/",
+  //     "Complaint": "https://www.courthousenews.com/wp-content/uploads/2023/12/silverman-v-openai-complaint.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Chabon v. OpenAI, Inc., No. 3:23-cv-04625 (member case)",
+  //   "court": "U.S. District Court, N.D. Cal. (consolidated into In re OpenAI ChatGPT Litigation)",
+  //   "date": "2023-09-08",
+  //   "desc": "Michael Chabon and other authors claim OpenAI copied their books to train ChatGPT, violating the Copyright Act.",
+  //   "judge": "Araceli Martínez-Olguín",
+  //   "plaintiffsAttorneys": [
+  //     "Daniel J. Muller – Ventura Hersey & Muller",
+  //     "David A. Straite – DiCello Levitt"
+  //   ],
+  //   "defendantsAttorneys": [
+  //     "Allison L. Stillman – Latham & Watkins"
+  //   ],
+  //   "outcome": "Consolidated with Tremblay and Silverman; direct-infringement claim survives, case now in S.D.N.Y. MDL.",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67778017/chabon-v-openai-inc/",
+  //     "Complaint": "https://www.documentcloud.org/documents/23972952-chabon-v-openai-complaint"
+  //   }
+  // },
+  // {
+  //   "name": "Andersen v. Stability AI Ltd., No. 3:23-cv-00201",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-01-13",
+  //   "desc": "Illustrators assert Stable Diffusion copied billions of images (incl. their works).",
+  //   "judge": "William H. Orrick",
+  //   "plaintiffsAttorneys": ["Joseph R. Saveri – Saveri Law Firm"],
+  //   "defendantsAttorneys": ["Mark Lemley – Lex Lumina"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/66827321/andersen-v-stability-ai-ltd/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.407208/gov.uscourts.cand.407208.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Doe v. GitHub Inc. (Code AI), No. 4:22-cv-06823",
+  //   "court": "N.D. Cal.",
+  //   "date": "2022-11-03",
+  //   "desc": "Developers claim Copilot trains on their GPL code without honoring licenses.",
+  //   "judge": "Jon S. Tigar",
+  //   "plaintiffsAttorneys": ["Matthew Butterick – Butterick Law"],
+  //   "defendantsAttorneys": ["Alyssa Caridis – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/66535066/doe-v-github-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.402172/gov.uscourts.cand.402172.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "J.L. v. Alphabet Inc., No. 3:23-cv-03440",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-07-06",
+  //   "desc": "Consumers allege Google's AI scraped private data, books, images and code.",
+  //   "judge": "Eumi K. Lee",
+  //   "plaintiffsAttorneys": ["Ryan Clarkson – Clarkson Law"],
+  //   "defendantsAttorneys": ["David H. Kramer – Wilson Sonsini"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67804652/jl-v-alphabet-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.415732/gov.uscourts.cand.415732.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Zhang v. Google LLC, No. 3:23-cv-02531",
+  //   "court": "N.D. Cal.",
+  //   "date": "2023-05-23",
+  //   "desc": "Photographer sues Bard/Gemini for using his copyrighted portfolio during training.",
+  //   "judge": "Eumi K. Lee",
+  //   "plaintiffsAttorneys": ["Joseph R. Saveri – Saveri Law Firm"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67592098/zhang-v-google-llc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cand.414235/gov.uscourts.cand.414235.1.0.pdf"
+  //   }
+  // },
+
+  // /* ───────── S.D. NEW YORK (13) ───────── */
+  // {
+  //   "name": "The New York Times Co. v. Microsoft Corp. & OpenAI LP, No. 1:23-cv-11195",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2023-12-27",
+  //   "desc": "NYT seeks billions alleging GPT-4 was trained on its paywalled corpus verbatim.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["Ian Crosby – Susman Godfrey"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68117049/the-new-york-times-company-v-microsoft-corporation/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.630933/gov.uscourts.nysd.630933.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Dow Jones & Co. v. Perplexity AI Inc., No. 1:24-cv-07984",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-09-09",
+  //   "desc": "WSJ publisher says Perplexity regurgitates pay-walled articles wholesale.",
+  //   "judge": "Katherine P. Failla",
+  //   "plaintiffsAttorneys": ["William P. Barr – Torridon Law"],
+  //   "defendantsAttorneys": ["Eugene Y. Mar – Farella Braun"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69270463/dow-jones-company-inc-v-perplexity-ai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.605882/gov.uscourts.nysd.605882.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Lehrman v. Lovo Inc., No. 1:24-cv-03770",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-05-07",
+  //   "desc": "Voice-over artist claims Lovo cloned her protected recordings to train TTS system.",
+  //   "judge": "J. Paul Oetken",
+  //   "plaintiffsAttorneys": ["Steve Cohen – Pollock Cohen"],
+  //   "defendantsAttorneys": ["David E. Case – Rimon PC"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68919991/lehrman-v-lovo-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.638362/gov.uscourts.nysd.638362.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "UMG Recordings v. Uncharted Labs d/b/a Udio, No. 1:24-cv-04777",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-06-12",
+  //   "desc": "Music giants assert Udio's text-to-music model was trained on millions of sound recordings.",
+  //   "judge": "Alvin Hellerstein",
+  //   "plaintiffsAttorneys": ["Moez Kaba – Hueston Hennigan"],
+  //   "defendantsAttorneys": ["Alex Spiro – Quinn Emanuel"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69007066/umg-recordings-inc-v-uncharted-labs-llc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.640392/gov.uscourts.nysd.640392.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Raw Story Media Inc. v. OpenAI Inc., No. 1:24-cv-01514",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-02-14",
+  //   "desc": "Digital newsroom alleges ChatGPT reproduces its paywalled investigative pieces.",
+  //   "judge": "Colleen McMahon",
+  //   "plaintiffsAttorneys": ["Matthew Topic – Loevy & Loevy"],
+  //   "defendantsAttorneys": ["Andrew Gass – Latham & Watkins"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68290709/raw-story-media-inc-v-openai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.633272/gov.uscourts.nysd.633272.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Intercept Media Inc. v. OpenAI Inc. & Microsoft, No. 1:24-cv-01515",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-02-14",
+  //   "desc": "Intercept alleges DMCA-CID removal from training data and verbatim article output.",
+  //   "judge": "Jed S. Rakoff",
+  //   "plaintiffsAttorneys": ["Jonathan Loevy – Loevy & Loevy"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68290710/intercept-media-inc-v-openai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.633273/gov.uscourts.nysd.633273.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Authors Guild v. OpenAI Inc., No. 1:23-cv-08292",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2023-09-19",
+  //   "desc": "Seventeen prominent authors say GPT reproduces their novels nearly verbatim.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["Anna Freymann – Lieff Cabraser"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68050910/authors-guild-v-openai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.605091/gov.uscourts.nysd.605091.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Alter v. OpenAI Inc. & Microsoft, No. 1:23-cv-10211",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2023-11-21",
+  //   "desc": "Non-fiction authors allege GPT trained on their copyrighted investigative books.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["J. Craig Smyser – Susman Godfrey"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68601105/alter-v-openai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.648220/gov.uscourts.nysd.648220.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Basbanes v. Microsoft Corp. & OpenAI, No. 1:24-cv-00084",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-01-04",
+  //   "desc": "Historian Daniel Basbanes alleges GPT trained on his book 'On Paper'.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["Scott J. Sholder – Cowan DeBaets"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68138737/basbanes-v-microsoft-corporation/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.630628/gov.uscourts.nysd.630628.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Daily News LP et al. v. Microsoft & OpenAI, No. 1:24-cv-03285",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-04-29",
+  //   "desc": "Eight local newspapers sue over Bing/Copilot reproducing subscriber-only articles.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["Michael Kanovitz – Loevy & Loevy"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68484432/daily-news-lp-v-microsoft-corporation/",
+  //     "Complaint": "https://www.courthousenews.com/wp-content/uploads/2024/04/newspapers-openAI-suit.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "CIR v. OpenAI Inc. & Microsoft, No. 1:24-cv-04872",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2024-06-05",
+  //   "desc": "Center for Investigative Reporting says ChatGPT outputs verbatim Mother Jones content.",
+  //   "judge": "Sidney H. Stein",
+  //   "plaintiffsAttorneys": ["Matthew Topic – Loevy & Loevy"],
+  //   "defendantsAttorneys": ["Annette Hurst – Orrick"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/68892274/the-center-for-investigative-reporting-inc-v-openai-inc/",
+  //     "Complaint": "https://content.mlex.com/Attachments/2024-09-24_4IDN3145HHBT36Y2/US_DIS_NYSD_1_24cv4872_FIRST_AMENDED_COMPLAINT.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Advance Local Media LLC v. Cohere Inc., No. 1:25-cv-01305",
+  //   "court": "S.D.N.Y.",
+  //   "date": "2025-02-13",
+  //   "desc": "Advance/Condé Nast allege Cohere's large-language model scraped their magazines.",
+  //   "judge": "Colleen McMahon",
+  //   "plaintiffsAttorneys": ["Matthew Oppenheim – Oppenheim + Zebrak"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69636122/advance-local-media-llc-v-cohere-inc/",
+  //     "Complaint": "https://chatgptiseatingtheworld.com/wp-content/uploads/2025/02/Advance-Local-Media-LLC-v.-Cohere-Inc.-Conde-Nast-suit-Feb-13-2025.pdf"
+  //   }
+  // },
+
+  // /* ───────── D. DELAWARE (3) ───────── */
+  // {
+  //   "name": "Thomson Reuters GmbH v. ROSS Intelligence Inc., No. 1:20-cv-00613-SB",
+  //   "court": "D. Del.",
+  //   "date": "2020-05-26",
+  //   "desc": "Reuters accuses ROSS of copying Westlaw headnotes to train legal-research AI.",
+  //   "judge": "Stephanos Bibas",
+  //   "plaintiffsAttorneys": ["Dale Cendali – Kirkland & Ellis"],
+  //   "defendantsAttorneys": ["David E. Moore – Potter Anderson"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/17131648/thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.ded.72172/gov.uscourts.ded.72172.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Getty Images (US) Inc. v. Stability AI Ltd., No. 1:23-cv-00135",
+  //   "court": "D. Del.",
+  //   "date": "2023-02-03",
+  //   "desc": "Alleges Stable Diffusion was trained on 12 million Getty photos and still outputs their watermarks.",
+  //   "judge": "Jennifer L. Hall",
+  //   "plaintiffsAttorneys": ["Tammy L. Mercer – Young Conaway"],
+  //   "defendantsAttorneys": ["Michael J. Flynn – Morris Nichols"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/66788385/getty-images-us-inc-v-stability-ai-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.ded.81407/gov.uscourts.ded.81407.1.0.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "Vacker v. ElevenLabs Inc., No. 1:24-cv-00987",
+  //   "court": "D. Del.",
+  //   "date": "2024-07-12",
+  //   "desc": "Professional narrator says ElevenLabs cloned her voice without consent or license.",
+  //   "judge": "Colm F. Connolly",
+  //   "plaintiffsAttorneys": ["Edward Anderson – Anderson Yeh"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69111793/vacker-v-elevenlabs-inc/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.ded.720987/gov.uscourts.ded.720987.1.0.pdf"
+  //   }
+  // },
+
+  // /* ───────── D. COLORADO (1) ───────── */
+  // {
+  //   "name": "Pierce v. Photobucket Corp., No. 1:24-cv-03432",
+  //   "court": "D. Colo.",
+  //   "date": "2024-12-23",
+  //   "desc": "Photographers accuse Photobucket's new AI-search tool of training on their licensed images.",
+  //   "judge": "N. Reid Neureiter (Mag.)",
+  //   "plaintiffsAttorneys": ["Daniel Twetten – Loevy & Loevy"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69456658/pierce-v-photobucket-corporation/",
+  //     "Complaint": "https://storage.courtlistener.com/recap/gov.uscourts.cod.232771/gov.uscourts.cod.232771.1.0.pdf"
+  //   }
+  // },
+
+  // /* ───────── FOREIGN (3) ───────── */
+  // {
+  //   "name": "Getty Images & ors v. Stability AI Ltd., Claim IL-2023-000007",
+  //   "court": "High Court (Ch) – England & Wales",
+  //   "date": "2023-01-16",
+  //   "desc": "Getty seeks U.K. damages for Stable Diffusion's alleged wholesale copying of its library.",
+  //   "judge": "Mrs Justice Joanna Smith",
+  //   "plaintiffsAttorneys": ["Lindsay Lane KC – Fieldfisher"],
+  //   "defendantsAttorneys": ["Nicholas Saunders KC – Bird & Bird"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.judiciary.uk/judgments/getty-images-and-others-v-stability-ai/",
+  //     "Complaint": "https://www.judiciary.uk/wp-content/uploads/2025/01/Getty-Images-and-others-v-Stability-AI-14.01.25.pdf"
+  //   }
+  // },
+  // {
+  //   "name": "SNE & Associations v. Meta Platforms Inc.",
+  //   "court": "Tribunal judiciaire de Paris",
+  //   "date": "2025-03-12",
+  //   "desc": "French publishers sue Meta, alleging LLaMA trained on millions of French-language books.",
+  //   "judge": "Aude Buresi (3ᵉ chambre)",
+  //   "plaintiffsAttorneys": ["Valérie-Marie Rigaud – Fidal IP-IT"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://techcrunch.com/2025/03/12/meta-faces-publisher-copyright-ai-lawsuit-in-france/",
+  //     "Complaint": "https://www.sne.fr/actu/unis-auteurs-et-editeurs-assignent-meta-pour-imposer-le-respect-du-droit-dauteur-aux-developpeurs-doutils-dintelligence-artificielle-generative/"
+  //   }
+  // },
+  // {
+  //   "name": "Canadian News Media v. OpenAI Inc., CV-24-00012600-00CP",
+  //   "court": "Ontario Superior Ct.",
+  //   "date": "2025-04-08",
+  //   "desc": "Class action by 17 Canadian outlets over alleged scraping of paywalled journalism.",
+  //   "judge": "Paul Perell J.",
+  //   "plaintiffsAttorneys": ["Marcus Kopal – Sotos LLP"],
+  //   "defendantsAttorneys": ["— (not yet appeared)"],
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "links": {
+  //     "Docket": "https://www.canliiconnects.org/en/cases/2025onca260",
+  //     "Complaint": "https://www.thestar.com/content/dam/thestar/business/2025/04/08/canadian-media-sue-openai/statement-of-claim-openai.pdf"
+  //   }
+  // }
+];
+
+/* ─────────────────────────── AI–LIABILITY / TORT & DEFAMATION ─────────────────────────── */
+const liabilityCases = [
+  // {
+  //   "name": "Walters v. OpenAI LLC, No. 23-A-04860-2 (Gwinnett Co. Super. Ct. GA)",
+  //   "court": "Gwinnett Co. Super. Ct. (GA)",
+  //   "claim": "Defamation",
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "date": "2023-06-05",
+  //   "desc": "Radio host sues ChatGPT creator for defamation after bot falsely claimed he embezzled funds.",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/67617826/walters-v-openai-llc/"
+  //   }
+  // },
+  // {
+  //   "name": "Garcia v. Character Techs. Inc., No. 6:24-cv-01903 (M.D. Fla.)",
+  //   "court": "M.D. Fla.",
+  //   "claim": "Wrongful Death, Negligence, Florida's Deceptive and Unfair Trade Practices Act, …",
+  //   "outcome": "Pending",
+  //   "outcomeClass": "pending",
+  //   "date": "2024-10-22",
+  //   "desc": "Family alleges chatbot encouraged teen's suicide; company seeks dismissal, citing First Amendment.",
+  //   "links": {
+  //     "Docket": "https://www.courtlistener.com/docket/69300919/garcia-v-character-technologies-inc/"
+  //   }
+  // },
+  // {
+  //   "name": "Huang Estate v. Tesla Inc. (Autopilot), No. 18CV334980 (Cal. Super. Ct. Jan. 17 2025)",
+  //   "court": "Cal. Super. Ct.",
+  //   "claim": "Negligence, Wrongful Death, …",
+  //   "outcome": "Settlement",
+  //   "outcomeClass": "settlement",
+  //   "date": "2019-04-26",
+  //   "desc": "Tesla settles wrongful-death suit alleging Autopilot caused fatal crash.",
+  //   "links": {
+  //     "Complaint": "https://dig.abclocal.go.com/kgo/PDF/Complaint-Huang-v-Tesla-State-of-Calif-20190430.pdf",
+  //     "Coverage": "https://lsflaw.com/landmark-tesla-wrongful-death-settlement-things-to-know/"
+  //   }
+  // }
+];
+
+/* ─────────────────────────── FIRST-AMENDMENT & AI SPEECH ─────────────────────────── */
+const firstAmendmentCases = [
+  // {
+  //   "name": "Kohls v. Bonta, No. 2:24-cv-02527 (E.D. Cal. Oct. 2 2024)",
+  //   "court": "E.D. Cal.",
+  //   "outcome": "Preliminary Injunction",
+  //   "outcomeClass": "warning",
+  //   "date": "2024-10-02",
+  //   "desc": "Court blocks California 'Defending Democracy from Deepfake Deception Act' as overbroad.",
+  //   "links": {
+  //     "Order": "https://cdn.arstechnica.net/wp-content/uploads/2024/10/Kohls-v-Bonta-Order-Granting-Injunction-10-2-24.pdf",
+  //     "Coverage": "https://www.politico.com/news/2024/10/02/california-law-block-political-deepfakes-00182277/"
+  //   }
+  // },
+  // {
+  //   "name": "Character Techs. MTD (Garcia), No. 6:24-cv-01903 (M.D. Fla. Apr. 28 2025)",
+  //   "court": "M.D. Fla.",
+  //   "outcome": "Motion to Dismiss",
+  //   "outcomeClass": "pending",
+  //   "date": "2025-04-28",
+  //   "desc": "Company argues chatbot outputs are protected speech deserving full First-Amendment protection.",
+  //   "links": {
+  //     "Brief": "https://www.documentcloud.org/documents/25503918-garcia-vs-character-technologies-characterai-motion-to-dismiss/",
+  //     "Coverage": "https://arstechnica.com/tech-policy/2025/04/are-chatbot-outputs-protected-speech-court-pressured-to-clarify/"
+  //   }
+  // }
+];
+
+
+/* ------------- UTILITIES ------------- */
+const badgeColors = {
+  sanction:"bg-purple-700",
+  warning:"bg-yellow-600 text-gray-900",
+  rejected:"bg-red-700",
+  pending:"bg-gray-600",
+  settlement:"bg-green-700"
+};
+
+function makeBadge(cls,text){return `<span class="px-2 py-1 rounded text-xs ${badgeColors[cls]||'bg-gray-600'}">${text}</span>`;}
+
+function renderTable(cases,tbodyId){
+  const tbody=document.getElementById(tbodyId);tbody.innerHTML="";
+  cases.forEach(c=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td class="px-4 py-2 font-semibold">${c.name}</td>
+      <td class="px-4 py-2">${c.court}</td>
+      ${c.filer || c.claim || c.topic ? `<td class="px-4 py-2">${c.filer || c.claim || c.topic}</td>` : ''}
+      <td class="px-4 py-2">${makeBadge(c.outcomeClass,c.outcome)}</td>
+      <td class="px-4 py-2 text-sm">${c.desc}</td>
+      <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderLatest(){
+  const container=document.getElementById('latest-cards');container.innerHTML="";
+  const all=[...hallucinationCases,...copyrightCases,...liabilityCases,...firstAmendmentCases];
+  const latest=all.sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,4);
+  latest.forEach(c=>{
+    const card=document.createElement('div');card.className='card p-5 rounded-lg';
+    card.innerHTML=`${makeBadge(c.outcomeClass,c.outcome)}
+      <h3 class="mt-3 text-lg font-semibold">${c.name}</h3>
+      <p class="mt-2 text-sm text-gray-300">${c.desc}</p>
+      <div class="mt-4 text-xs text-gray-400 flex items-center justify-between"><span>${c.date?new Date(c.date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}):''}</span>
+</div>`;
+    container.appendChild(card);
+  });
+}
+
+/* ------------- TAB LOGIC ------------- */
+function filterCases(category){
+  document.querySelectorAll('.category-section').forEach(sec=>sec.classList.add('hidden'));
+  document.getElementById(`${category}-section`).classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link=>{link.classList.toggle('tab-active',link.getAttribute('data-category')===category);link.classList.toggle('text-gray-300',link.getAttribute('data-category')!==category);});
+}
+
+/* ------------- INIT ------------- */
+document.addEventListener('DOMContentLoaded',()=>{
+  renderTable(hallucinationCases,'hallucination-body');
+  renderTable(copyrightCases,'copyright-body');
+  renderTable(liabilityCases,'liability-body');
+  renderTable(firstAmendmentCases,'first-body');
+  renderLatest();
+  filterCases('latest');
+});
+</script>
+</body>
+</html> 
