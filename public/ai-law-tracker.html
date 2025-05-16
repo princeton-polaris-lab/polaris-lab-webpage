@@ -168,6 +168,203 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
 {
+    "name": "People v. Zachariah C. Crabill, No. 23PDJ067 (Colo. O.P.D.J.)",
+    "court": "Colo. O.P.D.J.",
+    "state": "CO",
+    "filer": "Lawyer",
+    "judge": "Presiding Disciplinary Judge Bryon M. Large",
+    "date": "2023-11-22",
+    "outcome": "Suspension 1 yr + 1 day (90 days served) + 2 yrs probation",
+    "outcomeClass": "sanction",
+    "desc": "Attorney filed a ChatGPT-written motion with fictitious precedents, then blamed a legal intern.  CO disciplinary tribunal imposed a year-and-a-day suspension (all but 90 days stayed) for violating Colo. RPC 1.1, 3.3 & 8.4(c).",
+    "links": {
+      "Order": "https://www.coloradolegalregulation.com/wp-content/uploads/PDJ/Decisions/Crabill,%20Stipulation%20to%20Discipline,%2023PDJ067,%2011-22-23.pdf",
+      "Coverage": "https://reason.com/volokh/2023/11/23/90-day-suspension-of-colorado-lawyer-who-filed-chatgpt-written-motion-with-hallucinated-cases/"
+    }
+  },  /* :contentReference[oaicite:0]{index=0} */
+
+  {
+    "name": "Park v. Kim, 91 F.4th 610 (2d Cir. 2024)",
+    "court": "2d Cir.",
+    "state": "NY",
+    "filer": "Lawyer",
+    "judge": "Circuit Judges Parker, Nathan & Merriam (per curiam)",
+    "date": "2024-01-30",
+    "outcome": "Referral to Grievance Panel",
+    "outcomeClass": "referral",
+    "desc": "Reply brief cited a nonexistent case; court found Rule 11(b)(2) violation and referred attorney to disciplinary authorities, ordering a copy of the decision served on the client.",
+    "links": {
+      "Opinion": "https://www.law.nyu.edu/sites/default/files/Park%20v.%20Kim%2C%20No.%2022-2057%20%282024%29.pdf",
+      "Coverage": "https://reason.com/volokh/2024/01/30/second-circuit-refers-lawyer-for-disciplinary-proceedings-based-on-ai-hallucinated-case-in-brief/"
+    }
+  },  /* :contentReference[oaicite:1]{index=1} */
+
+  {
+    "name": "Ex parte Lee, No. 10-23-00126-CR (Tex. App.—Waco July 20 2023)",
+    "court": "Tex. 10th Ct. App.",
+    "state": "TX",
+    "filer": "Lawyer",
+    "judge": "Chief Justice Tom Gray",
+    "date": "2023-07-20",
+    "outcome": "Arguments disregarded; no sanction",
+    "outcomeClass": "warning",
+    "desc": "Bail-reduction brrief had hallucinated or misquoted cases.Court flagged likely AI drafting, declined sanctions but treated the issue as inadequately briefed and overruled the appeal.",
+    "links": {
+      "Opinion": "https://law.justia.com/cases/texas/tenth-court-of-appeals/2023/10-22-00281-cr.html",
+      "Coverage": "https://reason.com/volokh/2023/07/27/court-notes-apparently-nonexistent-precedents-cited-in-brief-suggests-brief-may-have-been-partly-ai-written/"
+    }
+  },  /* :contentReference[oaicite:2]{index=2} */
+
+  {
+    "name": "Matter of Samuel, 82 Misc. 3d 616 (Sur. Ct. Kings Cty. 2024)",
+    "court": "Sur. Ct. Kings Cty.",
+    "state": "NY",
+    "filer": "Lawyer",
+    "judge": "",
+    "date": "2024-01-11",
+    "outcome": "Strike Pleading; Sanctions TBD",
+    "outcomeClass": "sanction",
+    "desc": "Reply papers opposing summary judgment relied on fake cases in probate proceeding. Court held counsel’s conduct frivolous and imposed costs, stressing lawyers—not AI—must verify authorities.",
+    "links": {
+      "Opinion": "https://law.justia.com/cases/new-york/other-courts/2024/2024-ny-slip-op-24014.html",
+      "Coverage": "https://www.nyestatelitigationblog.com/2024/01/articles/uncategorized/matter-of-samuel-artificial-intelligence-hallucinates/"
+    }
+  },  /* :contentReference[oaicite:3]{index=3} */
+
+  {
+    "name": "Dukuray v. Experian Info. Sols., No. 23-cv-9043 (S.D.N.Y. July 26 2024)",
+    "court": "S.D.N.Y.",
+    "state": "NY",
+    "filer": "Pro se",
+    "judge": "Magistrate Judge Gary Stein",
+    "date": "2024-07-26",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "Pro se filer quoted several nonexistent opinions. Court noted risk of ChatGPT hallucinations, cautioned that repeat misconduct could result in dismissal or monetary penalties.",
+    "links": {
+      "Opinion": "https://caselaw.findlaw.com/court/us-dis-crt-sd-new-yor/116482791.html",
+    }
+  },  /* :contentReference[oaicite:4]{index=4} */
+
+  {
+    "name": "Transamerica Life Ins. Co. v. Williams, No. CV-24-00379 (D. Ariz. Sept 6 2024)",
+    "court": "D. Ariz.",
+    "state": "AZ",
+    "filer": "Pro se",
+    "judge": "District Judge G. Murray Snow",
+    "date": "2024-09-06",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "Order observed briefs were “replete with citations to nonexistent caselaw,” inferred ChatGPT use, and warned any future fake authorities would trigger dismissal or other sanctions.",
+    "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.azd.1364532/gov.uscourts.azd.1364532.62.0.pdf"
+    }
+  },  /* :contentReference[oaicite:5]{index=5} */
+  {
+  "name": "An v. Archblock, Inc., C.A. No. 2024-0102-LWW (Del. Ch. Apr. 4 2025)",
+  "court": "Del. Ch.",
+  "state": "DE",
+  "filer": "Pro se litigant",
+  "judge": "Vice Chancellor Lori W. Will",
+  "date": "2025-04-04",
+  "outcome": "Motion denied; formal warning + future GenAI-use certification required",
+  "outcomeClass": "warning",
+  "desc": "Vice Chancellor denied a motion to compel that relied on multiple AI-invented quotations and authorities. Calling the misconduct 'sanctionable,' they warned the petitioner that any repeat will trigger monetary or dismissal sanctions and directed future filings to include a certification disclosing any GenAI assistance.",
+  "links": {
+    "Letter Opinion": "https://courts.delaware.gov/Opinions/Download.aspx?id=377750"
+  }
+},
+  {
+    "name": "Al-Hamim v. Star Hearthstone, LLC, 2024 COA 128 (Colo. Ct. App. Dec 5 2024)",
+    "court": "Colo. Ct. App.",
+    "state": "CO",
+    "filer": "Pro se",
+    "judge": "Judge Christina Finzel Gomez (panel)",
+    "date": "2024-12-05",
+    "outcome": "Appeal affirmed; stern warning",
+    "outcomeClass": "warning",
+    "desc": "Opening brief mixed real and fake citations generated with a GAI tool. Court affirmed dismissal and put litigants on notice that any future ‘hallucinations’ will draw sanctions.",
+    "links": {
+      "Opinion": "https://law.justia.com/cases/colorado/court-of-appeals/2024/24ca0190.html"
+    }
+  },  /* :contentReference[oaicite:6]{index=6} */
+
+  {
+    "name": "Morgan v. Community Against Violence, No. 1:23-cv-353 (D.N.M. Jan 19 2024)",
+    "court": "D. N.M.",
+    "state": "NM",
+    "filer": "Pro se",
+    "judge": "Chief Judge William P. Johnson",
+    "date": "2024-01-19",
+    "outcome": "Warning, then dismissal with prejudice",
+    "outcomeClass": "dismissal",
+    "desc": "Dismissal order noted plaintiff had cited several fake or nonexistent opinions, combined with other conduct, that led to dismissal with prejudice.",
+    "links": {
+      "Opinion": "https://cases.justia.com/federal/district-courts/new-mexico/nmdce/1%3A2023cv00353/487231/35/0.pdf"    }
+  },  /* :contentReference[oaicite:7]{index=7} */
+
+  {
+    "name": "Sanders v. United States, No. 24-1301 (Fed. Cl. Mar 31 2025)",
+    "court": "U.S. Ct. of Fed. Claims",
+    "state": "DC",
+    "filer": "Pro se",
+    "judge": "Judge Richard A. Hertling",
+    "date": "2025-03-31",
+    "outcome": "Warning only, then dismissal",
+    "outcomeClass": "dismissal",
+    "desc": "Court dismissed $1 B unjust-enrichment claim, finding plaintiff was “misled by fake cases made up by an AI program.”",
+    "links": {
+      "Opinion": "https://www.casemine.com/judgement/us/680623e02e3a69d2585ee087"
+    }
+  },  /* :contentReference[oaicite:8]{index=8} */
+/* —— NEW CASE —— */
+{
+  "name": "Zhang v. Chen, 2024 BCSC 285 (B.C. Sup. Ct.)",
+  "court": "Supreme Court of British Columbia",
+  "state": "Canada-BC",
+  "filer": "Lawyer",
+  "judge": "Justice D. Masuhara",
+  "date": "2024-02-20",
+  "outcome": "Reimbursement of 4.5 days of party-and-party tariff",
+  "outcomeClass": "costs",
+  "desc": "Family-law application relied on two ChatGPT-invented cases. After opposing counsel proved the authorities didn’t exist. Ordered the responsible lawyer to pay the ordinary (party-and-party) costs of the application herself and warned that citing fake authorities is an abuse of process tantamount to making a false statement to the court.",
+  "links": {
+    "Decision": "https://www.canlii.org/en/bc/bcsc/doc/2024/2024bcsc285/2024bcsc285.html",
+    "Coverage": "https://www.fasken.com/en/knowledge/2024/03/cautionary-tales-of-using-ai-chatbots-the-courts-weigh-in-on-ai-hallucinations"
+  }
+},
+  {
+    "name": "Ko v. Li, 2025 ONSC 2766 (Ont. Sup. Ct. May 6 2025)",
+    "court": "Ont. Sup. Ct. (SCJ)",
+    "state": "Canada-ON",
+    "filer": "Lawyer",
+    "judge": "Justice Fred Myers",
+    "date": "2025-05-06",
+    "outcome": "Show-cause re contempt, pending",
+    "outcomeClass": "pending",
+    "desc": "Family-law factum relied on multiple non-existent cases. Court ordered counsel to show cause why she should not be cited for contempt and reminded bar of duty to vet AI output.",
+    "links": {
+      "Decision": "https://canlii.ca/t/kbzwn",
+        "Coverage": "https://www.canadianlawyermag.com/news/general/superior-court-says-family-law-case-factum-may-have-fake-legal-citations-due-to-ai-hallucinations/392433"
+    }
+  },  /* :contentReference[oaicite:9]{index=9} */
+
+  {
+    "name": "R (Ayinde) v. London Borough of Haringey, [2025] EWHC 1040 (Admin)",
+    "court": "High Court (Admin.)",
+    "state": "UK-ENG",
+    "filer": "Lawyers",
+    "judge": "Justice Ritchie",
+    "date": "2025-04-03",
+    "outcome": "£4,000 wasted costs order, reduce allowable attorneys' fees by £7,000",
+    "outcomeClass": "sanction",
+    "desc": "Defendant exposed five wholly fabricated authorities in claimant’s submissions. Court branded conduct ‘professional misconduct,’ ordered wasted costs, and referred matter to regulators.",
+    "links": {
+      "Judgment": "https://www.judiciary.uk/wp-content/uploads/2025/05/Ayinde-v-LB-Haringey-Judgment-Ritchie-J-03.04.25-HD-2.pdf",
+      "Coverage": "https://www.lexology.com/library/detail.aspx?g=49d3af34-c4df-4184-8c6b-8d0330aa4e97"
+    }
+  }  /* :contentReference[oaicite:10]{index=10} */,
+{
   "name": "Ramirez v. Humala, No. 1:24-cv-00242 (E.D.N.Y.)",
   "court": "E.D.N.Y.",
   "state": "NY",
