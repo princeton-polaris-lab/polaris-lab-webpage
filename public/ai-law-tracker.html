@@ -76,9 +76,9 @@
       <div id="latest-cards" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
     </section>
   
-    <!-- Hallucination table -->
+    <!-- ═════ HALLUCINATION TABLE ═════ -->
     <section id="hallucinations-section" class="hidden category-section">
-      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Hallucination Cases Tracker</h2>
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Hallucination Cases Tracker <span id="hallucination-count" class="text-sm font-normal text-gray-400"></span></h2>
       <div class="overflow-x-auto">
         <table class="min-w-full divide-y divide-gray-700">
           <thead class="bg-gray-800">
@@ -86,6 +86,7 @@
               <th class="px-4 py-2 text-left">Case</th>
               <th class="px-4 py-2 text-left">Court</th>
               <th class="px-4 py-2 text-left">Filer</th>
+              <th class="px-4 py-2 text-left cursor-pointer" id="sort-date">Date <span class="sort-icon">↓</span></th>
               <th class="px-4 py-2 text-left">Outcome</th>
               <th class="px-4 py-2 text-left">Description</th>
               <th class="px-4 py-2 text-left">Links</th>
@@ -281,7 +282,7 @@ const hallucinationCases = [
     "filer": "Pro se",
     "judge": "Judge Christina Finzel Gomez (panel)",
     "date": "2024-12-05",
-    "outcome": "Appeal affirmed; stern warning",
+    "outcome": "Warning only",
     "outcomeClass": "warning",
     "desc": "Opening brief mixed real and fake citations generated with a GAI tool. Court affirmed dismissal and put litigants on notice that any future ‘hallucinations’ will draw sanctions.",
     "links": {
@@ -1290,16 +1291,36 @@ const badgeColors = {
 
 function makeBadge(cls,text){return `<span class="px-2 py-1 rounded text-xs ${badgeColors[cls]||'bg-gray-600'}">${text}</span>`;}
 
-function renderTable(cases,tbodyId){
-  const tbody=document.getElementById(tbodyId);tbody.innerHTML="";
-  cases.forEach(c=>{
-    const tr=document.createElement('tr');
-    tr.innerHTML=`<td class="px-4 py-2 font-semibold">${c.name}</td>
-      <td class="px-4 py-2">${c.court}</td>
-      ${c.filer || c.claim || c.topic ? `<td class="px-4 py-2">${c.filer || c.claim || c.topic}</td>` : ''}
-      <td class="px-4 py-2">${makeBadge(c.outcomeClass,c.outcome)}</td>
-      <td class="px-4 py-2 text-sm">${c.desc}</td>
-      <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
+function renderTable(cases, tbodyId) {
+  const tbody = document.getElementById(tbodyId);
+  tbody.innerHTML = "";
+  
+  // Update case count if it's the hallucination section
+  if (tbodyId === 'hallucination-body') {
+    document.getElementById('hallucination-count').textContent = `(${cases.length} cases)`;
+  }
+  
+  cases.forEach(c => {
+    const tr = document.createElement('tr');
+    
+    // Different rendering for hallucination table vs other tables
+    if (tbodyId === 'hallucination-body') {
+      tr.innerHTML = `<td class="px-4 py-2 font-semibold">${c.name}</td>
+        <td class="px-4 py-2">${c.court}</td>
+        <td class="px-4 py-2">${c.filer || ''}</td>
+        <td class="px-4 py-2">${c.date || ''}</td>
+        <td class="px-4 py-2">${c.outcome}</td>
+        <td class="px-4 py-2 text-sm">${c.desc}</td>
+        <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
+    } else {
+      tr.innerHTML = `<td class="px-4 py-2 font-semibold">${c.name}</td>
+        <td class="px-4 py-2">${c.court}</td>
+        ${c.filer || c.claim || c.topic ? `<td class="px-4 py-2">${c.filer || c.claim || c.topic}</td>` : ''}
+        <td class="px-4 py-2">${makeBadge(c.outcomeClass, c.outcome)}</td>
+        <td class="px-4 py-2 text-sm">${c.desc}</td>
+        <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
+    }
+    
     tbody.appendChild(tr);
   });
 }
@@ -1326,14 +1347,40 @@ function filterCases(category){
   document.querySelectorAll('.nav-link').forEach(link=>{link.classList.toggle('tab-active',link.getAttribute('data-category')===category);link.classList.toggle('text-gray-300',link.getAttribute('data-category')!==category);});
 }
 
+/* ------------- SORTING ------------- */
+let sortDirection = 'desc'; // Default sort direction
+
+function sortHallucinationsByDate() {
+  const sortedCases = [...hallucinationCases].sort((a, b) => {
+    const dateA = a.date ? new Date(a.date) : new Date(0);
+    const dateB = b.date ? new Date(b.date) : new Date(0);
+    
+    return sortDirection === 'asc' 
+      ? dateA - dateB 
+      : dateB - dateA;
+  });
+  
+  renderTable(sortedCases, 'hallucination-body');
+  
+  // Toggle sort direction for next click
+  sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+  
+  // Update sort icon
+  const sortIcon = document.querySelector('#sort-date .sort-icon');
+  sortIcon.textContent = sortDirection === 'asc' ? '↑' : '↓';
+}
+
 /* ------------- INIT ------------- */
-document.addEventListener('DOMContentLoaded',()=>{
-  renderTable(hallucinationCases,'hallucination-body');
-  renderTable(copyrightCases,'copyright-body');
-  renderTable(liabilityCases,'liability-body');
-  renderTable(firstAmendmentCases,'first-body');
+document.addEventListener('DOMContentLoaded', () => {
+  renderTable(hallucinationCases, 'hallucination-body');
+  renderTable(copyrightCases, 'copyright-body');
+  renderTable(liabilityCases, 'liability-body');
+  renderTable(firstAmendmentCases, 'first-body');
   renderLatest();
   filterCases('latest');
+  
+  // Add event listener for date sorting
+  document.getElementById('sort-date').addEventListener('click', sortHallucinationsByDate);
 });
 </script>
 </body>
