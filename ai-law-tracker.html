@@ -167,6 +167,54 @@
 /* -------------------- DATA -------------------- */
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
+{
+  "name": "Ramirez v. Humala, No. 1:24-cv-00242 (E.D.N.Y.)",
+  "court": "E.D.N.Y.",
+  "state": "NY",
+  "filer": "Plaintiff’s counsel (Stillman Legal, P.C.)",
+  "judge": "District Judge Rachel P. Kovner; Magistrate Judge Joseph A. Marutollo",
+  "date": "2025-05-13",
+  "outcome": "$1,000 sanctions",
+  "outcomeClass": "sanctions",
+  "desc": "Plaintiff’s response letter quoted fictitious precedents. Counsel admitted the citations came from a paralegal’s unverified AI research. Judge Kovner held the conduct violated Fed. R. Civ. P. 11 and ordered monetary sanctions and client notice.",
+  "links": {
+    "Decision": "https://storage.courtlistener.com/recap/gov.uscourts.nyed.508684/gov.uscourts.nyed.508684.49.0.pdf",
+    "Docket": "https://www.courtlistener.com/docket/68152794/ramirez-v-el-tri-mx-restaurant-bar-corp/?filed_after=&filed_before=&entry_gte=&entry_lte=&order_by=desc",
+    "Coverage": "https://reason.com/volokh/2025/05/14/ai-hallucination-case-stemming-from-use-of-a-paralegals-ai-based-research/"
+  }
+},
+{
+  "name": "Coomer v. Lindell, No. 1:22-cv-01129-NYW-SBP (D. Colo.)",
+  "court": "D. Colo.",
+  "state": "CO",
+  "filer": "Lawyers",
+  "judge": "District Judge Nina Y. Wang; Magistrate Judge Susan B. Prose",
+  "date": "2025-04-23",
+  "outcome": "Pending order to show cause",
+  "outcomeClass": "pending",
+  "desc": "Judge Wang found nearly 30 misquotes, misattributions and entirely fictitious cases in the defendants’ brief opposing a motion in limine—errors the court traced to un-checked generative-AI research. She ordered defense counsel to explain, under oath, why they relied on AI and why they shouldn’t be sanctioned or referred to bar authorities, and required counsel to certify personal notice to client Mike Lindell.",
+  "links": {
+    "Order to Show Cause": "https://cases.justia.com/federal/district-courts/colorado/codce/1%3A2022cv01129/215068/309/0.pdf",
+    "Response": "https://storage.courtlistener.com/recap/gov.uscourts.cod.215068/gov.uscourts.cod.215068.311.0.pdf",
+    "Docket": "https://www.courtlistener.com/docket/63296393/coomer-v-lindell/",
+    "Coverage": "https://reason.com/volokh/2025/04/25/apparent-ai-hallucinations-in-defense-filing-in-coomer-v-lindell-my-pillow-election-related-libel-suit/"
+  }
+},
+{
+  "name": "State of Israel v. Ibrahim Mahajne",
+  "court": "Hadera Magistrate’s Court",
+  "state": "Israel",
+  "filer": "Israel Police",
+  "judge": "Judge Ehud Kaplan",
+  "date": "2025-05-07",
+  "outcome": "Pending internal inquiry",
+  "outcomeClass": "mixed",
+  "desc": "Police cited AI-invented statutory clauses in a filing opposing return of a seized phone. Police opened an internal investigation.",
+  "links": {
+    "Decision": "https://www.verdicts.co.il/הת-חדרה-26853-02-25-אברהים-מחאגנה-נ-ילפ-מרחב-מנשה/?pdf=578894",
+    "Coverage": "https://www.timesofisrael.com/judge-slams-police-for-using-ai-to-write-legal-argument-citing-nonexistent-laws/"
+  }
+},
   {
     name: "Concord Music Group, Inc., et al. v. Anthropic PBC, No. 5:24-cv-03811-EKL (N.D. Cal.)",
     court: "N.D. Cal.",
@@ -316,7 +364,7 @@ const hallucinationCases = [
       Report: "https://cases.justia.com/federal/district-courts/indiana/insdce/2:2024cv00326/215482/99/0.pdf",
       Coverage: "https://www.lawnext.com/2024/02/not-again-two-more-cases-just-this-week-of-hallucinated-citations-in-court-filings-leading-to-sanctions.html"
     }
-  }
+  },
 ];
 
 
