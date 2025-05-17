@@ -50,6 +50,11 @@
             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
         </svg>
           <span class="font-medium">Hallucinations by AI in Court</span></a>
+        <a href="#" data-category="no-hallucinations" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('no-hallucinations');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
+          </svg>
+          <span class="font-medium">AI Used in Court (no hallucinations)</span></a>
         <!-- <a href="#" data-category="copyright" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('copyright');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -93,6 +98,26 @@
             </tr>
           </thead>
           <tbody id="hallucination-body" class="divide-y divide-gray-800"></tbody>
+        </table>
+      </div>
+    </section>
+    
+    <!-- ═════ NO HALLUCINATIONS TABLE ═════ -->
+    <section id="no-hallucinations-section" class="hidden category-section">
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Used in Court (No Hallucinations) <span id="no-hallucination-count" class="text-sm font-normal text-gray-400"></span></h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-700">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left">Case</th>
+              <th class="px-4 py-2 text-left">Court</th>
+              <th class="px-4 py-2 text-left">Use</th>
+              <th class="px-4 py-2 text-left">Date</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Links</th>
+            </tr>
+          </thead>
+          <tbody id="no-hallucinations-body" class="divide-y divide-gray-800"></tbody>
         </table>
       </div>
     </section>
@@ -168,6 +193,270 @@
 /* -------------------- DATA -------------------- */
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
+  /* —— NEW ENTRY —— */
+  /* —— NEW ENTRY —— */
+{
+  "name": "Tribunale di Firenze, Sez. Imprese – Ordinanza n. 11053/2024 R.G. (Mar. 14 2025)",
+  "court": "Tribunale delle Imprese di Firenze",
+  "state": "IT",
+  "filer": "Lawyer",
+  "judge": "Presiding Judge (unnamed)",
+  "date": "2025-03-14",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In a commercial-law urgent application, counsel’s assistant relied on ChatGPT and cited multiple nonexistent Supreme Court precedents.  The court labeled these AI-generated errors “allucinazioni,” refused to apply aggravated process sanctions under art. 96 C.P.C. for lack of bad faith, but cautioned that unverified AI output risks future discipline.",
+  "links": {
+    "Opinion": "https://www.diritto.it/wp-content/uploads/2025/03/1743072902354.pdf"
+  }
+},
+{
+  "name": "Acuerdo de la Sala Primera del Tribunal Constitucional (Demanda de amparo) (Sept. 19 2024)",
+  "court": "Tribunal Constitucional, Sala Primera",
+  "state": "ES",
+  "filer": "Lawyer",
+  "judge": "Magistrados de la Sala Primera",
+  "date": "2024-09-19",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In an amparo petition, counsel included the supposedly literal citation of passages of 19 Constitutional Court rulings as quotations when it turns out that none of them was real. The Tribunal though chose a less stringent sanction,given the lack of a record of the lawyer's conduct, and because the seriousness of his conduct is tempered by the impossibility that the unreal quotations could affect the admission and estimation of the application for amparo.",
+  "links": {
+    "Opinion": "https://www.tribunalconstitucional.es/NotasDePrensaDocumentos/NP_2024_090/NOTA%20INFORMATIVA%20N%C2%BA%2090-2024.pdf",
+    "Coverage": "https://elderecho.com/sancion-a-un-abogado-por-incluir-citas-falsas-de-sentencias-del-tc"
+  }
+},
+/* —— NEW ENTRIES —— */
+
+/* India – high-court referral of a *trial-court judge* */
+{
+  "name": "Sammaan Capital Ltd. & Sammaan Finserve Ltd. v. Mantri Infrastructure Pvt. Ltd. & ors., CRP 49/2025 (Karnataka High Court Mar. 26 2025)",
+  "court": "Karnataka High Court (Bengaluru)",
+  "state": "IN-KA",
+  "filer": "Judge",
+  "judge": "Justice R. Devdas",
+  "date": "2025-03-26",
+  "outcome": "Probe initiated",
+  "outcomeClass": "referral",
+  "desc": "While reviewing a city-civil order, the High Court found the lower-court judge had relied on non-existent precedents.",
+  "links": {
+    "Order": "https://www.verdictum.in/pdf_upload/kahc0100347720251-593059watermark-1699430.pdf",
+    "Coverage": "https://www.verdictum.in/court-updates/high-courts/karnataka-high-court/sammaan-capital-limited-others-vs-mantri-infrastructure-pvt-ltd-probe-into-judge-citing-non-existent-supreme-court-decision-1572491"
+  }
+},
+/* :contentReference[oaicite:0]{index=0} */
+
+{
+  "name": "Keaau Development Partnership LLC v. Lawrence, No. CAAP-24-0000494 (Haw. Ct. App. May 12 2025)",
+  "court": "Haw. Intermediate Ct. App.",
+  "state": "HI",
+  "filer": "Lawyer",
+  "judge": "Acting C.J. Leonard; Judges Hiraoka & McCullen",
+  "date": "2025-05-12",
+  "outcome": "$100 sanction",
+  "outcomeClass": "sanction",
+  "desc": "Attorney’s motion to dismiss cited a nonexistent Hawai‘i case. The court found the use of a fabricated authority violated HRCP 11(b)(2), ordered attorney to pay $100 personally, and required a declaration of payment—warning that reliance on AI-generated ‘fake opinions’ abuses the adversary system.",
+  "links": {
+    "Opinion": "https://caselaw.findlaw.com/court/hi-intermediate-court-of-appeals/117260405.html"
+  }
+},
+{
+  "name": "Buckeye Trust v. PCIT, ITA No. 1051/Bang/2024 (ITA Bengaluru Bench Dec. 30 2024)",
+  "court": "Income Tax Appellate Tribunal (Bengaluru Bench)",
+  "state": "India",
+  "filer": "Judge",
+  "judge": "Vice President Prashant Maharishi & Judicial Member Prakash Chand Yadav",
+  "date": "2024-12-30",
+  "outcome": "Order recalled",
+  "outcomeClass": "pending",
+  "desc": "The ITAT’s December 2024 order non-existent precedents.  Within a week, the tribunal recalled the order and scheduled a fresh hearing.",
+  "links": {
+    "Withdrawn Order": "https://itat.gov.in/public/files/upload/1735624480-urq7dV-1-TO.pdf",
+    "Coverage": "https://counselvise.com/blogs/ai-hallucination-itat-buckeye-trust"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Valu v. Minister for Immigration & Multicultural Affairs (No 2), [2025] FedCFamC2G 95 (Fed. Cir. & Fam. Ct. Div. 2 Jan. 31 2025)",
+  "court": "Federal Circuit & Family Court of Australia (Div. 2)",
+  "state": "AU",
+  "filer": "Lawyer",
+  "judge": "Justice Rania Skaros",
+  "date": "2025-01-31",
+  "outcome": "Referral to NSW Legal Services Commissioner",
+  "outcomeClass": "referral",
+  "desc": "In an immigration-appeal filing, the applicant’s outline and amended application included multiple “hallucinated” citations and quotes from the tribunal’s decision.",
+  "links": {
+    "Opinion": "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FedCFamC2G/2025/95.html",
+    "Coverage": "https://hearsay.org.au/senior-practitioner-referred-to-regulator-for-incorporating-fake-ai-generated-decisions-in-submissions/"
+  }
+},
+{
+  "name": "Commissions for HM Revenue & Customs v. Harber, [2023] UKFTT 1007 (TC) (Dec. 4 2023)",
+  "court": "First-tier Tribunal (Tax Chamber)",
+  "state": "UK",
+  "filer": "Pro se",
+  "judge": "Tribunal Judge",
+  "date": "2023-12-04",
+  "outcome": "Costs awarded; referral to SRA",
+  "outcomeClass": "sanction",
+  "desc": "Appellant’s submissions cited decisions that could not be found anywhere. The Tribunal held they were “hallucinations” generated by ChatGPT, ordered to pay HMRC’s costs for responding to the bogus citations, and referred her to the Solicitors Regulation Authority.",
+  "links": {
+    "Opinion": "https://www.bailii.org/uk/cases/UKFTT/TC/2023/TC09010.html"
+  }
+},
+{
+  "name": "Parker v Forsyth NNO and Others, (1585/20) [2023] ZAGPRD 1 (Reg. Ct. Gauteng Div. June 29 2023)",
+  "court": "Regional Court of South Africa, Gauteng Div.",
+  "state": "South Africa",
+  "filer": "Lawyer",
+  "judge": "Chaitram, RM",
+  "date": "2023-06-29",
+  "outcome": "Costs order",
+  "outcomeClass": "costs",
+  "desc": "Plaintiff’s attorneys used ChatGPT to assemble a list of purported precedents which didn't exist. When challenged, they admitted they had never sourced or read the cases.  The court branded the citations “hallucinated” and ordered the plaintiff to pay the defendants’ costs in responding to the fabricated authorities.",
+  "links": {
+    "Opinion": "https://lawlibrary.org.za/akn/za-gp/judgment/zagprd/2023/1/eng@2023-06-29"
+  }
+},
+/* —— NEW ENTRY —— */
+
+{
+  "name": "Moales v. Land Rover Cherry Hill, No. 3:25-cv-544 (D. Conn. Apr. 30 2025)",
+  "court": "D. Conn.",
+  "state": "CT",
+  "filer": "Pro se",
+  "judge": "District Judge Vernon D. Oliver",
+  "date": "2025-04-30",
+  "outcome": "Warning only",
+  "outcomeClass": "dismissal",
+  "desc": "The court dismissed the complaint under Rule 12(h)(3) and, in a lengthy footnote, noted that many citations were “misstatements of the law” and likely generated by AI.  Judge cautioned that future filings must contain only verified authorities and that un-checked AI output could lead to Rule 11 sanctions.",
+  "links": {
+    "Opinion": "https://www.casemine.com/judgement/us/6819ae59dc2f884d962147d0"
+  }
+},
+{
+  "name": "Mavundla v. MEC: Department of Co-Operative Government & Traditional Affairs KwaZulu-Natal & Others, (7940/2024P) [2025] ZAKZPHC 2 (8 Jan 2025)",
+  "court": "Pietermaritzburg High Court (Kwazulu-Natal Div.)",
+  "state": "South Africa",
+  "filer": "Lawyer",
+  "judge": "Judge E. Bezuidenhout",
+  "date": "2025-01-08",
+  "outcome": "Cost reallocation; referral to Legal Practice Council",
+  "outcomeClass": "sanction",
+  "desc": "The supplementary notice of appeal cited nonexistent authorities.  Judge referred the matter to the Legal Practice Council for disciplinary review and allocated cost.",
+  "links": {
+    "Opinion": "https://www.saflii.org/za/cases/ZAKZPHC/2025/2.html"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Rubio v. District of Columbia Dept. of Human Services, No. 1:23-cv-00719 (D.D.C. Dec. 3 2024)",
+  "court": "D.D.C.",
+  "state": "DC",
+  "filer": "Pro se",
+  "judge": "District Judge Randolph D. Moss",
+  "date": "2024-12-03",
+  "outcome": "Warning only",
+  "outcomeClass": "dismissal",
+  "desc": "In denying leave to file a second amended complaint and dismissing the case, the court observed that 'many of the cases that Plaintiff cites appear to have been invented by artificial intelligence,' noting the brief’s ‘hallmarks of an AI response’ and rejecting the fabricated authorities as incapable of supporting the claims or satisfying Rule 11 duties.",
+  "links": {
+    "Opinion": "https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1%3A2023cv00719/253276/88/0.pdf",
+    "Docket": "https://dockets.justia.com/docket/district-of-columbia/dcdce/1%3A2023cv00719/253276"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "O’Brien v. Flick, No. 24-61529-CIV-DAMIAN (S.D. Fla. Jan. 10 2025)",
+  "court": "S.D. Fla.",
+  "state": "FL",
+  "filer": "Pro se",
+  "judge": "District Judge Melissa Damian",
+  "date": "2025-01-10",
+  "outcome": "Warning; arguments stricken",
+  "outcomeClass": "warning",
+  "desc": "Omnibus order dismissed the case after plaintiff’s response brief cited two non-existent Florida appellate decisions. Finding the citations likely came from a generative-AI tool and that the litigant acted in bad faith, the court deemed dismissal the appropriate sanction and warned that fabricated authorities ‘abuse the adversary system.’",
+  "links": {
+    "Opinion (PDF)": "https://www.beankinney.com/wp-content/uploads/2025/04/O_Brien-v.-Flick_2025-U.S.-Dist.-LEXIS-10625-2.pdf",
+    "Westlaw": "2025 WL 242924"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Gordon v. Wells Fargo Bank N.A. Inc., No. 5:24-cv-388 (M.D. Ga. Apr. 8 2025)",
+  "court": "M.D. Ga.",
+  "state": "GA",
+  "filer": "Pro se",
+  "judge": "Senior District Judge C. Ashley Royal",
+  "date": "2025-04-08",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "While ruling on a flurry of non-dispositive motions, the court found several citations in the pro-se plaintiff’s filings that “appear to be fake” and likely generated by AI.  Judge Royal warned that submitting unverified authorities violates Rule 11 and could lead to a substantial penalty—including fees or dismissal—if repeated.  The order directed the plaintiff to halt further motion practice until the pending motion to dismiss is resolved and to withdraw meritless claims.",
+  "links": {
+    "Opinion": "https://www.casemine.com/judgement/us/67f91cad21647c6cabcad68a",
+    "Westlaw": "2025 WL 1057211"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Thomas v. Pangburn, No. CV423-046 (S.D. Ga. Oct. 6 2023)",
+  "court": "S.D. Ga. (Savannah Div.)",
+  "state": "GA",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Christopher L. Ray (R&R); Dist. Judge William T. Moore Jr. (adopted Jan 29 2024)",
+  "date": "2023-10-06",
+  "outcome": "Dismissal with prejudice as Rule 11 sanction",
+  "outcomeClass": "dismissal",
+  "desc": "Several citations that looked valid but pointed to opinions that simply did not exist. Concluding the misuse was deceptive and wasted the court’s time, Judge dismissed the case as a sanction.",
+  "links": {
+    "R&R (Oct 6 2023)": "https://www.courtlistener.com/docket/67565382/59/thomas-v-pangburn/"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Secura Insurance v. Thompson, No. 5:23-cv-00066-BJB-LLK (W.D. Ky. Aug. 21 2024)",
+  "court": "W.D. Ky. (Paducah Div.)",
+  "state": "KY",
+  "filer": "Pro se",
+  "judge": "Magistrate Judge Lanny King",
+  "date": "2024-08-21",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In a motion to quash a third-party subpoena, the pro-se litigant cited a precedent the court could not locate.  Judge denied the motion and reminded the litigant that preparing filings “includes confirming that all cases or orders cited to the Court exist.",
+  "links": {
+    "Order": "https://www.courtlistener.com/docket/67359179/104/secura-insurance-a-mutual-company-v-thompson/"
+    }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Mescall v. Renaissance at Antiquity, No. 3:23-cv-00332 (W.D.N.C. Nov. 13 2023)",
+  "court": "W.D. N.C. (Charlotte Div.)",
+  "state": "NC",
+  "filer": "Pro se",
+  "judge": "District Judge Robert J. Conrad Jr.; Mag. Judge Susan C. Rodriguez",
+  "date": "2023-11-13",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In a footnote to an order on service and briefing, the court remarked that Mescall’s response \"appears to have been partially written with the aid of artificial intelligence,\" cautioned that such use \"creates challenges, raises ethical issues, and may result in sanctions or penalties when used inappropriately,\" and directed the pro-se plaintiff to comply with Rule 11 going forward.",
+  "links": {
+    "Opinion": "https://www.courtlistener.com/docket/67468113/21/mescall-v-renaissance-at-antiquity/"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Strong v. Rushmore Loan Management Services, LLC, No. 8:24-cv-00352 (D. Neb. Jan. 15 2025)",
+  "court": "D. Neb.",
+  "state": "NE",
+  "filer": "Pro se",
+  "judge": "Senior District Judge John M. Gerrard",
+  "date": "2025-01-15",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The court dismissed the complaint. It did so noting multiple fictitious citations likely generated by AI, though part of larger potential misconduct.",
+  "links": {
+    "Order": "https://www.courtlistener.com/docket/69140239/24/strong-v-rushmore-loan-management-services/"
+  }
+},
+/* —— END NEW ENTRY —— */
+
 {
     "name": "People v. Zachariah C. Crabill, No. 23PDJ067 (Colo. O.P.D.J.)",
     "court": "Colo. O.P.D.J.",
@@ -199,6 +488,22 @@ const hallucinationCases = [
       "Coverage": "https://reason.com/volokh/2024/01/30/second-circuit-refers-lawyer-for-disciplinary-proceedings-based-on-ai-hallucinated-case-in-brief/"
     }
   },  /* :contentReference[oaicite:1]{index=1} */
+  /* —— NEW ENTRY —— */
+{
+  "name": "Kruglyak v. Home Depot U.S.A., Inc., No. 1:22-cv-00024 (W.D. Va. Mar. 25 2025)",
+  "court": "W.D. Va.",
+  "state": "VA",
+  "filer": "Pro se",
+  "judge": "Senior District Judge Michael F. Urbanski",
+  "date": "2025-03-25",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Responding to briefs that quoted several nonexistent precedents—authorities the court could not locate in any reporter—Judge noted the likelihood that plaintiff relied on an AI tool, rejected the arguments as unsupported, and cautioned that any further submission containing fabricated citations would expose the plaintiff to Rule 11 penalties. Given Kruglyak’s pro-se status, the court declined to impose a fine.",
+  "links": {
+    "Opinion" : "https://www.westlaw.com/Document/I2d86b9d009da11f0af92f78b23f67b47/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0"
+  }
+},
+/* —— END NEW ENTRY —— */
 
   {
     "name": "Ex parte Lee, No. 10-23-00126-CR (Tex. App.—Waco July 20 2023)",
@@ -265,7 +570,7 @@ const hallucinationCases = [
   "name": "An v. Archblock, Inc., C.A. No. 2024-0102-LWW (Del. Ch. Apr. 4 2025)",
   "court": "Del. Ch.",
   "state": "DE",
-  "filer": "Pro se litigant",
+  "filer": "Pro se",
   "judge": "Vice Chancellor Lori W. Will",
   "date": "2025-04-04",
   "outcome": "Motion denied; formal warning + future GenAI-use certification required",
@@ -354,7 +659,7 @@ const hallucinationCases = [
     "name": "R (Ayinde) v. London Borough of Haringey, [2025] EWHC 1040 (Admin)",
     "court": "High Court (Admin.)",
     "state": "UK-ENG",
-    "filer": "Lawyers",
+    "filer": "Lawyer",
     "judge": "Justice Ritchie",
     "date": "2025-04-03",
     "outcome": "£4,000 wasted costs order, reduce allowable attorneys' fees by £7,000",
@@ -369,7 +674,7 @@ const hallucinationCases = [
   "name": "Ramirez v. Humala, No. 1:24-cv-00242 (E.D.N.Y.)",
   "court": "E.D.N.Y.",
   "state": "NY",
-  "filer": "Lawyers",
+  "filer": "Lawyer",
   "judge": "District Judge Rachel P. Kovner; Magistrate Judge Joseph A. Marutollo",
   "date": "2025-05-13",
   "outcome": "$1,000 sanctions",
@@ -385,7 +690,7 @@ const hallucinationCases = [
   "name": "Coomer v. Lindell, No. 1:22-cv-01129-NYW-SBP (D. Colo.)",
   "court": "D. Colo.",
   "state": "CO",
-  "filer": "Lawyers",
+  "filer": "Lawyer",
   "judge": "District Judge Nina Y. Wang; Magistrate Judge Susan B. Prose",
   "date": "2025-04-23",
   "outcome": "Pending order to show cause",
@@ -402,7 +707,7 @@ const hallucinationCases = [
   "name": "State of Israel v. Ibrahim Mahajne",
   "court": "Hadera Magistrate’s Court",
   "state": "Israel",
-  "filer": "Israel Police",
+  "filer": "Lawyer",
   "judge": "Judge Ehud Kaplan",
   "date": "2025-05-07",
   "outcome": "Pending",
@@ -417,16 +722,17 @@ const hallucinationCases = [
     name: "Concord Music Group, Inc., et al. v. Anthropic PBC, No. 5:24-cv-03811-EKL (N.D. Cal.)",
     court: "N.D. Cal.",
     state: "CA",
-    filer: "Data Scientist Expert",
+    filer: "Lawyer",
     judge: "District Judge Eumi K. Lee; Magistrate Judge Susan van Keulen",
     date: "2025-05-13",
     outcome: "Pending",
     outcomeClass: "pending",
-    desc: "Publishers allege Claude infringes song-lyric copyrights. Plaintiffs moved to strike an Anthropic data-scientist declaration after discovering a potential hallucinated citation; the dispute is ongoing.",
+    desc: "Publishers allege Claude infringes song-lyric copyrights. Plaintiffs moved to strike an Anthropic data-scientist declaration after discovering a potential hallucinated citation; the dispute is ongoing. Attorneys for Anthropic admitted that the declaration was modified by attorneys using Claude to format citations, which introduced the hallucinated citation.",
     links: {
       Docket: "https://www.courtlistener.com/docket/68889092/concord-music-group-inc-v-anthropic-pbc/",
       Filing: "https://chatgptiseatingtheworld.com/wp-content/uploads/2025/05/Olivia-Chen-sampling-protocol.pdf",
-      Coverage: "https://www.reuters.com/legal/litigation/anthropic-expert-accused-using-ai-fabricated-source-copyright-case-2025-05-13/"
+      Coverage: "https://www.reuters.com/legal/litigation/anthropic-expert-accused-using-ai-fabricated-source-copyright-case-2025-05-13/",
+      Update: "https://www.reuters.com/legal/legalindustry/anthropics-lawyers-take-blame-ai-hallucination-music-publishers-lawsuit-2025-05-15/"
     }
   },
   {
@@ -750,6 +1056,22 @@ const hallucinationCases = [
 
 ];
 
+
+const aiInCourtNoHallucinations = [
+{
+"name": "Pegnatori v. Pure Sports Techs. LLC, 2:23-cv-01424-DCN (D.S.C. Oct. 11, 2023)",
+"court": "D.S.C.",
+"state": "SC",
+"filer": "Text Interpretation",
+"judge": "District Judge David C. Norton",
+"date": "2023-10-11",
+// "outcome": "",
+// "outcomeClass": "injunction_denied",
+"desc": "In this patent dispute over softball-bat technology, the court rejected plaintiffs’ request for a preliminary injunction after finding they had not shown a likelihood of success on infringement; it also criticized defendant’s reliance on a ChatGPT-generated definition of “foam,” remarking that the tool’s “batting average in legal briefs leaves something to be desired.”",
+"links": {
+"Opinion": "https://cases.justia.com/federal/district-courts/south-carolina/scdce/2%3A2023cv01424/279239/25/0.pdf?ts=1697125221"}
+}
+]
 
 
 /* ─────────────────────────── COPYRIGHT / TRAINING ─────────────────────────── */
@@ -1505,6 +1827,13 @@ function renderTable(cases, tbodyId) {
         <td class="px-4 py-2">${c.outcome}</td>
         <td class="px-4 py-2 text-sm">${c.desc}</td>
         <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
+    } else if (tbodyId === 'no-hallucinations-body') {
+      tr.innerHTML = `<td class="px-4 py-2 font-semibold">${c.name}</td>
+        <td class="px-4 py-2">${c.court}</td>
+        <td class="px-4 py-2">${c.filer || ''}</td>
+        <td class="px-4 py-2">${c.date || ''}</td>
+        <td class="px-4 py-2 text-sm">${c.desc}</td>
+        <td class="px-4 py-2 text-sm space-x-2">${Object.entries(c.links).map(([k,v])=>`<a href="${v}" class="underline text-blue-400" target="_blank" rel="noopener">${k}</a>`).join(" ")}</td>`;
     } else {
       tr.innerHTML = `<td class="px-4 py-2 font-semibold">${c.name}</td>
         <td class="px-4 py-2">${c.court}</td>
@@ -1568,6 +1897,7 @@ function sortHallucinationsByDate() {
 /* ------------- INIT ------------- */
 document.addEventListener('DOMContentLoaded', () => {
   renderTable(hallucinationCases, 'hallucination-body');
+  renderTable(aiInCourtNoHallucinations, 'no-hallucinations-body');
   renderTable(copyrightCases, 'copyright-body');
   renderTable(liabilityCases, 'liability-body');
   renderTable(firstAmendmentCases, 'first-body');
