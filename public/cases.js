@@ -903,10 +903,108 @@ const hallucinationCases = [
     "links": {
       "Order": "https://www.courtlistener.com/docket/68839037/121/benshoof-v-ferguson/"
     }
-  }  
+  },
 /* —— END NEW ENTRIES —— */
 
 /* —— END NEW ENTRY —— */
+
+/* —— NEW ENTRIES 3/18/2025 —— */
+
+/* —— NEW ENTRY —— */
+{
+  "name": "Crypto Open Patent Alliance v. Wright, [2024] EWHC 3135 (Ch) (Dec. 6 2024)",
+  "court": "High Court (Chancery Division)",
+  "state": "UK-ENG",
+  "filer": "Pro se",
+  "judge": "Mr Justice Mellor",
+  "date": "2024-12-06",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Litigant's submissions quoted authorities that contained none of the passages he relied on; likely ChatGPT hallucinations. The court disregarded the false citations but imposed no penalty.",
+  "links": {
+    "Judgment": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2024/3135",
+    "Coverage": "https://naturalandartificiallaw.com/remote-attendance-at-committal-hearings-vulnerable-witnesses-and-ai-hallucinations-by-chatgpt/"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Matter of Vanguard Constr. & Dev. Co. v. 400 Times Square Assoc., LLC, 2025 NY Slip Op 01781 (App. Div. 1st Dep’t Mar. 25 2025)",
+  "court": "N.Y. Appellate Division, First Department",
+  "state": "NY",
+  "filer": "Lawyer",
+  "judge": "Per curiam panel",
+  "date": "2025-03-25",
+  "outcome": "Counsel rebuked for unfounded AI allegation, but citations stricken",
+  "outcomeClass": "warning",
+  "desc": "The panel admonished counsel for insinuating—without evidence—that opposing counsel had “used ChatGPT to write [his] brief.” Unsupported allegations, it warned, undermine professional integrity; a stray record citation was stricken.",
+  "links": {
+    "Opinion": "https://caselaw.findlaw.com/court/ny-supreme-court-appellate-division/117090479.html"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Bandla v. Solicitors Regulation Authority, [2025] EWHC 1167 (Admin) (May 13 2025)",
+  "court": "High Court (Administrative Court)",
+  "state": "UK-ENG",
+  "filer": "Pro se",
+  "judge": "Fordham J.",
+  "date": "2025-05-13",
+  "outcome": "Appeal struck out as abuse of process",
+  "outcomeClass": "dismissal",
+  "desc": "Several authorities cited in the appeal did not exist. Holding that the appeal was an abuse of process, the court refused permission and emphasised the duty to verify any AI-assisted research.",
+  "links": {
+    "Judgment": "https://www.bailii.org/ew/cases/EWHC/Admin/2025/1167.html"
+  }
+},
+/* —— NEW ENTRY —— */
+/* —— NEW ENTRY —— */
+{
+  "name": "Mortazavi v. Booz Allen Hamilton, Inc., No. 2:24-cv-07189-SB-RAO (C.D. Cal. Sept. 26 2024)",
+  "court": "C.D. Cal.",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "District Judge Stanley Blumenfeld Jr.",
+  "date": "2024-10-30",
+  "outcome": "$2,500 sanction",
+  "outcomeClass": "referral",
+  "desc": "A motion to remand cited a nonexistent case and was drafted with AI without the declaration the court’s standing order requires. The judge issued an OSC directing counsel to explain why sanctions should not be imposed, ultimately imposing a $2,500 sanction and ordering attorney to notify the California State Bar.",
+  "links": {
+    "Order to Show Cause": "https://cases.justia.com/federal/district-courts/california/cacdce/2%3A2024cv07189/938427/27/0.pdf",
+    "Order on Sanctions": "https://www.courtlistener.com/docket/69078157/48/mehrnaz-mortazavi-v-booz-allen-hamilton-inc/"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Nexgen Pathology Servs. Ltd. v. Darceuil Duncan, CV2023-04039 (Trin. & Tobago High Ct. Apr. 30 2025)",
+  "court": "High Court of Trinidad & Tobago",
+  "state": "TT",
+  "filer": "Lawyer",
+  "judge": "Justice Westmin R. James",
+  "date": "2025-04-30",
+  "outcome": "Authorities struck; disciplinary referral",
+  "outcomeClass": "referral",
+  "desc": "Counsel cited multiple Industrial Court ‘decisions’ that proved fictitious—likely hallucinations. Court emphasizes that citing non-existent cases, even inadvertently, constitutes a serious abuse of process and professionalism and condemns \"irresponsible use of internet sources or generative AI tools.\" Referred matter to Disciplinary Committee.",
+  "links": {
+    "Opinion": "https://webopac.ttlawcourts.org/LibraryJud/Judgments/HC/james/2023/cv_23_04039DD30Apr2025.pdf",
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Reclamação 78.890 (STF Apr. 25 2025)",
+  "court": "Supremo Tribunal Federal",
+  "state": "BR",
+  "filer": "Lawyer",
+  "judge": "Min. Cristiano Zanin",
+  "date": "2025-04-25",
+  "outcome": "Monetary sanction (twice the filing costs); bar referral",
+  "outcomeClass": "sanction",
+  "desc": "A constitutional complaint drafted with AI quoted a string of nonexistent STF and STJ precedents. Citing litigational bad faith, the minister dismissed the filing, imposed a penalty under CPC art. 81 of twice the filing costs, and forwarded the matter to national and state bar councils.",
+  "links": {
+    "Coverage": "https://www.migalhas.com.br/quentes/430465/zanin-ve-ma-fe-e-rejeita-peticao-feita-por-ia-com-falsos-precedentes",
+    "Docket" : "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7240744"
+  }
+}
+
 
 ];
 
@@ -1609,7 +1707,22 @@ const liabilityCases = [
   //     "Complaint": "https://dig.abclocal.go.com/kgo/PDF/Complaint-Huang-v-Tesla-State-of-Calif-20190430.pdf",
   //     "Coverage": "https://lsflaw.com/landmark-tesla-wrongful-death-settlement-things-to-know/"
   //   }
-  // }
+  // },
+  // {
+  //   "name": "Moffatt v. Air Canada, 2024 BCCRT 149 (B.C. Civ. Resol. Trib. Feb. 14 2024)",
+  //   "court": "B.C. Civil Resolution Tribunal",
+  //   "state": "Canada-BC",
+  //   "filer": "Chatbot (carrier’s website)",
+  //   "judge": "Tribunal Member Christopher Rivers",
+  //   "date": "2024-02-14",
+  //   "outcome": "CA$650.88 damages + fees",
+  //   "outcomeClass": "costs",
+  //   "desc": "Air Canada’s chatbot told a passenger he could apply later for a bereavement-fare refund—information that was false. The tribunal found negligent misrepresentation and ordered the airline to pay the fare difference, interest and tribunal fees.",
+  //   "links": {
+  //     "Decision": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
+  //     "Coverage": "https://www.theguardian.com/world/2024/feb/16/air-canada-chatbot-lawsuit"
+  //   }
+  // },
 ];
 
 /* ─────────────────────────── FIRST-AMENDMENT & AI SPEECH ─────────────────────────── */
