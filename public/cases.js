@@ -1003,6 +1003,78 @@ const hallucinationCases = [
     "Coverage": "https://www.migalhas.com.br/quentes/430465/zanin-ve-ma-fe-e-rejeita-peticao-feita-por-ia-com-falsos-precedentes",
     "Docket" : "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7240744"
   }
+},
+{
+  "name": "Attaway v. Illinois Department of Corrections, No. 23-cv-2091-DWD (S.D. Ill. Apr. 14 2025)",
+  "court": "S.D. Ill.",
+  "state": "IL",
+  "filer": "Pro se",
+  "judge": "District Judge David W. Dugan",
+  "date": "2025-04-14",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Plaintiff’s post-judgment motions cited several nonexistent authorities that may have been copied from a generative-AI tool.  Judge cautioned that any future reliance on fake caselaw would trigger Rule 11 monetary sanctions.",
+  "links": {
+    "Order": "https://www.casemine.com/judgement/us/68022da00e0adcc9305db4e9"
+  }
+},
+/* —— CORRECTED ENTRY —— */
+{
+  "name": "Nichols v. Walmart Inc., No. CV 124-236 (S.D. Ga. Apr. 23 2025)",
+  "court": "S.D. Ga. (Augusta Div.)",
+  "state": "GA",
+  "filer": "Pro se",
+  "judge": "District Judge J. Randal Hall (adopting M.J. Brian K. Epps)",
+  "date": "2025-04-23",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Overruling objections and dismissing for lack of jurisdiction, the Court also addressed Nichols’s motion that relied on fictitious authorities, stressing that even pro-se litigants receive no leeway for citing “fake, nonexistent, misleading” cases and warning that Rule 11 sanctions would follow any repeat.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.gasd.106188/gov.uscourts.gasd.106188.60.0.pdf"
+  }
+},
+{
+  "name": "Ford v. Bank of New York Mellon, No. 24-50053 (5th Cir. Apr. 4 2025)",
+  "court": "5th Cir.",
+  "state": "LA-TX (appellate)",
+  "filer": "Pro se",
+  "judge": "Per curiam panel",
+  "date": "2025-04-04",
+  "outcome": "Arguments disregarded; no sanction",
+  "outcomeClass": "warning",
+  "desc": "A per-curiam opinion affirming dismissal noted in a footnote that Ford’s brief cited authorities that do not exist — an issue the panel attributed to generative-AI research.  The court disregarded the fake cases and reminded litigants that Rule 11 applies equally on appeal.",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/federal/appellate-courts/ca5/24-50053/24-50053-2025-04-04.html"
+  }
+},
+/* —— CORRECTED ENTRY —— */
+{
+  "name": "McKeown v. Paycom Payroll LLC, No. CIV-24-301-PRW (W.D. Okla. Mar. 31 2025)",
+  "court": "W.D. Okla.",
+  "state": "OK",
+  "filer": "Pro se",
+  "judge": "District Judge Patrick R. Wyrick",
+  "date": "2025-03-31",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Granting in part Paycom’s motion to strike, the Court found McKeown had twice relied on nonexistent caselaw—“repeated use of falsified legal authority.” ",
+  "links": {
+    "Order": "https://cases.justia.com/federal/district-courts/oklahoma/okwdce/5%3A2024cv00301/126292/30/0.pdf"
+  }
+},
+{
+  "name": "Johnson v. Dunn, No. 2:21-cv-01701-AMM (N.D. Ala. May 19 2025)",
+  "court": "N.D. Ala.",
+  "state": "AL",
+  "filer": "Lawyer",
+  "judge": "District Judge Ann M. Manasco",
+  "date": "2025-05-19",
+  "outcome": "Response to order to show cause; sanctions pending",
+  "outcomeClass": "pending",
+  "desc": "In a response to the Court’s show-cause order, lawfirm admitted that its attorneys used ChatGPT to add nonexistent case citations to prior motions, acknowledged the citations were AI “hallucinations,” and apologized to the Court and opposing counsel.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.alnd.179677/gov.uscourts.alnd.179677.195.0.pdf"
+  }
 }
 
 
@@ -1671,84 +1743,84 @@ const copyrightCases = [
 
 /* ─────────────────────────── AI–LIABILITY / TORT & DEFAMATION ─────────────────────────── */
 const liabilityCases = [
-  // {
-  //   "name": "Walters v. OpenAI LLC, No. 23-A-04860-2 (Gwinnett Co. Super. Ct. GA)",
-  //   "court": "Gwinnett Co. Super. Ct. (GA)",
-  //   "claim": "Defamation",
-  //   "outcome": "Pending",
-  //   "outcomeClass": "pending",
-  //   "date": "2023-06-05",
-  //   "desc": "Radio host sues ChatGPT creator for defamation after bot falsely claimed he embezzled funds.",
-  //   "links": {
-  //     "Docket": "https://www.courtlistener.com/docket/67617826/walters-v-openai-llc/"
-  //   }
-  // },
-  // {
-  //   "name": "Garcia v. Character Techs. Inc., No. 6:24-cv-01903 (M.D. Fla.)",
-  //   "court": "M.D. Fla.",
-  //   "claim": "Wrongful Death, Negligence, Florida's Deceptive and Unfair Trade Practices Act, …",
-  //   "outcome": "Pending",
-  //   "outcomeClass": "pending",
-  //   "date": "2024-10-22",
-  //   "desc": "Family alleges chatbot encouraged teen's suicide; company seeks dismissal, citing First Amendment.",
-  //   "links": {
-  //     "Docket": "https://www.courtlistener.com/docket/69300919/garcia-v-character-technologies-inc/"
-  //   }
-  // },
-  // {
-  //   "name": "Huang Estate v. Tesla Inc. (Autopilot), No. 18CV334980 (Cal. Super. Ct. Jan. 17 2025)",
-  //   "court": "Cal. Super. Ct.",
-  //   "claim": "Negligence, Wrongful Death, …",
-  //   "outcome": "Settlement",
-  //   "outcomeClass": "settlement",
-  //   "date": "2019-04-26",
-  //   "desc": "Tesla settles wrongful-death suit alleging Autopilot caused fatal crash.",
-  //   "links": {
-  //     "Complaint": "https://dig.abclocal.go.com/kgo/PDF/Complaint-Huang-v-Tesla-State-of-Calif-20190430.pdf",
-  //     "Coverage": "https://lsflaw.com/landmark-tesla-wrongful-death-settlement-things-to-know/"
-  //   }
-  // },
-  // {
-  //   "name": "Moffatt v. Air Canada, 2024 BCCRT 149 (B.C. Civ. Resol. Trib. Feb. 14 2024)",
-  //   "court": "B.C. Civil Resolution Tribunal",
-  //   "state": "Canada-BC",
-  //   "filer": "Chatbot (carrier’s website)",
-  //   "judge": "Tribunal Member Christopher Rivers",
-  //   "date": "2024-02-14",
-  //   "outcome": "CA$650.88 damages + fees",
-  //   "outcomeClass": "costs",
-  //   "desc": "Air Canada’s chatbot told a passenger he could apply later for a bereavement-fare refund—information that was false. The tribunal found negligent misrepresentation and ordered the airline to pay the fare difference, interest and tribunal fees.",
-  //   "links": {
-  //     "Decision": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
-  //     "Coverage": "https://www.theguardian.com/world/2024/feb/16/air-canada-chatbot-lawsuit"
-  //   }
-  // },
+  {
+    "name": "Walters v. OpenAI LLC, No. 23-A-04860-2 (Gwinnett Co. Super. Ct. GA)",
+    "court": "Gwinnett Co. Super. Ct. (GA)",
+    "claim": "Defamation",
+    "outcome": "Dismissed",
+    "outcomeClass": "dismissed",
+    "date": "2023-06-05",
+    "desc": "Radio host sues ChatGPT creator for defamation after bot falsely claimed he embezzled funds.",
+    "links": {
+      "Docket": "https://www.courtlistener.com/docket/67617826/walters-v-openai-llc/"
+    }
+  },
+  {
+    "name": "Garcia v. Character Techs. Inc., No. 6:24-cv-01903 (M.D. Fla.)",
+    "court": "M.D. Fla.",
+    "claim": "Wrongful Death, Negligence, Florida's Deceptive and Unfair Trade Practices Act, …",
+    "outcome": "Pending",
+    "outcomeClass": "pending",
+    "date": "2024-10-22",
+    "desc": "Family alleges chatbot encouraged teen's suicide; company seeks dismissal, citing First Amendment.",
+    "links": {
+      "Docket": "https://www.courtlistener.com/docket/69300919/garcia-v-character-technologies-inc/"
+    }
+  },
+  {
+    "name": "Huang Estate v. Tesla Inc. (Autopilot), No. 18CV334980 (Cal. Super. Ct. Jan. 17 2025)",
+    "court": "Cal. Super. Ct.",
+    "claim": "Negligence, Wrongful Death, …",
+    "outcome": "Settlement",
+    "outcomeClass": "settlement",
+    "date": "2019-04-26",
+    "desc": "Tesla settles wrongful-death suit alleging Autopilot caused fatal crash.",
+    "links": {
+      "Complaint": "https://dig.abclocal.go.com/kgo/PDF/Complaint-Huang-v-Tesla-State-of-Calif-20190430.pdf",
+      "Coverage": "https://lsflaw.com/landmark-tesla-wrongful-death-settlement-things-to-know/"
+    }
+  },
+  {
+    "name": "Moffatt v. Air Canada, 2024 BCCRT 149 (B.C. Civ. Resol. Trib. Feb. 14 2024)",
+    "court": "B.C. Civil Resolution Tribunal",
+    "state": "Canada-BC",
+    "filer": "Negligent Misrepresentation",
+    "judge": "Tribunal Member Christopher Rivers",
+    "date": "2024-02-14",
+    "outcome": "CA$650.88 damages + fees",
+    "outcomeClass": "costs",
+    "desc": "Air Canada’s chatbot told a passenger he could apply later for a bereavement-fare refund—information that was false. The tribunal found negligent misrepresentation and ordered the airline to pay the fare difference, interest and tribunal fees.",
+    "links": {
+      "Decision": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
+      "Coverage": "https://www.theguardian.com/world/2024/feb/16/air-canada-chatbot-lawsuit"
+    }
+  },
 ];
 
 /* ─────────────────────────── FIRST-AMENDMENT & AI SPEECH ─────────────────────────── */
 const firstAmendmentCases = [
-  // {
-  //   "name": "Kohls v. Bonta, No. 2:24-cv-02527 (E.D. Cal. Oct. 2 2024)",
-  //   "court": "E.D. Cal.",
-  //   "outcome": "Preliminary Injunction",
-  //   "outcomeClass": "warning",
-  //   "date": "2024-10-02",
-  //   "desc": "Court blocks California 'Defending Democracy from Deepfake Deception Act' as overbroad.",
-  //   "links": {
-  //     "Order": "https://cdn.arstechnica.net/wp-content/uploads/2024/10/Kohls-v-Bonta-Order-Granting-Injunction-10-2-24.pdf",
-  //     "Coverage": "https://www.politico.com/news/2024/10/02/california-law-block-political-deepfakes-00182277/"
-  //   }
-  // },
-  // {
-  //   "name": "Character Techs. MTD (Garcia), No. 6:24-cv-01903 (M.D. Fla. Apr. 28 2025)",
-  //   "court": "M.D. Fla.",
-  //   "outcome": "Motion to Dismiss",
-  //   "outcomeClass": "pending",
-  //   "date": "2025-04-28",
-  //   "desc": "Company argues chatbot outputs are protected speech deserving full First-Amendment protection.",
-  //   "links": {
-  //     "Brief": "https://www.documentcloud.org/documents/25503918-garcia-vs-character-technologies-characterai-motion-to-dismiss/",
-  //     "Coverage": "https://arstechnica.com/tech-policy/2025/04/are-chatbot-outputs-protected-speech-court-pressured-to-clarify/"
-  //   }
-  // }
+  {
+    "name": "Kohls v. Bonta, No. 2:24-cv-02527 (E.D. Cal. Oct. 2 2024)",
+    "court": "E.D. Cal.",
+    "outcome": "Preliminary Injunction",
+    "outcomeClass": "warning",
+    "date": "2024-10-02",
+    "desc": "Court blocks California 'Defending Democracy from Deepfake Deception Act' as overbroad.",
+    "links": {
+      "Order": "https://cdn.arstechnica.net/wp-content/uploads/2024/10/Kohls-v-Bonta-Order-Granting-Injunction-10-2-24.pdf",
+      "Coverage": "https://www.politico.com/news/2024/10/02/california-law-block-political-deepfakes-00182277/"
+    }
+  },
+  {
+    "name": "Character Techs. MTD (Garcia), No. 6:24-cv-01903 (M.D. Fla. Apr. 28 2025)",
+    "court": "M.D. Fla.",
+    "outcome": "Motion to Dismiss",
+    "outcomeClass": "pending",
+    "date": "2025-04-28",
+    "desc": "Company argues chatbot outputs are protected speech deserving full First-Amendment protection.",
+    "links": {
+      "Brief": "https://www.documentcloud.org/documents/25503918-garcia-vs-character-technologies-characterai-motion-to-dismiss/",
+      "Coverage": "https://arstechnica.com/tech-policy/2025/04/are-chatbot-outputs-protected-speech-court-pressured-to-clarify/"
+    }
+  }
 ];
