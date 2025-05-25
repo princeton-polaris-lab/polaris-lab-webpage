@@ -1075,6 +1075,412 @@ const hallucinationCases = [
   "links": {
     "Order": "https://storage.courtlistener.com/recap/gov.uscourts.alnd.179677/gov.uscourts.alnd.179677.195.0.pdf"
   }
+},
+{
+  "name": "Bauche v. Commissioner of Internal Revenue, T.C. Memo 2025-66 (U.S. Tax Ct. May 20 2025)",
+  "court": "U.S. Tax Court",
+  "state": "USA",
+  "filer": "Pro se",
+  "judge": "Judge Guy",
+  "date": "2025-05-20",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Petitioner’s brief opposing deficiencies cited two decisions the Court could not find anywhere.  The Tax Court declined to sanction the pro-se litigant.",
+  "links": {
+    "Opinion": "/opinion_pdfs/Bauche_v_US_Tax_Court_2025-05-20.pdf"
+  }
+},
+
+{
+  "name": "Versant Funding LLC v. Teras Breakbulk Ocean Navigation Enters., No. 23-cv-81494 (S.D. Fla. May 20 2025)",
+  "court": "S.D. Fla.",
+  "state": "FL",
+  "filer": "Lawyer",
+  "judge": "Mag. Judge William Matthewman",
+  "date": "2025-05-20",
+  "outcome": "$1,500 costs",
+  "outcomeClass": "sanction",
+  "desc": "Two defense lawyers filed a response brief containing a Delaware privilege case that never existed.  The court awarded plaintiff its fees for ferreting out the fake cite, fined lead counsel $1,000 and local counsel $500, and required both to complete CLE on generative-AI ethics.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.514535/gov.uscourts.flsd.514535.384.0.pdf"   
+  }
+},
+
+{
+  "name": "Beenshoof v. Chin, No. 2:24-cv-00808 (W.D. Wash. May 15 2025)",
+  "court": "W.D. Wash.",
+  "state": "WA", 
+  "filer": "Pro se",
+  "judge": "District Judge John H. Chun",
+  "date": "2025-05-15",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Plaintiff’s reply cited a supposed Oregon district-court opinion that does not exist.  The court struck the citation, reminded plaintiff that Rule 11 applies equally to pro-se litigants, and warned sanctions would follow any repeat.",
+  "links": {
+    "Order": "https://www.courtlistener.com/docket/68839037/121/benshoof-v-ferguson/"
+  }
+},
+{
+  "name": "Newbern v. DeSoto Cnty. Sch. Dist., No. 3:23-cv-113 (N.D. Miss. May 12 2025)",
+  "court": "N.D. Miss.",
+  "state": "MS",
+  "filer": "Pro se",
+  "judge": "District Judge Sharion Aycock",
+  "date": "2025-05-12",
+  "outcome": "Partioal dismissal as sanction",
+  "outcomeClass": "dismissal",
+  "ai_used": "Unidentified (implied use)",
+  "desc": "Several key authorities offered were fabricated.  Treating the fake cases against the officer, the court dismissed all § 1983 claims but allowed limited state-law discovery to proceed.",
+  "links": {
+    "Opinion": "https://caselaw.findlaw.com/court/us-dis-crt-n-d-mis-oxf-div/117261206.html"
+    }
+},
+{
+  "name": "Qamar v. Bd. of Trs. of Governors State Univ., No. 24-cv-1987 (N.D. Ill. May 6 2025)",
+  "court": "N.D. Ill.",
+  "state": "IL",
+  "filer": "Pro se",
+  "judge": "District Judge Manish S. Shah",
+  "date": "2025-05-06",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Plaintiff relied on a non-existent precedent.  The court accepted the filing but cautioned that continued citations to non-existent caselaw would violate Rule 11 and could merit sanctions.",
+  "links": {
+    "Opinion": "https://cases.justia.com/federal/district-courts/illinois/ilndce/1:2024cv13245/470262/28/0.pdf?ts=1746611749"
+  }
+},
+{
+  "name": "Harris v. Take-Two Interactive Software, Inc., No. 1:24-cv-00947 (D. Colo. May 6 2025)",
+  "court": "D. Colo.",
+  "state": "CO",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Gordon P. Gallagher",
+  "date": "2025-05-06",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Judge warned pro se client about citing non-existent cases.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.cod.234471/gov.uscourts.cod.234471.205.0.pdf"
+  }
+},
+{
+  "name": "Rotonde v. Stewart Title Ins. Co., 2025 NY Slip Op 50728(U) (Sup. Ct. Westchester Cty. May 6 2025)",
+  "court": "N.Y. Sup. Ct. (Westchester Cty.)",
+  "state": "NY",
+  "filer": "Pro se",
+  "judge": "Justice Linda S. Jamieson",
+  "date": "2025-05-06",
+  "outcome": "Claims dismissed; formal warning",
+  "outcomeClass": "warning",
+  "desc": "In footnote, court observed that several cases cited in opposition papers 'do not exist' and warned plaintiff that any future reliance on fake authority would result in sanctions.",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/new-york/other-courts/2025/2025-ny-slip-op-50728-u.html"
+  }
+},
+{
+  "name": "In re Thomas Grant Neusom, No. 8:24-mc-00015 (M.D. Fla. May 8 2025)",
+  "court": "M.D. Fla.",
+  "state": "FL",
+  "filer": "Lawyer",
+  "judge": "Chief Judge Timothy J. Corrigan (adopting Grievance-Cmte.)",
+  "date": "2025-03-08",
+  "outcome": "One-year federal bar suspension",
+  "outcomeClass": "sanction",
+  "desc": "Disciplinary inquiry showed multiple filings with invented opinions and quotations.  Court suspended attorney from the Middle District for one year and imposed compliance reporting conditions.",
+  "links": {
+    "Order": "https://www.courtlistener.com/docket/68209128/6/in-re-thomas-grant-neusom/",
+    "Grievance Committee Recommendation" : "https://www.courtlistener.com/docket/68209128/3/in-re-thomas-grant-neusom/"
+  }
+},
+{
+  "name": "Raven Investigations & Security Consulting, B-422880.4 (Gov’t Accountability Office May 7 2025)",
+  "court": "U.S. GAO Bid-Protest",
+  "state": "USA",
+  "filer": "Non-lawyer representative",
+  "judge": "GAO (Procurement Law Division)",
+  "date": "2025-05-07",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Bid-protest submissions included citations to GAO decisions that never existed.  GAO dismissed the protest on other grounds but warned that future reliance on fabricated authority could lead to cost-shifting or dismissal with prejudice.",
+  "links": {
+    "Decision": "https://www.gao.gov/products/b-423447"
+  }
+},
+{
+  "name": "Fox v. Assum",
+  "court": "Tel Aviv District Court",
+  "state": "Israel",
+  "filer": "Lawyer",
+  "judge": "Judge Limor Biber Shitrit",
+  "date": "2025-05-14",
+  "outcome": "₪1,200 costs; explanation required",
+  "outcomeClass": "costs",
+  "desc": "Defense notice relied on a judgment that does not exist.",
+  "links": {
+    "Decision": "https://websitedc.s3.amazonaws.com/documents/Fox_v._Assum_May_24_2025.pdf"
+  }
+},
+{
+  "name": "Case No. 72079-11-24 (Nazareth Mag. Ct. May 12 2025)",
+  "court": "Israel Magistrate Court",
+  "state": "Israel",
+  "filer": "Lawyer",
+  "judge": "Judge Itay Katz",
+  "date": "2025-05-12",
+  "outcome": "Referred for possible bar discipline",
+  "outcomeClass": "referral",
+  "desc": "Civil motion cited multiple non-existent Israeli rulings.  While sparing immediate sanctions, the judge forwarded the matter to the judiciary’s Legal Department to consider referral to the Israel Bar Ethics Committee.",
+  "links": {
+    "Order": "https://websitedc.s3.amazonaws.com/documents/X_v._Y_Israel_May_12_2025.pdf"
+  }
+},
+{
+  "name": "Jamisson Roriz de Santana Andrade v. TST, RCC 60.487 (Sup. Fed. Ct. Brazil May 12 2025)",
+  "court": "Supremo Tribunal Federal",
+  "state": "Brazil",
+  "filer": "Lawyer",
+  "judge": "Min. Dias Toffoli",
+  "date": "2025-05-12",
+  "outcome": "Double filing-fee penalty; bar referral",
+  "outcomeClass": "sanction",
+  "desc": "‘Constitutional complaint’ potentially drafted with MobiOffice AI cited nonexistent STF precedents.  STF summarily rejected the case, fined counsel twice the filing costs under CPC art. 81, and notified the OAB.",
+  "links": {
+    "Decision": "https://static.poder360.com.br/2025/05/STF-oficia-OAB-sobre-uso-de-IA-em-peticao.pdf"
+  }
+},
+{
+  "name": "Brown v. Patel, No. 4:24-cv-05036 (S.D. Tex. Apr 22 2025)",
+  "court": "S.D. Tex.",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Peter Bray",
+  "date": "2025-04-22",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Five nonexistent cases and misrepresentations of three others appeared in plaintiff’s amended complaint.  Court warned that continued misuse of AI-generated authority would lead to sanction.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.txsd.1985734/gov.uscourts.txsd.1985734.21.0.pdf"
+  }
+},
+
+{
+  "name": "Sims v. Souily-Lefave, No. 2:24-cv-00831-CDS-EJY (D. Nev. Apr 15 2025)",
+  "court": "D. Nev.",
+  "state": "NV",
+  "filer": "Lawyer",
+  "judge": "District Judge Cristina D. Silva",
+  "date": "2025-04-15",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Screening order noted at least two fabricated authorities and cautioned plaintiff that future filings containing AI 'hallucinations' could trigger sanctions.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.nvd.168422/gov.uscourts.nvd.168422.127.0.pdf"
+  }
+},
+
+
+{
+  "name": "Gustafson v. Amazon.com Inc., No. CV-24-01834-PHX-SHD (D. Ariz. Apr 30 2025)",
+  "court": "D. Ariz.",
+  "state": "AZ",
+  "filer": "Pro se",
+  "judge": "District Judge G. Murray Snow",
+  "date": "2025-04-30",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Motion contained citations to non-existent cases.  Court warned plaintiff that they may be subject to sanctions.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.azd.1390331/gov.uscourts.azd.1390331.69.0.pdf"
+  }
+},
+{
+  "name": "Arnaoudoff v. Tivity Health Inc., No. 2:23-cv-01510-DJH (D. Ariz. Mar 11 2025)",
+  "court": "D. Ariz.",
+  "state": "AZ",
+  "filer": "Pro se",
+  "judge": "District Judge Susan R. Bolton",
+  "date": "2025-03-11",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Plaintiff admitted drafting with ChatGPT.  The court disregarded two phantom cases but granted a motion to correct the record instead of imposing sanctions, citing plaintiff being up front about their use of AI.",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.azd.1341963/gov.uscourts.azd.1341963.69.0.pdf"
+  }
+},
+
+{
+  "name": "210S LLC v. Di Wu, No. CAAP-24-0000817 (Haw. Ct. App. Mar 11 2025)",
+  "court": "Haw. Intermediate Ct. App.",
+  "state": "HI",
+  "filer": "Pro se",
+  "judge": "Per curiam panel",
+  "date": "2025-03-11",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Court warned 'cautioned that all parties, including self-represented litigants, shall not cite fictitious cases or misrepresent the holdings of a case.'",
+  "links": {
+    "Order": "https://www.casemine.com/judgement/us/67d25fd13db7ac2e2c1d5b31"
+  }
+},
+
+{
+  "name": "Alkuda v. McDonald Hopkins Co., L.P.A., No. 1:24-cv-01103-BM (N.D. Ohio Mar 18 2025)",
+  "court": "N.D. Ohio",
+  "state": "OH",
+  "filer": "Pro se",
+  "judge": "District Judge J. Philip Calabrese",
+  "date": "2025-03-18",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In a footnote, the court warned that \"submitting fictitious legal citations is  not permitted, whether submitted by a pro se litigant or a licensed attorney. [Litigant] is now on  notice that any further submissions of fictitious legal citations to a court may result in dismissal  or other sanctions, including monetary penalties, as deemed appropriate by the Court.\"",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.ohnd.307896/gov.uscourts.ohnd.307896.17.0.pdf"
+  }
+},
+{
+  "name": "Stevens v. BJC Health System, No. ED 112759 (Mo. Ct. App. Mar 18 2025)",
+  "court": "Missouri Court of Appeals, Eastern District",
+  "state": "MO",
+  "filer": "Pro se",
+  "judge": "Judge Renée D. Hardin-Tammons (panel)",
+  "date": "2025-03-18",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "In a footnote, the court noted that the appellant's brief contained citations to six cases that the Court was unable to locate. \"These citations to fictitious legal authorities suggest the use of artificial intelligence in the drafting of Appellant's brief… we warn litigants that using artificial intelligence to draft a legal document may lead to sanctions if the user fails to perform a critical review of the end-product to ensure that fictitious legal authorities or citations do not appear in filings with this Court or any other court.\"",
+  "links": {
+    "Opinion": "https://caselaw.findlaw.com/court/mis-crt-app-eas-dis-div-thr/117060624.html"
+  }
+},
+{
+  "name": "Buckner v. Hilton Global, No. 3:24-cv-00375 (W.D. Ky. Mar 20 2025)",
+  "court": "W.D. Ky.",
+  "state": "KY",
+  "filer": "Pro se",
+  "judge": "District Judge Rebecca Grady Jennings",
+  "date": "2025-03-20",
+  "outcome": "Complaint dismissed; warning re AI citations",
+  "outcomeClass": "dismissed_warning",
+  "desc": "\"The Court has reason to believe that Buckner used artificial intelligence (\"AI\") to assist him in drafting his Fourth Amended Complaint… Although the Court recognizes that Buckner is pro se, his status will not be tolerated as an excuse for citing nonexistent case law. Thus, the use of citations to nonexistent cases may result in sanctions such as the pleading being stricken, filing restrictions imposed, or the case being dismissed.\"",
+  "links": {
+    "Order": "https://docs.justia.com/cases/federal/district-courts/kentucky/kywdce/3:2024cv00375/135307/36"
+  }
+},
+{
+  "name": "Williams v. Capital One Bank (USA) N.A., No. 1:24-cv-2032 (D.D.C. Mar 18 2025)",
+  "court": "D.D.C.",
+  "state": "DC",
+  "filer": "Pro se",
+  "judge": "District Judge Rudolph Contreras",
+  "date": "2025-03-18",
+  "outcome": "Warning only",
+  "outcomeClass": "dismissal",
+  "desc": "\"Courts have recently seen increasing reliance on artificial intelligence… Williams cites to cases that do not exist and may either be from his imagination or represent hallucinations of artificial intelligence… The Court strongly warns Williams against filing briefs with fabricated case citations in this Court or any other.\"",
+  "links": {
+    "Opinion": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_24-cv-02032/pdf/USCOURTS-dcd-1_24-cv-02032-0.pdf"
+  }
+},
+{
+  "name": "Sheets v. Presseller, No. 2:24-cv-00495 (M.D. Fla. Mar 11 2025)",
+  "court": "M.D. Fla. (Fort Myers Div.)",
+  "state": "FL",
+  "filer": "Pro se",
+  "judge": "Magistrate Judge Kyle C. Dudek",
+  "date": "2025-03-11",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "\"Finally, the City claims that Sheets relied on generative AI to draft discovery, emails, and pleadings … If Sheets relies on any non-existent cases moving forward, the Court may consider sanctions.\"",
+  "links": {
+    "Order": "https://ecf.flmd.uscourts.gov/cgi-bin/show_public_doc?2024-00495-110-2-cv",
+    "Filing Containing Hallucinated Citations": "https://storage.courtlistener.com/recap/gov.uscourts.flmd.428254/gov.uscourts.flmd.428254.102.0.pdf"    // Pl.’s motion to compel (Doc. 102) – cited by the court as containing the bad citations
+  }
+},
+{
+  "name": "Plonit v. Sharia Court of Appeals, HCJ 38379/12-24 (Isr. High Ct. Just. Feb 23 2025)",
+  "court": "High Court of Justice (Israel)",
+  "state": "Israel",
+  "filer": "Lawyer",
+  "judge": "Justice Gila Canfy-Steinitz (panel)",
+  "date": "2025-02-23",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The petition relied on fictitious precedents apparently generated by an AI service.  The Court dismissed the case and warned that lawyers remain professionally responsible for verifying AI output.",
+  "links": {
+    "Decision (PDF)": "https://supremedecisions.court.gov.il/home/Download?path=NetVerdicts/2025/3/2/2025-1-23602-5-2&fileName=52977a5595010000090037f6ad0e9015&type=4",
+    "Coverage": "https://www.jewishpress.com/news/the-courts/israels-high-court-rejects-plea-written-by-ai-that-cited-fake-rulings/2025/02/24/"
+
+  }
+},
+{
+  "name": "Dog Rights Ass’n v. Ministry of Agriculture, HCJ 1868/25 (Isr. Sup. Ct. Feb 28 2025)",
+  "court": "Supreme Court (Israel)",
+  "state": "Israel",
+  "filer": "Lawyer",
+  "judge": "Justice Noam Sohlberg (panel)",
+  "date": "2025-02-28",
+  "outcome": "Petition dismissed as sanction; ₪7,000 costs and warning",
+  "outcomeClass": "costs",
+  "desc": "The public-interest petition was riddled with invented precedents.  The Court dismissed it, imposed ₪7,000 costs, and cautioned that future AI-generated fabrications will attract harsher sanctions.",
+  "quote": "״זוהי הבעיה הגדולה של העתירה הנוכחית, ובעטיה נחרץ דינה לשבט״, כתב השופט נעם סולברג, והוסיף כי \"עורך דין אשר מגיש כתבי-טענות כאמור, חוטא ב'חטא מרובע'.\"",
+  "links": {
+    "Article": "https://www.law.co.il/media/computer-law/dogs_rights_advancement_association.pdf"
+  }
+},
+{
+    "name": "LYJ v. Occupational Therapy Board of Australia [2025] QCAT 68 (26 Mar 2025)",
+    "court": "Queensland Civil and Administrative Tribunal (QCAT)",
+    "state": "Australia-QLD",
+    "filer": "Pro se",
+    "judge": "Member Ann Fitzpatrick",
+    "date": "2025-03-26",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "Stay granted but Tribunal warned that quoting a non-existent Court of Appeal authority—generated by ChatGPT—undermines credibility and wastes public resources.",
+    // "quote": "“Citing a judgment ‘found’ by ChatGPT that is not in any authorised series weakens your submission and diverts the Tribunal’s time.”",
+    "links": {
+      "Decision": "https://www.queenslandjudgments.com.au/caselaw/qcat/2025/96",
+    }
+  },
+{
+  "name": "Reddan v. An Bord Pleanála, [2025] IEHC 197 (Ir. High Ct. Mar 13 2025)",
+  "court": "High Court (Ireland)",
+  "state": "Ireland",
+  "filer": "Pro se",
+  "judge": "Justice Richard Nolan",
+  "date": "2025-03-13",
+  "outcome": "Warning only",
+  "outcomeClass": "dismissal",
+  "desc": "Application accusing a golf-club trusteeship of constitutional wrongs relied on AI-generated pseudo-legal concepts.  Court refused leave for judicial review and sharply criticized the misuse of AI hallucinations.",
+  "links": {
+    "Judgment": "https://www.courts.ie/view/Judgments/b323bfc6-665d-4dde-970f-50feb065f0a8/9413138c-64cf-41a8-858c-a1fb3bad2b72/2025_IEHC_172.pdf/pdf"
+  }
+},
+{
+  "name": "Hamdon v. National Insurance Institute, TA 10743-12-24 (Jerusalem Dist. Ct. Dec 12 2024)",
+  "court": "Jerusalem District Court",
+  "state": "Israel",
+  "filer": "Lawyer",
+  "judge": "Judge Raphael Saharai",
+  "date": "2024-12-12",
+  "outcome": "Petition dismissed; ₪1,000 costs",
+  "outcomeClass": "costs",
+  "desc": "Bankruptcy petition cited ten non-existent Israeli precedents.  Court dismissed the case and ordered counsel to pay ₪1,000 for procedural abuse.",
+  "links": {
+    "Decision": "https://www.law.co.il/media/computer-law/hamdan.pdf"
+  }
+},
+{
+  "name": "Strike 3 Holdings LLC v. Doe, No. 2:24-CV-8183-TJH (SPX) (C.D. Cal. Jan 22 2025)",
+  "court": "C.D. Cal.",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "Mag. Judge Sheri Pym",
+  "date": "2025-01-22",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "Early-discovery motion relied on three wholly fictitious cases.  Court denied relief and reiterated that AI does not lighten counsel’s duty of reasonable inquiry.",
+  "links": {
+    "Order": "https://websitedc.s3.amazonaws.com/documents/Strike_3_Holdings_LLC_v_Doe_C.D._California_January_22_2025.pdf"
+  }
 }
 
 
