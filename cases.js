@@ -1547,21 +1547,6 @@ const hallucinationCases = [
     }
   },
 
-  /* 2 ― E.D. Michigan warning (no money) */
-  {
-    "name": "Evans v. Robertson, No. 2:24-cv-13435 (E.D. Mich. May 21 2025)",
-    "court": "E.D. Mich.",
-    "state": "MI",
-    "filer": "Pro se",
-    "judge": "District Judge Laurie J. Michelson",
-    "date": "2025-05-21",
-    "outcome": "Filings stricken; warning",
-    "outcomeClass": "warning",
-    "desc": "Fake citations in the litigant filing..  Judge struck the filings and warned the litigant that repeating the error will trigger Rule 11 sanctions.",
-    "links": {
-      "Order": "https://www.courtlistener.com/docket/69493133/58/evans-v-robertson/"
-    }
-  },
 
   /* 3 ― South-Carolina Administrative Law Court (warning) */
   {
@@ -1741,10 +1726,94 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2024cv04232/622538/36/"
   }
+},
+{
+  "name": "Plumbers & Gasfitters Union Local 75 Health Fund v. Morris Plumbing, LLC, No. 23-cv-616-JPS (E.D. Wis. Apr. 18 2024)",
+  "court": "U.S. District Court, E.D. Wisconsin",
+  "state": "WI",
+  "filer": "Lawyer",
+  "judge": "District Judge J. P. Stadtmueller",
+  "date": "2024-04-18",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "\"Although it does not ultimately affect the Court’s analysis or disposition, Plaintiffs in their reply cite to a case that none of the Court’s staff were able to locate. . . The citation goes to a case of a different name, from a different year, and from a different circuit. Court staff also could not locate the case by searching, either on Google or in legal databases, the case name provided in conjunction with the purported publication year. If this is, as the Court suspects, an instance of provision of falsified case authority derived from artificial intelligence, Plaintiffs’ counsel is on notice that any future instance of the presentation of nonexistent case authority will result in sanctions.\"",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.wied.103652/gov.uscourts.wied.103652.33.0.pdf",
+    "Coverage": "https://evan.law/2024/04/22/footnote-in-opinion-warns-counsel-not-to-cite-ai-generated-fake-cases-again/"
+  }
+}, 
+{
+  "name": "Dowlah v. Professional Staff Congress CUNY, 2024 NY Slip Op 02980 (App. Div. 1st Dep’t May 30 2024)",
+  "court": "N.Y. Appellate Division, First Department",
+  "state": "NY",
+  "filer": "Pro se",
+  "judge": "Moulton, J.P.; Scarpulla, Shulman, Higgitt & O’Neill Levy, JJ.",
+  "date": "2024-05-30",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The Court wrote: “**Plaintiff cites several nonexistent cases in his initial memorandum of law. In his reply brief he acknowledges that these citations were the result of research using ‘legal software applications’ that deploy artificial intelligence.**”  He “**apologizes for the fictitious precedents. We caution plaintiff that his pro se status does not excuse his failure to check the legal citations that he offers to a court.**”",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/new-york/appellate-division-first-department/2024/index-no-151561-22-appeal-no-2412-case-no-2023-06121.html"
+  }
+},
+
+{
+  "name": "Lillard v. Offit Kurman, P.A., 2025 WL 800833 (Del. Super. Ct. Mar. 12 2025)",
+  "court": "Delaware Superior Court (New Castle Cty.)",
+  "state": "DE",
+  "filer": "Pro se",
+  "judge": "Judge Danielle J. Brennan",
+  "date": "2025-03-12",
+  "outcome": "Certification order; warnings re future sanctions",
+  "outcomeClass": "warning",
+  "desc": "• “Going forward, **any filing in this case by either party must contain a certification page if Generative Artificial Intelligence was used** in the creation of said filing.”\n• The court’s review “**revealed a number of mis-cited and incorrect cases** cited in Plaintiff’s papers,” including quotes the court “**cannot find**.”\n• “While one example was given on the record to Plaintiff, **the following additional issues were found by the Court**:” followed by three bullet-pointed nonexistent or misquoted authorities.\n• “The Court’s review of the filings in this case **revealed a number of mis-cited and incorrect cases** … Plaintiff acknowledged that **Generative AI was used** in preparation of his legal filings.”\n• “The Motion to Dismiss is **DENIED WITHOUT PREJUDICE** … The petitioner should consider himself **warned**.”",
+  "links": {
+    "Order": "https://law.justia.com/cases/delaware/superior-court/2025/n24c-10-001-djb.html"
+  }
+},
+/* —— NEW ENTRY —— */
+{
+  "name": "Evans v. Robertson, No. 2:24-cv-13435 (E.D. Mich. May 21 2025)",
+  "court": "U.S. District Court, E.D. Mich.",
+  "state": "MI",
+  "filer": "Pro se",
+  "judge": "District Judge Judith E. Levy",
+  "date": "2025-05-21",
+  "outcome": "Filings stricken; warning",
+  "outcomeClass": "warning",
+  "desc": "“Doe’s objections will be stricken...” “Doe’s objections cite to nonexistent, seemingly AI-generated authority.” “This non-existent case has ‘the hallmarks of cases generated by AI found in other courts.’.... The Court warns Doe, **and all other litigants, that they may be subject to sanctions if they violate Rule 11, including by citing nonexistent cases.” Court order requires any corrected filing to include “a certification that he has checked all citations and ensured that the content is correct.”",
+  "links": {
+    "Order": "https://storage.courtlistener.com/recap/gov.uscourts.mied.372289/gov.uscourts.mied.372289.58.0.pdf"
+  }
+},
+{
+  "name": "Ruggirello v. Lancaster, No. 4:22-cv-12010-SDK-EAS (E.D. Mich. Sept. 11 2023)",
+  "court": "U.S. District Court, E.D. Michigan",
+  "state": "MI",
+  "filer": "Pro se",
+  "judge": "District Judge Nancy G. Edmunds",
+  "date": "2023-09-11",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "\"Lancaster cites “Bazzi v. Sentinel Ins. Co., 961 F.3d 734 (6th Cir. 2020),” which appears to be a mutant citation blending the case name of an existing Michigan state-court case (Bazzi v. Sentinel Ins. Co., 919 N.W.2d 20 (Mich. 2018)) with the reporter citation to an existing Fifth Circuit case (Hewlett-Packard Co. v. Quanta Storage, Inc., 961 F.3d 731, 734 (5th Cir. 2020)). ECF No. 15, PageID.244. Lancaster similarly cites two other cases which do not exist; as a result, the majority of the cases cited in his objections are nonexistent. See id. at PageID.242, 244 (citing “Maldonado v. Ford Motor Co., 720 F.3d 760 (5th Cir. 2013)” and “Malliaras & Poulos, P.C. v. City of Center Line, 788 F.3d 876 (6th Cir. 2015)”). These and other fabrications within Lancaster’s objections may be from Lancaster’s imagination, a generative artificial-intelligence tool’s hallucination, both, or something else entirely. The Court need not speculate. At bottom, Lancaster wasted the Court’s and plaintiff’s time and resources, as well as his chance to bring legitimate objections. Although he is pro se, the Court warns Lancaster that conduct such as citing made-up law may result in significant sanctions imposed by either this Court, or upon remand, another court observing the same conduct.\"",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.mied.364169/gov.uscourts.mied.364169.25.0.pdf"
+  }
+},
+{
+  "name": "In the Matter of Anthony Matos, Proceeding No. D2025-13 (USPTO March 6, 2025)",
+  "court": "U.S. Patent & Trademark Office, Office of Enrollment & Discipline",
+  "state": "USA",
+  "filer": "Lawyer",
+  "judge": "",
+  "date": "2025-03-06",
+  "outcome": "Public reprimand; two CLEs on AI",
+  "outcomeClass": "sanction",
+  "desc": "TTAB found seven instances where respondent “*improperly cited cases in a brief*,” including “*three purported TTAB decisions **which did not exist***.” OED issued a public reprimand and required two CLEs on AI as sanctions.",
+  "links": {
+    "Final Order": "https://www.uspto.gov/sites/default/files/documents/STEPPETHICSAPR2025.pdf#page=21"
+  }
 }
-
-
-
 ];
 
 
@@ -1774,6 +1843,21 @@ const aiInCourtNoHallucinations = [
   "desc": "The Tribunal recorded that “**The claimant also sought to rely on Chat GPT statements**.” When the claimant pressed the point: “**The claimant sought to rely on a conversation with ChatGPT as expert evidence that the respondent’s explanation regarding the difficulty and time involved in extracting the data was false. He had been informed by REJ Davies on 11 June 2024 that he did not have permission to adduce AI generated documents.**” “**I would add that even if there had been, a record of a ChatGPT discussion would not in my judgment be evidence that could sensibly be described as expert evidence nor could it be deemed reliable.**”",
   "links": {
     "Judgment & Reasons": "https://assets.publishing.service.gov.uk/media/66b5f74bce1fd0da7b59358a/Mr_D_Rollo_-v-_Marstons_Trading_Ltd_1600833.2022_-_Judgment_with_Reasons.pdf"
+  }
+},
+{
+  "name": "Matter of Weber, 2024 NY Slip Op 24258 (Sur. Ct. Saratoga Cty. Oct. 10 2024)",
+  "court": "Surrogate’s Court, Saratoga County (NY)",
+  "state": "NY",
+  "filer": "AI as Expert or By Expert",
+  "judge": "Surrogate Jonathan G. Schopf",
+  "date": "2024-10-10",
+  "outcome": "Expert evidence discounted",
+  "outcomeClass": "evidence",
+  "ai_tools_used": ["Microsoft Copilot"],
+  "desc": "Expert relied on Microsoft Copilot for calculating witness report. Critiquing the objectant’s damages report, the Court wrote: “**This brings to mind the old adage, ‘garbage in, garbage out’. Clearly a user of Copilot and other artificial intelligence software must be trained or have knowledge of the appropriate inputs to ensure the most accurate results.**” ",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/new-york/other-courts/2024/2024-ny-slip-op-24258.html"
   }
 }
 ]
