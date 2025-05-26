@@ -1637,8 +1637,69 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://caselaw.findlaw.com/court/mis-crt-app-eas-dis-div-one/116593661.html"
   }
-}
+},
 /* —— END NEW ENTRIES —— */
+{
+  "name": "Re Mr Dayal, Dayal [2024] FedCFamC2F 1166",
+  "court": "Federal Circuit and Family Court of Australia (Division 2)",
+  "state": "Australia",
+  "filer": "Solicitor",
+  "judge": "Judge A. Humphreys",
+  "date": "2024-08-27",
+  "ai_tools_used": ["AI tool within the LEAP Practice Management Software"],
+  "outcome": "Referall to Victorian Legal Services Board and Commissioner; warning regarding AI-generated research.",
+  "outcomeClass": "warning",
+  "desc": "\"solicitor appearing as agent tendered a list and summary of authorities which are acknowledged by the solicitor not to exist\"; \"list and summary generated using software relying on artificial intelligence (AI)\"; \"accuracy of the document produced was not verified by the solicitor\"; \"unconditional apology offered by the solicitor for what is acknowledged to be a breach of the professional standards expected of a solicitor in this court\"; \"referral made to the Office of the Victorian Legal Services Board and Commissioner, being the statutory body and officer responsible for the maintenance of professional standards of solicitors in Victoria\"; \"decision for referral not intended to be punitive\"; \"responsible use of AI tools in litigation an issue of public interest\"",
+  "links": {
+    "Opinion": "opinion_pdfs/In_Re_Dayal_Australia_August_27_2024.pdf"
+  }
+},
+{
+  "name": "N.E.W. Credit Union v. Mehlhorn, No. 2023AP2187 (Wis. Ct. App. Dist. III Aug. 13 2024)",
+  "court": "Wisconsin Court of Appeals, Dist. III",
+  "state": "WI",
+  "filer": "Pro se",
+  "judge": "Stark, P.J., Hruz and Gill, JJ. (panel)",
+  "date": "2024-08-13",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "“In her brief-in-chief, Mehlhorn provides what appear to be citations to six cases. Based on our research, however, it appears that only one of those cases actually exists... We strongly admonish Mehlhorn for her violations of the Rules of Appellate procedure, and particularly for her citations to what appear to be fictitious cases. Although Mehlhorn is self-represented, pro se appellants “are bound by the same rules that apply to attorneys on appeal.” See Waushara County v. Graf, 166 Wis. 2d 442, 452, 480 N.W.2d 16 (1992). We could summarily dismiss this appeal as a sanction for Mehlhorn’s multiple and egregious rule violations. See WIS. STAT. RULE 809.83(2). Nevertheless, we choose to address the merits of Mehlhorn’s arguments as best as we are able, given the deficiencies in her briefing.",
+  "links": {
+    "Opinion": "https://www.wicourts.gov/ca/smd/DisplayDocument.pdf?content=pdf&seqNo=837468"
+  }
+},
+{
+  "name": "Valu v Minister for Immigration and Multicultural Affairs (No 2) [2025] FedCFamC2G 95",
+  "court": "Federal Circuit and Family Court of Australia (Division 2)",
+  "state": "Australia",
+  "filer": "Lawyer",
+  "judge": "Judge Skaros",
+  "date": "2025-01-31",
+  "outcome": "Referall to Office of the NSW Legal Services Commissioner; no further sanction imposed.",
+  "outcomeClass": "warning",
+  "desc": "After noting non-existent citations, the \"Court expressed its concern about the ALR’s conduct and his failure to check the accuracy of what had been filed with the Court, noting that a considerable amount time had been spent by the Court and my Associates checking the citations and attempting to find the purported authorities.\"; \"The conduct of the ALR, in filing an application and submissions which contained citations to Federal Court of Australia cases which do not exist and alleged quotes from the Tribunal's decision which do not exist, falls short of the standard of competence and diligence that the applicant in the substantive proceedings was entitled to expect from his legal representative.\"; \" the Court considers it in the public interest to refer the ALR’s conduct to the OLSC and will so direct that the Principal Registrar of this Court to refer the matter accordingly\"",
+  "links": {
+    "Opinion": "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/cth/FedCFamC2G/2025/95.html"
+  }
+},
+{
+  "name": "Rasmussen v. Rasmussen, No. 24CV02293 (Cal. Super. Ct. Sonoma Cty. Aug. 23 2024)",
+  "court": "Cal. Superior Court, Sonoma County",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "Hon. Christopher M. Honigsberg",
+  "date": "2024-08-23",
+  "outcome": "Order to show cause",
+  "outcomeClass": "pending",
+  "desc": "“Defendant has cited to a number of cases for propositions they do not support, and to a number of other cases that simply do not exist at all.”  “The Court does not know where Defendant got these citations, but cannot help noticing their resemblance to the nonexistent case law cited in the well-publicized case Mata v. Avianca… That is exactly the sort of error to which large-language-model artificial intelligence software is prone.”  “Despite the fact that Defendant is representing herself in this matter, she is a licensed attorney.”  Filing such citations “demonstrates a marked lack of integrity” and “violates California Rules of Professional Conduct, rules 3.3(a)(2)… and 8.4(c).”  “Defendant is ordered to appear in person in Department 18 on October 11, 2024 at 8:30 a.m. to show cause why the Court should not impose any or all of the following sanctions… A report to the State Bar for a violation(s) of the Rules of Professional Conduct.”",
+  "links": {
+    "Tentative Ruling": "https://sonoma.courts.ca.gov/system/files/tentative-rulings/8-23-24-lm.pdf"
+  }
+}
+
+
+// Valu v Minister for Immigration and Multicultural Affairs (No 2) [2025] FedCFamC2G 95 (31 January 2025)
+// https://hearsay.org.au/senior-practitioner-referred-to-regulator-for-incorporating-fake-ai-generated-decisions-in-submissions/
 
 ];
 
