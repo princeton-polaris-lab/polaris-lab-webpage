@@ -1695,11 +1695,55 @@ const hallucinationCases = [
   "links": {
     "Tentative Ruling": "https://sonoma.courts.ca.gov/system/files/tentative-rulings/8-23-24-lm.pdf"
   }
+},
+{
+  "name": "Grant v. City of Long Beach, 96 F.4th 1255 (9th Cir. Mar. 22 2024)",
+  "court": "U.S. Court of Appeals for the Ninth Circuit",
+  "state": "CA-app",
+  "filer": "Pro se",
+  "judge": "Desai, Thomas & Márquez, JJ. (per opinion by Desai, J.)",
+  "date": "2024-03-22",
+  "outcome": "Brief struck as sanction; appeal dismissed",
+  "outcomeClass": "dismissal",
+  "desc": [
+    "“Appellants filed an opening brief **replete with misrepresentations and fabricated case law**.”",
+    "The brief “**cite[d] two cases that do not appear to exist**.”",
+    "Because the brief “**represents a material failure to comply with our rules, we strike the brief in its entirety … and dismiss this appeal.**”"
+  ],
+  "links": {
+    "Opinion": "https://law.justia.com/cases/federal/appellate-courts/ca9/22-56121/22-56121-2024-03-22.html"
+  }
+},
+{
+  "name": "Rule v. Braiman, No. 1:23-cv-01218 (N.D.N.Y. Sept. 4 2024)",
+  "court": "U.S. District Court, N.D.N.Y.",
+  "state": "NY",
+  "filer": "Pro se",
+  "judge": "Chief Judge Brenda K. Sannes",
+  "date": "2024-09-04",
+  "outcome": "Filing stricken; warning",
+  "outcomeClass": "warning",
+  "desc": "The Court observed that “**other cases Plaintiff cited in her submissions that the defense counsel or the Court were unable to locate or verify**” included a long list of titles, and cautioned: “The Court notes that **‘ChatGPT and similar AI programs are capable of generating fake case citations and other misstatements of law.’** … **Plaintiff is warned that any future filings ‘with citations to nonexistent cases may result in sanctions, such as her submissions being stricken, filing restrictions or monetary penalties being imposed, or the case being dismissed.’**”",
+  "links": {
+    "Order": "https://www.casemine.com/judgement/us/66da8554c312b31e38e4d56e"
+  }
+},
+{
+  "name": "Anonymous v. N.Y.C. Dep’t of Education, No. 1:24-cv-04232 (S.D.N.Y. July 18 2024)",
+  "court": "U.S. District Court, S.D.N.Y.",
+  "state": "NY",
+  "filer": "Pro se",
+  "judge": "District Judge Jennifer L. Rochon",
+  "date": "2024-07-18",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The Court noted that Plaintiff “cit[es] to and reli[es] on what appears to be non-existent legal authority” and, after searching, was “likewise unable to locate them.”  It stressed that “it is improper and unacceptable for litigants – including pro se litigants – to submit ‘non-existent judicial opinions with fake quotes and citations.’ … Sanctions may be imposed for submitting false and nonexistent legal authority to the Court,” but “declines to sanction Plaintiff at this time and instead warns Plaintiff that the Court will not look kindly on similar infractions in the future.”",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2024cv04232/622538/36/"
+  }
 }
 
 
-// Valu v Minister for Immigration and Multicultural Affairs (No 2) [2025] FedCFamC2G 95 (31 January 2025)
-// https://hearsay.org.au/senior-practitioner-referred-to-regulator-for-incorporating-fake-ai-generated-decisions-in-submissions/
 
 ];
 
@@ -1717,6 +1761,20 @@ const aiInCourtNoHallucinations = [
 "desc": "In this patent dispute over softball-bat technology, the court rejected plaintiffs’ request for a preliminary injunction after finding they had not shown a likelihood of success on infringement; it also criticized defendant’s reliance on a ChatGPT-generated definition of “foam,” remarking that the tool’s “batting average in legal briefs leaves something to be desired.”",
 "links": {
 "Opinion": "https://cases.justia.com/federal/district-courts/south-carolina/scdce/2%3A2023cv01424/279239/25/0.pdf?ts=1697125221"}
+},
+{
+  "name": "Mr D Rollo v. Marstons Trading Ltd, Case No. 1600833/2022 (Emp. Trib. Manchester Aug. 1 2024)",
+  "court": "Employment Tribunal (Manchester)",
+  "state": "UK-ENG",
+  "filer": "AI as Expert or By Expert",
+  "judge": "Employment Judge S Moore",
+  "date": "2024-08-01",
+  "outcome": "Evidence excluded; application dismissed",
+  "outcomeClass": "evidence",
+  "desc": "The Tribunal recorded that “**The claimant also sought to rely on Chat GPT statements**.” When the claimant pressed the point: “**The claimant sought to rely on a conversation with ChatGPT as expert evidence that the respondent’s explanation regarding the difficulty and time involved in extracting the data was false. He had been informed by REJ Davies on 11 June 2024 that he did not have permission to adduce AI generated documents.**” “**I would add that even if there had been, a record of a ChatGPT discussion would not in my judgment be evidence that could sensibly be described as expert evidence nor could it be deemed reliable.**”",
+  "links": {
+    "Judgment & Reasons": "https://assets.publishing.service.gov.uk/media/66b5f74bce1fd0da7b59358a/Mr_D_Rollo_-v-_Marstons_Trading_Ltd_1600833.2022_-_Judgment_with_Reasons.pdf"
+  }
 }
 ]
 
