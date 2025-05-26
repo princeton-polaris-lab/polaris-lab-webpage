@@ -534,14 +534,15 @@ const hallucinationCases = [
     filer: "Lawyer",
     judge: "District Judge Eumi K. Lee; Magistrate Judge Susan van Keulen",
     date: "2025-05-13",
-    outcome: "Pending",
-    outcomeClass: "pending",
-    desc: "Publishers allege Claude infringes song-lyric copyrights. Plaintiffs moved to strike an Anthropic data-scientist declaration after discovering a potential hallucinated citation; the dispute is ongoing. Attorneys for Anthropic admitted that the declaration was modified by attorneys using Claude to format citations, which introduced the hallucinated citation.",
+    outcome: "Strikes paragraph; notes for the record that this issue undermines the overall credibility of expert's written declaration, a factor in the Court’s conclusion.",
+    outcomeClass: "warning",
+    desc: "Publishers allege Claude infringes song-lyric copyrights. Plaintiffs moved to strike an Anthropic data-scientist declaration after discovering a potential hallucinated citation; the dispute is ongoing. Attorneys for Anthropic admitted that the declaration was modified by attorneys using Claude to format citations, which introduced the hallucinated citation. The Court struck a paragraph from the declaration and noted that the issue undermines the overall credibility of the expert's written declaration, a factor in the Court’s conclusion.",
     links: {
       Docket: "https://www.courtlistener.com/docket/68889092/concord-music-group-inc-v-anthropic-pbc/",
       Filing: "https://chatgptiseatingtheworld.com/wp-content/uploads/2025/05/Olivia-Chen-sampling-protocol.pdf",
       Coverage: "https://www.reuters.com/legal/litigation/anthropic-expert-accused-using-ai-fabricated-source-copyright-case-2025-05-13/",
-      Update: "https://www.reuters.com/legal/legalindustry/anthropics-lawyers-take-blame-ai-hallucination-music-publishers-lawsuit-2025-05-15/"
+      Update: "https://www.reuters.com/legal/legalindustry/anthropics-lawyers-take-blame-ai-hallucination-music-publishers-lawsuit-2025-05-15/",
+      "Court Order": "https://websitedc.s3.amazonaws.com/documents/Concord_v._Anthropic_N.D._California_USA_May_23_2025.pdf"
     }
   },
   {
@@ -1813,6 +1814,21 @@ const hallucinationCases = [
   "links": {
     "Final Order": "https://www.uspto.gov/sites/default/files/documents/STEPPETHICSAPR2025.pdf#page=21"
   }
+},
+
+{
+  "name": "Nexgen Pathology Services Ltd v. Darceuil Duncan, CV2023-04039 (High Ct. TT Apr. 30 2025)",
+  "court": "High Court of Justice, Republic of Trinidad & Tobago",
+  "state": "Trinidad & Tobago",
+  "filer": "Claimant’s counsel (Mr Surendra Ramkissoon & Mr Larry Mooteeram)",
+  "judge": "Justice Westmin R. A. James",
+  "date": "2025-04-30",
+  "outcome": "Referred to the Disciplinary Committee of the Law Association",
+  "outcomeClass": "referral",
+  "desc": "“The Court is compelled to address a matter of grave concern arising from the Claimant’s written submissions—specifically, the citation of non-existent legal authorities …”  “Legitimate court judgments do not simply disappear from online repositories without a trace.”  “Irresponsible use of internet sources or generative AI tools undermines not only individual cases but also the credibility of the legal system as a whole.”  “Accordingly … the Court … directs the Registrar … to refer the matter to the Disciplinary Committee … for investigation as to whether there has been a breach of the Code of Ethics.”",
+  "links": {
+    "Judgment": "https://webopac.ttlawcourts.org/LibraryJud/Judgments/HC/james/2023/cv_23_04039DD30Apr2025.pdf"
+  }
 }
 ];
 
@@ -1859,7 +1875,36 @@ const aiInCourtNoHallucinations = [
   "links": {
     "Opinion": "https://law.justia.com/cases/new-york/other-courts/2024/2024-ny-slip-op-24258.html"
   }
-}
+},
+{
+  "name": "Dewald v. Smith, 2025 NY Slip Op 30663(U) (N.Y. Sup. Ct. Feb. 26 2025)",
+  "court": "Supreme Court, New York County",
+  "state": "NY",
+  "filer": "AI Transcription",
+  "judge": "Justice Hasa A. Kingo",
+  "date": "2025-02-26",
+  "outcome": "Evidence excluded; motion denied",
+  "outcomeClass": "evidence",
+  "desc": "\"In support of the motion, Plaintiff submits his affidavit and three transcripts, purportedly transcripts. . . Each transcript is accompanied by a “Certification of Transcript Accuracy” in which Plaintiff attests that he utilized a “Generative AI tool” to produce the transcript from an audio or audio/video recording of the events depicted, which he then reviewed, “corrected any discernible errors, omissions, or inaccuracies,” and now attests is a true, accurate, and complete representation of the audio or audio/video recording (id.). Notably, each transcript appears to depict only a portion of the interaction between the parties on that date (id.). Taken together, these items are not sufficient to meet Plaintiff’s burden of proof of a motion for summary judgment. At the outset, the transcripts are inadmissible in the form presented (see CPLR §3212 [b]; Zuckerman, 49 NY2d at 562 [evidence submitted in support of motion for summary judgment must be in admissible evidentiary form]). Failure to produce the audio or audio/video recordings without explanation violates the best evidence rule, and the purported self-certification of the transcripts is insufficient to authenticate the document and lay the necessary evidentiary foundation (see Guide to New York Evidence Rule 9.01, 9.14, 10.03). Standing alone, the self-serving affidavit of Plaintiff lacks the requisite detail to demonstrate Plaintiff’s entitlement to judgment as a matter of law. Therefore, the motion is denied with respect to this claim.",
+  "links": {
+    "Decision": "https://law.justia.com/cases/new-york/other-courts/2025/2025-ny-slip-op-30663-u.html"
+  }
+},
+{
+  "name": "Willis v. U.S. Bank Nat’l Ass’n (Trustee), No. 3:25-cv-00516-BN (N.D. Tex. Apr. 28 2025)",
+  "court": "N.D. Tex. (Dallas Div.)",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Magistrate Judge David L. Horan",
+  "date": "2025-04-28",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The Court explains that “there are sound reasons for requiring this disclosure, including that ‘[i]t is no secret that generative AI programs are known to “hallucinate” nonexistent cases, and … both counsel and pro se litigants have cited such fake, hallucinated cases in their briefs.’ … The citation contains hallmarks of a nonexistent case generated by AI,” and “a litigant’s using AI and then failing to verify the accuracy of the results it yields violates the litigant’s Federal Rule … 11 obligations.” Nonetheless court chooses to warn.",
+  "links": {
+    "Order": "https://law.justia.com/cases/federal/district-courts/texas/txndce/3:2025cv00516/400650/42/"
+  }
+},
+
 ]
 
 
