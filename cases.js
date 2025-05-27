@@ -1843,7 +1843,94 @@ const hallucinationCases = [
   "links": {
     "Order": "https://law.justia.com/cases/federal/district-courts/texas/txndce/3:2025cv00516/400650/42/"
   }
+},
+{
+  "name": "Rochon-Eidsvig & Hafer v. JGB Collateral, LLC, No. 05-24-00123-CV (Tex. App.—Dallas Apr. 10 2025)",
+  "court": "Court of Appeals, Fifth District of Texas",
+  "state": "TX",
+  "filer": "Lawyer",
+  "judge": "Presiding Justice Nancy Kennedy",
+  "date": "2025-04-10",
+  "outcome": "Order to supply copies of missing cases; possible further action",
+  "outcomeClass": "warning",
+  "desc": "The order notes: “After reviewing the parties’ briefs, we note that Appellants’ May 16, 2024 Brief cites the following cases, none of which could be located by Appellee or this Court.” It then directs counsel to file copies of the four phantom authorities and cure other rule defects within ten days, signaling that sanctions may follow if the cases cannot be produced. ",
+  "links": {
+    "Order": "https://600commerce.com/wp-content/uploads/2025/04/0D5.pdf",
+    "Leagle": "https://www.leagle.com/decision/intxco20250411577"
+  }
+},
+{
+  "name": "In re Tariq Farooq, No. 05-25-00431-CV (Tex. App.—Dallas Apr. 16 2025)",
+  "court": "Court of Appeals, Fifth District of Texas",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Justices Garcia, Clinton & Rossini",
+  "date": "2025-04-16",
+  "outcome": "Filing stricken; dismissal",
+  "outcomeClass": "warning",
+  "desc": "The panel writes: “After reviewing the relator’s brief, we note that it cites the following cases, none of which could be located by this Court.” Order requires relator to file copies within ten days. In response relator admitted that the cases did not exist and he cited them in error. Court strike the petition of writ of mandamus, dismissing the case.",
+  "links": {
+    "Order to file copies of missing cases": "https://www.casemine.com/judgement/us/68118697b71a0cd10129f3f1",
+    "Order" : "https://law.justia.com/cases/texas/fifth-court-of-appeals/2025/05-25-00431-cv.html"
+  }
+},
+{
+  "name": "Letts v. Avidien Technologies, Inc., No. 5:24-cv-00402-M-BM (E.D.N.C. Dec. 16 2024)",
+  "court": "E.D.N.C.",
+  "state": "NC",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Brian S. Meyers (M&R)",
+  "date": "2024-12-16",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "After plaintiff cited three opinions the court could not locate, the M&R noted “**an apparent increased use of artificial-intelligence technologies has given rise to citations to non-existent cases** … Many harms flow from such deception.” It warned that future false cites could trigger Rule 11 sanctions.",
+  "links": {
+    "Opinion": "https://websitedc.s3.amazonaws.com/documents/Letts_v._Avidien_Technologies_E.D._North_Carolina_USA_December_16_2025.pdf"
+  }
+},
+{
+  "name": "Jones v. Experian Information Solutions, Inc., 1:25-cv-01535 (S.D.N.Y. Mar. 26 2025)",
+  "court": "S.D.N.Y.",
+  "state": "NY",
+  "filer": "Lawyer",
+  "judge": "Mag. Judge Sarah L. Cave",
+  "date": "2025-03-26",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "\"In support of his criticisms, Mr. Jones cites one non-xistent case,4 erroneously cites another non-precedential case from outside the Second Circuit,5 and cites a third that is irrelevant... Mr. Jones' counsel should thus consider themselves reminded of their obligations under Federal Rule of Civil Procedure 11(b) and warned that the Court will not countenance in the future any motions or other tactics that contravene the need “to secure the just, speedy, and inexpensive determination” of this action.\"",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.637416/gov.uscourts.nysd.637416.24.0.pdf"
+  }
+},
+{
+  "name": "Leslie v. IQ Data International, Inc., No. 1:22-cv-02304-VMC (N.D. Ga. June 5 2024)",
+  "court": "N.D. Ga.",
+  "state": "GA",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Russell G. Vineyard (R&R)",
+  "date": "2024-06-05",
+  "outcome": "Dismissal with prejudice as sanction",
+  "outcomeClass": "dismissal",
+  "desc": "The Court has already ordered Plaintiff to produce these documents 3 times over 13 months. . . And instead of complying with this Court's orders and producing the documents, Plaintiff has resorted to citing nonexistent authority. As Defendant states, “Enough is enough.” (Doc. 83 at 4). Defendant's motion for sanctions should be GRANTED and this case should be DISMISSED WITH PREJUDICE. Given the recommendation for the most drastic sanction of all—dismissal with prejudice—the undersigned declines to also recommend monetary sanctions. While a court may order the payment of the opposing side's expenses in addition to dismissal, the undersigned finds that Plaintiff's circumstances—as noted during the undersigned's most recent teleconference—would make an award of expenses unjust.",
+  "links": {
+    "R&R": "/opinion_pdfs/Leslie_EQ_decision.pdf"
+  }
+},
+{
+  "name": "Gutierrez v. Gutierrez, Nos. 3D24-1014 & 3D24-1087 (Fla. 3d DCA Dec. 4 2024)",
+  "court": "Fla. 3d DCA",
+  "state": "FL",
+  "filer": "Pro se",
+  "judge": "Judge Fleur J. Lobree (panel: Lobree, Bokor & Gooden)",
+  "date": "2024-12-04",
+  "outcome": "Dismissed with prejudice as sanction; barred from future pro se filings related to underlying probate issues",
+  "outcomeClass": "sanction",
+  "desc": "“Alarmingly, the bulk of the cases cited by Gutierrez do not in fact exist in the body of Florida case law, and therefore constitute fake or ‘phantom case law.’ … We find Gutierrez’s failure to comply with rule 9.210(b) and submission of fictitious case law to this court sufficient to warrant the imposition of sanctions.”",
+  "links": {
+    "Opinion": "https://cases.justia.com/florida/third-district-court-of-appeal/2024-3d24-1087.pdf?ts=1733329128"
+  }
 }
+
 ];
 
 
@@ -1902,6 +1989,20 @@ const aiInCourtNoHallucinations = [
   "desc": "\"In support of the motion, Plaintiff submits his affidavit and three transcripts, purportedly transcripts. . . Each transcript is accompanied by a “Certification of Transcript Accuracy” in which Plaintiff attests that he utilized a “Generative AI tool” to produce the transcript from an audio or audio/video recording of the events depicted, which he then reviewed, “corrected any discernible errors, omissions, or inaccuracies,” and now attests is a true, accurate, and complete representation of the audio or audio/video recording (id.). Notably, each transcript appears to depict only a portion of the interaction between the parties on that date (id.). Taken together, these items are not sufficient to meet Plaintiff’s burden of proof of a motion for summary judgment. At the outset, the transcripts are inadmissible in the form presented (see CPLR §3212 [b]; Zuckerman, 49 NY2d at 562 [evidence submitted in support of motion for summary judgment must be in admissible evidentiary form]). Failure to produce the audio or audio/video recordings without explanation violates the best evidence rule, and the purported self-certification of the transcripts is insufficient to authenticate the document and lay the necessary evidentiary foundation (see Guide to New York Evidence Rule 9.01, 9.14, 10.03). Standing alone, the self-serving affidavit of Plaintiff lacks the requisite detail to demonstrate Plaintiff’s entitlement to judgment as a matter of law. Therefore, the motion is denied with respect to this claim.",
   "links": {
     "Decision": "https://law.justia.com/cases/new-york/other-courts/2025/2025-ny-slip-op-30663-u.html"
+  }
+},
+{
+  "name": "Ferlito v. Harbor Freight Tools USA, Inc., No. 2:20-cv-05615 (E.D.N.Y. Apr. 23 2025)",
+  "court": "E.D.N.Y.",
+  "state": "NY",
+  "filer": "AI as Expert or By Expert",
+  "judge": "Mag. Judge Steven I. Locke",
+  "date": "2025-04-23",
+  "outcome": "No sanction; AI use approved as reliable",
+  "outcomeClass": "warning",
+  "desc": "Addressing an expert who had verified his conclusions with ChatGPT, the Court contrasted him with lawyers in Kohls and Mata: “There is no indication that Lehnert used ChatGPT to generate a report with false authority … Accordingly, the Court finds no issue with Lehnert’s use of ChatGPT in this instance.”",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.nyed.456084/gov.uscourts.nyed.456084.48.0.pdf"
   }
 }
 ]
@@ -2633,3 +2734,20 @@ const firstAmendmentCases = [
     }
   }
 ];
+
+const otherConstitutionalCases = [
+{
+  "name": "Harris as next friend of R.N.H. v. Adams, No. 24-cv-12437-PGL (D. Mass. Nov. 20 2024)",
+  "court": "U.S. District Court, D. Massachusetts",
+  "state": "MA",
+  "filer": "Due Process",
+  "judge": "District Judge Patti B. Saris (hearing), Judge Paul G. Levenson (order)",
+  "date": "2024-11-20",
+  "outcome": "Preliminary-injunction motion denied",
+  "outcomeClass": "warning",
+  "desc": "While recounting the background of a school-discipline dispute, the Court explained that the student team’s submission \"had indiscriminately copied and pasted text from the AI application, **including citations to nonexistent books (i.e., AI hallucinations).**\"  It noted that the *very first* footnote “consists of a citation to a nonexistent book: **‘Lee, Robert. *Hoop Dreams: A Century of Basketball.* Los Angeles: Courtside Publications, 2018.’**” The court denied the preliminary injunction motion stating that most factors weighed in favor of the school's discipline.",
+  "links": {
+    "Opinion": "https://caselaw.findlaw.com/court/us-dis-crt-d-mas/116710071.html"
+  }
+}
+]
