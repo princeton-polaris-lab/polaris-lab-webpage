@@ -101,7 +101,11 @@
   
     <!-- ═════ HALLUCINATION TABLE ═════ -->
     <section id="hallucinations-section" class="hidden category-section">
-      <h2 class="text-2xl font-bold mb-4 tracking-tight">Fake Cases Tracker (e.g., AI Hallucinations) <span id="hallucination-count" class="text-sm font-normal text-gray-400"></span></h2>
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">Fake Cases Tracker (e.g., AI Hallucinations) <span id="hallucination-count" class="text-sm font-normal text-gray-400"></span>
+        <button onclick="downloadHallucinationsCSV()" class="ml-4 px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 rounded text-white">
+          Download CSV
+        </button>
+      </h2>
       
       <!-- Add a note at the top defining what's tracked -->
       <p class="text-sm text-gray-400 mb-4">This tracker tracks cases where the filer cites made-up cases in court. While in many cases they are the result of relying on AI, some may be the result of human error. In particular, we have identified cases pre-2023 where made-up cases were cited.</p>
@@ -589,6 +593,61 @@ function filterCases(category){
       }, 0);
     }
   }
+}
+
+/* ------------- CSV DOWNLOAD ------------- */
+function downloadHallucinationsCSV() {
+  // Get the table data
+  const cases = [...hallucinationCases].sort((a, b) => {
+    const dateA = a.date ? new Date(a.date) : new Date(0);
+    const dateB = b.date ? new Date(b.date) : new Date(0);
+    return dateB - dateA;
+  });
+
+  // Define CSV headers
+  const headers = ['Case', 'Court', 'Filer', 'Date', 'Outcome', 'Description', 'Links'];
+
+  // Convert cases to CSV rows
+  const csvRows = cases.map(c => {
+    // Format links as a single string
+    const links = Object.entries(c.links)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join('; ');
+
+    // Escape fields that might contain commas
+    const escapeField = (field) => {
+      if (field === null || field === undefined) return '';
+      const str = String(field);
+      return str.includes(',') ? `"${str}"` : str;
+    };
+
+    return [
+      escapeField(c.name),
+      escapeField(c.court),
+      escapeField(c.filer),
+      escapeField(c.date),
+      escapeField(c.outcome),
+      escapeField(c.desc),
+      escapeField(links)
+    ].join(',');
+  });
+
+  // Combine headers and rows
+  const csvContent = [
+    headers.join(','),
+    ...csvRows
+  ].join('\n');
+
+  // Create and trigger download
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  link.setAttribute('href', url);
+  link.setAttribute('download', 'ai-hallucination-cases.csv');
+  link.style.visibility = 'hidden';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 </script>
 </body>
