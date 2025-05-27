@@ -1602,7 +1602,20 @@ const hallucinationCases = [
     "Order": "https://www.courtlistener.com/docket/4308863/161/florence-v-board-of-chosen-freeholders-of-the-county-of-burlington/"
   }
 },
-
+{
+  "name": "Bunker v. McCormick, No. 2:24-cv-01491-PHX-DWL (D. Ariz. Jan. 14 2025)",
+  "court": "D. Ariz.",
+  "state": "AZ",
+  "filer": "Pro se",
+  "judge": "District Judge Dominic W. Lanza",
+  "date": "2025-01-14",
+  "outcome": "Dismissal without leave to amend",
+  "outcomeClass": "dismissal",
+  "desc": "In a 16-page order the Court dismissed the case for lack of personal jurisdiction and other threshold defects. Footnote 1 highlights that Plaintiffs’ jurisdiction theory relied on a decision the Court states \"does not appear to exist.\" The Court concluded that the plethora of issues here, potentially including citing such non-existent authority, demonstrated bad-faith litigation tactics warranting dismissal without leave to amend.",
+  "links": {
+    "Opinion": "https://www.govinfo.gov/content/pkg/USCOURTS-azd-2_24-cv-01491/pdf/USCOURTS-azd-2_24-cv-01491-1.pdf"
+  }
+},
   /* 1 ― Utah Court of Appeals monetary sanction */
   {
     "name": "Garner v. Kadince, Inc., 2025 UT App 80 (Utah Ct. App. May 22 2025)",
@@ -2042,6 +2055,105 @@ const hallucinationCases = [
   "desc": "“Clinton’s legal counsel appeared to cite **two non-existent cases**... This Court issued a show-cause order** suspecting that artificial intelligence was used to obtain case citations that do not exist... counsel’s response did not fully alleviate our serious concerns. Furthermore, we have previously warned this counsel that failure to follow briefing requirements could result in sanctions in future appeals... As we stated in 2020, we have “grown weary” of the increasing number of attorneys failing to follow the rules of appellate procedure. Clark v. Workman, 604 S.W.3d 616 (Ky. App. 2020). Nonetheless, we have elected to proceed with this decision without further delay in light of the many failures and delay already evident in this case. The appellee’s motion to amend the brief, to which appellant objected, is denied by this Order”",
   "links": {
     "Opinion": "https://cases.justia.com/kentucky/court-of-appeals/2025-2024-ca-0623-mr.pdf?ts=1743170812"
+  }
+},
+{
+  "name": "Devaughn v. McDonell, No. 5:15-cv-00577-TJH (C.D. Cal. Sept. 26 2017)",
+  "court": "C.D. Cal.",
+  "state": "CA",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Gail J. Standish (R&R), adopted by Dist. Judge Terry J. Hatter Jr.",
+  "date": "2017-09-26",
+  "outcome": "No action",
+  "outcomeClass": "dismissal",
+  "desc": "In recommending dismissal for a pre-ChatGPT case, the magistrate judge wrote of a habeas petitioner that, \"**Petitioner cites a non-existent case** (Motion at 22, citing *People v. Rhodes* (1972) 6 Cal. ___).\"",
+  "links": {
+    "Order (Westlaw)": "https://www.westlaw.com/Document/I55012890c47011e7bf23e096364180a5/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0"
+  }
+},
+{
+  "name": "Lee v. Delta Air Lines, Inc., No. 2:20-cv-01705-WFK-LGD (E.D.N.Y. Mar. 22 2024)",
+  "court": "E.D.N.Y.",
+  "state": "NY",
+  "filer": "Pro se",
+  "judge": "District Judge William F. Kuntz II (magistrate referral to Judge Lee G. Dunst)",
+  "date": "2024-03-22",
+  "outcome": "No action",
+  "outcomeClass": "dismissal",
+  "desc": "The Court wrote: “The Court maintains serious concern that at least one of Plaintiff’s cited cases is non-existent and may have been a hallucinated product of generative artificial intelligence, particularly given Plaintiff’s recent history of similar conduct before the Second Circuit.” (Pro se plaintiff here is the attorney in Park v. Kim which also contained hallucinated citations leading to disciplinary proceedings.) The Court nevertheless resolved the merits and dismissed the action, taking no explicit action on the issue of the phantom citation.",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.nyed.447025/gov.uscourts.nyed.447025.79.0.pdf"
+  }
+},
+{
+  "name": "Black & Veatch Corp. v. Modesto Irrigation District, No. 1:11-cv-00695-LJO-SKO (E.D. Cal. Oct. 28 2011)",
+  "court": "E.D. Cal.",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "Chief U.S. District Judge Lawrence J. O’Neill",
+  "date": "2011-10-28",
+  "outcome": "No action",
+  "outcomeClass": "warning",
+  "desc": "In a pre-ChatGPT era case, the Court observed: “BBC erroneously cites a non-existent case for this proposition.”   The Court’s own research uncovered no authority standing for the rule advanced.",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.caed.223086/gov.uscourts.caed.223086.58.0.pdf"
+  }
+},
+{
+  "name": "Chapman v. Horace Mann Property and Casualty Insurance Company, No. 2:24-cv-10546 (C.D. Cal. Apr. 23 2025)",
+  "court": "C.D. Cal.",
+  "state": "CA",
+  "filer": "Pro se",
+  "judge": "District Judge Michael W. Fitzgerald",
+  "date": "2025-04-23",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "\"Defendant took issue with the untimeliness of the filings and Plaintiff’s distortion of and citation to nonexistent case law…\" \"Plaintiff is warned... that any future non-compliance with the Local Rules or this Court’s procedures may not be similarly entertained.\"",
+  "links": {
+    "Opinion": "https://cases.justia.com/federal/district-courts/california/cacdce/2%3A2024cv10546/950604/40/0.pdf"
+  }
+},
+{
+  "name": "Gropp v. Stevens, No. 58983-4-II (Wash. Ct. App. Div. II Apr. 22 2025)",
+  "court": "Wash. Ct. App. Div. II",
+  "state": "WA",
+  "filer": "Pro se",
+  "judge": "Judge Glasgow (panel: Glasgow, Maxa & Veljacic)",
+  "date": "2025-04-22",
+  "outcome": "No action",
+  "outcomeClass": "dismissal",
+  "desc": "The panel affirmed dismissal on statute-of-limitations grounds, noting: “**She has also cited nonexistent cases in her briefing.** … *We decline to award attorney fees to Stevens.*”",
+  "links": {
+    "Opinion": "https://cases.justia.com/washington/court-of-appeals-division-ii/2025-58983-4.pdf?ts=1745345570"
+  },
+  "other_information" : ["Pro se status verified at https://www.courts.wa.gov/appellate_trial_courts/appellatedockets/index.cfm?fa=appellatedockets.showDocket&folder=a02&year=2025&file=20250321"]
+},
+{
+  "name": "Esquivel v. Kendrick, No. 22-50979 (5th Cir. Aug. 29 2023)",
+  "court": "5th Cir.",
+  "state": "LA",
+  "filer": "Pro se",
+  "judge": "Per Curiam (King, Haynes & Graves, JJ.)",
+  "date": "2023-08-29",
+  "outcome": "No action",
+  "outcomeClass": "warning",
+  "desc": "\"The one case cited by Esquivel to support his argument is nonexistent.\"... \"First, citing nonexistent cases, Esquivel argues that the City of San Antonio waived immunity from suit by purchasing liability insurance for its police officers.\" The panel affirmed across the board but highlighted the reliance on phantom authorities—serving as a clear caution that further use of fictitious citations would not be countenanced.",
+  "links": {
+    "Opinion": "https://www.ca5.uscourts.gov/opinions/unpub/22/22-50979.0.pdf"
+  }
+},
+{
+  "name": "Albelbaisi v. Mustang Materials, LLC, No. 05-24-00617-CV (Tex. App.—Dallas May 13 2025)",
+  "court": "Tex. App.—Dallas",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Justice Garcia (panel: Garcia, Breedlove & Jackson)",
+  "date": "2025-05-13",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The court affirmed summary judgment and, addressing briefing defects, observed: “Moreover, citation of nonexistent cases that appear to have been generated by AI is unacceptable. The failure to provide substantive analysis of an issue or cite appropriate authority waives a complaint on appeal... We have liberally construed Albelbaisi’s brief in an effort to address the issues he seeks to raise. To the extent our understanding of Albelbaisi’s presentation of an issue or subpoint is incorrect, it is waived for inadequate briefing.",
+  "links": {
+    "Opinion": "https://cases.justia.com/texas/fifth-court-of-appeals/2025-05-24-00617-cv.pdf?ts=1747228392"
   }
 }
 ];
