@@ -294,7 +294,8 @@ const hallucinationCases = [
     "desc": "Reply brief cited a nonexistent case; court found Rule 11(b)(2) violation and referred attorney to disciplinary authorities, ordering a copy of the decision served on the client.",
     "links": {
       "Opinion": "https://www.law.nyu.edu/sites/default/files/Park%20v.%20Kim%2C%20No.%2022-2057%20%282024%29.pdf",
-      "Coverage": "https://reason.com/volokh/2024/01/30/second-circuit-refers-lawyer-for-disciplinary-proceedings-based-on-ai-hallucinated-case-in-brief/"
+      "Coverage": "https://reason.com/volokh/2024/01/30/second-circuit-refers-lawyer-for-disciplinary-proceedings-based-on-ai-hallucinated-case-in-brief/",
+      "Order Denying TRO on Grievance Panel Hearing" : "https://cases.justia.com/federal/district-courts/new-york/nysdce/1%3A2025cv00789/635802/36/0.pdf"
     }
   },  /* :contentReference[oaicite:1]{index=1} */
   /* —— NEW ENTRY —— */
@@ -1929,8 +1930,21 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://cases.justia.com/florida/third-district-court-of-appeal/2024-3d24-1087.pdf?ts=1733329128"
   }
+},
+{
+  "name": "Luther v. Oklahoma Department of Human Services, No. 5:25-cv-00317-J (W.D. Okla. May 23 2025)",
+  "court": "W.D. Okla.",
+  "state": "OK",
+  "filer": "Pro se",
+  "judge": "Mag. Judge Chris M. Stephens (referral from Dist. Judge Bernard M. Jones)",
+  "date": "2025-05-23",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The Court has serious reason to believe that Plaintiff used artificial intelligence tools to assist in drafting her objection. While the use of such tools is not prohibited, artificial intelligence often cites to legal authorities, like Cabrera, that do not exist. Continuing to cite to non-existent cases will result in sanctions up to and including dismissal.”",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.okwd.130468/gov.uscourts.okwd.130468.11.0.pdf"
+  }
 }
-
 ];
 
 
