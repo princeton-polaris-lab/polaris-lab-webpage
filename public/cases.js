@@ -2155,7 +2155,38 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://cases.justia.com/texas/fifth-court-of-appeals/2025-05-24-00617-cv.pdf?ts=1747228392"
   }
+},
+{
+  "name": "Grant v. Nationwide Mutual Insurance Company, No. 1:24-cv-00247-DAE (W.D. Tex. Apr. 4 2025)",
+  "court": "W.D. Tex.",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Sr. Dist. Judge David A. Ezra (adopting R&R of Mag. Judge Susan Hightower)",
+  "date": "2025-04-04",
+  "outcome": "Claims dismissed with prejudice; monetary sanctions imposed",
+  "outcomeClass": "sanction",
+  "desc": "Judge adopted the magistrate judge’s recommendation and “DISMISSES WITH PREJUDICE” all claims under Rules 37(b)(2)(A)(v) and 41(b), ordering Plaintiffs to pay Nationwide’s expenses and attorneys’ fees.  Earlier, the court had warned that the docket was clogged with “*borderline frivolous and/or harassing filings*” and cautioned that “*future frivolous, harassing, or unconsolidated filings will result in sanctions.*” (Dkt. 144, quoted in the order).  The magistrate judge’s R&R also noted that Plaintiffs’ motions were “*replete with citations to nonexistent cases and quotes*.” Though the nonexistent citations were not directly addressed this overall led to dismissal with prejudice of claims.",
+  "links": {
+    "R&R (WestLaw)": "https://www.westlaw.com/Document/Ifecfc7e01d2911f081f78a83f19781c1/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0",
+    "Adopting R&R": "https://cases.justia.com/federal/district-courts/texas/txwdce/1%3A2024cv00247/1172777859/184/0.pdf"
+  }
+},
+{
+  "name": "Estrada v. San Francisco Fire Department, 698, No. 4:25-cv-00216-JSW (N.D. Cal. Apr. 18 2025)",
+  "court": "N.D. Cal.",
+  "state": "CA",
+  "filer": "Pro se",
+  "judge": "District Judge Jeffrey S. White",
+  "date": "2025-04-18",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "“First, Plaintiff presents a mixture of real and fake court decisions to the Court.  See, e.g., *Davis v. Chicago Fire Dep’t*, 598 F.3d 325 (7th Cir. 2010) (**non-existent case**); *Johnson v. Alameda Cnty. Fire Dep’t*, 714 F.3d 1091 (9th Cir. 2013) (**same**).  Plaintiff also fabricates quotes from existing cases … Plaintiff cited these same cases in his late-filed opposition. These false citations are misrepresentations to the Court and will not be permitted. The Court warns that it may impose sanctions for misrepresentations, up to and including dismissal of the action with prejudice.\"",
+  "links": {
+    "Order (WestLaw)": "https://www.westlaw.com/Document/Ifa90cf90380d11f0a030a4ee3246e0f6/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0"
+  }
 }
+
+
 ];
 
 
