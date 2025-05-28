@@ -928,6 +928,21 @@ const hallucinationCases = [
     "Coverage": "https://naturalandartificiallaw.com/remote-attendance-at-committal-hearings-vulnerable-witnesses-and-ai-hallucinations-by-chatgpt/"
   }
 },
+{
+  "name": "Crypto Open Patent Alliance v. Wright, Nos. IL-2021-000019 & IL-2022-000069, [2025] EWHC 1139 (Ch) (UK High Ct. May 12 2025) (second case)",
+  "court": "High Court of Justice, Business & Property Courts (ChD)",
+  "state": "UK",
+  "filer": "Pro Se",
+  "judge": "Mr Justice Mellor",
+  "date": "2025-05-12",
+  "outcome": "General Civil Restraint Order issued for three years against litigant; case referred to the Attorney General; ordered to pay £100,000 in indemnity costs",
+  "outcomeClass": "sanction",
+  "desc": "In a second case involving the same litigants: “The evidence before the Court was, once again, overwhelming: all three considerations pointed overwhelmingly in favour of the grant of a GCRO against Dr Wright… I was completely satisfied that an ECRO would not provide adequate protection… and concluded that a GCRO was warranted and appropriate.”",
+  "links": {
+    "Opinion": "https://www.bailii.org/ew/cases/EWHC/Ch/2025/1139.html"
+  }
+},
+
 /* —— NEW ENTRY —— */
 {
   "name": "Matter of Vanguard Constr. & Dev. Co. v. 400 Times Square Assoc., LLC, 2025 NY Slip Op 01781 (App. Div. 1st Dep’t Mar. 25 2025)",
@@ -2184,7 +2199,51 @@ const hallucinationCases = [
   "links": {
     "Order (WestLaw)": "https://www.westlaw.com/Document/Ifa90cf90380d11f0a030a4ee3246e0f6/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0"
   }
+},
+{
+  "name": "Idehen v. Stoute-Phillip, Index No. LT-305376-23/QU (N.Y. Civ. Ct. Queens Cty. May 21 2025)",
+  "court": "N.Y. City Civ. Ct., Queens Cty., Housing Part O",
+  "state": "NY",
+  "filer": "Lawyer",
+  "judge": "Hon. Kimon C. Thermos, J.H.C.",
+  "date": "2025-05-21",
+  "outcome": "Order to show cause",
+  "outcomeClass": "pending",
+  "desc": "“The Court looked up these seven cases on LexisNexis, Westlaw, and the New York State Reporting Bureau … None of the citations provided link to the cases cited,” observing that “Petitioners' counsel cited seven cases that do not appear to exist.”",
+  "links": {
+    "Opinion": "opinion_pdfs/HAPPINESS-IDEHEN_v_STOUTE-PHILLIP.pdf"
+  }
+},
+{
+  "name": "Flowz Digital LLC v. Dalal, No. 2:25-cv-00709-SB-PVC (C.D. Cal. May 5 2025)",
+  "court": "U.S. District Court, Central District of California",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "Judge Stanley Blumenfeld, Jr.",
+  "date": "2025-05-05",
+  "outcome": "Order to show cause",
+  "outcomeClass": "pending",
+  "desc": "“The Court’s Civil Standing Order requires a party who uses generative artificial intelligence (AI) in drafting any portion of a filing to provide ‘a separate declaration disclosing the use of artificial intelligence and certifying that the filer has reviewed the source material and verified that the artificially generated content is accurate and complies with the filer’s Rule 11 obligations.’ … The Court is unable to locate Shell Petroleum N.V. v. Republic of Costa Rica, 608 F. Supp. 2d 269 (S.D.N.Y. 2009)...Plaintiff is ordered to show cause, in writing, by May 12, 2025, why it and its counsel should not be sanctioned under: (1) Rule 16(f) for violating the Court’s Standing Order; and (2) Rule 11 for filing an opposition without performing a reasonable inquiry into whether its legal contentions are supported.”",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.cacd.955326/gov.uscourts.cacd.955326.30.0.pdf"
+  }
+},
+{
+  "name": "Byrd v. The Villages of Woodland Springs Homeowners Association, Inc., No. 02-23-00078-CV (Tex. App.—Fort Worth Jul. 25 2024)",
+  "court": "Tex. App.—Fort Worth (2d Dist.)",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Justice Mike Wallach (panel: Sudderth, C.J.; Wallach & Walker, JJ.)",
+  "date": "2024-07-25",
+  "outcome": "Trial court’s judgment affirmed; no issues preserved or adequately briefed; no sanctions imposed despite deficient citations",
+  "outcomeClass": "no_sanction",
+  "desc": "After noting numerous briefing defects, the court observed: “We cannot tell from Byrd’s brief if he used ChatGPT or another artificial intelligence (AI) source to attempt to develop his legal citations.”  The opinion characterized the appeal as “yet another … cautionary tale” of pro-se litigants’ “critical mistakes of form and substance.”",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/texas/second-court-of-appeals/2024/02-23-00078-cv.html"
+  }
 }
+
+
 
 
 ];
