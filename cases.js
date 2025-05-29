@@ -798,13 +798,29 @@ const hallucinationCases = [
     state: "IN",
     filer: "Lawyer",
     judge: "Magistrate Judge Mark J. Dinsmore",
-    date: "2025-02-21",
-    outcome: "$15,000 Sanction Recommended",
+    date: "2025-02-21", 
+    filing_date: "2024-10-29",
+    outcome: "$15,000 Sanction Recommended in R&R; $6,000 Sanction adopted",
     outcomeClass: "recommendation",
     desc: "After three briefs containing AI-fabricated cases, the magistrate recommended a $15 k Rule 11 sanction and referral for discipline.",
     links: {
-      Report: "https://cases.justia.com/federal/district-courts/indiana/insdce/2:2024cv00326/215482/99/0.pdf",
+      "Report & Recommendation (Feb. 21, 2025)": "https://cases.justia.com/federal/district-courts/indiana/insdce/2:2024cv00326/215482/99/0.pdf",
+      "Order (May 28, 2025)": "https://www.westlaw.com/Document/I628592c03bf611f08bf8d350012e3990/View/FullText.html?transitionType=Default&contextData=(sc.Default)&VR=3.0&RS=cblt1.0",
       Coverage: "https://www.lawnext.com/2024/02/not-again-two-more-cases-just-this-week-of-hallucinated-citations-in-court-filings-leading-to-sanctions.html"
+    }
+  },
+  {
+    "name": "Brick v. Gallatin County, et al., No. CV 2:24-00174-BMM (D. Mont. May 27 2025)",
+    "court": "U.S. District Court, District of Montana, Butte Division",
+    "state": "MT",
+    "filer": "Pro se",
+    "judge": "Chief Judge Brian Morris",
+    "date": "2025-05-27",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“Brick's filings frequently exceed page limits, disregard procedural requirements, and cite to non-existent cases to support Brick's legal contentions.” The court dismissed with leave to amend and gave a warning.",
+    "links": {
+      "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.mtd.78773/gov.uscourts.mtd.78773.137.0.pdf"
     }
   },
   {
