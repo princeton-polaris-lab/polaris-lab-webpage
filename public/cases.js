@@ -2460,9 +2460,41 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://www.austlii.edu.au/cgi-bin/viewdoc/au/cases/nsw/NSWCATAD/2025/117.html"
   }
+},
+{
+  "name": "Stenner v. Stenner, 2025 BCSC 978 (CanLII) (B.C. S.C. May 28 2025)",
+  "court": "Supreme Court of British Columbia",
+  "state": "BC",
+  "filer": "Lawyer",
+  "judge": "Mr. Justice Ball",
+  "date": "2025-05-28",
+  "outcome": "No action, though generated arguments weren't convincing to the court",
+  "outcomeClass": "no_action",
+  "ai_tools_used": ["Unknown"],
+  "order_date": "2025-05-28",
+  "filing_date": "2025-03-17",
+  "desc": "“Mr. Stenner advised he used artificial intelligence to prepare the Recusal Application, a 55 page submission.”",
+  "links": {
+    "Opinion": "https://canlii.ca/t/kcbqb"
+  }
+},
+{
+  "name": "Andersen v. Olympus at Daybreak, No. 2:25-cv-00178-RJS-JCB (D. Utah May 30 2025)",
+  "court": "U.S. District Court, District of Utah",
+  "state": "UT",
+  "filer": "Pro se",
+  "judge": "Magistrate Judge Jared C. Bennett",
+  "date": "2025-05-30",
+  "order_date": "2025-05-30",
+  "filing_date": "2025-03-24",
+  "outcome": "Motion for alternative service denied; deadline to complete service extended 60 days; court warns that future fictitious citations will trigger Rule 11 sanctions",
+  "outcomeClass": "no_sanction",
+  "ai_tools_used": ["Unknown"],
+  "desc": "“The court is unable to locate the cases that [litigant] has cited, which calls into question his compliance with Fed. R. Civ. P. 11 … any further instances of such conduct will result in sanctions under Rule 11.”",
+  "links": {
+    "Opinion": "https://law.justia.com/cases/federal/district-courts/utah/utdce/2:2025cv00178/154869/20/"
+  }
 }
-
-
 ];
 
 
