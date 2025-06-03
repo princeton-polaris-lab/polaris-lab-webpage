@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f752988.css",
-    "main.js": "/static/js/main.d7432cd4.js",
+    "main.js": "/static/js/main.9aeffc3e.js",
     "static/js/488.5e451eab.chunk.js": "/static/js/488.5e451eab.chunk.js",
     "static/media/f82502cb-bf11-43cf-95a0-06bff430221f.png": "/static/media/f82502cb-bf11-43cf-95a0-06bff430221f.f018e9201fb82d34befa.png",
     "static/media/da113242-14df-4074-96b6-545b0a6b3495.png": "/static/media/da113242-14df-4074-96b6-545b0a6b3495.5816dd75b38bba392443.png",
@@ -21,6 +21,7 @@
     "static/media/359_725_f1.jpeg": "/static/media/359_725_f1.5741ae085fa26624a348.jpeg",
     "static/media/0932b15c-49b8-433d-95b7-df159e950ee1.png": "/static/media/0932b15c-49b8-433d-95b7-df159e950ee1.7e42ca667f5a14e0cf70.png",
     "static/media/dd0d7033-5385-4c86-bf70-b4f5148d3ac3.png": "/static/media/dd0d7033-5385-4c86-bf70-b4f5148d3ac3.4a4144e0707fc1a420e3.png",
+    "static/media/b72c0ef5-9935-4290-9ae7-d36d5c996cc4.png": "/static/media/b72c0ef5-9935-4290-9ae7-d36d5c996cc4.ea32dfd7d825b6982f21.png",
     "static/media/18c51d69-9fc3-43e2-9f5f-48886c77421c.png": "/static/media/18c51d69-9fc3-43e2-9f5f-48886c77421c.815dd7110d393004a838.png",
     "static/media/legalbench_a_collaboratively_built_benchmark_for_m.png": "/static/media/legalbench_a_collaboratively_built_benchmark_for_m.84c9f90427a4b015e01d.png",
     "static/media/fantastic.png": "/static/media/fantastic.8a1594f72aa321f3b5cf.png",
@@ -92,11 +93,11 @@
     "static/media/ntia-logo-wht.svg": "/static/media/ntia-logo-wht.029200dfab9fde95b12b.svg",
     "index.html": "/index.html",
     "main.4f752988.css.map": "/static/css/main.4f752988.css.map",
-    "main.d7432cd4.js.map": "/static/js/main.d7432cd4.js.map",
+    "main.9aeffc3e.js.map": "/static/js/main.9aeffc3e.js.map",
     "488.5e451eab.chunk.js.map": "/static/js/488.5e451eab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f752988.css",
-    "static/js/main.d7432cd4.js"
+    "static/js/main.9aeffc3e.js"
   ]
 }
