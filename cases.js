@@ -2448,7 +2448,7 @@ const hallucinationCases = [
   "name": "GNX v. Children’s Guardian, [2025] NSWCATAD 117 (NSW CAT AD May 27 2025)",
   "court": "NSW Civil and Administrative Tribunal, Administrative & Equal Opportunity Division",
   "state": "NSW",
-  "filer": "Self-represented applicant",
+  "filer": "Pro se",
   "judge": "Senior Member J. Smith",
   "date": "2025-05-27",
   "outcome": "Warning that Applicant should not rely on ChatGPT for legal advice; poor quality claims led to dismissal",
