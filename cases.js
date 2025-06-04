@@ -2494,6 +2494,85 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://law.justia.com/cases/federal/district-courts/utah/utdce/2:2025cv00178/154869/20/"
   }
+},
+{
+  "name": "Byoplanet International, LLC v. Knecht, No. 0:25-cv-60646-LEIBOWITZ (S.D. Fla. May 29 2025)",
+  "court": "U.S. District Court, Southern District of Florida",
+  "state": "FL",
+  "filer": "Lawyer",
+  "judge": "David S. Leibowitz",
+  "date": "2025-05-29",
+  "order_date": "2025-05-29",
+  "filing_date": "2025-05-15",
+  "outcome": "Order to Show Cause; Pending outcome",
+  "outcomeClass": "pending",
+  "desc": "The court found that “many quotes from cited cases are fabricated entirely, and at least one case which Plaintiff cites does not exist,” and therefore directed Plaintiff’s counsel to “show cause in writing whether he intentionally made misrepresentations to the Court.”",
+  "links": {
+    "Order to Show Cause": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.687084/gov.uscourts.flsd.687084.13.0.pdf"
+  }
+},
+{
+  "name": "Powhatan County School Board v. Skinger & Lucas, No. 3:24-cv-874 (E.D. Va. Jun. 2 2025)",
+  "court": "U.S. District Court, Eastern District of Virginia (Richmond Div.)",
+  "state": "VA",
+  "filer": "Pro se",
+  "judge": "Senior U.S. District Judge Robert E. Payne",
+  "date": "2025-06-02",
+  "order_date": "2025-06-02",
+  "ai_tools_used": ["ChatGPT"],
+  "outcome": "Strike filings with leave to re-file",
+  "outcomeClass": "no_action",
+  "desc": "“[T]he Court has found at least fourty-two (42) citations to authority by [litigant]... that do not exist.” “[Litigant] repeatedly has cited cases that do not exist. … The pervasive misrepresentations of the law in [litigant's] filings cannot be tolerated. It serves to make a mockery of the judicial process. It causes an enormous waste of judicial resources to try to find cited cases that do not exist and to determine whether a cited authority is relevant or binding, only to determine that most are neither.”",
+  "links": {
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.vaed.564853/gov.uscourts.vaed.564853.170.0.pdf"
+  }
+},
+{
+  "name": "Gjovik v. Apple Inc., No. 3:23-cv-04597-EMC (N.D. Cal. May 19 2025)",
+  "court": "U.S. District Court, Northern District of California",
+  "state": "CA",
+  "filer": "Pro se",
+  "judge": "Judge Edward M. Chen",
+  "date": "2025-05-19",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "ai_tools_used": ["Unknown"],
+  "desc": "The Court “forewarns [litigant] that … she is responsible for verifying the accuracy of AI-generated or AI-provided information … and that … failure to do so may lead to sanctions.”",
+  "links": {
+    "Opinion": "https://www.courtlistener.com/docket/67772913/215/gjovik-v-apple-inc/"
+  }
+},
+{
+  "name": "Wilt v. Department of the Navy & Defense Finance and Accounting Service, No. 6:24-cv-213-JDK-KNM (E.D. Tex. May 2 2025)",
+  "court": "U.S. District Court, Eastern District of Texas, Tyler Division",
+  "state": "TX",
+  "filer": "Pro se",
+  "judge": "Judge Jeremy D. Kernodle",
+  "date": "2025-05-02",
+  "order_date": "2025-05-02",
+  "filing_date": "2025-04-14",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "“Plaintiff's citation to hallucinatory cases likely generated via AI violates this Court’s Local Rule CV-11(g) … The Court cautions Plaintiff that fabricated citations will not be tolerated.”",
+  "links": {
+    "Opinion": "https://scholar.google.com/scholar_case?case=3519138082593363287"
+  }
+},
+{
+  "name": "United States v. Ortiz-Acosta, Nos. 22-cr-00167-RM-1 & 25-cv-00561-RM (D. Colo. Apr. 30 2025)",
+  "court": "U.S. District Court, District of Colorado",
+  "state": "CO",
+  "filer": "Pro se",
+  "judge": "Senior District Judge Raymond P. Moore",
+  "date": "2025-04-30",
+  "order_date": "2025-04-30",
+  "filing_date": "2025-02-19",
+  "outcome": "Motion denied, but no explicit action on fabricated citations",
+  "outcomeClass": "no_action",
+  "desc": "“Whether Ortiz-Acosta is using artificial intelligence, copying the pleadings of others, bad at research or just making up case law, the cases he cites do not come close to supporting his claim.”",
+  "links": {
+    "Opinion": "https://scholar.google.com/scholar_case?case=15302887190655116376"
+  }
 }
 ];
 
