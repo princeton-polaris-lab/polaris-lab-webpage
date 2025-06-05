@@ -561,7 +561,21 @@ const hallucinationCases = [
       "Judgment": "https://www.judiciary.uk/wp-content/uploads/2025/05/Ayinde-v-LB-Haringey-Judgment-Ritchie-J-03.04.25-HD-2.pdf",
       "Coverage": "https://www.lexology.com/library/detail.aspx?g=49d3af34-c4df-4184-8c6b-8d0330aa4e97"
     }
-  }  /* :contentReference[oaicite:10]{index=10} */,
+  },
+  {
+    "name": "Alharoun v. Qatar National Bank Q.P.S.C. and QNB Capital LLC",
+    "court": "High Court of Justice (UK)",
+    "state": "UK-ENG",
+    "filer": "Lawyer",
+    "judge": "Justice Ritchie",
+    "date": "2025-05-09",
+    "outcome": "Pending",
+    "outcomeClass": "pending",
+    "desc": "\"it appears from the Order of Mrs Justice Dias that correspondence was sent to the court, and witness statements were filed, citing authorities that do not exist and claiming that other authorities contained passages that they do not contain.\"",
+    "links": {
+      "Order": "https://www.judiciary.uk/judgments/alharoun-v-qatar-national-bank-and-ayinde-v-london-borough-of-hackney-order/"
+    }
+  },
 {
   "name": "Ramirez v. Humala, No. 1:24-cv-00242 (E.D.N.Y.)",
   "court": "E.D.N.Y.",
@@ -576,6 +590,20 @@ const hallucinationCases = [
     "Decision": "https://storage.courtlistener.com/recap/gov.uscourts.nyed.508684/gov.uscourts.nyed.508684.49.0.pdf",
     "Docket": "https://www.courtlistener.com/docket/68152794/ramirez-v-el-tri-mx-restaurant-bar-corp/?filed_after=&filed_before=&entry_gte=&entry_lte=&order_by=desc",
     "Coverage": "https://reason.com/volokh/2025/05/14/ai-hallucination-case-stemming-from-use-of-a-paralegals-ai-based-research/"
+  }
+},
+{
+  "name": "LMN v. STC, [2025] NZEmpC 46 (EmpC Mar. 17 2025)",
+  "court": "Employment Court of New Zealand",
+  "state": "NZ",
+  "filer": "Pro se",
+  "judge": "Judge M S King",
+  "date": "2025-03-17",
+  "outcome": "Warning only; but poor arguments also led to costs being awarded of $500 NZD",
+  "outcomeClass": "warning",
+  "desc": "After the plaintiff cited a non-existent authority—“Fowlie v Stonex (No 2) [2015] NZEmpC 94”—the Court warned that “information provided by generative artificial intelligence ought to be checked before being relied on in documents filed in court proceedings.”",
+  "links": {
+    "Opinion": "https://www.justice.govt.nz/assets/Documents/Decisions/2025-NZEmpC-46-LMN-v-STC-Interlocutory-No-2.pdf"
   }
 },
 {
@@ -1192,6 +1220,20 @@ const hallucinationCases = [
   "desc": "In a response to the Court’s show-cause order, lawfirm admitted that its attorneys used ChatGPT to add nonexistent case citations to prior motions, acknowledged the citations were AI “hallucinations,” and apologized to the Court and opposing counsel.",
   "links": {
     "Order": "https://storage.courtlistener.com/recap/gov.uscourts.alnd.179677/gov.uscourts.alnd.179677.195.0.pdf"
+  }
+},
+{
+  "name": "Thomas v. Commissioner of Internal Revenue, Docket No. 10795-22 (U.S. Tax Ct. Oct. 23 2024)",
+  "court": "United States Tax Court",
+  "state": "USA",
+  "filer": "Lawyer",
+  "judge": "Judge Ronald L. Buch",
+  "date": "2024-10-23",
+  "outcome": "Pretrial Memorandum deemed stricken; warning",
+  "outcomeClass": "no_sanction",
+  "desc": "Finding that several cases cited in petitioner’s Pretrial Memorandum “did not exist, evidencing possible AI hallucinations,” the Court held that counsel’s signature failed to satisfy Tax Court Rule 33 and therefore “**petitioner’s Pretrial Memorandum … is deemed stricken.**” The Court warned that large-language-model tools can generate fictitious authorities and emphasized counsel’s duty to verify any AI-assisted work.",
+  "links": {
+    "Order": "/opinion_pdfs/Thomas_v_IRS.pdf"
   }
 },
 {
@@ -2487,8 +2529,8 @@ const hallucinationCases = [
   "date": "2025-05-30",
   "order_date": "2025-05-30",
   "filing_date": "2025-03-24",
-  "outcome": "Motion for alternative service denied; deadline to complete service extended 60 days; court warns that future fictitious citations will trigger Rule 11 sanctions",
-  "outcomeClass": "no_sanction",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
   "ai_tools_used": ["Unknown"],
   "desc": "“The court is unable to locate the cases that [litigant] has cited, which calls into question his compliance with Fed. R. Civ. P. 11 … any further instances of such conduct will result in sanctions under Rule 11.”",
   "links": {
@@ -2573,7 +2615,22 @@ const hallucinationCases = [
   "links": {
     "Opinion": "https://scholar.google.com/scholar_case?case=15302887190655116376"
   }
+},
+{
+  "name": "Wyderka v. Energy Transfer Co. d/b/a Sunoco Logistics, OALJ No. 2023-PSI-00001 (USDOL OALJ Feb. 11 2025)",
+  "court": "U.S. Department of Labor, Office of Administrative Law Judges (Cincinnati, OH)",
+  "state": "OH",
+  "filer": "Pro se",
+  "judge": "ALJ Willow Eden Fort",
+  "date": "2025-02-11",
+  "outcome": "No action",
+  "outcomeClass": "no_action",
+  "desc": "Noting that Complainant’s late-filed brief appeared to be AI-generated, the ALJ warned: “Complainant’s Opposition looks to have been prepared with the assistance of a large language model, such as Chat GPT; it is largely incomprehensible. … A party using such assistance has a duty to ensure that the result generated is sensical.”",
+  "links": {
+    "Opinion": "https://oalj.dol.gov/DECISIONS/ALJ/PSI/2023/Wyderka_v_Energy_Transfer_dba__2023PSI00001_(FEB_11_2025)_080503_ORDER_PD.PDF"
+  }
 }
+
 ];
 
 
