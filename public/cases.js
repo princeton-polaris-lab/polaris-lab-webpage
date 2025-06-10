@@ -38,7 +38,7 @@ const hallucinationCases = [
 /* India – high-court referral of a *trial-court judge* */
 {
   "name": "Sammaan Capital Ltd. & Sammaan Finserve Ltd. v. Mantri Infrastructure Pvt. Ltd. & ors., CRP 49/2025 (Karnataka High Court Mar. 26 2025)",
-  "court": "Karnataka High Court (Bengaluru)",
+  "court": "Karnataka High Court (Bengaluru), India",
   "state": "IN-KA",
   "filer": "Judge",
   "judge": "Justice R. Devdas",
@@ -55,7 +55,7 @@ const hallucinationCases = [
 
 {
   "name": "Keaau Development Partnership LLC v. Lawrence, No. CAAP-24-0000494 (Haw. Ct. App. May 12 2025)",
-  "court": "Haw. Intermediate Ct. App.",
+  "court": "Haw. Intermediate Ct. App., Hawaii, USA",
   "state": "HI",
   "filer": "Lawyer",
   "judge": "Acting C.J. Leonard; Judges Hiraoka & McCullen",
@@ -69,7 +69,7 @@ const hallucinationCases = [
 },
 {
   "name": "Buckeye Trust v. PCIT, ITA No. 1051/Bang/2024 (ITA Bengaluru Bench Dec. 30 2024)",
-  "court": "Income Tax Appellate Tribunal (Bengaluru Bench)",
+  "court": "Income Tax Appellate Tribunal (Bengaluru Bench), India",
   "state": "India",
   "filer": "Judge",
   "judge": "Vice President Prashant Maharishi & Judicial Member Prakash Chand Yadav",
@@ -101,7 +101,7 @@ const hallucinationCases = [
 },
 {
   "name": "Commissions for HM Revenue & Customs v. Harber, [2023] UKFTT 1007 (TC) (Dec. 4 2023)",
-  "court": "First-tier Tribunal (Tax Chamber)",
+  "court": "First-tier Tribunal (Tax Chamber), UK",
   "state": "UK",
   "filer": "Pro se",
   "judge": "Tribunal Judge",
@@ -115,7 +115,7 @@ const hallucinationCases = [
 },
 {
   "name": "Parker v Forsyth NNO and Others, (1585/20) [2023] ZAGPRD 1 (Reg. Ct. Gauteng Div. June 29 2023)",
-  "court": "Regional Court of South Africa, Gauteng Div.",
+  "court": "Regional Court of South Africa, Gauteng Div., South Africa",
   "state": "South Africa",
   "filer": "Lawyer",
   "judge": "Chaitram, RM",
@@ -131,7 +131,7 @@ const hallucinationCases = [
 
 {
   "name": "Moales v. Land Rover Cherry Hill, No. 3:25-cv-544 (D. Conn. Apr. 30 2025)",
-  "court": "D. Conn.",
+  "court": "D. Conn., USA",
   "state": "CT",
   "filer": "Pro se",
   "judge": "District Judge Vernon D. Oliver",
@@ -145,7 +145,7 @@ const hallucinationCases = [
 },
 {
   "name": "Mavundla v. MEC: Department of Co-Operative Government & Traditional Affairs KwaZulu-Natal & Others, (7940/2024P) [2025] ZAKZPHC 2 (8 Jan 2025)",
-  "court": "Pietermaritzburg High Court (Kwazulu-Natal Div.)",
+  "court": "Pietermaritzburg High Court (Kwazulu-Natal Div.), South Africa",
   "state": "South Africa",
   "filer": "Lawyer",
   "judge": "Judge E. Bezuidenhout",
@@ -160,7 +160,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Rubio v. District of Columbia Dept. of Human Services, No. 1:23-cv-00719 (D.D.C. Dec. 3 2024)",
-  "court": "D.D.C.",
+  "court": "D.D.C., USA",
   "state": "DC",
   "filer": "Pro se",
   "judge": "District Judge Randolph D. Moss",
@@ -176,7 +176,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "O’Brien v. Flick, No. 24-61529-CIV-DAMIAN (S.D. Fla. Jan. 10 2025)",
-  "court": "S.D. Fla.",
+  "court": "S.D. Fla., USA",
   "state": "FL",
   "filer": "Pro se",
   "judge": "District Judge Melissa Damian",
@@ -191,7 +191,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Gordon v. Wells Fargo Bank N.A. Inc., No. 5:24-cv-388 (M.D. Ga. Apr. 8 2025)",
-  "court": "M.D. Ga.",
+  "court": "M.D. Ga., USA",
   "state": "GA",
   "filer": "Pro se",
   "judge": "Senior District Judge C. Ashley Royal",
@@ -207,7 +207,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Thomas v. Pangburn, No. CV423-046 (S.D. Ga. Oct. 6 2023)",
-  "court": "S.D. Ga. (Savannah Div.)",
+  "court": "S.D. Ga. (Savannah Div.), USA",
   "state": "GA",
   "filer": "Pro se",
   "judge": "Mag. Judge Christopher L. Ray (R&R); Dist. Judge William T. Moore Jr. (adopted Jan 29 2024)",
@@ -222,7 +222,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Secura Insurance v. Thompson, No. 5:23-cv-00066-BJB-LLK (W.D. Ky. Aug. 21 2024)",
-  "court": "W.D. Ky. (Paducah Div.)",
+  "court": "W.D. Ky. (Paducah Div.), USA",
   "state": "KY",
   "filer": "Pro se",
   "judge": "Magistrate Judge Lanny King",
@@ -237,7 +237,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Mescall v. Renaissance at Antiquity, No. 3:23-cv-00332 (W.D.N.C. Nov. 13 2023)",
-  "court": "W.D. N.C. (Charlotte Div.)",
+  "court": "W.D. N.C. (Charlotte Div.), USA",
   "state": "NC",
   "filer": "Pro se",
   "judge": "District Judge Robert J. Conrad Jr.; Mag. Judge Susan C. Rodriguez",
@@ -252,7 +252,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Strong v. Rushmore Loan Management Services, LLC, No. 8:24-cv-00352 (D. Neb. Jan. 15 2025)",
-  "court": "D. Neb.",
+  "court": "D. Neb., USA",
   "state": "NE",
   "filer": "Pro se",
   "judge": "Senior District Judge John M. Gerrard",
@@ -268,7 +268,7 @@ const hallucinationCases = [
 
 {
     "name": "People v. Zachariah C. Crabill, No. 23PDJ067 (Colo. O.P.D.J.)",
-    "court": "Colo. O.P.D.J.",
+    "court": "Colo. O.P.D.J., USA",
     "state": "CO",
     "filer": "Lawyer",
     "judge": "Presiding Disciplinary Judge Bryon M. Large",
@@ -284,7 +284,7 @@ const hallucinationCases = [
 
   {
     "name": "Park v. Kim, 91 F.4th 610 (2d Cir. 2024)",
-    "court": "2d Cir.",
+    "court": "2d Cir., USA",
     "state": "NY",
     "filer": "Lawyer",
     "judge": "Circuit Judges Parker, Nathan & Merriam (per curiam)",
@@ -301,7 +301,7 @@ const hallucinationCases = [
   /* —— NEW ENTRY —— */
 {
   "name": "Kruglyak v. Home Depot U.S.A., Inc., No. 1:22-cv-00024 (W.D. Va. Mar. 25 2025)",
-  "court": "W.D. Va.",
+  "court": "W.D. Va., USA",
   "state": "VA",
   "filer": "Pro se",
   "judge": "Senior District Judge Michael F. Urbanski",
@@ -317,7 +317,7 @@ const hallucinationCases = [
 
   {
     "name": "Ex parte Lee, No. 10-23-00126-CR (Tex. App.—Waco July 20 2023)",
-    "court": "Tex. 10th Ct. App.",
+    "court": "Tex. 10th Ct. App., USA",
     "state": "TX",
     "filer": "Lawyer",
     "judge": "Chief Justice Tom Gray",
@@ -333,7 +333,7 @@ const hallucinationCases = [
 
   {
     "name": "Matter of Samuel, 82 Misc. 3d 616 (Sur. Ct. Kings Cty. 2024)",
-    "court": "Sur. Ct. Kings Cty.",
+    "court": "Sur. Ct. Kings Cty., USA",
     "state": "NY",
     "filer": "Lawyer",
     "judge": "",
@@ -349,7 +349,7 @@ const hallucinationCases = [
 
   {
     "name": "Dukuray v. Experian Info. Sols., No. 23-cv-9043 (S.D.N.Y. July 26 2024)",
-    "court": "S.D.N.Y.",
+    "court": "S.D.N.Y., USA",
     "state": "NY",
     "filer": "Pro se",
     "judge": "Magistrate Judge Gary Stein",
@@ -364,7 +364,7 @@ const hallucinationCases = [
 
   {
     "name": "Transamerica Life Ins. Co. v. Williams, No. CV-24-00379 (D. Ariz. Sept 6 2024)",
-    "court": "D. Ariz.",
+    "court": "D. Ariz., USA",
     "state": "AZ",
     "filer": "Pro se",
     "judge": "District Judge G. Murray Snow",
@@ -378,7 +378,7 @@ const hallucinationCases = [
   },  /* :contentReference[oaicite:5]{index=5} */
   {
   "name": "An v. Archblock, Inc., C.A. No. 2024-0102-LWW (Del. Ch. Apr. 4 2025)",
-  "court": "Del. Ch.",
+  "court": "Del. Ch., USA",
   "state": "DE",
   "filer": "Pro se",
   "judge": "Vice Chancellor Lori W. Will",
@@ -392,7 +392,7 @@ const hallucinationCases = [
 },
   {
     "name": "Al-Hamim v. Star Hearthstone, LLC, 2024 COA 128 (Colo. Ct. App. Dec 5 2024)",
-    "court": "Colo. Ct. App.",
+    "court": "Colo. Ct. App., USA",
     "state": "CO",
     "filer": "Pro se",
     "judge": "Judge Christina Finzel Gomez (panel)",
@@ -407,7 +407,7 @@ const hallucinationCases = [
 
   {
     "name": "Morgan v. Community Against Violence, No. 1:23-cv-353 (D.N.M. Jan 19 2024)",
-    "court": "D. N.M.",
+    "court": "D. N.M., USA",
     "state": "NM",
     "filer": "Pro se",
     "judge": "Chief Judge William P. Johnson",
@@ -421,7 +421,7 @@ const hallucinationCases = [
 
   {
     "name": "Sanders v. United States, No. 24-1301 (Fed. Cl. Mar 31 2025)",
-    "court": "U.S. Ct. of Fed. Claims",
+    "court": "U.S. Ct. of Fed. Claims, USA",
     "state": "DC",
     "filer": "Pro se",
     "judge": "Judge Richard A. Hertling",
@@ -436,7 +436,7 @@ const hallucinationCases = [
 /* —— NEW CASE —— */
 {
   "name": "Zhang v. Chen, 2024 BCSC 285 (B.C. Sup. Ct.)",
-  "court": "Supreme Court of British Columbia",
+  "court": "Supreme Court of British Columbia, Canada",
   "state": "Canada-BC",
   "filer": "Lawyer",
   "judge": "Justice D. Masuhara",
@@ -451,7 +451,7 @@ const hallucinationCases = [
 },
   {
     "name": "Ko v. Li, 2025 ONSC 2766 (Ont. Sup. Ct. May 6 2025)",
-    "court": "Ont. Sup. Ct. (SCJ)",
+    "court": "Ont. Sup. Ct. (SCJ), Canada",
     "state": "Canada-ON",
     "filer": "Lawyer",
     "judge": "Justice Fred Myers",
@@ -466,7 +466,7 @@ const hallucinationCases = [
   },  /* :contentReference[oaicite:9]{index=9} */
   {
     "name": "R. v. Chand, 2025 ONCJ 282 (Ont. Ct. J. May 26 2025)",
-    "court": "Ontario Court of Justice",
+    "court": "Ontario Court of Justice, Canada",
     "state": "ON",
     "filer": "Lawyer",
     "judge": "Justice Joseph F. Kenkel",
@@ -480,8 +480,8 @@ const hallucinationCases = [
   },
   {
     "name": "St. Michaels Investment Group Canada Inc. v. Department of Public Works and Government Services, File PR-2023-042, 2024 CanLII 140109 (CA CITT Apr. 11 2024)",
-    "court": "Canadian International Trade Tribunal",
-    "state": "Canada",
+    "court": "Canadian International Trade Tribunal, Canada",
+    "state": "Canada-ON",
     "filer": "Lawyer",
     "judge": "Presiding Member Randolph W. Heggart",
     "date": "2024-04-11",
@@ -494,8 +494,8 @@ const hallucinationCases = [
   },
   {
     "name": "Simpson v. Hung Long Enterprises Inc., 2025 BCCRT 525 (CanLII) (B.C. Civil Resolution Tribunal Apr. 25 2025)",
-    "court": "Civil Resolution Tribunal, British Columbia",
-    "state": "BC",
+    "court": "Civil Resolution Tribunal, British Columbia, Canada",
+    "state": "Canada-BC",
     "filer": "Pro se",
     "judge": "Vice Chair Eric Regehr",
     "date": "2025-04-25",
@@ -508,7 +508,7 @@ const hallucinationCases = [
   },
   {
     "name": "Vechtel et al. v. Gershoni, Civ. Case No. 16667-08-23 (Mag. Ct. Rishon LeZion May 25 2025)",
-    "court": "Magistrates’ Court, Rishon LeZion",
+    "court": "Magistrates’ Court, Rishon LeZion, Israel",
     "state": "Israel",
     "filer": "Lawyer",
     "judge": "Judge Sarit Avdiyan",
@@ -522,8 +522,8 @@ const hallucinationCases = [
   },
   {
     "name": "Re Nicholson, 2025 ONSC 1069 (Ont. S.C.J. Feb. 18 2025)",
-    "court": "Ontario Superior Court of Justice (Bankruptcy & Insolvency)",
-    "state": "ON",
+    "court": "Ontario Superior Court of Justice (Bankruptcy & Insolvency), Canada",
+    "state": "Canada-ON",
     "filer": "Pro se",
     "judge": "Associate Justice Ilchenko (Registrar in Bankruptcy)",
     "date": "2025-02-18",
@@ -536,8 +536,8 @@ const hallucinationCases = [
   },  
   {
     "name": "SQBox Solutions Ltd. v. Oak, 2025 BCCRT 408 (CanLII) (B.C. Civil Resolution Tribunal Mar. 31 2025)",
-    "court": "Civil Resolution Tribunal, British Columbia",
-    "state": "BC",
+    "court": "Civil Resolution Tribunal, British Columbia, Canada",
+    "state": "Canada-BC",
     "filer": "Pro se",
     "judge": "Tribunal Member Douglas Merchant",
     "date": "2025-03-31",
@@ -550,7 +550,7 @@ const hallucinationCases = [
   },  
   {
     "name": "R (Ayinde) v. London Borough of Haringey, [2025] EWHC 1040 (Admin)",
-    "court": "High Court (Admin.)",
+    "court": "High Court (Admin.), UK",
     "state": "UK-ENG",
     "filer": "Lawyer",
     "judge": "Justice Ritchie",
@@ -565,7 +565,7 @@ const hallucinationCases = [
   },
   {
     "name": "Alharoun v. Qatar National Bank Q.P.S.C. and QNB Capital LLC",
-    "court": "High Court of Justice (UK)",
+    "court": "High Court of Justice (UK), UK",
     "state": "UK-ENG",
     "filer": "Lawyer",
     "judge": "Justice Ritchie",
@@ -579,7 +579,7 @@ const hallucinationCases = [
   },
 {
   "name": "Ramirez v. Humala, No. 1:24-cv-00242 (E.D.N.Y.)",
-  "court": "E.D.N.Y.",
+  "court": "E.D.N.Y., USA",
   "state": "NY",
   "filer": "Lawyer",
   "judge": "District Judge Rachel P. Kovner; Magistrate Judge Joseph A. Marutollo",
@@ -595,7 +595,7 @@ const hallucinationCases = [
 },
 {
   "name": "LMN v. STC, [2025] NZEmpC 46 (EmpC Mar. 17 2025)",
-  "court": "Employment Court of New Zealand",
+  "court": "Employment Court of New Zealand, New Zealand",
   "state": "NZ",
   "filer": "Pro se",
   "judge": "Judge M S King",
@@ -609,7 +609,7 @@ const hallucinationCases = [
 },
 {
   "name": "Coomer v. Lindell, No. 1:22-cv-01129-NYW-SBP (D. Colo.)",
-  "court": "D. Colo.",
+  "court": "D. Colo., USA",
   "state": "CO",
   "filer": "Lawyer",
   "judge": "District Judge Nina Y. Wang; Magistrate Judge Susan B. Prose",
@@ -626,7 +626,7 @@ const hallucinationCases = [
 },
 {
   "name": "State of Israel v. Ibrahim Mahajne",
-  "court": "Hadera Magistrate’s Court",
+  "court": "Hadera Magistrate’s Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Judge Ehud Kaplan",
@@ -641,7 +641,7 @@ const hallucinationCases = [
 },
   {
     name: "Concord Music Group, Inc., et al. v. Anthropic PBC, No. 5:24-cv-03811-EKL (N.D. Cal.)",
-    court: "N.D. Cal.",
+    court: "N.D. Cal., USA",
     state: "CA",
     filer: "Lawyer",
     judge: "District Judge Eumi K. Lee; Magistrate Judge Susan van Keulen",
@@ -659,7 +659,7 @@ const hallucinationCases = [
   },
   {
     name: "Lacey v. State Farm Gen. Ins. Co., No. 2:24-cv-05205-FMO-MAA (C.D. Cal.)",
-    court: "C.D. Cal.",
+    court: "C.D. Cal., USA",
     state: "CA",
     filer: "Lawyers",
     judge: "Special Master Hon. Michael R. Wilner (Ret.); District Judge Fernando M. Olguin",
@@ -673,7 +673,7 @@ const hallucinationCases = [
   },
   {
     "name": "HC 5001175-27.2025.8.24.0000 (5ª Câmara Criminal, TJ-SC Feb. 6 2025)",
-    "court": "Santa Catarina Court of Justice – Fifth Criminal Chamber",
+    "court": "Santa Catarina Court of Justice – Fifth Criminal Chamber, Brazil",
     "state": "BR-SC",
     "filer": "Lawyer",
     "judge": "Des. Cinthia Beatriz da Silva Bittencourt Schaefer (rel.)",
@@ -687,7 +687,7 @@ const hallucinationCases = [
   },  
   {
     "name": "(confidential style) – Apelação civil (6ª Câmara Cível, TJ-SC Feb. 18 2025)",
-    "court": "Tribunal de Justiça de Santa Catarina – 6ª Câmara Cível",
+    "court": "Tribunal de Justiça de Santa Catarina – 6ª Câmara Cível, Brazil",
     "state": "BR-SC",
     "filer": "Lawyer",
     "judge": "Des. relator (name suppressed)",
@@ -703,7 +703,7 @@ const hallucinationCases = [
   /* Brazil – national electoral court fine */
   {
     "name": "AIJE 0600814-85.2022.6.00.0000 (TSE Apr. 14 2023)",
-    "court": "Tribunal Superior Eleitoral",
+    "court": "Tribunal Superior Eleitoral, Brazil",
     "state": "BR-DF",
     "filer": "Lawyer",
     "judge": "Min. Benedito Gonçalves (Corregedor-Geral)",
@@ -718,7 +718,7 @@ const hallucinationCases = [
   },  
   {
     name: "Mata v. Avianca, Inc., 678 F. Supp. 3d 443 (S.D.N.Y. 2023)",
-    court: "S.D.N.Y.",
+    court: "S.D.N.Y., USA",
     state: "NY",
     filer: "Lawyers",
     judge: "District Judge P. Kevin Castel",
@@ -733,7 +733,7 @@ const hallucinationCases = [
   },
   {
     name: "Gauthier v. Goodyear Tire & Rubber Co., 2024 WL 4882651 (E.D. Tex. Nov. 25 2024)",
-    court: "E.D. Tex.",
+    court: "E.D. Tex., USA",
     state: "TX",
     filer: "Lawyer",
     judge: "District Judge Marcia A. Crone",
@@ -748,7 +748,7 @@ const hallucinationCases = [
   },
   {
     name: "Kruse v. Karlen, 692 S.W.3d 43 (Mo. Ct. App. E.D. 2024)",
-    court: "Mo. Ct. App.",
+    court: "Mo. Ct. App. E.D., USA",
     state: "MO",
     filer: "Pro se",
     judge: "Judge Kurt S. Odenwald (panel with Judges Gardner & Hardin-Tammons)",
@@ -763,7 +763,7 @@ const hallucinationCases = [
   },
   {
     name: "Wadsworth v. Walmart Inc., 2025 WL 608073 (D. Wyo. Feb. 24 2025)",
-    court: "D. Wyo.",
+    court: "D. Wyo., USA",
     state: "WY",
     filer: "Lawyers",
     judge: "Chief District Judge Kelly H. Rankin",
@@ -778,7 +778,7 @@ const hallucinationCases = [
   },
   {
     name: "Kohls v. Ellison, No. 0:24-cv-03754-LMP-DLM (D. Minn. Jan. 10 2025)",
-    court: "D. Minn.",
+    court: "D. Minn., USA",
     state: "MN",
     filer: "State expert",
     judge: "District Judge Laura M. Provinzino",
@@ -793,7 +793,7 @@ const hallucinationCases = [
   },
   {
     name: "United States v. Hayes, 2025 WL 235531 (E.D. Cal. Jan. 17 2025)",
-    court: "E.D. Cal.",
+    court: "E.D. Cal., USA",
     state: "CA",
     filer: "Defense Counsel",
     judge: "District Judge Daniel J. Calabretta",
@@ -808,7 +808,7 @@ const hallucinationCases = [
   },
   {
     name: "Nguyen v. Savage Enters., 2025 WL 679024 (E.D. Ark. Mar. 3 2025)",
-    court: "E.D. Ark.",
+    court: "E.D. Ark., USA",
     state: "AR",
     filer: "Lawyer",
     judge: "District Judge Brian S. Miller",
@@ -823,7 +823,7 @@ const hallucinationCases = [
   },
   {
     name: "Mid Central Operating Eng'rs Health & Welfare Fund v. Hoosiervac LLC, 2025 U.S. Dist. LEXIS 31073 (S.D. Ind. Feb. 21 2025)",
-    court: "S.D. Ind.",
+    court: "S.D. Ind., USA",
     state: "IN",
     filer: "Lawyer",
     judge: "Magistrate Judge Mark J. Dinsmore",
@@ -840,7 +840,7 @@ const hallucinationCases = [
   },
   {
     "name": "Brick v. Gallatin County, et al., No. CV 2:24-00174-BMM (D. Mont. May 27 2025)",
-    "court": "U.S. District Court, District of Montana, Butte Division",
+    "court": "U.S. District Court, District of Montana, Butte Division, USA",
     "state": "MT",
     "filer": "Pro se",
     "judge": "Chief Judge Brian Morris",
@@ -857,7 +857,7 @@ const hallucinationCases = [
   },
   {
     "name": "United States v. Cohen, No. 18-cr-602 (S.D.N.Y. Mar. 20 2024)",
-    "court": "S.D.N.Y.",
+    "court": "S.D.N.Y., USA",
     "state": "NY",
     "filer": "Lawyer",
     "judge": "District Judge Jesse M. Furman",
@@ -872,7 +872,7 @@ const hallucinationCases = [
   },
 {
   "name": "Smith v. Farwell, Civ. A. No. 2282CV01197 (Mass. Super. Ct. Feb. 12 2024)",
-  "court": "Mass. Super. Ct.",
+  "court": "Mass. Super. Ct., USA",
   "state": "MA",
   "filer": "Lawyer",
   "judge": "Justice Brian A. Davis",
@@ -887,7 +887,7 @@ const hallucinationCases = [
 },
 {
   "name": "Iovino v. Michael Stapleton Assocs. Ltd., No. 5:21-cv-00064 (W.D. Va. Oct. 9 2024)",
-  "court": "W.D. Va.",
+  "court": "W.D. Va., USA",
   "state": "VA",
   "filer": "Lawyer",
   "judge": "District Judge Thomas T. Cullen",
@@ -903,7 +903,7 @@ const hallucinationCases = [
 /* —— NEW ENTRIES —— */
 {
   "name": "Dehghani v. Castro, No. 2:25-cv-00052-MIS-DLM (D.N.M. Apr. 2 2025)",
-  "court": "D. N.M.",
+  "court": "D. N.M., USA",
   "state": "NM",
   "filer": "Lawyer (Felipe D. J. Millan)",
   "judge": "Magistrate Judge Damian L. Martinez (sanctions); District Judge Margaret I. Strickland (affirmed)",
@@ -918,7 +918,7 @@ const hallucinationCases = [
 },
 {
   "name": "Bevins v. Colgate-Palmolive Co., No. 25-576 (E.D. Pa. Apr. 10 2025)",
-  "court": "E.D. Pa.",
+  "court": "E.D. Pa., USA",
   "state": "PA",
   "filer": "Lawyer (Vincenzo M. Palazzo)",
   "judge": "District Judge Michael M. Baylson",
@@ -933,7 +933,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Ferris v. Amazon.com Services, LLC, No. 3:24-cv-304-MPM-JMV (N.D. Miss. Apr. 16 2025)",
-  "court": "N.D. Miss.",
+  "court": "N.D. Miss., USA",
   "state": "MS",
   "filer": "Pro se",
   "judge": "District Judge Michael P. Mills",
@@ -948,7 +948,7 @@ const hallucinationCases = [
 /* —— NEW ENTRIES —— */
 {
   "name": "Benjamin v. Costco Wholesale Corporation, No. 2:24-cv-7399 (E.D.N.Y. Apr. 24 2025)",
-  "court": "E.D.N.Y.",
+  "court": "E.D.N.Y., USA",
   "state": "NY",
   "filer": "Lawyer (Victoria Hovsepyan)",
   "judge": "Magistrate Judge Lee G. Dunst",
@@ -962,7 +962,7 @@ const hallucinationCases = [
 },
 {
   "name": "Bunce v. Visual Technology Innovations, Inc., No. 2:23-cv-01740 (E.D. Pa. Feb. 27 2025)",
-  "court": "E.D. Pa.",
+  "court": "E.D. Pa., USA",
   "state": "PA",
   "filer": "Lawyer (Raja G. Rajan)",
   "judge": "District Judge Kai N. Scott",
@@ -977,7 +977,7 @@ const hallucinationCases = [
 },
 {
     "name": "Herigodt v. La. Dep’t of Transportation & Development, No. 2024-CA-0580 (La. App. 4 Cir. Mar. 7 2025)",
-    "court": "La. Ct. App. 4th Cir.",
+    "court": "La. Ct. App. 4th Cir., USA",
     "state": "LA",
     "filer": "Pro se",
     "judge": "Judges Belsome, Ledet & Herman (per curiam)",
@@ -989,11 +989,11 @@ const hallucinationCases = [
       "Opinion": "https://cases.justia.com/louisiana/fourth-circuit-court-of-appeal/2025-2024-ca-0580.pdf",
       "Coverage": "https://law.justia.com/cases/louisiana/fourth-circuit-court-of-appeal/2025/2024-ca-0580.html"
     }
-  },  /* :contentReference[oaicite:0]{index=0} */
+  }, 
 
   {
     "name": "Saxena v. Martinez-Hernandez, No. 2:22-cv-02126-CDS-BNW, 2025 WL 522234 (D. Nev. Feb. 18 2025)",
-    "court": "D. Nev.",
+    "court": "D. Nev., USA",
     "state": "NV",
     "filer": "Pro se",
     "judge": "District Judge Cristina D. Silva",
@@ -1005,11 +1005,11 @@ const hallucinationCases = [
       "Opinion": "https://cases.justia.com/federal/district-courts/nevada/nvdce/2%3A2022cv02126/160032/98/0.pdf",
       "Coverage": "https://www.linkedin.com/posts/matuszakm_a-self-described-law-student-in-the-united-activity-7298156403876085762-UMDN"
     }
-  },  /* :contentReference[oaicite:1]{index=1} */
+  },  
 
   {
     "name": "Greenflight Venture Corp. v. Google LLC, No. 24-cv-80395 (S.D. Fla. Feb. 4 2025)",
-    "court": "S.D. Fla.",
+    "court": "S.D. Fla., USA",
     "state": "FL",
     "filer": "Pro se",
     "judge": "District Judge Robin L. Rosenberg",
@@ -1020,11 +1020,11 @@ const hallucinationCases = [
     "links": {
       "OSC": "https://www.courtlistener.com/docket/68397500/65/isaacs-v-google-llc/"
     }
-  },  /* :contentReference[oaicite:2]{index=2} */
+  },  
 
   {
     "name": "Benshoof v. Ferguson, 2:24-cv-00808, (W.D. Wash. May 15, 2025) ECF No. 121",
-    "court": "W.D. Wash.",
+    "court": "W.D. Wash., USA",
     "state": "WA",
     "filer": "Pro se",
     "judge": "District Judge John H. Chun",
@@ -1045,7 +1045,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Crypto Open Patent Alliance v. Wright, [2024] EWHC 3135 (Ch) (Dec. 6 2024)",
-  "court": "High Court (Chancery Division)",
+  "court": "High Court (Chancery Division), UK",
   "state": "UK-ENG",
   "filer": "Pro se",
   "judge": "Mr Justice Mellor",
@@ -1060,7 +1060,7 @@ const hallucinationCases = [
 },
 {
   "name": "Crypto Open Patent Alliance v. Wright, Nos. IL-2021-000019 & IL-2022-000069, [2025] EWHC 1139 (Ch) (UK High Ct. May 12 2025) (second case)",
-  "court": "High Court of Justice, Business & Property Courts (ChD)",
+  "court": "High Court of Justice, Business & Property Courts (ChD), UK",
   "state": "UK",
   "filer": "Pro Se",
   "judge": "Mr Justice Mellor",
@@ -1076,7 +1076,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Matter of Vanguard Constr. & Dev. Co. v. 400 Times Square Assoc., LLC, 2025 NY Slip Op 01781 (App. Div. 1st Dep’t Mar. 25 2025)",
-  "court": "N.Y. Appellate Division, First Department",
+  "court": "N.Y. Appellate Division, First Department, USA",
   "state": "NY",
   "filer": "Lawyer",
   "judge": "Per curiam panel",
@@ -1091,7 +1091,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Bandla v. Solicitors Regulation Authority, [2025] EWHC 1167 (Admin) (May 13 2025)",
-  "court": "High Court (Administrative Court)",
+  "court": "High Court (Administrative Court), UK",
   "state": "UK-ENG",
   "filer": "Pro se",
   "judge": "Fordham J.",
@@ -1107,7 +1107,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Mortazavi v. Booz Allen Hamilton, Inc., No. 2:24-cv-07189-SB-RAO (C.D. Cal. Sept. 26 2024)",
-  "court": "C.D. Cal.",
+  "court": "C.D. Cal., USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "District Judge Stanley Blumenfeld Jr.",
@@ -1123,7 +1123,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Nexgen Pathology Servs. Ltd. v. Darceuil Duncan, CV2023-04039 (Trin. & Tobago High Ct. Apr. 30 2025)",
-  "court": "High Court of Trinidad & Tobago",
+  "court": "High Court of Trinidad & Tobago, Trinidad & Tobago",
   "state": "TT",
   "filer": "Lawyer",
   "judge": "Justice Westmin R. James",
@@ -1138,7 +1138,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Reclamação 78.890 (STF Apr. 25 2025)",
-  "court": "Supremo Tribunal Federal",
+  "court": "Supremo Tribunal Federal, Brazil",
   "state": "BR",
   "filer": "Lawyer",
   "judge": "Min. Cristiano Zanin",
@@ -1153,7 +1153,7 @@ const hallucinationCases = [
 },
 {
   "name": "Attaway v. Illinois Department of Corrections, No. 23-cv-2091-DWD (S.D. Ill. Apr. 14 2025)",
-  "court": "S.D. Ill.",
+  "court": "S.D. Ill., USA",
   "state": "IL",
   "filer": "Pro se",
   "judge": "District Judge David W. Dugan",
@@ -1168,7 +1168,7 @@ const hallucinationCases = [
 /* —— CORRECTED ENTRY —— */
 {
   "name": "Nichols v. Walmart Inc., No. CV 124-236 (S.D. Ga. Apr. 23 2025)",
-  "court": "S.D. Ga. (Augusta Div.)",
+  "court": "S.D. Ga. (Augusta Div.), USA",
   "state": "GA",
   "filer": "Pro se",
   "judge": "District Judge J. Randal Hall (adopting M.J. Brian K. Epps)",
@@ -1182,7 +1182,7 @@ const hallucinationCases = [
 },
 {
   "name": "Ford v. Bank of New York Mellon, No. 24-50053 (5th Cir. Apr. 4 2025)",
-  "court": "5th Cir.",
+  "court": "5th Cir., USA",
   "state": "LA-TX (appellate)",
   "filer": "Pro se",
   "judge": "Per curiam panel",
@@ -1197,7 +1197,7 @@ const hallucinationCases = [
 /* —— CORRECTED ENTRY —— */
 {
   "name": "McKeown v. Paycom Payroll LLC, No. CIV-24-301-PRW (W.D. Okla. Mar. 31 2025)",
-  "court": "W.D. Okla.",
+  "court": "W.D. Okla., USA",
   "state": "OK",
   "filer": "Pro se",
   "judge": "District Judge Patrick R. Wyrick",
@@ -1211,7 +1211,7 @@ const hallucinationCases = [
 },
 {
   "name": "Johnson v. Dunn, No. 2:21-cv-01701-AMM (N.D. Ala. May 19 2025)",
-  "court": "N.D. Ala.",
+  "court": "N.D. Ala., USA",
   "state": "AL",
   "filer": "Lawyer",
   "judge": "District Judge Ann M. Manasco",
@@ -1225,7 +1225,7 @@ const hallucinationCases = [
 },
 {
   "name": "Thomas v. Commissioner of Internal Revenue, Docket No. 10795-22 (U.S. Tax Ct. Oct. 23 2024)",
-  "court": "United States Tax Court",
+  "court": "United States Tax Court, USA",
   "state": "USA",
   "filer": "Lawyer",
   "judge": "Judge Ronald L. Buch",
@@ -1239,7 +1239,7 @@ const hallucinationCases = [
 },
 {
   "name": "Bauche v. Commissioner of Internal Revenue, T.C. Memo 2025-66 (U.S. Tax Ct. May 20 2025)",
-  "court": "U.S. Tax Court",
+  "court": "U.S. Tax Court, USA",
   "state": "USA",
   "filer": "Pro se",
   "judge": "Judge Guy",
@@ -1254,7 +1254,7 @@ const hallucinationCases = [
 
 {
   "name": "Versant Funding LLC v. Teras Breakbulk Ocean Navigation Enters., No. 23-cv-81494 (S.D. Fla. May 20 2025)",
-  "court": "S.D. Fla.",
+  "court": "S.D. Fla., USA",
   "state": "FL",
   "filer": "Lawyer",
   "judge": "Mag. Judge William Matthewman",
@@ -1269,7 +1269,7 @@ const hallucinationCases = [
 
 {
   "name": "Beenshoof v. Chin, No. 2:24-cv-00808 (W.D. Wash. May 15 2025)",
-  "court": "W.D. Wash.",
+  "court": "W.D. Wash., USA",
   "state": "WA", 
   "filer": "Pro se",
   "judge": "District Judge John H. Chun",
@@ -1283,7 +1283,7 @@ const hallucinationCases = [
 },
 {
   "name": "Newbern v. DeSoto Cnty. Sch. Dist., No. 3:23-cv-113 (N.D. Miss. May 12 2025)",
-  "court": "N.D. Miss.",
+  "court": "N.D. Miss., USA",
   "state": "MS",
   "filer": "Pro se",
   "judge": "District Judge Sharion Aycock",
@@ -1298,7 +1298,7 @@ const hallucinationCases = [
 },
 {
   "name": "Qamar v. Bd. of Trs. of Governors State Univ., No. 24-cv-1987 (N.D. Ill. May 6 2025)",
-  "court": "N.D. Ill.",
+  "court": "N.D. Ill., USA",
   "state": "IL",
   "filer": "Pro se",
   "judge": "District Judge Manish S. Shah",
@@ -1312,7 +1312,7 @@ const hallucinationCases = [
 },
 {
   "name": "Harris v. Take-Two Interactive Software, Inc., No. 1:24-cv-00947 (D. Colo. May 6 2025)",
-  "court": "D. Colo.",
+  "court": "D. Colo., USA",
   "state": "CO",
   "filer": "Pro se",
   "judge": "Mag. Judge Gordon P. Gallagher",
@@ -1326,7 +1326,7 @@ const hallucinationCases = [
 },
 {
   "name": "Rotonde v. Stewart Title Ins. Co., 2025 NY Slip Op 50728(U) (Sup. Ct. Westchester Cty. May 6 2025)",
-  "court": "N.Y. Sup. Ct. (Westchester Cty.)",
+  "court": "N.Y. Sup. Ct. (Westchester Cty.), USA",
   "state": "NY",
   "filer": "Pro se",
   "judge": "Justice Linda S. Jamieson",
@@ -1340,7 +1340,7 @@ const hallucinationCases = [
 },
 {
   "name": "In re Thomas Grant Neusom, No. 8:24-mc-00015 (M.D. Fla. May 8 2025)",
-  "court": "M.D. Fla.",
+  "court": "M.D. Fla., USA",
   "state": "FL",
   "filer": "Lawyer",
   "judge": "Chief Judge Timothy J. Corrigan (adopting Grievance-Cmte.)",
@@ -1355,7 +1355,7 @@ const hallucinationCases = [
 },
 {
   "name": "Raven Investigations & Security Consulting, B-422880.4 (Gov’t Accountability Office May 7 2025)",
-  "court": "U.S. GAO Bid-Protest",
+  "court": "U.S. GAO Bid-Protest, USA",
   "state": "USA",
   "filer": "Non-lawyer representative",
   "judge": "GAO (Procurement Law Division)",
@@ -1369,7 +1369,7 @@ const hallucinationCases = [
 },
 {
   "name": "Fox v. Assum",
-  "court": "Tel Aviv District Court",
+  "court": "Tel Aviv District Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Judge Limor Biber Shitrit",
@@ -1383,7 +1383,7 @@ const hallucinationCases = [
 },
 {
   "name": "Case No. 72079-11-24 (Nazareth Mag. Ct. May 12 2025)",
-  "court": "Israel Magistrate Court",
+  "court": "Israel Magistrate Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Judge Itay Katz",
@@ -1397,7 +1397,7 @@ const hallucinationCases = [
 },
 {
   "name": "Jamisson Roriz de Santana Andrade v. TST, RCC 60.487 (Sup. Fed. Ct. Brazil May 12 2025)",
-  "court": "Supremo Tribunal Federal",
+  "court": "Supremo Tribunal Federal, Brazil",
   "state": "Brazil",
   "filer": "Lawyer",
   "judge": "Min. Dias Toffoli",
@@ -1411,7 +1411,7 @@ const hallucinationCases = [
 },
 {
   "name": "Brown v. Patel, No. 4:24-cv-05036 (S.D. Tex. Apr 22 2025)",
-  "court": "S.D. Tex.",
+  "court": "S.D. Tex., USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Mag. Judge Peter Bray",
@@ -1426,7 +1426,7 @@ const hallucinationCases = [
 
 {
   "name": "Sims v. Souily-Lefave, No. 2:24-cv-00831-CDS-EJY (D. Nev. Apr 15 2025)",
-  "court": "D. Nev.",
+  "court": "D. Nev., USA",
   "state": "NV",
   "filer": "Lawyer",
   "judge": "District Judge Cristina D. Silva",
@@ -1442,7 +1442,7 @@ const hallucinationCases = [
 
 {
   "name": "Gustafson v. Amazon.com Inc., No. CV-24-01834-PHX-SHD (D. Ariz. Apr 30 2025)",
-  "court": "D. Ariz.",
+  "court": "D. Ariz., USA",
   "state": "AZ",
   "filer": "Pro se",
   "judge": "District Judge G. Murray Snow",
@@ -1456,7 +1456,7 @@ const hallucinationCases = [
 },
 {
   "name": "Arnaoudoff v. Tivity Health Inc., No. 2:23-cv-01510-DJH (D. Ariz. Mar 11 2025)",
-  "court": "D. Ariz.",
+  "court": "D. Ariz., USA",
   "state": "AZ",
   "filer": "Pro se",
   "judge": "District Judge Susan R. Bolton",
@@ -1471,7 +1471,7 @@ const hallucinationCases = [
 
 {
   "name": "210S LLC v. Di Wu, No. CAAP-24-0000817 (Haw. Ct. App. Mar 11 2025)",
-  "court": "Haw. Intermediate Ct. App.",
+  "court": "Haw. Intermediate Ct. App., USA",
   "state": "HI",
   "filer": "Pro se",
   "judge": "Per curiam panel",
@@ -1486,7 +1486,7 @@ const hallucinationCases = [
 
 {
   "name": "Alkuda v. McDonald Hopkins Co., L.P.A., No. 1:24-cv-01103-BM (N.D. Ohio Mar 18 2025)",
-  "court": "N.D. Ohio",
+  "court": "N.D. Ohio, USA",
   "state": "OH",
   "filer": "Pro se",
   "judge": "District Judge J. Philip Calabrese",
@@ -1500,7 +1500,7 @@ const hallucinationCases = [
 },
 {
   "name": "Stevens v. BJC Health System, No. ED 112759 (Mo. Ct. App. Mar 18 2025)",
-  "court": "Missouri Court of Appeals, Eastern District",
+  "court": "Missouri Court of Appeals, Eastern District, USA",
   "state": "MO",
   "filer": "Pro se",
   "judge": "Judge Renée D. Hardin-Tammons (panel)",
@@ -1514,7 +1514,7 @@ const hallucinationCases = [
 },
 {
   "name": "Buckner v. Hilton Global, No. 3:24-cv-00375 (W.D. Ky. Mar 20 2025)",
-  "court": "W.D. Ky.",
+  "court": "W.D. Ky., USA",
   "state": "KY",
   "filer": "Pro se",
   "judge": "District Judge Rebecca Grady Jennings",
@@ -1528,7 +1528,7 @@ const hallucinationCases = [
 },
 {
   "name": "Williams v. Capital One Bank (USA) N.A., No. 1:24-cv-2032 (D.D.C. Mar 18 2025)",
-  "court": "D.D.C.",
+  "court": "D.D.C., USA",
   "state": "DC",
   "filer": "Pro se",
   "judge": "District Judge Rudolph Contreras",
@@ -1542,7 +1542,7 @@ const hallucinationCases = [
 },
 {
   "name": "Sheets v. Presseller, No. 2:24-cv-00495 (M.D. Fla. Mar 11 2025)",
-  "court": "M.D. Fla. (Fort Myers Div.)",
+  "court": "M.D. Fla. (Fort Myers Div.), USA",
   "state": "FL",
   "filer": "Pro se",
   "judge": "Magistrate Judge Kyle C. Dudek",
@@ -1557,7 +1557,7 @@ const hallucinationCases = [
 },
 {
   "name": "Plonit v. Sharia Court of Appeals, HCJ 38379/12-24 (Isr. High Ct. Just. Feb 23 2025)",
-  "court": "High Court of Justice (Israel)",
+  "court": "High Court of Justice (Israel), Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Justice Gila Canfy-Steinitz (panel)",
@@ -1573,7 +1573,7 @@ const hallucinationCases = [
 },
 {
   "name": "Dog Rights Ass’n v. Ministry of Agriculture, HCJ 1868/25 (Isr. Sup. Ct. Feb 28 2025)",
-  "court": "Supreme Court (Israel)",
+  "court": "Supreme Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Justice Noam Sohlberg (panel)",
@@ -1588,7 +1588,7 @@ const hallucinationCases = [
 },
 {
     "name": "LYJ v. Occupational Therapy Board of Australia [2025] QCAT 68 (26 Mar 2025)",
-    "court": "Queensland Civil and Administrative Tribunal (QCAT)",
+    "court": "Queensland Civil and Administrative Tribunal (QCAT), Australia",
     "state": "Australia-QLD",
     "filer": "Pro se",
     "judge": "Member Ann Fitzpatrick",
@@ -1603,7 +1603,7 @@ const hallucinationCases = [
   },
 {
   "name": "Reddan v. An Bord Pleanála, [2025] IEHC 197 (Ir. High Ct. Mar 13 2025)",
-  "court": "High Court (Ireland)",
+  "court": "High Court, Ireland",
   "state": "Ireland",
   "filer": "Pro se",
   "judge": "Justice Richard Nolan",
@@ -1617,7 +1617,7 @@ const hallucinationCases = [
 },
 {
   "name": "Hamdon v. National Insurance Institute, TA 10743-12-24 (Jerusalem Dist. Ct. Dec 12 2024)",
-  "court": "Jerusalem District Court",
+  "court": "Jerusalem District Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Judge Raphael Saharai",
@@ -1631,7 +1631,7 @@ const hallucinationCases = [
 },
 {
   "name": "Strike 3 Holdings LLC v. Doe, No. 2:24-CV-8183-TJH (SPX) (C.D. Cal. Jan 22 2025)",
-  "court": "C.D. Cal.",
+  "court": "C.D. Cal., USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "Mag. Judge Sheri Pym",
@@ -1645,7 +1645,7 @@ const hallucinationCases = [
 },
 {
 "name": "Gonzalez-Ayala v. United States, 3:05-cv-01291, (D.P.R. Dec 02, 2009) ECF No. 8",
-"court": "D.P.R.",
+"court": "D.P.R., USA",
 "state": "PR",
 "filer": "Pro se",
 "judge": "District Judge David C. Norton",
@@ -1659,7 +1659,7 @@ const hallucinationCases = [
 },
 {
   "name": "United States v. Burke, No. 8:24-cr-00068 (M.D. Fla. May 20 2025)",
-  "court": "M.D. Fla.",
+  "court": "M.D. Fla., USA",
   "state": "FL",
   "filer": "Lawyer",
   "judge": "District Judge Kathryn Kimball Mizelle",
@@ -1678,7 +1678,7 @@ const hallucinationCases = [
 },
 {
   "name": "Gakuba v. Hollywood Video LLC, No. 2:15-cv-00630-MCE-AC (E.D. Cal. Apr. 6 2015)",
-  "court": "E.D. Cal.",
+  "court": "E.D. Cal., USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "Mag. Judge Allison Claire (screening order for Dist. Judge Morrison C. England, Jr.)",
@@ -1692,7 +1692,7 @@ const hallucinationCases = [
 },
 {
   "name": "Mahala Association v. Clalit Health Services et al., Class Action Motion No. 30537-11-24 (Tel-Aviv-Jaffa Dist. Ct. May 26 2025)",
-  "court": "Tel-Aviv-Jaffa District Court",
+  "court": "Tel-Aviv-Jaffa District Court, Israel",
   "state": "Israel",
   "filer": "Lawyer",
   "judge": "Judge Ilan Daphdi",
@@ -1707,7 +1707,7 @@ const hallucinationCases = [
 },
 {
   "name": "Holtz v. Brnovich, No. CV-17-02562-PHX-JAT (D. Ariz. Apr. 14 2020)",
-  "court": "D. Ariz.",
+  "court": "D. Ariz., USA",
   "state": "AZ",
   "filer": "Pro se",
   "judge": "Senior District Judge James A. Teilborg",
@@ -1721,7 +1721,7 @@ const hallucinationCases = [
 },
 {
   "name": "Martin v. Taylor County, No. 1:23-cv-00052-H-BU (N.D. Tex. Mar. 6 2024)",
-  "court": "N.D. Tex.",
+  "court": "N.D. Tex., USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Dist. Judge James Wesley Hendrix (adopting Mag. Judge John R. Parker)",
@@ -1735,7 +1735,7 @@ const hallucinationCases = [
 },
 {
   "name": "Holtz v. Brnovich, No. CV-17-02562-PHX-JAT (D. Ariz. Apr. 14 2020)",
-  "court": "D. Ariz.",
+  "court": "D. Ariz., USA",
   "state": "AZ",
   "filer": "Pro se prisoner",
   "judge": "Senior District Judge James A. Teilborg",
@@ -1749,7 +1749,7 @@ const hallucinationCases = [
 },
 {
   "name": "Florence v. Board of Chosen Freeholders of the County of Burlington, 1:05-cv-03619, (D.N.J. Feb 04, 2009) ECF No. 161",
-  "court": "D.N.J.",
+  "court": "D.N.J., USA",
   "state": "NJ",
   "filer": "Lawyer",
   "judge": "District Joseph H. Rodriguez",
@@ -1763,7 +1763,7 @@ const hallucinationCases = [
 },
 {
   "name": "Bunker v. McCormick, No. 2:24-cv-01491-PHX-DWL (D. Ariz. Jan. 14 2025)",
-  "court": "D. Ariz.",
+  "court": "D. Ariz., USA",
   "state": "AZ",
   "filer": "Pro se",
   "judge": "District Judge Dominic W. Lanza",
@@ -1778,7 +1778,7 @@ const hallucinationCases = [
   /* 1 ― Utah Court of Appeals monetary sanction */
   {
     "name": "Garner v. Kadince, Inc., 2025 UT App 80 (Utah Ct. App. May 22 2025)",
-    "court": "Utah Court of Appeals",
+    "court": "Utah Court of Appeals, USA",
     "state": "UT",
     "filer": "Lawyer",
     "judge": "Presiding Judge Mortensen",
@@ -1796,7 +1796,7 @@ const hallucinationCases = [
   /* 3 ― South-Carolina Administrative Law Court (warning) */
   {
     "name": "Bischoff v. S.C. Dep’t of Education, Docket 23-ALJ-30-0123 (S.C. ALC Apr 10 2025)",
-    "court": "S.C. Administrative Law Court",
+    "court": "S.C. Administrative Law Court, USA",
     "state": "SC",
     "filer": "Pro se",
     "judge": "Chief Judge Ralph K. Anderson III",
@@ -1812,7 +1812,7 @@ const hallucinationCases = [
   /* —— NEW ENTRY —— */
 {
   "name": "Ehrlich v. Israel National Academy of Sciences et al., HCJ 37942/05-25 (Isr. Sup. Ct. May 18 2025)",
-  "court": "High Court of Justice (Israel Supreme Court)",
+  "court": "High Court of Justice (Israel Supreme Court), Israel",
   "state": "Israel",
   "filer": "Pro se",
   "judge": "Dep.-President Justice Noam Sohlberg (single-justice motion)",
@@ -1828,7 +1828,7 @@ const hallucinationCases = [
 /* —— NEW ENTRIES  (add after the last item in your array) —— */
 {
   "name": "Puerto Rico Soccer League NFP v. Federación Puertorriqueña de Fútbol, No. 3:23-cv-01203 (D.P.R. Apr. 10 2025)",
-  "court": "U.S. Dist. Ct. – D. P.R.",
+  "court": "U.S. Dist. Ct. – D. P.R., USA",
   "state": "PR",
   "filer": "Lawyer",
   "judge": "Judge Raúl M. Arias-Marxuach",
@@ -1842,7 +1842,7 @@ const hallucinationCases = [
 },
 {
   "name": "Crespo v. Pabón-Charneco, No. 3:25-cv-01016-JAW, 2025 WL 1384446 (D.P.R. Mar. 17 2025)",
-  "court": "U.S. District Court, D. P.R.",
+  "court": "U.S. District Court, D. P.R., USA",
   "state": "PR",
   "filer": "Pro se",
   "judge": "District Judge John A. Woodcock Jr.",
@@ -1856,7 +1856,7 @@ const hallucinationCases = [
 },
 {
   "name": "Jones v. Simploy, Inc., 698 S.W.3d 480 (Mo. Ct. App. E.D. Sept. 24 2024)",
-  "court": "Missouri Court of Appeals, Eastern District",
+  "court": "Missouri Court of Appeals, Eastern District, USA",
   "state": "MO",
   "filer": "Pro se",
   "judge": "Judge Kelly C. Broniec (panel)",
@@ -1871,7 +1871,7 @@ const hallucinationCases = [
 /* —— END NEW ENTRIES —— */
 {
   "name": "Re Mr Dayal, Dayal [2024] FedCFamC2F 1166",
-  "court": "Federal Circuit and Family Court of Australia (Division 2)",
+  "court": "Federal Circuit and Family Court of Australia (Division 2), Australia",
   "state": "Australia",
   "filer": "Solicitor",
   "judge": "Judge A. Humphreys",
@@ -1886,7 +1886,7 @@ const hallucinationCases = [
 },
 {
   "name": "N.E.W. Credit Union v. Mehlhorn, No. 2023AP2187 (Wis. Ct. App. Dist. III Aug. 13 2024)",
-  "court": "Wisconsin Court of Appeals, Dist. III",
+  "court": "Wisconsin Court of Appeals, Dist. III, USA",
   "state": "WI",
   "filer": "Pro se",
   "judge": "Stark, P.J., Hruz and Gill, JJ. (panel)",
@@ -1900,7 +1900,7 @@ const hallucinationCases = [
 },
 {
   "name": "Valu v Minister for Immigration and Multicultural Affairs (No 2) [2025] FedCFamC2G 95",
-  "court": "Federal Circuit and Family Court of Australia (Division 2)",
+  "court": "Federal Circuit and Family Court of Australia (Division 2), Australia",
   "state": "Australia",
   "filer": "Lawyer",
   "judge": "Judge Skaros",
@@ -1914,7 +1914,7 @@ const hallucinationCases = [
 },
 {
   "name": "Rasmussen v. Rasmussen, No. 24CV02293 (Cal. Super. Ct. Sonoma Cty. Aug. 23 2024)",
-  "court": "Cal. Superior Court, Sonoma County",
+  "court": "Cal. Superior Court, Sonoma County, USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "Hon. Christopher M. Honigsberg",
@@ -1928,7 +1928,7 @@ const hallucinationCases = [
 },
 {
   "name": "Grant v. City of Long Beach, 96 F.4th 1255 (9th Cir. Mar. 22 2024)",
-  "court": "U.S. Court of Appeals for the Ninth Circuit",
+  "court": "U.S. Court of Appeals for the Ninth Circuit, USA",
   "state": "CA-app",
   "filer": "Pro se",
   "judge": "Desai, Thomas & Márquez, JJ. (per opinion by Desai, J.)",
@@ -1946,7 +1946,7 @@ const hallucinationCases = [
 },
 {
   "name": "Rule v. Braiman, No. 1:23-cv-01218 (N.D.N.Y. Sept. 4 2024)",
-  "court": "U.S. District Court, N.D.N.Y.",
+  "court": "U.S. District Court, N.D.N.Y., USA",
   "state": "NY",
   "filer": "Pro se",
   "judge": "Chief Judge Brenda K. Sannes",
@@ -1960,7 +1960,7 @@ const hallucinationCases = [
 },
 {
   "name": "Anonymous v. N.Y.C. Dep’t of Education, No. 1:24-cv-04232 (S.D.N.Y. July 18 2024)",
-  "court": "U.S. District Court, S.D.N.Y.",
+  "court": "U.S. District Court, S.D.N.Y., USA",
   "state": "NY",
   "filer": "Pro se",
   "judge": "District Judge Jennifer L. Rochon",
@@ -1974,7 +1974,7 @@ const hallucinationCases = [
 },
 {
   "name": "Plumbers & Gasfitters Union Local 75 Health Fund v. Morris Plumbing, LLC, No. 23-cv-616-JPS (E.D. Wis. Apr. 18 2024)",
-  "court": "U.S. District Court, E.D. Wisconsin",
+  "court": "U.S. District Court, E.D. Wisconsin, USA",
   "state": "WI",
   "filer": "Lawyer",
   "judge": "District Judge J. P. Stadtmueller",
@@ -1989,7 +1989,7 @@ const hallucinationCases = [
 }, 
 {
   "name": "Dowlah v. Professional Staff Congress CUNY, 2024 NY Slip Op 02980 (App. Div. 1st Dep’t May 30 2024)",
-  "court": "N.Y. Appellate Division, First Department",
+  "court": "N.Y. Appellate Division, First Department, USA",
   "state": "NY",
   "filer": "Pro se",
   "judge": "Moulton, J.P.; Scarpulla, Shulman, Higgitt & O’Neill Levy, JJ.",
@@ -2004,7 +2004,7 @@ const hallucinationCases = [
 
 {
   "name": "Lillard v. Offit Kurman, P.A., 2025 WL 800833 (Del. Super. Ct. Mar. 12 2025)",
-  "court": "Delaware Superior Court (New Castle Cty.)",
+  "court": "Delaware Superior Court (New Castle Cty.), USA",
   "state": "DE",
   "filer": "Pro se",
   "judge": "Judge Danielle J. Brennan",
@@ -2019,7 +2019,7 @@ const hallucinationCases = [
 /* —— NEW ENTRY —— */
 {
   "name": "Evans v. Robertson, No. 2:24-cv-13435 (E.D. Mich. May 21 2025)",
-  "court": "U.S. District Court, E.D. Mich.",
+  "court": "U.S. District Court, E.D. Mich., USA",
   "state": "MI",
   "filer": "Pro se",
   "judge": "District Judge Judith E. Levy",
@@ -2033,7 +2033,7 @@ const hallucinationCases = [
 },
 {
   "name": "Ruggirello v. Lancaster, No. 4:22-cv-12010-SDK-EAS (E.D. Mich. Sept. 11 2023)",
-  "court": "U.S. District Court, E.D. Michigan",
+  "court": "U.S. District Court, E.D. Michigan, USA",
   "state": "MI",
   "filer": "Pro se",
   "judge": "District Judge Nancy G. Edmunds",
@@ -2047,7 +2047,7 @@ const hallucinationCases = [
 },
 {
   "name": "In the Matter of Anthony Matos, Proceeding No. D2025-13 (USPTO March 6, 2025)",
-  "court": "U.S. Patent & Trademark Office, Office of Enrollment & Discipline",
+  "court": "U.S. Patent & Trademark Office, Office of Enrollment & Discipline, USA",
   "state": "USA",
   "filer": "Lawyer",
   "judge": "",
@@ -2076,7 +2076,7 @@ const hallucinationCases = [
 },
 {
   "name": "Willis v. U.S. Bank Nat’l Ass’n (Trustee), No. 3:25-cv-00516-BN (N.D. Tex. Apr. 28 2025)",
-  "court": "N.D. Tex. (Dallas Div.)",
+  "court": "N.D. Tex. (Dallas Div.), USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Magistrate Judge David L. Horan",
@@ -2090,7 +2090,7 @@ const hallucinationCases = [
 },
 {
   "name": "Rochon-Eidsvig & Hafer v. JGB Collateral, LLC, No. 05-24-00123-CV (Tex. App.—Dallas Apr. 10 2025)",
-  "court": "Court of Appeals, Fifth District of Texas",
+  "court": "Court of Appeals, Fifth District of Texas, USA",
   "state": "TX",
   "filer": "Lawyer",
   "judge": "Presiding Justice Nancy Kennedy",
@@ -2105,7 +2105,7 @@ const hallucinationCases = [
 },
 {
   "name": "In re Tariq Farooq, No. 05-25-00431-CV (Tex. App.—Dallas Apr. 16 2025)",
-  "court": "Court of Appeals, Fifth District of Texas",
+  "court": "Court of Appeals, Fifth District of Texas, USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Justices Garcia, Clinton & Rossini",
@@ -2120,7 +2120,7 @@ const hallucinationCases = [
 },
 {
   "name": "Letts v. Avidien Technologies, Inc., No. 5:24-cv-00402-M-BM (E.D.N.C. Dec. 16 2024)",
-  "court": "E.D.N.C.",
+  "court": "E.D.N.C., USA",
   "state": "NC",
   "filer": "Pro se",
   "judge": "Mag. Judge Brian S. Meyers (M&R)",
@@ -2134,7 +2134,7 @@ const hallucinationCases = [
 },
 {
   "name": "Jones v. Experian Information Solutions, Inc., 1:25-cv-01535 (S.D.N.Y. Mar. 26 2025)",
-  "court": "S.D.N.Y.",
+  "court": "S.D.N.Y., USA",
   "state": "NY",
   "filer": "Lawyer",
   "judge": "Mag. Judge Sarah L. Cave",
@@ -2148,7 +2148,7 @@ const hallucinationCases = [
 },
 {
   "name": "Leslie v. IQ Data International, Inc., No. 1:22-cv-02304-VMC (N.D. Ga. June 5 2024)",
-  "court": "N.D. Ga.",
+  "court": "N.D. Ga., USA",
   "state": "GA",
   "filer": "Pro se",
   "judge": "Mag. Judge Russell G. Vineyard (R&R)",
@@ -2162,7 +2162,7 @@ const hallucinationCases = [
 },
 {
   "name": "Gutierrez v. Gutierrez, Nos. 3D24-1014 & 3D24-1087 (Fla. 3d DCA Dec. 4 2024)",
-  "court": "Fla. 3d DCA",
+  "court": "Fla. 3d DCA, USA",
   "state": "FL",
   "filer": "Pro se",
   "judge": "Judge Fleur J. Lobree (panel: Lobree, Bokor & Gooden)",
@@ -2176,7 +2176,7 @@ const hallucinationCases = [
 },
 {
   "name": "Luther v. Oklahoma Department of Human Services, No. 5:25-cv-00317-J (W.D. Okla. May 23 2025)",
-  "court": "W.D. Okla.",
+  "court": "W.D. Okla., USA",
   "state": "OK",
   "filer": "Pro se",
   "judge": "Mag. Judge Chris M. Stephens (referral from Dist. Judge Bernard M. Jones)",
@@ -2190,7 +2190,7 @@ const hallucinationCases = [
 },
 {
   "name": "Robinson v. JPMorgan Chase Bank, N.A., No. 4:24-cv-00170 (N.D. Fla. Apr. 16 2024)",
-  "court": "N.D. Fla.",
+  "court": "N.D. Fla., USA",
   "state": "FL",
   "filer": "Pro se",
   "judge": "Mag. Judge Martin A. Fitzpatrick (referral from Dist. Judge Allen C. Winsor)",
@@ -2204,7 +2204,7 @@ const hallucinationCases = [
 },
 {
   "name": "Salyer v. Salyer, No. 2024-CA-0623-MR (Ky. Ct. App. Mar. 28 2025)",
-  "court": "Ky. Ct. App.",
+  "court": "Ky. Ct. App., USA",
   "state": "KY",
   "filer": "Counsel",
   "judge": "Judge Donna L. Cetrulo (panel: Caldwell, Cetrulo & A. Jones)",
@@ -2218,7 +2218,7 @@ const hallucinationCases = [
 },
 {
   "name": "Devaughn v. McDonell, No. 5:15-cv-00577-TJH (C.D. Cal. Sept. 26 2017)",
-  "court": "C.D. Cal.",
+  "court": "C.D. Cal., USA",
   "state": "CA",
   "filer": "Pro se",
   "judge": "Mag. Judge Gail J. Standish (R&R), adopted by Dist. Judge Terry J. Hatter Jr.",
@@ -2232,7 +2232,7 @@ const hallucinationCases = [
 },
 {
   "name": "Lee v. Delta Air Lines, Inc., No. 2:20-cv-01705-WFK-LGD (E.D.N.Y. Mar. 22 2024)",
-  "court": "E.D.N.Y.",
+  "court": "E.D.N.Y., USA",
   "state": "NY",
   "filer": "Pro se",
   "judge": "District Judge William F. Kuntz II (magistrate referral to Judge Lee G. Dunst)",
@@ -2246,7 +2246,7 @@ const hallucinationCases = [
 },
 {
   "name": "Black & Veatch Corp. v. Modesto Irrigation District, No. 1:11-cv-00695-LJO-SKO (E.D. Cal. Oct. 28 2011)",
-  "court": "E.D. Cal.",
+  "court": "E.D. Cal., USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "Chief U.S. District Judge Lawrence J. O’Neill",
@@ -2260,7 +2260,7 @@ const hallucinationCases = [
 },
 {
   "name": "Chapman v. Horace Mann Property and Casualty Insurance Company, No. 2:24-cv-10546 (C.D. Cal. Apr. 23 2025)",
-  "court": "C.D. Cal.",
+  "court": "C.D. Cal., USA",
   "state": "CA",
   "filer": "Pro se",
   "judge": "District Judge Michael W. Fitzgerald",
@@ -2274,7 +2274,7 @@ const hallucinationCases = [
 },
 {
   "name": "Gropp v. Stevens, No. 58983-4-II (Wash. Ct. App. Div. II Apr. 22 2025)",
-  "court": "Wash. Ct. App. Div. II",
+  "court": "Wash. Ct. App. Div. II, USA",
   "state": "WA",
   "filer": "Pro se",
   "judge": "Judge Glasgow (panel: Glasgow, Maxa & Veljacic)",
@@ -2289,7 +2289,7 @@ const hallucinationCases = [
 },
 {
   "name": "Esquivel v. Kendrick, No. 22-50979 (5th Cir. Aug. 29 2023)",
-  "court": "5th Cir.",
+  "court": "5th Cir., USA",
   "state": "LA",
   "filer": "Pro se",
   "judge": "Per Curiam (King, Haynes & Graves, JJ.)",
@@ -2303,7 +2303,7 @@ const hallucinationCases = [
 },
 {
   "name": "Albelbaisi v. Mustang Materials, LLC, No. 05-24-00617-CV (Tex. App.—Dallas May 13 2025)",
-  "court": "Tex. App.—Dallas",
+  "court": "Tex. App.—Dallas, USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Justice Garcia (panel: Garcia, Breedlove & Jackson)",
@@ -2317,7 +2317,7 @@ const hallucinationCases = [
 },
 {
   "name": "Grant v. Nationwide Mutual Insurance Company, No. 1:24-cv-00247-DAE (W.D. Tex. Apr. 4 2025)",
-  "court": "W.D. Tex.",
+  "court": "W.D. Tex., USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Sr. Dist. Judge David A. Ezra (adopting R&R of Mag. Judge Susan Hightower)",
@@ -2332,7 +2332,7 @@ const hallucinationCases = [
 },
 {
   "name": "Estrada v. San Francisco Fire Department, 698, No. 4:25-cv-00216-JSW (N.D. Cal. Apr. 18 2025)",
-  "court": "N.D. Cal.",
+  "court": "N.D. Cal., USA",
   "state": "CA",
   "filer": "Pro se",
   "judge": "District Judge Jeffrey S. White",
@@ -2346,7 +2346,7 @@ const hallucinationCases = [
 },
 {
   "name": "Idehen v. Stoute-Phillip, Index No. LT-305376-23/QU (N.Y. Civ. Ct. Queens Cty. May 21 2025)",
-  "court": "N.Y. City Civ. Ct., Queens Cty., Housing Part O",
+  "court": "N.Y. City Civ. Ct., Queens Cty., Housing Part O, USA",
   "state": "NY",
   "filer": "Lawyer",
   "judge": "Hon. Kimon C. Thermos, J.H.C.",
@@ -2360,7 +2360,7 @@ const hallucinationCases = [
 },
 {
   "name": "Flowz Digital LLC v. Dalal, No. 2:25-cv-00709-SB-PVC (C.D. Cal. May 5 2025)",
-  "court": "U.S. District Court, Central District of California",
+  "court": "U.S. District Court, Central District of California, USA",
   "state": "CA",
   "filer": "Lawyer",
   "judge": "Judge Stanley Blumenfeld, Jr.",
@@ -2374,7 +2374,7 @@ const hallucinationCases = [
 },
 {
   "name": "Byrd v. The Villages of Woodland Springs Homeowners Association, Inc., No. 02-23-00078-CV (Tex. App.—Fort Worth Jul. 25 2024)",
-  "court": "Tex. App.—Fort Worth (2d Dist.)",
+  "court": "Tex. App.—Fort Worth (2d Dist.), USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Justice Mike Wallach (panel: Sudderth, C.J.; Wallach & Walker, JJ.)",
@@ -2388,7 +2388,7 @@ const hallucinationCases = [
 },
 {
   "name": "AQ v. BT, 2025 BCCRT 398 (CanLII) (B.C. Civil Resolution Tribunal Mar. 28 2025)",
-  "court": "Civil Resolution Tribunal, British Columbia",
+  "court": "Civil Resolution Tribunal, British Columbia, Canada",
   "state": "BC",
   "filer": "Pro se",
   "judge": "Vice Chair Eric Regehr",
@@ -2402,7 +2402,7 @@ const hallucinationCases = [
 },
 {
   "name": "Delano Crossing 2016, LLC v. County of Wright, Ct. File No. 86-CV-23-2147, 2025 WL 1539250 (Minn. Tax Ct. May 29 2025)",
-  "court": "Minnesota Tax Court, Regular Division (en banc)",
+  "court": "Minnesota Tax Court, Regular Division (en banc), USA",
   "state": "MN",
   "filer": "Lawyer",
   "judge": "Chief Judge Jane N. Bowman; Judges Bradford S. Delapena & Beverly J. Luther Quast",
@@ -2419,7 +2419,7 @@ const hallucinationCases = [
 },
 {
   "name": "Calgary Masonic Temple Ltd. v. City of Calgary, 2024 ABCGYARB 2188903 (Calgary Assessment Review Board Nov. 7 2024)",
-  "court": "Calgary Assessment Review Board",
+  "court": "Calgary Assessment Review Board, Canada",
   "state": "AB",
   "filer": "Lawyer",
   "judge": "Presiding Officer B. Bickford (panel: Bickford, Rocker & Okhiria)",
@@ -2433,7 +2433,7 @@ const hallucinationCases = [
 },
 {
   "name": "R. L. v. Canada Employment Insurance Commission, 2025 SST 85 (S.S.T. Appeal Div. Feb. 5 2025)",
-  "court": "Social Security Tribunal of Canada, Appeal Division",
+  "court": "Social Security Tribunal of Canada, Appeal Division, Canada",
   "state": "CA-ON",
   "filer": "Pro se",
   "judge": "Tribunal Member Janet Lew",
@@ -2447,7 +2447,7 @@ const hallucinationCases = [
 },
 {
   "name": "Lozano González v. Roberge, 2025 QCTAL 15786 (T.A.L. May 1 2025)",
-  "court": "Tribunal administratif du logement (Montréal)",
+  "court": "Tribunal administratif du logement (Montréal), Canada",
   "state": "QC",
   "filer": "Pro se",
   "judge": "Administrative Judge Annie Guillemette",
@@ -2461,7 +2461,7 @@ const hallucinationCases = [
 },
 {
   "name": "Standard Chartered Bank (Hong Kong) Ltd. v. John, DCCJ 5479/2021, [2025] HKDC 728 (Hong Kong Dist. Ct. May 6 2025)",
-  "court": "Hong Kong District Court",
+  "court": "Hong Kong District Court, Hong Kong",
   "state": "HK",
   "filer": "Pro se",
   "judge": "Her Honour Judge G. Chow",
@@ -2475,7 +2475,7 @@ const hallucinationCases = [
 },
 {
   "name": "Yu v. Centaline Property Agency Ltd., HCLA 33/2024, [2025] HKCFI 808 (HK CFI Feb. 26 2025)",
-  "court": "High Court of Hong Kong, Court of First Instance",
+  "court": "High Court of Hong Kong, Court of First Instance, Hong Kong",
   "state": "HK",
   "filer": "Pro se",
   "judge": "Deputy High Court Judge S. U. Lee",
@@ -2489,7 +2489,7 @@ const hallucinationCases = [
 },
 {
   "name": "GNX v. Children’s Guardian, [2025] NSWCATAD 117 (NSW CAT AD May 27 2025)",
-  "court": "NSW Civil and Administrative Tribunal, Administrative & Equal Opportunity Division",
+  "court": "NSW Civil and Administrative Tribunal, Administrative & Equal Opportunity Division, Australia",
   "state": "NSW",
   "filer": "Pro se",
   "judge": "Senior Member J. Smith",
@@ -2506,7 +2506,7 @@ const hallucinationCases = [
 },
 {
   "name": "Stenner v. Stenner, 2025 BCSC 978 (CanLII) (B.C. S.C. May 28 2025)",
-  "court": "Supreme Court of British Columbia",
+  "court": "Supreme Court of British Columbia, Canada",
   "state": "BC",
   "filer": "Lawyer",
   "judge": "Mr. Justice Ball",
@@ -2523,7 +2523,7 @@ const hallucinationCases = [
 },
 {
   "name": "Andersen v. Olympus at Daybreak, No. 2:25-cv-00178-RJS-JCB (D. Utah May 30 2025)",
-  "court": "U.S. District Court, District of Utah",
+  "court": "U.S. District Court, District of Utah, USA",
   "state": "UT",
   "filer": "Pro se",
   "judge": "Magistrate Judge Jared C. Bennett",
@@ -2540,7 +2540,7 @@ const hallucinationCases = [
 },
 {
   "name": "Byoplanet International, LLC v. Knecht, No. 0:25-cv-60646-LEIBOWITZ (S.D. Fla. May 29 2025)",
-  "court": "U.S. District Court, Southern District of Florida",
+  "court": "U.S. District Court, Southern District of Florida, USA",
   "state": "FL",
   "filer": "Lawyer",
   "judge": "David S. Leibowitz",
@@ -2556,7 +2556,7 @@ const hallucinationCases = [
 },
 {
   "name": "Powhatan County School Board v. Skinger & Lucas, No. 3:24-cv-874 (E.D. Va. Jun. 2 2025)",
-  "court": "U.S. District Court, Eastern District of Virginia (Richmond Div.)",
+  "court": "U.S. District Court, Eastern District of Virginia (Richmond Div.), USA",
   "state": "VA",
   "filer": "Pro se",
   "judge": "Senior U.S. District Judge Robert E. Payne",
@@ -2572,7 +2572,7 @@ const hallucinationCases = [
 },
 {
   "name": "Gjovik v. Apple Inc., No. 3:23-cv-04597-EMC (N.D. Cal. May 19 2025)",
-  "court": "U.S. District Court, Northern District of California",
+  "court": "U.S. District Court, Northern District of California, USA",
   "state": "CA",
   "filer": "Pro se",
   "judge": "Judge Edward M. Chen",
@@ -2587,7 +2587,7 @@ const hallucinationCases = [
 },
 {
   "name": "Wilt v. Department of the Navy & Defense Finance and Accounting Service, No. 6:24-cv-213-JDK-KNM (E.D. Tex. May 2 2025)",
-  "court": "U.S. District Court, Eastern District of Texas, Tyler Division",
+  "court": "U.S. District Court, Eastern District of Texas, Tyler Division, USA",
   "state": "TX",
   "filer": "Pro se",
   "judge": "Judge Jeremy D. Kernodle",
@@ -2603,7 +2603,7 @@ const hallucinationCases = [
 },
 {
   "name": "United States v. Ortiz-Acosta, Nos. 22-cr-00167-RM-1 & 25-cv-00561-RM (D. Colo. Apr. 30 2025)",
-  "court": "U.S. District Court, District of Colorado",
+  "court": "U.S. District Court, District of Colorado, USA",
   "state": "CO",
   "filer": "Pro se",
   "judge": "Senior District Judge Raymond P. Moore",
@@ -2619,7 +2619,7 @@ const hallucinationCases = [
 },
 {
   "name": "Wyderka v. Energy Transfer Co. d/b/a Sunoco Logistics, OALJ No. 2023-PSI-00001 (USDOL OALJ Feb. 11 2025)",
-  "court": "U.S. Department of Labor, Office of Administrative Law Judges (Cincinnati, OH)",
+  "court": "U.S. Department of Labor, Office of Administrative Law Judges (Cincinnati, OH), USA",
   "state": "OH",
   "filer": "Pro se",
   "judge": "ALJ Willow Eden Fort",
@@ -2633,7 +2633,7 @@ const hallucinationCases = [
 },
 {
   "name": "Jon H. v. Lydia M., No. 24-ICA-396 (W. Va. Int. Ct. App. Jun. 6 2025)",
-  "court": "W. Va. Intermediate Court of Appeals",
+  "court": "W. Va. Intermediate Court of Appeals, USA",
   "state": "WV",
   "filer": "Lawyer",
   "judge": "Chief Judge Charles O. Lorensen (panel: Lorensen, Greear & White)",
@@ -2649,7 +2649,7 @@ const hallucinationCases = [
 },
 {
   "name": "Goins v. Father Flanagan’s Boys’ Home, No. 8:23-cv-477 (D. Neb. Jun. 5 2025)",
-  "court": "U.S. District Court, District of Nebraska",
+  "court": "U.S. District Court, District of Nebraska, USA",
   "state": "NE",
   "filer": "Pro se",
   "judge": "Senior Judge John M. Gerrard",
@@ -2665,7 +2665,7 @@ const hallucinationCases = [
 },
 {
   "name": "Shanmugavelandy v. AbbVie Inc., No. 22-cv-02975 (N.D. Ill. Jun. 2 2025)",
-  "court": "U.S. District Court, Northern District of Illinois, Eastern Division",
+  "court": "U.S. District Court, Northern District of Illinois, Eastern Division, USA",
   "state": "IL",
   "filer": "Pro se",
   "judge": "Judge Sharon Johnson Coleman",
@@ -2681,7 +2681,7 @@ const hallucinationCases = [
 },
 {
   "name": "Lipe v. Albuquerque Public Schools, No. 1:23-cv-00899-GBW-JMR (D.N.M. Jun. 4 2025)",
-  "court": "U.S. District Court, District of New Mexico",
+  "court": "U.S. District Court, District of New Mexico, USA",
   "state": "NM",
   "filer": "Lawyer",
   "judge": "Magistrate Judge Jennifer M. Rozzoni (consent case: Chief Magistrate Judge Gregory B. Wormuth)",
@@ -2694,6 +2694,22 @@ const hallucinationCases = [
   "links": {
     "Filing containing fabricated citations": "https://storage.courtlistener.com/recap/gov.uscourts.nmd.493855/gov.uscourts.nmd.493855.107.0.pdf",
     "Order": "https://storage.courtlistener.com/recap/gov.uscourts.nmd.493855/gov.uscourts.nmd.493855.113.0.pdf"
+  }
+},
+{
+  "name": "Anita Krishnakumar et al. v. Eichler Swim and Tennis Club, No. 24CV432638",
+  "court": "Superior Court of California, Santa Clara County, USA",
+  "state": "CA",
+  "filer": "Lawyer",
+  "judge": "Honorable Frederick S. Chung",
+  "date": "2025-05-29",
+  "order_date": "2025-05-29",
+  "filing_date": null,
+  "outcome": "Warning of potential sanctions; affected decision resulting in loss on merits",
+  "outcomeClass": "warning",
+  "desc": "The court found that the defendant's 'principal citation' in their opposition brief appeared to be 'completely made up: “Ortiz v. Ford Motor Co. (2020) 50 Cal.App.5th 665.”' After spending an 'inordinate amount of time searching for this case,' the court concluded 'it is nowhere to be found.' The court noted that the plaintiff's suggestion that the citation was '“generated by an AI tool”' is 'the most benign explanation.' It warned that an 'intentional deception... would be a violation of Rule 3.3 of the California Rules of Professional Conduct.'",
+  "links": {
+    "Order": "/opinion_pdfs/Anita_Krishnakumar_et_al._v._Eichler_Swim_and_Tennis_Club_CA_SC_USA_29_May_2025.pdf"
   }
 },
 {
@@ -2873,6 +2889,20 @@ const aiInCourtNoHallucinations = [
     "Opinion": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:GHDHA:2024:1771"
   }
 },
+{
+  "name": "CIBC Trust Corporation, as Trustee of the John Szewczyk Testamentary Trust v. Szewczyk, et al, 2025 ONSC 3382",
+  "court": "ONSC",
+  "state": "ON",
+  "filer": "Text Interpretation",
+  "judge": "LEMAY J",
+  "date": "2025-06-06",
+  "outcome": "Warned not to give the court ChatGPT interpretations of documents",
+  "outcomeClass": "warning",
+  "desc": "In this will interpretation case concerning the indexing of an annuity under a testamentary trust, the court found that the interpretation proposed by the trustee and one beneficiary was correct, and ordered that overpayments made to the other beneficiary since January 1, 2024, be recovered by postponing future increases. The court also addressed a party's use of ChatGPT, stating: 'Finally, as part of his reply factum, John's counsel provided an analysis of the language of Jennie's will that was performed by ChatGPT. He suggests that, \"while not determinative, the fact that an advanced language-processing tool arrived at the same plain meaning demonstrates that the wording is clear\".' The court noted: 'There is no evidence as to ChatGPT's ability to interpret the words of a testator. This is especially true because the interpretation of a will is a subjective exercise.' and concluded: 'For these reasons, I reject this argument. Going forward, I would caution [litigant] against providing the Court with ChatGPT interpretations of documents as part of his reply arguments.'",
+  "links": {
+  "Opinion": "https://www.canlii.org/en/on/onsc/doc/2025/2025onsc3382/2025onsc3382.pdf"
+  }
+  }
 ]
 
 

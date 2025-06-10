@@ -39,6 +39,26 @@
       max-width: 100%;
       max-height: 100%;
     }
+    /* Search input styling */
+    .search-input {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      background-color: #202020;
+      border: 1px solid #333;
+      border-radius: 0.375rem;
+      color: #fff;
+      font-size: 0.875rem;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: #3B82F6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    .search-input::placeholder {
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -67,7 +87,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
         </svg>
-          <span class="font-medium">Fake Cases (AI Hallucinations)</span></a>
+          <span class="font-medium">Fake Citations in Court (AI Hallucinations)</span></a>
         <a href="#" data-category="no-hallucinations" class="nav-link flex items-center px-4 py-1 text-gray-300 hover:text-white" onclick="filterCases('no-hallucinations');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
@@ -101,14 +121,17 @@
   
     <!-- ═════ HALLUCINATION TABLE ═════ -->
     <section id="hallucinations-section" class="hidden category-section">
-      <h2 class="text-2xl font-bold mb-4 tracking-tight">Fake Cases Tracker (e.g., AI Hallucinations) <span id="hallucination-count" class="text-sm font-normal text-gray-400"></span>
+      <h2 class="text-2xl font-bold mb-4 tracking-tight">Tracking Fake Citations in Court (e.g., AI Hallucinations) <span id="hallucination-count" class="text-sm font-normal text-gray-400"></span>
         <button onclick="downloadHallucinationsCSV()" class="ml-4 px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 rounded text-white">
           Download CSV
         </button>
       </h2>
       
+      <!-- Add search input -->
+      <input type="text" id="hallucination-search" class="search-input" placeholder="Search cases, courts, filers, outcomes..." oninput="filterTable('hallucination')">
+      
       <!-- Add a note at the top defining what's tracked -->
-      <p class="text-sm text-gray-400 mb-4">This tracker tracks cases where the filer cites made-up cases in court. While in many cases they are the result of relying on AI, some may be the result of human error. In particular, we have identified cases pre-2023 where made-up cases were cited. To identify these, we ran a search through WestLaw for the keyword "non-existent case" and then manually reviewed the results.</p>
+      <p class="text-sm text-gray-400 mb-4">This tracker documents instances where attorneys, pro se litigants, and other parties cite non-existent cases in court filings or other legal settings, and the court explicitly calls it out. While AI-generated hallucinations are a common cause, we also include cases of human error. Our dataset includes pre-2023 examples identified through WestLaw searches for a set of keywords including "non-existent case" and subsequent manual verification. In borderline instances, we add a specific note as to the inclusion decision.</p>
 
       <!-- Chart for hallucination cases -->
       <div class="chart-container">
@@ -136,6 +159,9 @@
     <!-- ═════ NO HALLUCINATIONS TABLE ═════ -->
     <section id="no-hallucinations-section" class="hidden category-section">
       <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Used in Court (Evidence & Interpretation) <span id="no-hallucination-count" class="text-sm font-normal text-gray-400"></span></h2>
+      
+      <!-- Add search input -->
+      <input type="text" id="no-hallucination-search" class="search-input" placeholder="Search cases, courts, uses..." oninput="filterTable('no-hallucination')">
       
       <!-- Chart for no hallucination cases -->
       <!-- <div class="chart-container">
@@ -165,6 +191,9 @@
     <section id="copyright-section" class="hidden category-section">
       <h2 class="text-2xl font-bold mb-4 tracking-tight">Generative AI Copyright Litigation</h2>
       
+      <!-- Add search input -->
+      <input type="text" id="copyright-search" class="search-input" placeholder="Search cases, courts, status..." oninput="filterTable('copyright')">
+      
       <!-- Chart for copyright cases -->
       <!-- <div class="chart-container">
         <canvas id="copyright-chart"></canvas>
@@ -189,6 +218,9 @@
     <!-- Liability -->
     <section id="liability-section" class="hidden category-section">
       <h2 class="text-2xl font-bold mb-4 tracking-tight">AI Liability & Defamation</h2>
+      
+      <!-- Add search input -->
+      <input type="text" id="liability-search" class="search-input" placeholder="Search cases, courts, claims..." oninput="filterTable('liability')">
       
       <!-- Chart for liability cases -->
       <!-- <div class="chart-container">
@@ -215,6 +247,9 @@
     <!-- First Amendment -->
     <section id="first-amendment-section" class="hidden category-section">
       <h2 class="text-2xl font-bold mb-4 tracking-tight">AI & First Amendment Challenges</h2>
+      
+      <!-- Add search input -->
+      <input type="text" id="first-amendment-search" class="search-input" placeholder="Search cases, courts, status..." oninput="filterTable('first-amendment')">
       
       <!-- Chart for first amendment cases -->
       <!-- <div class="chart-container">
@@ -272,10 +307,33 @@ function makeBadge(cls,text){return `<span class="px-2 py-1 rounded text-xs ${ba
 
 function renderTable(cases, tbodyId) {
   const tbody = document.getElementById(tbodyId);
+  const category = tbodyId.replace('-body', '');
+  const searchInput = document.getElementById(`${category}-search`);
+  const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+  
+  // If there's a search term, filter the cases
+  const filteredCases = searchTerm ? cases.filter(c => {
+    const searchableFields = [
+      c.name,
+      c.court,
+      c.filer,
+      c.date,
+      c.outcome,
+      c.desc,
+      c.claim,
+      c.topic,
+      ...Object.keys(c.links || {})
+    ].filter(Boolean);
+    
+    return searchableFields.some(field => 
+      String(field).toLowerCase().includes(searchTerm)
+    );
+  }) : cases;
+  
   tbody.innerHTML = "";
   
   // Sort cases by date (newest first) before rendering
-  const sortedCases = [...cases].sort((a, b) => {
+  const sortedCases = [...filteredCases].sort((a, b) => {
     const dateA = a.date ? new Date(a.date) : new Date(0);
     const dateB = b.date ? new Date(b.date) : new Date(0);
     return dateB - dateA; // Descending order (newest first)
@@ -283,7 +341,7 @@ function renderTable(cases, tbodyId) {
   
   // Update case count if it's the hallucination section
   if (tbodyId === 'hallucination-body') {
-    document.getElementById('hallucination-count').textContent = `(${cases.length} cases)`;
+    document.getElementById('hallucination-count').textContent = `(${sortedCases.length} cases)`;
   }
   
   sortedCases.forEach(c => {
@@ -648,6 +706,64 @@ function downloadHallucinationsCSV() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+}
+
+/* ------------- FILTERING ------------- */
+function filterTable(category) {
+  const searchInput = document.getElementById(`${category}-search`);
+  const searchTerm = searchInput.value.toLowerCase();
+  const tbodyId = `${category}-body`;
+  let cases;
+  
+  // Get the appropriate case array based on category
+  switch(category) {
+    case 'hallucination':
+      cases = hallucinationCases;
+      break;
+    case 'no-hallucination':
+      cases = aiInCourtNoHallucinations;
+      break;
+    case 'copyright':
+      cases = copyrightCases;
+      break;
+    case 'liability':
+      cases = liabilityCases;
+      break;
+    case 'first-amendment':
+      cases = firstAmendmentCases;
+      break;
+    default:
+      return;
+  }
+  
+  // Filter cases based on search term
+  const filteredCases = cases.filter(c => {
+    // Search across all relevant fields
+    const searchableFields = [
+      c.name,
+      c.court,
+      c.filer,
+      c.date,
+      c.outcome,
+      c.desc,
+      c.claim,
+      c.topic,
+      // Include link keys in search
+      ...Object.keys(c.links || {})
+    ].filter(Boolean); // Remove null/undefined values
+    
+    return searchableFields.some(field => 
+      String(field).toLowerCase().includes(searchTerm)
+    );
+  });
+  
+  // Render the filtered table
+  renderTable(filteredCases, tbodyId);
+  
+  // Update count if it's the hallucination section
+  if (category === 'hallucination') {
+    document.getElementById('hallucination-count').textContent = `(${filteredCases.length} cases)`;
+  }
 }
 </script>
 </body>
