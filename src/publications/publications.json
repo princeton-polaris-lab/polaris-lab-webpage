@@ -1,5 +1,43 @@
 [
     {
+        "title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?",
+        "pdf": "https://arxiv.org/abs/2506.11928",
+        "authors": [
+            "Zihan Zheng",
+            "Zerui Cheng",
+            "Zeyu Shen",
+            "Shang Zhou",
+            "Kaiyuan Liu",
+            "Hansen He",
+            "Dongruixuan Li",
+            "Stanley Wei",
+            "Hangyi Hao",
+            "Jianzhu Yao",
+            "Peiyao Sheng",
+            "Zixuan Wang",
+            "Wenhao Chai",
+            "Aleksandra Korolova",
+            "Peter Henderson",
+            "Sanjeev Arora",
+            "Pramod Viswanath",
+            "Jingbo Shang",
+            "Saining Xie"
+        ],
+        "year": "2025",
+        "abstract": "Recent reports claim that large language models (LLMs) now outperform elite humans in competitive programming. Drawing on knowledge from a group of medalists in international algorithmic contests, we revisit this claim, examining how LLMs differ from human experts and where limitations still remain. We introduce LiveCodeBench Pro, a benchmark composed of problems from Codeforces, ICPC, and IOI that are continuously updated to reduce the likelihood of data contamination. A team of Olympiad medalists annotates every problem for algorithmic categories and conducts a line-by-line analysis of failed model-generated submissions. Using this new data and benchmark, we find that frontier models still have significant limitations: without external tools, the best model achieves only 53% pass@1 on medium-difficulty problems and 0% on hard problems, domains where expert humans still excel. We also find that LLMs succeed at implementation-heavy problems but struggle with nuanced algorithmic reasoning and complex case analysis, often generating confidently incorrect justifications. High performance appears largely driven by implementation precision and tool augmentation, not superior reasoning. LiveCodeBench Pro thus highlights the significant gap to human grandmaster levels, while offering fine-grained diagnostics to steer future improvements in code-centric LLM reasoning.",
+        "published": "2025-06-13T00:00:00Z",
+        "updated": "2025-06-13T00:00:00Z",
+        "publication_venue": "arXiv preprint",
+        "code": "https://livecodebenchpro.com/",
+        "site": "https://livecodebenchpro.com/",
+        "comments": "",
+        "tags": [
+            "Foundation Models",
+            "Evaluation Practices"
+        ],
+        "image" : "15a9c89b-9431-4181-be48-18f0f15175a0.png"
+    },
+    {
         "title": "AI for Scaling Legal Reform: Mapping and Redacting Racial Covenants in Santa Clara County",
         "pdf": "https://reglab.github.io/racialcovenants/",
         "authors": [
@@ -1129,6 +1167,7 @@
             "Foundation Models"
         ]
     },
+    
     {
         "title": "Foundation models and fair use",
         "pdf": "https://www.jmlr.org/papers/v24/23-0569.html",
