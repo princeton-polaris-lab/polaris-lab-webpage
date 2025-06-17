@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f752988.css",
-    "main.js": "/static/js/main.9aeffc3e.js",
+    "main.js": "/static/js/main.8f9c0a9b.js",
     "static/js/488.5e451eab.chunk.js": "/static/js/488.5e451eab.chunk.js",
     "static/media/f82502cb-bf11-43cf-95a0-06bff430221f.png": "/static/media/f82502cb-bf11-43cf-95a0-06bff430221f.f018e9201fb82d34befa.png",
     "static/media/da113242-14df-4074-96b6-545b0a6b3495.png": "/static/media/da113242-14df-4074-96b6-545b0a6b3495.5816dd75b38bba392443.png",
@@ -26,6 +26,7 @@
     "static/media/legalbench_a_collaboratively_built_benchmark_for_m.png": "/static/media/legalbench_a_collaboratively_built_benchmark_for_m.84c9f90427a4b015e01d.png",
     "static/media/fantastic.png": "/static/media/fantastic.8a1594f72aa321f3b5cf.png",
     "static/media/boyi_wei.jpg": "/static/media/boyi_wei.6cfca4712f0f3126b73f.jpg",
+    "static/media/15a9c89b-9431-4181-be48-18f0f15175a0.png": "/static/media/15a9c89b-9431-4181-be48-18f0f15175a0.d4afd9ecafdd8e0ce3e6.png",
     "static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.jpg": "/static/media/uh-oh_fine-tuning_llms_compromises_their_safety,_study_finds.5ddfdf9871840963ae47.jpg",
     "static/media/safety_alignment_should_be_made_more_than_just_a_f.png": "/static/media/safety_alignment_should_be_made_more_than_just_a_f.58bba412a8ab514d6d5b.png",
     "static/media/general_scales_unlock_ai_evaluation_with_explanato.png": "/static/media/general_scales_unlock_ai_evaluation_with_explanato.ece74d714e82f08c6b1b.png",
@@ -93,11 +94,11 @@
     "static/media/ntia-logo-wht.svg": "/static/media/ntia-logo-wht.029200dfab9fde95b12b.svg",
     "index.html": "/index.html",
     "main.4f752988.css.map": "/static/css/main.4f752988.css.map",
-    "main.9aeffc3e.js.map": "/static/js/main.9aeffc3e.js.map",
+    "main.8f9c0a9b.js.map": "/static/js/main.8f9c0a9b.js.map",
     "488.5e451eab.chunk.js.map": "/static/js/488.5e451eab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f752988.css",
-    "static/js/main.9aeffc3e.js"
+    "static/js/main.8f9c0a9b.js"
   ]
 }

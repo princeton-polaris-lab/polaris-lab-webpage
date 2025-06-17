@@ -2,6 +2,86 @@
 /* -------------------- DATA -------------------- */
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
+  {
+    "name": "In re Chapman, No. 24-60759 (Bankr. N.D. Ohio Jun. 6 2025)",
+    "court": "United States Bankruptcy Court for the Northern District of Ohio, Eastern Division",
+    "state": "OH",
+    "filer": "Pro se",
+    "judge": "Bankruptcy Judge John P. Gustafson",
+    "date": "2025-06-06",
+    "order_date": "2025-06-06",
+    "filing_date": "2025-05-02",
+    "outcome": "Stricken without prejudice; warning",
+    "outcomeClass": "warning",
+    "desc": "“ ‘In re Brunsman’ is a fictitious case. It does not exist as an actual court decision. There is a decision at the cited location in the Bankruptcy Reporter, *In re Mims*—but it is not an Ohio bankruptcy court decision.”",
+    "links": {
+      "Tentative Ruling": "https://storage.courtlistener.com/recap/gov.uscourts.ohnb.1124038/gov.uscourts.ohnb.1124038.208.0.pdf"
+    }
+  },  
+  {
+    "name": "Marasco v. Swift, No. 2:25-cv-14067 (S.D. Fla. Jun. 13 2025)",
+    "court": "United States District Court for the Southern District of Florida, Fort Pierce Division",
+    "state": "FL",
+    "filer": "Pro se",
+    "judge": "District Judge Aileen M. Cannon",
+    "date": "2025-06-13",
+    "order_date": "",
+    "filing_date": "",
+    "outcome": "Pending allegation",
+    "outcomeClass": "motion",
+    "desc": "“Plaintiff continues to rely on a nonexistent case to support her due diligence arguments even though she was previously advised as much. Compare [ECF 33 (citing *Seward v. Iacono*, 252 So. 3d 360, 362 (Fla. 4th DCA 2018)), with ECF 28 at 9 n.6 (advising that this case ‘does not appear to exist.’)].”",
+    "links": {
+      "Opposition": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.684880/gov.uscourts.flsd.684880.41.0.pdf"
+    }
+  },
+  {
+    "name": "In re Valsartan, Losartan & Irbesartan Prods. Liab. Litig., No. 19-md-02875, Doc. 3060-1 (D.N.J. May 22 2025)",
+    "court": "United States District Court for the District of New Jersey, USA",
+    "state": "NJ",
+    "filer": "Expert",
+    "judge": "District Judge Renée Marie Bumb",
+    "date": "2025-05-22",
+    "order_date": "",
+    "filing_date": "",
+    "outcome": "Pending allegation",
+    "outcomeClass": "motion",
+    "desc": "The memorandum asserts that Dr. Sawyer’s expert report cites numerous fabricated journal articles—apparently produced by an AI tool—and that Sawyer falsely testified he had reviewed those sources. Invoking the 2023 amendments to Rule 702 and cases such as *Kohls v. Ellison*, defendants argue these false citations “shatter” Sawyer’s credibility and require wholesale exclusion of his causation opinions on NDMA-contaminated valsartan and liver cancer. The brief further criticizes his Bradford-Hill analysis and dose-extrapolation calculations as speculative and unsupported.",
+    "links": {
+      "Memorandum": "https://storage.courtlistener.com/recap/gov.uscourts.njd.397935/gov.uscourts.njd.397935.3060.1.pdf"
+    }
+  },
+  {
+    "name": "Jacobs v. Payward, Inc. et al., No. 3:25-cv-00567-SVN (D. Conn. May 12 2025)",
+    "court": "United States District Court for the District of Connecticut",
+    "state": "CT",
+    "filer": "Pro se",
+    "judge": "District Judge Sarala V. Nagala",
+    "date": "2025-05-12",
+    "order_date": "",
+    "filing_date": "",
+    "outcome": "Pending allegation",
+    "outcomeClass": "motion",
+    "desc": "In this 28-page memorandum, the defendants identify seven non-existent decisions, complete with fabricated quotations, that appear in plaintiffs' filings, labeling the citations an abuse of the adversary system and requesting cost-shifting under *Park v. Kim*.",
+    "links": {
+      "Memorandum": "https://storage.courtlistener.com/recap/gov.uscourts.ctd.164452/gov.uscourts.ctd.164452.45.0.pdf"
+    }
+  },
+  {
+    "name": "Homony v. Rembrandt 3D Holding Ltd., No. 25-00138 (Bankr. E.D. Pa. Jun. 4 2025)",
+    "court": "United States Bankruptcy Court for the Eastern District of Pennsylvania, USA",
+    "state": "PA",
+    "filer": "Pro se",
+    "judge": "Judge Derek J. Baker",
+    "date": "2025-06-04",
+    "order_date": "2025-06-04",
+    "filing_date": "2025-05-07",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "\"The Motion contains an asserted quote of legal authority that the Court is unable to verify. Rajan cites Chambers v. NASCO, Inc., 501 U.S. 32 (1991) and Jones v. Bank of Santa Fe, 40 F. Supp. 2d 1001 (D.N.M. 1999) [sic] for the following quoted language: “A party cannot shield itself from sanctions-related discovery simply by refusing to cooperate under the pretext of timing.” While certainly a useful statement to the movant, it does not appear in the cited authority. Even more worrisome, the Bank of Santa Fe citation is at best inaccurate and at worst a complete fabrication. The opinion at that citation is unrelated to this matter, and while an opinion with that case name does exist, it was authored five (5) years earlier in the Tenth Circuit—not the District of New Mexico. See In re Courtesy Inns, Ltd., Inc., 40 F.3d 1084 (10th Cir. 1994). When submitting a filing to the Court, an attorney is verifying that the information contained within is true and any legal contentions made are warranted by existing law. See Fed. R. Civ. P. 11(b). An attorney is charged with inquiring into the credibility and application of any case citations in their filings. See Bunce v. Visual Tech. Innovations, Inc., 2025 WL 662398, at *3 (E.D. Pa. Feb. 27, 2025) (finding an attorney in violation of Rule 11(b)(2) meriting sanctions under Rule 11(c) for relying on an artificial intelligence program to draft filings and submitting those briefs to the court containing fake case citations without verifying the authenticity and veracity of those citations). Mr. Rajan purports to be acting pro se; however, Mr. Rajan is an attorney admitted to the bar of this court and holds ECF filing privileges. As such, he is acting as, and will be treated as, an attorney for all purposes here. Moving forward, I encourage the parties to remember the importance of candor to the court, compliance with the Federal Rules, and adherence to the ethical standards of the legal profession.\"",
+      "links": {
+      "Order PDF": "https://storage.courtlistener.com/recap/gov.uscourts.paeb.517460/gov.uscourts.paeb.517460.22.0.pdf"
+    }
+  },
   /* —— NEW ENTRY —— */
   /* —— NEW ENTRY —— */
 {
@@ -780,7 +860,7 @@ const hallucinationCases = [
     name: "Kohls v. Ellison, No. 0:24-cv-03754-LMP-DLM (D. Minn. Jan. 10 2025)",
     court: "D. Minn., USA",
     state: "MN",
-    filer: "State expert",
+    filer: "Expert",
     judge: "District Judge Laura M. Provinzino",
     date: "2025-01-10",
     outcome: "Expert Declaration Stricken",
@@ -1452,6 +1532,22 @@ const hallucinationCases = [
   "desc": "Motion contained citations to non-existent cases.  Court warned plaintiff that they may be subject to sanctions.",
   "links": {
     "Order": "https://storage.courtlistener.com/recap/gov.uscourts.azd.1390331/gov.uscourts.azd.1390331.69.0.pdf"
+  }
+},
+{
+  "name": "Arajuo v. Wedelstadt, No. 23-C-1190 (E.D. Wis. Jan. 22 2025)",
+  "court": "United States District Court for the Eastern District of Wisconsin",
+  "state": "WI",
+  "filer": "Lawyer",
+  "judge": "District Judge William C. Griesbach",
+  "date": "2025-01-22",
+  "order_date": "2025-01-22",
+  "filing_date": "2024-12-29",
+  "outcome": "Warning only",
+  "outcomeClass": "warning",
+  "desc": "The court addressed the use of fictitious authorities in defendants’ brief—counsel admitted employing a “new legal research medium,” likely an AI tool, which produced non-existent cases. Citing Rule 11 and Park v. Kim, the judge deemed such conduct “unacceptable” and issued a caution that repeat offenses could lead to sanctions.",
+  "links": {
+    "Order PDF": "https://storage.courtlistener.com/recap/gov.uscourts.wied.104945/gov.uscourts.wied.104945.38.0.pdf"
   }
 },
 {
@@ -2754,7 +2850,7 @@ const hallucinationCases = [
   "order_date": "2025-06-09",
   "filing_date": "unknown",
   "outcome": "Petitioner ordered to pay respondent’s costs at the ordinary scale under the SCFR",
-  "outcomeClass": "costs",
+  "outcomeClass": "sanctions",
   "desc": "\"The petitioner is self-represented\" and the judge stated, \"I suspect that the petitioner may have relied on internet searches, and possibly artificial intelligence programs,\" but accepted that \"this was not intentional on his part\" and decided, \"Any errors do not affect my conclusion on costs.\" The first citation, \"Thomson v. Thomson, [1994] 3 S.C.R. 551, 1994 CanLII 26 (S.C.C.),\" is indeed a Convention case, yet the court was \"unable to locate the proposition cited by the petitioner in that decision.\" As for \"Kovacs v. Kovacs, 2012 BCSC 1400,\" \"D.A.M. v. M.A.K., 2009 ONCJ 405,\" and \"C.A. v. G.T., 2012 NBQB 282,\" each neutral citation \"exists, but not for those named parties, and it is not a Convention case,\" and for two of them \"neither my law clerk nor I have been able to locate this case by party name.\""
   ,
   "links": {
