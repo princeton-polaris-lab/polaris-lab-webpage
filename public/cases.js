@@ -3,6 +3,22 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "Frymier v. Aid to Victims of Domestic Abuse & Stalder, No. 4:25-cv-00442 (S.D. Tex. May 13 2025)",
+    "court": "United States District Court for the Southern District of Texas, Houston Division",
+    "state": "TX",
+    "filer": "Pro se",
+    "judge": "Magistrate Judge Yvonne Y. Ho",
+    "date": "2025-05-13",
+    "order_date": "2025-05-13",
+    "filing_date": "2025-03-31",
+    "outcome": "Warning only, but may have impacted the outcome of the case due to poor arguments",
+    "outcomeClass": "warning",
+    "desc": "“Two cases Frymier cites repeatedly to support his negligent-supervision claim—one of which Stalder also cites—do not exist. … The Court cautions Mr. Frymier and Ms. Stalder that parties must carefully review their filings and ensure that they are supported by existing law, based on a reasonable inquiry. Citing fabricated case law falls short of that standard.”",
+    "links": {
+      "Memorandum": "https://storage.courtlistener.com/recap/gov.uscourts.txsd.1990426/gov.uscourts.txsd.1990426.24.0.pdf"
+    }
+  },  
+  {
     "name": "In re Chapman, No. 24-60759 (Bankr. N.D. Ohio Jun. 6 2025)",
     "court": "United States Bankruptcy Court for the Northern District of Ohio, Eastern Division",
     "state": "OH",
