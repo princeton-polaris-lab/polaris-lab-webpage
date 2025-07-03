@@ -3,6 +3,53 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "Shahid v. Esaam, No. A25A0196 (Ga. Ct. App. Jun. 30 2025)",
+    "court": "Court of Appeals of Georgia, USA",
+    "state": "GA",
+    "filer": "Judge and Attorney",
+    "judge": "Judge Jeffrey Watkins",
+    "date": "2025-06-30",
+    "order_date": "2025-06-30",
+    "filing_date": "unknown",
+    "outcome": "Order vacated and remanded",
+    "outcomeClass": "vacated",
+    "desc": "“We are troubled by the citation of bogus cases in the trial court's order...” \"We are deeply troubled, however, that Lynch submitted to this Court an Appellee's Brief, completely ignoring the second of two arguments that Wife raised in her Appellant's Brief and Application for Discretionary Review (wherein Wife pointed out the two fictitious cases in the trial court's order),14 and provided 11 bogus case citations 15 out of 15 total,16 one of which was in support of a frivolous request for attorney fees.\"",
+    "links": {
+      "Opinion": "https://caselaw.findlaw.com/court/ga-court-of-appeals/117442275.html"
+    }
+  },
+  {
+    "name": "LaPointe v. Chief Animal Welfare Inspector, Nos. 16430, 16507, 16514, 16515, 16558, 16559 & 16602/ACRB (Animal Care Review Board Jun. 30 2025)",
+    "court": "Animal Care Review Board, Tribunals Ontario, Canada",
+    "state": "ON",
+    "filer": "Pro se",
+    "judge": "Vice-Chair Anxhela (Angela) Peco",
+    "date": "2025-06-30",
+    "order_date": "2025-06-30",
+    "outcome": "Non-compliant submissions struck from evidence",
+    "outcomeClass": "limited_action",
+    "desc": "“Mr. LaPointe’s use of artificial intelligence tools has produced false or misleading information. This information includes veterinary opinions that are likely fabricated and citations to non-existent cases or cases that do not stand for the legal principles for which he relies on them.”",
+    "links": {
+      "Opinion": "https://canlii.ca/t/kcz4p"
+    }
+  },
+  {
+    "name": "Hussein v. Canada (Immigration, Refugees and Citizenship), 2025 FC 1138 (F.C. June 24 2025)",
+    "court": "Federal Court of Canada",
+    "state": "ON",
+    "filer": "Lawyer",
+    "judge": "Associate Judge Catharine Moore",
+    "date": "2025-06-24",
+    "order_date": "2025-06-24",
+    "filing_date": "unknown",
+    "outcome": "Costs awarded ($100)",
+    "outcomeClass": "costs",
+    "desc": "“Several cases were relied upon by Applicant’s counsel which did not exist and, further, that four directions of the Court were required before Applicant’s counsel admitted that generative AI had been used and had resulted in the error.”",
+    "links": {
+      "Opinion": "https://www.canlii.org/en/ca/fct/doc/2025/2025fc1138/2025fc1138.html"
+    }
+  },
+  {
     "name": "J.R.V. v. N.L.V., 2025 BCSC 1137 (Supreme Court of British Columbia June 19 2025)",
     "court": "Supreme Court of British Columbia, Canada",
     "state": "BC",
