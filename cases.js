@@ -2,8 +2,119 @@
 /* -------------------- DATA -------------------- */
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
-  // TODO: Alcock, Romero
-
+  {
+    "name": "Washington v. State Farm Fire and Casualty Company, No. 2025-CA-0047 (La. App. 4th Cir. June 12 2025)",
+    "court": "Court of Appeal of Louisiana, Fourth Circuit, USA",
+    "state": "LA",
+    "filer": "Pro se",
+    "judge": "Judge Rachael D. Johnson",
+    "date": "2025-06-12",
+    "order_date": "2025-06-12",
+    "filing_date": "unknown",
+    "outcome": "No explicit action on fabricated citation, but the court found the plaintiff's argument without merit due to lack of supporting evidence",
+    "outcomeClass": "warning",
+    "desc": "“Ms. Washington cites Burke v. Baton Rouge Metro. Airport, 940 So. 2d 120, 124 (La. 2006) in support of her arguments. However, this case does not exist... With no supporting evidence and no arguments or case law to show that there was manifest injustice in the district court’s judgement, we find Ms. Washington’s argument without merit.”",
+    "links": {
+      "Opinion": "https://cases.justia.com/louisiana/fourth-circuit-court-of-appeal/2025-2025-ca-0047.pdf"
+    }
+  },
+  {
+    "name": "Commonwealth v. Deleon, No. 1103 MDA 2024 (Pa. Super. Ct. June 16 2025)",
+    "court": "Superior Court of Pennsylvania, USA",
+    "state": "PA",
+    "filer": "Lawyer",
+    "judge": "Judge Mary Jane Bowes",
+    "date": "2025-06-16",
+    "order_date": "2025-06-16",
+    "filing_date": null,
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“PCRA counsel provided invalid citations for both cases, listing an incorrect initial page number for Gomez and referring to Batson as Boston. We admonish counsel to exercise greater care in drafting his briefs, lest similar errors leave a future court unable to uncover the case he meant to cite and lead it to conclude that they were artificial intelligence hallucinations.”",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=15267404793381339693"
+    }
+  },
+  {
+    "name": "Miller v. Kansas Department of Children and Families, No. 25-2145-KHV (D. Kan. Jun. 20 2025)",
+    "court": "U.S. District Court, District of Kansas, USA",
+    "state": "KS",
+    "filer": "Pro se",
+    "judge": "Senior District Judge Kathryn H. Vratil",
+    "date": "2025-06-20",
+    "order_date": "2025-06-20",
+    "filing_date": null,
+    "outcome": "Mandated disclosure of AI use",
+    "outcomeClass": "warning",
+    "desc": "“On April 4, 2025, for punitive reasons, Judge O'Grady imposed a selective Artificial Intelligence (\"AI\") certification rule, which mandated that plaintiff disclose her use of AI in pleadings. Plaintiff alleges that the AI certification rule obstructed her access to the courts.”",
+    "links": {
+    "Opinion": "https://scholar.google.com/scholar_case?case=6108113596586623700"
+    }
+    },
+  {
+    "name": "United States v. Brown, No. 19-cr-60181-ALTMAN (S.D. Fla. Jun. 23 2025)",
+    "court": "U.S. District Court, Southern District of Florida, USA",
+    "state": "FL",
+    "filer": "Pro se",
+    "judge": "District Judge Roy K. Altman",
+    "date": "2025-06-23",
+    "order_date": "2025-06-23",
+    "filing_date": "",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“One last thing: the Defendant seems to have used ChatGPT or some other generative AI assistant to draft the Motion … the only two cases he cites—‘United States v. Liriano, 70 F.3d 79 (1st Cir. 1995),’ and ‘United States v. Hardin, 2018 WL 3659342 (S.D. Fla. 2018)’—seem to have been ‘hallucinated’ by the machine...We won't penalize the Defendant for submitting fictitious cases this time, but he may not continue to do so in the future.”",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=14684301401158197078"
+    }
+  },
+  {
+    "name": "Angelo v. Allen, 2025 MT 135N, No. DA 24-0574 (Mont. Jun. 24 2025)",
+    "court": "Supreme Court of Montana",
+    "state": "MT",
+    "filer": "Pro se",
+    "judge": "Justice James Jeremiah Shea",
+    "date": "2025-06-24",
+    "order_date": "2025-06-24",
+    "filing_date": "2025-08-28",
+    "outcome": "Court declines to consider arguments supported only by non-existent case law",
+    "outcomeClass": "sanction",
+    "desc": "“Allen's brief cites a number of cases in support of her argument which might be persuasive if they existed—but they do not. It appears that Allen's brief may have been written with assistance from artificial intelligence (‘AI’). Although our current rules do not prohibit the use of AI in drafting briefs, we do require that a party provide accurate citations in support of their arguments. While we consistently make accommodations for self-represented litigants by relaxing the technical and substantive requirements of litigating in this Court, it is reasonable to expect all litigants—including those representing themselves—to adhere to the procedural rules that ensure a fair judicial process. Cox v. Magers, 2018 MT 21, ¶ 15, 390 Mont. 224, 411 P.3d 1271 (citation omitted). We have consistently held that when a party fails to support their arguments with sufficient citation to existing authority, we will not develop their analysis for them. McCulley v. Am. Land Title Co., 2013 MT 89, ¶ 20, 369 Mont. 433, 300 P.3d 679. Because Allen fails to sufficiently support her arguments on appeal with citations to existing authority, we decline to consider them.”",
+    "links": {
+      "Opinion": "https://caselaw.findlaw.com/court/mt-supreme-court/117415617.html"
+    }
+  },
+  {
+    "name": "Nelson v. Washington Board of Industrial Appeals, No. 3:25-cv-05551-DGE (W.D. Wash. June 26 2025)",
+    "court": "U.S. District Court, Western District of Washington, Tacoma, USA",
+    "state": "WA",
+    "filer": "Pro se",
+    "judge": "U.S. District Judge David G. Estudillo",
+    "date": "2025-06-26",
+    "order_date": "2025-06-26",
+    "filing_date": null,
+    "outcome": "Court allows plaintiff to use AI but warns of sanctions for fabricated citations",
+    "outcomeClass": "warning",
+    "desc": "“Plaintiff is also admonished not to rely on the AI program’s legal analysis as AI programs are known to ‘hallucinate’ by identifying citations that do not exist. In fact, Plaintiff has already submitted at least one brief containing a citation that does not exist… If Plaintiff submits inaccurate or ‘hallucinated’ citations, Plaintiff will be subject to sanctions pursuant to Federal Rule of Civil Procedure 11(c)...In short, the Court at present finds no basis to prohibit Plaintiff from utilizing any computer program that may assist him in filing documents with the Court. The Court also offers no opinion at this time whether an AI program, such as Athena AI, is an “auxiliary aid” for purposes of Title II of the American with Disabilities Act.”",
+    "links": {
+      "Opinion": "https://cases.justia.com/federal/district-courts/washington/wawdce/3%3A2025cv05551/349668/17/0.pdf"
+    }
+  },
+  {
+    "name": "Khlafa v. Oregon Health and Science University, Case No. 3:23-cv-01013-SI (D. Or. Nov. 1 2024)",
+    "court": "U.S. District Court, District of Oregon, USA",
+    "state": "OR",
+    "filer": "Pro se",
+    "judge": "District Judge Michael H. Simon",
+    "date": "2024-11-01",
+    "order_date": "2024-11-01",
+    "filing_date": "2024-07-31",
+    "outcome": "Court flagged multiple non-existent or mis-described cases cited by the pro-se plaintiff but deferred any decision on sanctions to a later order.",
+    "outcomeClass": "pending",
+    "desc": "“Several of these cited cases, however, do not appear to exist; others do exist, but Plaintiff grossly misstates the facts, analyses, and holdings of these cases. In a separate Order, the Court will address these bogus citations and case descriptions.”",
+    "links": {
+      "Opinion": "https://www.govinfo.gov/content/pkg/USCOURTS-ord-3_23-cv-01013/pdf/USCOURTS-ord-3_23-cv-01013-1.pdf",
+      "Filing": "https://www.courtlistener.com/docket/67599657/khlafa-v-oregon-health-and-science-university/#entry-52"
+    }
+  },  
   {
     "name": "Alcock v. Doe, C.A. No. 25-11589-WGY (D. Mass. Jun. 5 2025)",
     "court": "U.S. District Court, District of Massachusetts, USA",
