@@ -2,11 +2,172 @@
 /* -------------------- DATA -------------------- */
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
+  // TODO: Alcock, Romero
+
+  {
+    "name": "Alcock v. Doe, C.A. No. 25-11589-WGY (D. Mass. Jun. 5 2025)",
+    "court": "U.S. District Court, District of Massachusetts, USA",
+    "state": "MA",
+    "filer": "Pro se",
+    "judge": "District Judge William G. Young",
+    "date": "2025-06-05",
+    "order_date": "2025-06-05",
+    "outcome": "Sanctions in original case, TRO denied",
+    "outcomeClass": "sanctions",
+    "desc": "“The civil rights complaint is brought pursuant to 42 U.S.C. § 1983 seeking multiple forms of declaratory and injunctive relief against two Massachusetts state court judges identified as John Doe 1 and John Doe 2.[1] The claims stem from what Alcock alleges were unconstitutional actions taken in a lawsuit that he had filed against his parents and others seeking to recover financial losses due, in part, to unauthorized financial transactions. . . . As to John Doe 1, Alcock states that he issued an order on December 19, 2024 that \"selectively presented evidence to Plaintiff's prejudice\" and on May 8, 2025 issued an order that imposed \"monetary sanctions on Plaintiff primarily due to alleged AI-generated citation errors, and who subsequently issued the final Order dismissing the MA State Court Action on May 15, 2025.\"",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=9044344629826775098"
+    }
+  },
+  {
+    "name": "Cordero Romero v. Goldman Sachs Bank USA, No. 1:25-cv-2857-GHW (S.D.N.Y. Jun. 25 2025)",
+    "court": "U.S. District Court, Southern District of New York, USA",
+    "state": "NY",
+    "filer": "Pro se",
+    "judge": "District Judge Gregory H. Woods",
+    "date": "2025-06-25",
+    "order_date": "2025-06-25",
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“Second, Plaintiff’s citation to Beckford v. City of New York, No. 12-cv-9231, 2015 WL 5521435 … appears to be completely fictitious....The Court is not making a finding at this time that Plaintiff presented fake citations to the Court as the result of the use of generative artificial intelligence. Plaintiff is representing himself in this action pro se in this case, and, as such, the Court affords him special solicitude. As a result, the Court is not taking action at this time as a result of Plaintiff's presentation of fictitious citations to the Court.”",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=17705707023637124604"
+    }
+  },
+  {
+    "name": "Carter v. UZGlobal LLC, No. 1:23-cv-01013-MV-JHR (D.N.M. Jun. 27 2025)",
+    "court": "U.S. District Court, District of New Mexico, USA",
+    "state": "NM",
+    "filer": "Lawyer",
+    "judge": "United States Magistrate Judge Jerry H. Ritter",
+    "date": "2025-06-27",
+    "order_date": "2025-06-27",
+    "filing_date": null,
+    "outcome": "Order to show cause",
+    "outcomeClass": "pending",
+    "desc": "“Plaintiffs’ Response to Defendant Amazon.com, Inc.’s Motion for Protective Order and Alternative Motion for Sharing Provision [Doc. 85] … contained incorrect citations including at least one citation to a case that does not exist.”",
+    "links": {
+      "Opinion": "https://app.midpage.ai/document/carter-v-uzglobal-llc-11085685"
+    }
+  },
+  {
+    "name": "Ravel Ferrera Parra v. United States, No. 25-cv-431 (Fed. Cl. Jun. 27 2025)",
+    "court": "United States Court of Federal Claims",
+    "state": "DC",
+    "filer": "Pro se",
+    "judge": "Judge Eleni M. Roumel",
+    "date": "2025-06-27",
+    "order_date": "2025-06-27",
+    "filing_date": null,
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“The citation of fake, AI-created cases in briefing is ‘an abuse of the adversary system’ and unacceptable...Here, too, a warning will suffice, as the Court lacks jurisdiction over Plaintiff’s claims and Defendant has not requested sanctions. Plaintiff, however, is now on notice of the risks associated with using AI. Accordingly, Plaintiff is advised that he may be subject to sanctions, should he file additional pleadings in this or other courts referencing fictional AI-generated legal authority.”",
+    "links": {
+      "Opinion": "https://www.govinfo.gov/content/pkg/USCOURTS-cofc-1_25-cv-00431/pdf/USCOURTS-cofc-1_25-cv-00431-0.pdf"
+    }
+  },
+  {
+    "name": "Jakes v. Youngblood, No. 2:24-cv-01608-WSS (W.D. Pa. Jun. 26 2025)",
+    "court": "U.S. District Court, Western District of Pennsylvania, USA",
+    "state": "PA",
+    "filer": "Lawyer",
+    "judge": "District Judge William S. Stickman IV",
+    "date": "2025-06-26",
+    "order_date": "2025-06-26",
+    "filing_date": "2025-05-05",
+    "outcome": "Motion to dismiss and reply brief were stricken; counsel ordered to show cause why Rule 11 and Pa. RPC 3.3 sanctions should not issue",
+    "outcomeClass": "action_taken",
+    "desc": "“The Court presumes that Youngblood’s briefs were constructed by generative artificial intelligence used by Blackburn, rather than an effort by Blackburn to personally construct false and misleading briefs. It does not matter...”",
+    "links": {
+    "Filing": "https://storage.courtlistener.com/recap/gov.uscourts.pawd.314851/gov.uscourts.pawd.314851.43.0.pdf",
+    "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.pawd.314851/gov.uscourts.pawd.314851.53.0.pdf"
+    }
+  },
+  {
+    "name": "Auto Test Ltd. v. Ministry of Transport & Road Safety et al., Admin. Petition 25536-04-25 (Tel Aviv-Jaffa Admin. Ct. June 25 2025)",
+    "court": "Administrative Court of Tel Aviv-Jaffa, Israel",
+    "state": "IL",
+    "filer": "Lawyer",
+    "judge": "Judge Kobi Vardi",
+    "date": "2025-06-25",
+    "order_date": "2025-06-25",
+    "filing_date": "2025-04-25",
+    "outcome": "The court declined to award costs to the petitioner and imposed no sanctions despite the fabricated citations.",
+    "outcomeClass": "no_action",
+    "desc": "As to the petitioner: its counsel (who apologised) acted improperly by using artificial-intelligence tools that injected non-existent or erroneous case-law citations into the petition and its supplements. Under Supreme Court precedent, the petition could have been summarily dismissed; I refrained from doing so because of the State’s conduct and the importance of issuing the tender. Given this misconduct—and the fact that the petition sought numerous remedies, some beyond this Court’s jurisdiction—no costs are awarded to the petitioner. (Warning: translation using ChatGPT, may contain errors.)",
+    "links": {
+      "Opinion": "https://www.law.co.il/media/computer-law/auto_test.pdf"
+    }
+  },
+  {
+    "name": "Sullivan v. Wisnovsky, No. 1:21-cv-00157-CL (D. Or. Jun. 16 2025)",
+    "court": "U.S. District Court, District of Oregon, Medford Division, USA",
+    "state": "OR",
+    "filer": "Lawyer",
+    "judge": "Magistrate Judge Mark D. Clarke",
+    "date": "2025-06-16",
+    "order_date": "2025-06-16",
+    "filing_date": "",
+    "outcome": "Order to show cause issued",
+    "outcomeClass": "pending",
+    "desc": "“Across these three briefs Plaintiffs cite to fifteen non-existent cases and misrepresent quotations from seven real cases.”",
+    "links": {
+      "Docket": "opinion_pdfs/Sullivan_v._Wisnovsky_Oregon_USA_14_June_2025-1.pdf"
+    }
+  },
+  {
+    "name": "Northbound Processing (Pty) Ltd v. South African Diamond and Precious Metals Regulator, Case No. 2025-072038 (Gauteng Div., Johannesburg, 30 June 2025)",
+    "court": "High Court of South Africa, Gauteng Division, Johannesburg",
+    "state": "ZA",
+    "filer": "Lawyer",
+    "judge": "Acting Judge DJ Smit",
+    "date": "2025-06-30",
+    "order_date": "2025-06-30",
+    "filing_date": "2025-05-20",
+    "outcome": "counsel referred to the Legal Practice Council",
+    "outcomeClass": "referral",
+    "desc": "“two cases cited in Northbound’s heads of argument for key propositions on the mandamus, that could have been dispositive of this matter if they applied, do not exist....there was no deliberate attempt to mislead the court in relation to the use of incorrect case citations in the heads of argument. Their apologies are acknowledged.”",
+    "links": {
+      "Opinion": "https://lawlibrary.org.za/akn/za-gp/judgment/zagpjhc/2025/538/eng@2025-06-30"
+    }
+  },
+  {
+    "name": "Doe v. Noem, No. 1:25-cv-01352 (D.D.C. Jul. 1 2025)",
+    "court": "U.S. District Court, District of Columbia, USA",
+    "state": "DC",
+    "filer": "Lawyer",
+    "judge": "District Judge Amit P. Mehta",
+    "date": "2025-07-01",
+    "order_date": "2025-07-01",
+    "filing_date": "2025-06-20",
+    "outcome": "Show-cause order issued regarding fabricated citation",
+    "outcomeClass": "no_action",
+    "desc": "“Counsel for Plaintiff shall show cause ... for citing Moms Against Poverty v. Department of State, 2022 WL 17951329 (D.D.C. Dec. 23, 2022), a seemingly non-existent authority … The court has found no such case on Westlaw or in the court's electronic docketing system.”",
+    "links": {
+      "Order": "https://www.courtlistener.com/docket/70119596/doe-v-noem/#minute-entry-430139754",
+      "Filing": "https://www.courtlistener.com/recap/gov.uscourts.dcd.280229/gov.uscourts.dcd.280229.22.0.pdf"
+    }
+  },  
+  {
+    "name": "Murray on behalf of the Wamba Wemba Native Title Claim Group v State of Victoria, [2025] FCA 731, VID 14 of 2022 (FCA Apr. 22 2025)",
+    "court": "Federal Court of Australia, Victoria Registry",
+    "state": "VIC",
+    "filer": "Lawyer",
+    "judge": "Justice Murphy",
+    "date": "2025-04-22",
+    "order_date": "2025-04-22",
+    "outcome": "Solicitors ordered to personally pay respondents’ costs on an indemnity basis for using AI-generated citations",
+    "outcomeClass": "sanctions",
+    "desc": "“The solicitors for the applicants... shall personally pay the costs of the respondents, on an indemnity basis, incurred through the firm’s use of artificial intelligence in the preparation of documents served on the respondents…”",
+    "links": {
+      "Opinion": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2025/2025fca0731"
+    }
+  },  
   {
     "name": "Shahid v. Esaam, No. A25A0196 (Ga. Ct. App. Jun. 30 2025)",
     "court": "Court of Appeals of Georgia, USA",
     "state": "GA",
-    "filer": "Judge and Attorney",
+    "filer": "Judge, Lawyer",
     "judge": "Judge Jeffrey Watkins",
     "date": "2025-06-30",
     "order_date": "2025-06-30",
@@ -153,7 +314,7 @@ const hallucinationCases = [
     "filing_date": "",
     "outcome": "Pending allegation",
     "outcomeClass": "motion",
-    "desc": "The memorandum asserts that Dr. Sawyer’s expert report cites numerous fabricated journal articles—apparently produced by an AI tool—and that Sawyer falsely testified he had reviewed those sources. Invoking the 2023 amendments to Rule 702 and cases such as *Kohls v. Ellison*, defendants argue these false citations “shatter” Sawyer’s credibility and require wholesale exclusion of his causation opinions on NDMA-contaminated valsartan and liver cancer. The brief further criticizes his Bradford-Hill analysis and dose-extrapolation calculations as speculative and unsupported.",
+    "desc": "The memorandum asserts that Dr. Sawyer’s expert report cites numerous fabricated journal articles—apparently produced by an AI tool—and that Sawyer falsely testified he had reviewed those sources. Invoking the 2023 amendments to Rule 702 and cases such as *Kohls v. Ellison*, defendants argue these false citations “shatter” Sawyer’s credibility and require wholesale exclusion of his causation opinions on NDMA-contaminated valsartan and liver cancer. The brief further criticizes his Bradford-Hill analysis and dose-extrapolation calculations as speculative and unsupported. The court issued a warning for the fabricated citations.",
     "links": {
       "Memorandum": "https://storage.courtlistener.com/recap/gov.uscourts.njd.397935/gov.uscourts.njd.397935.3060.1.pdf"
     }
