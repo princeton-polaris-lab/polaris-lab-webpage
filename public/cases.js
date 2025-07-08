@@ -3,6 +3,22 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "Rogers v. United States Postal Office, Case No. 24-cv-09519-HSG (N.D. Cal. July 1, 2025)",
+    "court": "United States District Court, Northern District of California, USA",
+    "state": "CA",
+    "filer": "Lawyer",
+    "judge": "Haywood S. Gilliam, Jr.",
+    "date": "2025-07-01",
+    "order_date": "2025-07-01",
+    "filing_date": null,
+    "outcome": "Order to show cause",
+    "outcomeClass": "pending",
+    "desc": "\"The Court has serious concerns that several of Plaintiff's authorities are miscited or misquoted. This does not appear to be an isolated clerical mistake, as the Court independently found several other wholly inaccurate or nonexistent citations throughout Plaintiff's opposition. For examples, see Attachment A to this Order. The Court therefore ORDERS Plaintiff's counsel to SHOW CAUSE why he should not be sanctioned for including inaccurate citations in Plaintiff's opposition brief. Counsel shall also indicate whether he used generative artificial intelligence to draft the opposition brief in whole or in part. Counsel shall file a declaration of five pages or less by July 7, 2025.\"",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=8727576533063958578"
+    }
+  },
+  {
     "name": "Washington v. State Farm Fire and Casualty Company, No. 2025-CA-0047 (La. App. 4th Cir. June 12 2025)",
     "court": "Court of Appeal of Louisiana, Fourth Circuit, USA",
     "state": "LA",
