@@ -3,6 +3,38 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "AQ v. BW, 2025 BCCRT 907",
+    "court": "Civil Resolution Tribunal",
+    "state": "BC",
+    "filer": "Judge",
+    "judge": "Eric Regehr, Vice Chair",
+    "date": "2025-07-04",
+    "order_date": "2025-07-04",
+    "filing_date": "2025-07-04",
+    "outcome": "$1,000 sanction",
+    "outcomeClass": "sanction",
+    "desc": "“Other issues the parties raised had no legal basis at all and appear to have been conjured by artificial intelligence. An example is that both parties rely on a hallucinated version of CRTA section 92...people who blindly use artificial intelligence often end up bombarding the CRT with endless legal arguments. They cannot reasonably expect the CRT to address them all... I find that $1,000 is appropriate compensation for AQ’s time spent in this dispute, based primarily on the sheer volume of irrelevant evidence AQ had to needlessly review.”",
+    "links": {
+      "Decision": "https://decisions.civilresolutionbc.ca/crt/ini/en/527997/1/document.do"
+    }
+  },  
+  {
+    "name": "Smith v. Gamble, No. CA2024-09-069 (Ohio Ct. App. 12th Dist. July 7 2025)",
+    "court": "Court of Appeals of Ohio, Twelfth Appellate District, Clermont County, USA",
+    "state": "OH",
+    "filer": "Lawyer",
+    "judge": "Judge Robin N. Piper",
+    "date": "2025-07-07",
+    "order_date": "2025-07-07",
+    "filing_date": "2025-07-07",
+    "outcome": "Judgment affirmed in part, reversed in part, and remanded.",
+    "outcomeClass": "partial_reversal_remand",
+    "desc": "\"Father used nonexistent cases and inappropriate, inaccurate citations to generate his response to Mother's brief. Therefore, given this court's ability to impose sanctions in circumstances such as these, Mother's request for this court to order Father pay sanctions is granted. ",
+    "links": {
+      "Opinion": "https://www.supremecourt.ohio.gov/rod/docs/pdf/12/2025/2025-Ohio-2381.pdf"
+    }
+  },
+  {
     "name": "Rogers v. United States Postal Office, Case No. 24-cv-09519-HSG (N.D. Cal. July 1, 2025)",
     "court": "United States District Court, Northern District of California, USA",
     "state": "CA",
@@ -1089,15 +1121,16 @@ const hallucinationCases = [
   "state": "CO",
   "filer": "Lawyer",
   "judge": "District Judge Nina Y. Wang; Magistrate Judge Susan B. Prose",
-  "date": "2025-04-23",
-  "outcome": "Pending order to show cause",
-  "outcomeClass": "pending",
+  "date": "2025-07-07",
+  "outcome": "$3,000 Sanction",
+  "outcomeClass": "sanction",
   "desc": "Judge Wang found nearly 30 misquotes, misattributions and entirely fictitious cases in the defendants’ brief opposing a motion in limine—errors the court traced to un-checked generative-AI research. She ordered defense counsel to explain, under oath, why they relied on AI and why they shouldn’t be sanctioned or referred to bar authorities, and required counsel to certify personal notice to client Mike Lindell.",
   "links": {
     "Order to Show Cause": "https://cases.justia.com/federal/district-courts/colorado/codce/1%3A2022cv01129/215068/309/0.pdf",
     "Response": "https://storage.courtlistener.com/recap/gov.uscourts.cod.215068/gov.uscourts.cod.215068.311.0.pdf",
     "Docket": "https://www.courtlistener.com/docket/63296393/coomer-v-lindell/",
-    "Coverage": "https://reason.com/volokh/2025/04/25/apparent-ai-hallucinations-in-defense-filing-in-coomer-v-lindell-my-pillow-election-related-libel-suit/"
+    "Coverage": "https://reason.com/volokh/2025/04/25/apparent-ai-hallucinations-in-defense-filing-in-coomer-v-lindell-my-pillow-election-related-libel-suit/",
+    "Final Order": "https://websitedc.s3.amazonaws.com/documents/Coomer_v._Lindell_USA_7_July_2025.pdf"
   }
 },
 {
