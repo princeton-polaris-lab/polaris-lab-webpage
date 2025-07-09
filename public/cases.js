@@ -3,10 +3,26 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "Grivas v. Sorace, No. 5:24-cv-6923 (E.D. Pa. Jun. 30 2025)",
+    "court": "U.S. District Court, Eastern District of Pennsylvania, USA",
+    "state": "PA",
+    "filer": "Pro se",
+    "judge": "District Judge Joseph F. Leeson, Jr.",
+    "date": "2025-06-30",
+    "order_date": "2025-06-30",
+    "filing_date": null,
+    "outcome": "No action taken",
+    "outcomeClass": "no_action",
+    "desc": "“Many of these miscellaneous Motions appear frivolous with only a cursory glance. For example, the \"Motion to Proceed and Request for Scheduling Order,\" see ECF No. 61, contains a dialogue between Plaintiff and ChatGPT. The resultant document then contains frivolous legal arguments such as arguing that a counterclaim amounts to \"consciousness of guilt.\" Id. The document also contains citations to nonexistent local rules. Id.”",
+    "links": {
+      "Opinion": "https://scholar.google.com/scholar_case?case=14039105670863960543"
+    }
+  },
+  {
     "name": "AQ v. BW, 2025 BCCRT 907",
     "court": "Civil Resolution Tribunal",
     "state": "BC",
-    "filer": "Judge",
+    "filer": "Pro se",
     "judge": "Eric Regehr, Vice Chair",
     "date": "2025-07-04",
     "order_date": "2025-07-04",
@@ -22,7 +38,7 @@ const hallucinationCases = [
     "name": "Smith v. Gamble, No. CA2024-09-069 (Ohio Ct. App. 12th Dist. July 7 2025)",
     "court": "Court of Appeals of Ohio, Twelfth Appellate District, Clermont County, USA",
     "state": "OH",
-    "filer": "Lawyer",
+    "filer": "Pro se",
     "judge": "Judge Robin N. Piper",
     "date": "2025-07-07",
     "order_date": "2025-07-07",
