@@ -3,6 +3,54 @@
 /*  AI-Hallucination / Ghost-Citation cases  */
 const hallucinationCases = [
   {
+    "name": "Celli v. New York City et al., No. 1:24-cv-09743-JPC-RWL (S.D.N.Y. June 9, 2025)",
+    "court": "U.S. District Court, Southern District of New York, USA",
+    "state": "NY",
+    "filer": "Pro se",
+    "judge": "John P. Cronan",
+    "date": "2025-06-09",
+    "order_date": "2025-06-09",
+    "filing_date": null,
+    "outcome": "Warning only",
+    "outcomeClass": "warning",
+    "desc": "“The overwhelming majority of Plaintiff’s frivolous submissions have been transparently authored by an artificial intelligence program. If Plaintiff files additional frivolous motions in this matter, the Court will enter an order prohibiting him from filing any document which was authored with the assistance of an artificial intelligence program and require any submission be accompanied by a sworn affidavit that no such program was used in its creation.”",
+    "links": {
+      "Opinion": "https://cases.justia.com/federal/district-courts/new-york/nysdce/1%3A2024cv09743/634117/214/0.pdf"
+    }
+  },
+  {
+    "name": "Muhammad v. Gap Inc., No. 2:24-cv-3676 (S.D. Ohio July 3 2025)",
+    "court": "U.S. District Court, Southern District of Ohio, USA",
+    "state": "OH",
+    "filer": "Pro se",
+    "judge": "District Judge Douglas R. Cole",
+    "date": "2025-07-03",
+    "order_date": "2025-07-03",
+    "filing_date": null,
+    "outcome": "Order to show cause",
+    "outcomeClass": "pending",
+    "desc": "Finally, and perhaps most troubling of all, Muhammad cites two cases in that motion as “controlling authority”: Scott v. City of Columbus Legal Department, No. 2:21-cv-5543, 2022 WL 2828015 (S.D. Ohio July 20, 2022), and Humphrey v. U.S. Attorney General’s Office, No. 2:15-cv-746, 2016 WL 740653 (S.D. Ohio Feb. 25, 2016). (Doc. 96, #1237). Neither exists... [T]he Court further suspects that these inaccuracies may be the result of Muhammad’s use of generative artificial intelligence (AI) technology. ",
+    "links": {
+      "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.ohsd.295059/gov.uscourts.ohsd.295059.114.0.pdf"
+    }
+  },
+  {
+    "name": "Sharita Hill v. State of Oklahoma ex rel., The Oklahoma Medical Marijuana Authority, No. CIV-25-522-SLP (W.D. Okla. July 3, 2025)",
+    "court": "U.S. District Court, Western District of Oklahoma, USA",
+    "state": "OK",
+    "filer": "Lawyer",
+    "judge": "U.S. District Judge Scott L. Palk",
+    "date": "2025-07-03",
+    "order_date": "2025-07-03",
+    "filing_date": null,
+    "outcome": "Warning only, but may have partially contributed to dismissal",
+    "outcomeClass": "warning",
+    "desc": "“The Court has reviewed these case citations and agrees with Defendant that they are inaccurate, nonexistent and include direct quotes that cannot be located... Further, these inaccuracies signal that Plaintiff’s counsel may have used AI to assist in the drafting of Plaintiff’s Response (or otherwise counsel produced exceptionally sloppy work)... This Order serves as a strong admonishment to Plaintiff’s counsel. On remand, Plaintiff’s counsel is forewarned of possible sanctions that the state court may choose to impose should counsel continue to submit filings with such inaccuracies as those contained in its Response.”",
+    "links": {
+      "Opinion": "https://storage.courtlistener.com/recap/gov.uscourts.okwd.131200/gov.uscourts.okwd.131200.9.0.pdf"
+    }
+  },
+  {
     "name": "Grivas v. Sorace, No. 5:24-cv-6923 (E.D. Pa. Jun. 30 2025)",
     "court": "U.S. District Court, Eastern District of Pennsylvania, USA",
     "state": "PA",
